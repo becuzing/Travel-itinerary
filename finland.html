@@ -1,0 +1,1162 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>2027-06 芬蘭愛沙尼亞 19天18夜</title>
+<meta name="robots" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
+<meta name="description" content="2027/6/25–7/13 芬蘭・愛沙尼亞親子行">
+<meta name="theme-color" content="#0F1B26">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="芬蘭愛沙尼亞">
+<meta name="format-detection" content="telephone=no">
+<link rel="icon" type="image/png" href="assets/icon-192.png">
+<link rel="apple-touch-icon" href="assets/icon-180.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preload" href="assets/fonts/barlow-condensed-700.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body>
+<style>
+html{-webkit-tap-highlight-color:transparent}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:500;font-display:swap;src:url(assets/fonts/barlow-condensed-500.woff2) format('woff2')}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:600;font-display:swap;src:url(assets/fonts/barlow-condensed-600.woff2) format('woff2')}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:700;font-display:swap;src:url(assets/fonts/barlow-condensed-700.woff2) format('woff2')}
+
+/* Layout: transit-board — navy departure board header (date strip, NOW/NEXT), metro-line timeline, bottom nav */
+:root{
+  --board:#0F1B26; --board2:#18293B; --board-line:#2C3F52; --board-btn:#4A5D70; --on-board:#FFFFFF; --on-board2:#B9C4CF;
+  --signal:#FFC72C; --on-signal:#0F1B26;
+  --bg:#EEF1F4; --card:#FFFFFF; --ink:#0F1B26; --ink2:#3E4C59; --ink3:#56636F; --line:#E3E8ED; --line2:#C6CFD8;
+  --anchor:#0B6BCB; --anchor-ink:#0B5CB0; --anchor-bg:#E6F0FC; --meal:#D9480F; --meal-ink:#A63A0A; --hotel:#2B8A3E; --hotel-ink:#22703A;
+  --flight:#0F1B26; --flight-bg:#0F1B26; --on-flight:#FFFFFF; --on-flight2:#B9C4CF; --plain:#8A96A3; --move:#8A96A3;
+  --link:#0B5CB0; --link-bg:#E7EEF6; --on-link:#FFFFFF;
+  --warn-bg:#FFF0E6; --warn-fg:#8A3208; --sos:#C92A2A; --on-sos:#FFFFFF;
+  --plane-m:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M17.8%2019.2%2016%2011l3.5-3.5C21%206%2021.5%204%2021%203c-1-.5-3%200-4.5%201.5L13%208%204.8%206.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1%201%20.3%201.3L9%2012l-2%203H4l-1%201%203%202%202%203%201-1v-3l3-2%203.5%205.3c.3.4.8.5%201.3.3l.5-.2c.4-.3.6-.7.5-1.2z%22%20fill%3D%22black%22/%3E%3C/svg%3E");
+  --train-m:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%222.6%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Crect%20x%3D%225%22%20y%3D%223%22%20width%3D%2214%22%20height%3D%2214%22%20rx%3D%223%22/%3E%3Cpath%20d%3D%22M5%2011h14M9%2021l-2-4M15%2021l2-4%22/%3E%3C/svg%3E");
+  --num:'Barlow Condensed','Arial Narrow',sans-serif;
+  --sans:-apple-system,BlinkMacSystemFont,'PingFang TC','Noto Sans TC','Noto Sans CJK TC','Microsoft JhengHei',sans-serif;
+  --sc:'PingFang SC','Noto Sans SC','Noto Sans CJK SC','Microsoft YaHei',sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --board:#07101A; --board2:#132232; --board-line:#26384A; --board-btn:#3B4E61; --on-board:#F2F5F8; --on-board2:#A9B6C2;
+    --bg:#0B141C; --card:#14212D; --ink:#E6ECF1; --ink2:#B8C4CE; --ink3:#97A5B1; --line:#22323F; --line2:#344654;
+    --anchor:#5AA6F0; --anchor-ink:#7DB7F5; --anchor-bg:#16304A; --meal:#FF8A50; --meal-ink:#FFA477; --hotel:#5CC27A; --hotel-ink:#7DD394;
+    --flight:#C9D3DC; --flight-bg:#DCE6F0; --on-flight:#0F1B26; --on-flight2:#3E4C59; --plain:#6E7D8A; --move:#6E7D8A;
+    --link:#7DB7F5; --link-bg:#1A2F44; --on-link:#07101A;
+    --warn-bg:#3A2114; --warn-fg:#FFC09A; --sos:#D9413A; --on-sos:#FFFFFF; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --board:#07101A; --board2:#132232; --board-line:#26384A; --board-btn:#3B4E61; --on-board:#F2F5F8; --on-board2:#A9B6C2;
+  --bg:#0B141C; --card:#14212D; --ink:#E6ECF1; --ink2:#B8C4CE; --ink3:#97A5B1; --line:#22323F; --line2:#344654;
+  --anchor:#5AA6F0; --anchor-ink:#7DB7F5; --anchor-bg:#16304A; --meal:#FF8A50; --meal-ink:#FFA477; --hotel:#5CC27A; --hotel-ink:#7DD394;
+  --flight:#C9D3DC; --flight-bg:#DCE6F0; --on-flight:#0F1B26; --on-flight2:#3E4C59; --plain:#6E7D8A; --move:#6E7D8A;
+  --link:#7DB7F5; --link-bg:#1A2F44; --on-link:#07101A;
+  --warn-bg:#3A2114; --warn-fg:#FFC09A; --sos:#D9413A; --on-sos:#FFFFFF; color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.5;-webkit-text-size-adjust:100%}
+body.lock{overflow:hidden}
+a{color:var(--link)}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--signal);outline-offset:2px}
+.app{max-width:640px;margin:0 auto;padding-inline:16px;padding-block:0 calc(70px + env(safe-area-inset-bottom,0px))}
+.num{font-family:var(--num);font-variant-numeric:tabular-nums}
+
+/* date strip */
+.strip{position:sticky;top:env(safe-area-inset-top,0px);z-index:6;display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;background:var(--board);margin-inline:-16px;padding:8px 16px}
+.strip::-webkit-scrollbar{display:none}
+.dd{flex:1 0 46px;min-height:42px;border:0;border-radius:10px;background:none;color:var(--on-board2);cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.1;padding:4px 2px}
+.dd b{font-family:var(--num);font-size:19px;font-weight:600;color:var(--on-board)}
+.dd small{font-size:11.5px;margin-top:2px}
+.dd.td small{color:var(--signal);font-weight:700}
+.dd[aria-selected="true"]{background:var(--signal);color:var(--on-signal)}
+.dd[aria-selected="true"] b,.dd[aria-selected="true"] small{color:var(--on-signal)}
+
+/* header board */
+.hd{background:var(--board);color:var(--on-board);margin-inline:-16px;padding:8px 16px 14px;display:flex;flex-direction:column;gap:6px}
+@media (min-width:672px){.hd{border-radius:0 0 18px 18px}}
+.kick{display:flex;align-items:center;justify-content:space-between;gap:12px;font-family:var(--num);font-size:16px;font-weight:600;letter-spacing:.06em;color:var(--on-board2)}
+.kick span{min-width:0}
+.sosb{flex:0 0 auto;min-height:32px;padding:0 10px;border-radius:8px;border:1.5px solid #FF8A80;background:none;color:#FFB3AC;font-family:var(--sans);font-size:13.5px;font-weight:700;letter-spacing:0;cursor:pointer}
+.hd h1{margin:0;font-size:22px;line-height:1.3;font-weight:900;text-wrap:balance}
+.hd .meta{margin:0;font-size:13px;line-height:1.45;color:var(--on-board2)}
+.cd{margin:0;font-size:15px;color:var(--on-board2)}
+.cd b{font-family:var(--num);font-size:24px;color:var(--signal);margin:0 2px}
+
+/* NOW / NEXT board */
+.nowb{background:var(--board2);border-radius:14px;padding:12px;display:flex;flex-direction:column;gap:5px;margin-top:2px}
+.nrow{display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 10px}
+.tag,.nowtag{font-family:var(--num);font-weight:700;letter-spacing:.12em;background:var(--signal);color:var(--on-signal);border-radius:4px;padding:0 7px;font-size:15px;line-height:1.5}
+.big{font-family:var(--num);font-variant-numeric:tabular-nums;font-size:30px;font-weight:700;line-height:1}
+.left{font-size:13px;color:var(--on-board2)}
+.nt1{font-size:18px;font-weight:700;line-height:1.35}
+.nsub{font-size:13px;line-height:1.45;color:var(--on-board2)}
+.nrem{font-size:13px;line-height:1.45;color:var(--on-board)}
+.bar{height:5px;margin-block:3px;border-radius:999px;background:var(--board-line);overflow:hidden}
+.bar i{display:block;height:100%;background:var(--signal);border-radius:999px}
+.next{border-top:1px solid var(--board-line);padding-top:7px;margin-top:3px;display:flex;align-items:baseline;gap:2px 8px;flex-wrap:wrap;font-size:13.5px;color:var(--on-board2)}
+.next .tag2{font-family:var(--num);font-weight:700;letter-spacing:.12em;color:var(--signal);font-size:14px}
+.next .nt2{font-family:var(--num);font-size:18px;font-weight:600;color:var(--on-board)}
+
+/* buttons */
+.acts{display:flex;flex-wrap:wrap;gap:6px}
+/* actions are quiet secondary controls: outline, muted label, coloured icon as the find-cue. Map is not filled. */
+.act{min-height:34px;padding:0 10px;border-radius:8px;border:1px solid var(--line2);background:transparent;color:var(--ink2);font-size:13.5px;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:5px;cursor:pointer;white-space:nowrap}
+.act svg{flex:0 0 auto;width:15px;height:15px;color:var(--link)}
+.act:hover{border-color:var(--link);color:var(--link)}
+.act.sm{min-height:30px;font-size:13px;padding:0 10px}
+.bd .acts{gap:5px}
+.bd .act{padding:0 7px;gap:3px;font-size:13px}
+.nowb .acts{margin-top:4px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
+.nowb .acts::-webkit-scrollbar{display:none}
+.nowb .act{border-color:var(--board-btn);color:var(--on-board2);flex:0 0 auto;padding:0 7px;gap:4px;font-size:13px}
+.nowb .act svg{color:var(--on-board2)}
+.nowb .act:hover{border-color:var(--on-board2);color:var(--on-board)}
+
+/* body */
+.body{display:flex;flex-direction:column;gap:8px;padding-top:10px}
+.warn{margin:0;background:var(--warn-bg);color:var(--warn-fg);border-radius:10px;padding:7px 11px;font-size:13.5px;line-height:1.45}
+.warn b{margin-right:8px}
+.vt{display:flex;gap:4px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:4px}
+.vt button{flex:1;min-height:40px;border:0;border-radius:9px;background:none;color:var(--ink2);font-size:14.5px;font-weight:600;cursor:pointer}
+.vt button[aria-pressed="true"]{background:var(--ink);color:var(--card)}
+.sum{margin:0;font-size:13.5px;line-height:1.5;color:var(--ink2)}
+.pastb{min-height:36px;border:0;border-radius:10px;background:var(--card);color:var(--ink2);font-size:13.5px;display:flex;align-items:center;gap:8px;padding:0 12px;cursor:pointer;text-align:left}
+.pastb span{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pastb[aria-expanded="true"] svg{transform:rotate(180deg)}
+.wide{min-height:38px;border-radius:10px;border:1.5px solid var(--line2);background:var(--card);color:var(--ink);font-size:14px;font-weight:600;cursor:pointer}
+
+/* metro timeline */
+.tl{list-style:none;margin:0;padding:4px 12px;background:var(--card);border-radius:14px}
+.st{display:grid;grid-template-columns:54px 22px minmax(0,1fr);column-gap:8px;--kc:var(--plain)}
+.k-anchor{--kc:var(--anchor);--ki:var(--anchor-ink)} .k-meal{--kc:var(--meal);--ki:var(--meal-ink)} .k-hotel{--kc:var(--hotel);--ki:var(--hotel-ink)} .k-flight{--kc:var(--flight);--ki:var(--ink)} .k-plain{--kc:var(--plain);--ki:var(--ink3)}
+.tm{text-align:right;padding:6px 0;font-family:var(--num);font-variant-numeric:tabular-nums;line-height:1.1}
+.tm .t1{display:block;font-size:20px;font-weight:700}
+.tm .t2{display:block;font-size:14px;font-weight:500;color:var(--ink3)}
+.rail{display:flex;flex-direction:column;align-items:center}
+.rail .seg{display:block;width:4px;height:10px;background:var(--kc)}
+.rail .grow{flex:1;height:auto}
+.rail .dot{display:block;flex:0 0 auto;width:15px;height:15px;border-radius:50%;border:4px solid var(--kc);background:var(--card)}
+.bd{padding:6px 0 9px;min-width:0;display:flex;flex-direction:column;gap:1px}
+.kd{display:flex;align-items:center;gap:8px;font-size:11.5px;font-weight:700;letter-spacing:.08em;color:var(--ki)}
+.kd .nowtag{font-size:12px;letter-spacing:.1em}
+.ttl{font-size:16px;font-weight:700;line-height:1.4}
+.pl{font-size:13.5px;line-height:1.45;color:var(--ink2)}
+.cs{font-size:13.5px;line-height:1.45;font-weight:600}
+.nt{font-size:13px;line-height:1.45;color:var(--ink3)}
+.rem{font-size:13px;line-height:1.45;color:var(--ink2);margin-top:1px}
+.rem b{color:var(--warn-fg);margin-right:6px}
+.bd .acts{margin-top:5px}
+.k-move .tm{padding:4px 0}
+.k-move .tm .t1{font-size:17px;font-weight:600;color:var(--ink3)}
+.k-move .rail .seg{flex:1;height:auto;width:0;background:none;border-left:3px dotted var(--move)}
+.k-move .bd{padding:5px 0 6px}
+.mv{font-size:13px;line-height:1.45;color:var(--ink2)}
+/* leg = travel time + distance for every point-to-point move */
+.lg{display:flex;align-items:center;flex-wrap:wrap;gap:2px 6px;margin-top:2px;font-size:12.5px;line-height:1.4;color:var(--ink3)}
+.lg svg{flex:0 0 auto;width:13px;height:13px}
+.lg b{font-family:var(--num);font-variant-numeric:tabular-nums;font-size:15px;font-weight:600;color:var(--ink2)}
+.lg i{font-style:normal;color:var(--line2)}
+.k-flight .lg,.k-flight .lg b{color:var(--on-flight2)}
+/* anchor = the day's highlight: same type scale as other rows, marked by colour only (tinted panel, solid label, blue title/time, filled dot) */
+.k-anchor .bd{background:var(--anchor-bg);border-radius:12px;padding:9px 11px 11px;margin:5px 0;gap:2px}
+.k-anchor .kl{background:var(--anchor);color:var(--on-link);border-radius:4px;padding:1px 7px;letter-spacing:.12em}
+.k-anchor .ttl{color:var(--anchor-ink)}
+.k-anchor .tm{padding-top:12px}
+.k-anchor .tm .t1{color:var(--anchor-ink)}
+.k-anchor .rail .seg:first-child{height:16px}
+.k-anchor .rail .dot{background:var(--anchor)}
+.k-anchor .act{background:var(--card);border-color:transparent}
+.k-anchor .pd{background:var(--card);border-color:transparent}
+/* ── Colour hierarchy (strongest → weakest) ──
+   T1 航班／高鐵 = filled boarding-pass panel (navy on light, light on dark) + plane/train dot
+   T1b 機場／車站流程 (報到・出境・入境・轉機・候車) = flight-coloured rail + label, no panel
+   T2 重點 = light blue tint panel · T3 用餐 = orange · T4 飯店 = green · T5 其他 = grey, transit dotted
+   State colours are separate: yellow = NOW／今天, amber = 注意, red = 緊急 only. Type size is the same on every tier. */
+.k-air{--kc:var(--flight);--ki:var(--flight)}
+.k-flight .bd{background:var(--flight-bg);border-radius:12px;padding:9px 11px 11px;margin:5px 0;gap:2px}
+.k-flight .kd{color:var(--on-flight)}
+.k-flight .kl{background:var(--on-flight);color:var(--flight-bg);border-radius:4px;padding:1px 7px;letter-spacing:.12em}
+.k-flight .ttl,.k-flight .pl,.k-flight .cs{color:var(--on-flight)}
+.k-flight .nt,.k-flight .rem{color:var(--on-flight2)}
+.k-flight .rem b{color:var(--on-flight)}
+.k-flight .tm{padding-top:12px}
+.k-flight .tm .t1{color:var(--flight)}
+.k-flight .rail .seg:first-child{height:14px}
+.k-flight .rail .dot{width:22px;height:22px;border:0;background:var(--flight-bg);color:var(--on-flight);display:flex;align-items:center;justify-content:center}
+.k-flight .rail .dot svg{width:13px;height:13px}
+.k-flight .act{border-color:var(--on-flight2);color:var(--on-flight)}
+.k-flight .act svg{color:var(--on-flight)}
+.k-flight .pd{border-color:var(--on-flight2);color:var(--on-flight)}
+.k-flight .pd dt,.k-flight .pd summary span{color:var(--on-flight2)}
+.k-flight .pd dd{color:var(--on-flight)}
+.cur.k-flight .rail .dot{background:var(--signal);color:var(--on-signal)}
+.past.k-flight .bd{opacity:.6}
+.past.k-flight .ttl{color:var(--on-flight)}
+/* flight days at day level: header strip, date-strip plane mark, 行程 list */
+.flh{list-style:none;margin:2px 0 0;padding:0;display:flex;flex-direction:column;gap:4px}
+.flh li{display:flex;align-items:center;gap:8px;background:var(--board2);border:1px solid var(--board-btn);border-radius:8px;padding:5px 10px;font-size:13.5px;color:var(--on-board);min-width:0}
+.flh svg{flex:0 0 auto;width:14px;height:14px;color:var(--on-board)}
+.flh b{font-weight:700;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.flh .num{margin-left:auto;flex:0 0 auto;font-family:var(--num);font-variant-numeric:tabular-nums;font-size:17px;font-weight:600}
+.dd.fl small::after{content:"";display:inline-block;width:10px;height:10px;margin-left:3px;vertical-align:-1px;background:currentColor;-webkit-mask:var(--plane-m) center/contain no-repeat;mask:var(--plane-m) center/contain no-repeat}
+.dd.tr small::after{content:"";display:inline-block;width:10px;height:10px;margin-left:3px;vertical-align:-1px;background:currentColor;-webkit-mask:var(--train-m) center/contain no-repeat;mask:var(--train-m) center/contain no-repeat}
+.dayrow .dfl{color:var(--flight)}
+.dayrow .dfl.tr::before{-webkit-mask-image:var(--train-m);mask-image:var(--train-m)}
+.dayrow .dfl::before{content:"";display:inline-block;width:11px;height:11px;margin-right:5px;vertical-align:-1px;background:currentColor;-webkit-mask:var(--plane-m) center/contain no-repeat;mask:var(--plane-m) center/contain no-repeat}
+.cur .rail .dot{background:var(--signal);border-color:var(--ink)}
+.cur .tm .t1{text-decoration:underline;text-decoration-color:var(--signal);text-decoration-thickness:4px;text-underline-offset:3px}
+.past .rail .dot{border-color:var(--line2);background:var(--line2)}
+.past .rail .seg{background:var(--line2)}
+.past .ttl{color:var(--ink2)}
+.nowline{display:grid;grid-template-columns:54px minmax(0,1fr);column-gap:8px;align-items:center;margin:2px 0}
+.nowline span{font-family:var(--num);font-weight:700;letter-spacing:.1em;text-align:right;font-size:14px}
+.nowline hr{border:0;border-top:3px solid var(--signal);margin:0}
+
+/* place details */
+.pd{margin-top:4px;border:1px solid var(--line);border-radius:8px}
+.pd summary{min-height:32px;list-style:none;cursor:pointer;display:flex;align-items:center;gap:8px;padding:3px 10px;font-weight:700;font-size:13.5px;min-width:0;overflow-wrap:anywhere}
+.pd summary::-webkit-details-marker{display:none}
+.pd summary span{font-weight:400;font-size:12px;color:var(--ink3);margin-left:auto;white-space:nowrap}
+.pd summary svg{width:15px;height:15px;flex:0 0 auto}
+.pd[open] summary svg{transform:rotate(180deg)}
+.pd dl{display:grid;grid-template-columns:2.6em minmax(0,1fr);gap:2px 10px;margin:0;padding:0 10px 4px;font-size:13px;line-height:1.45}
+.pd dt{color:var(--ink3)}
+.pd dd{margin:0;color:var(--ink);overflow-wrap:anywhere;-webkit-user-select:text;user-select:text}
+.pd .act{margin:4px 10px 10px}
+
+/* sections & lists */
+.card{background:var(--card);border-radius:14px;padding:10px 12px}
+.card h2{margin:0 0 2px;font-size:16.5px;font-weight:700}
+.rows{list-style:none;margin:0;padding:0}
+.rows>li{padding:8px 0;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:1px}
+.rows>li:first-child{border-top:0;padding-top:4px}
+.ra{font-weight:700;font-size:15px}
+.rb{font-size:13px;line-height:1.5;color:var(--ink2);white-space:pre-line}
+.hint{margin:0;font-size:12.5px;color:var(--ink3)}
+.wxall{margin:0;font-size:13.5px;color:var(--ink2)}
+.wxall b{color:var(--ink);margin-right:8px}
+
+/* plan day list */
+.days{list-style:none;margin:0;padding:0;background:var(--card);border-radius:14px;overflow:hidden}
+.days li+li{border-top:1px solid var(--line)}
+.dayrow{width:100%;min-height:48px;border:0;background:none;cursor:pointer;display:grid;grid-template-columns:54px minmax(0,1fr) 16px;gap:10px;align-items:center;padding:7px 12px;text-align:left}
+.dayrow .dt{display:flex;flex-direction:column;line-height:1.1}
+.dayrow .dt b{font-family:var(--num);font-size:20px;font-weight:700}
+.dayrow .dt small{font-size:12px;color:var(--ink3)}
+.dayrow .d1{display:block;font-size:15px;font-weight:700}
+.dayrow .d2{display:block;font-size:12.5px;line-height:1.45;color:var(--ink2)}
+.dayrow .dfl{display:block;font-size:12.5px;line-height:1.45;font-weight:700;color:var(--anchor-ink);font-variant-numeric:tabular-nums}
+.wide{display:inline-flex;align-items:center;justify-content:center;gap:6px}
+.wide svg{width:15px;height:15px}
+.dayrow.td{background:var(--warn-bg)}
+.dayrow.td .dt small{color:var(--ink);font-weight:700}
+
+/* info */
+.sosg{display:grid;grid-template-columns:repeat(auto-fit,minmax(92px,1fr));gap:8px}
+.sos{min-height:56px;border-radius:10px;background:var(--sos);color:var(--on-sos);text-decoration:none;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.sos b{font-family:var(--num);font-size:26px;line-height:1}
+.sos span{font-size:12px;font-weight:700}
+.sosx{list-style:none;margin:0;padding:0;font-size:13px;line-height:1.45;color:var(--on-board2)}
+.sosx b{color:var(--on-board);margin-right:8px}
+.hcard{background:var(--board2);border-radius:12px;padding:10px 12px;display:flex;flex-direction:column;gap:3px}
+.hcard .lab{font-family:var(--num);font-weight:700;letter-spacing:.12em;color:var(--signal);font-size:13px}
+.hcard .hn{font-size:16px;font-weight:700}
+.hcard .ha{font-size:13px;line-height:1.45;color:var(--on-board2);-webkit-user-select:text;user-select:text}
+.hcard .acts{margin-top:4px}
+.hcard .acts .act{border-color:var(--board-btn);color:var(--on-board2)}
+.hcard .acts .act svg{color:var(--on-board2)}
+.acc{background:var(--card);border-radius:14px}
+.acc summary{min-height:44px;list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;padding:5px 12px}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary .sx{flex:1;min-width:0;line-height:1.3}
+.acc summary b{display:block;font-size:15px}
+.acc summary small{display:block;font-size:12px;color:var(--ink3)}
+.acc[open] summary svg{transform:rotate(180deg)}
+.acc .rows{padding:0 12px 8px}
+table.bud{border-collapse:collapse;font-size:13.5px;margin:0 12px 10px;width:calc(100% - 24px)}
+table.bud td{padding:5px 0;border-top:1px solid var(--line);vertical-align:top}
+table.bud td:last-child{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;padding-left:12px}
+table.bud tr:first-child td{border-top:0}
+table.bud tr.tot td{font-weight:700;border-top:2px solid var(--ink)}
+/* ── 資訊 page: ordered by when the info is needed ── */
+.ihd-sub{margin:0;font-size:13px;color:var(--on-board2)}
+.ihd-sub b{color:var(--signal);font-family:var(--num);font-size:18px;margin:0 2px}
+.jump{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;margin-inline:-16px;padding-inline:16px}
+.jump::-webkit-scrollbar{display:none}
+.jump button{flex:0 0 auto;min-height:32px;padding:0 12px;border-radius:999px;border:1px solid var(--line2);background:var(--card);color:var(--ink2);font-size:13px;font-weight:600;cursor:pointer}
+.isec{display:flex;flex-direction:column;gap:6px;scroll-margin-top:12px}
+.sec-h{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:4px 8px;padding:0 2px}
+.sec-h h2{margin:0;font-size:16.5px;font-weight:700}
+.sec-h small{font-size:12.5px;color:var(--ink3)}
+.todo{list-style:none;margin:0;padding:2px 12px;background:var(--card);border-radius:14px}
+.todo li{display:grid;grid-template-columns:26px minmax(0,1fr) auto;gap:8px;align-items:start;padding:9px 0;border-top:1px solid var(--line)}
+.todo li:first-child{border-top:0}
+.ck{width:24px;height:24px;margin-top:1px;border-radius:7px;border:1.5px solid var(--line2);background:transparent;color:transparent;display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0}
+.ck svg{width:14px;height:14px}
+.ck:disabled{cursor:default}
+.todo li.is-done .ck{background:var(--hotel);border-color:var(--hotel);color:var(--card)}
+.todo li.is-done .ra{color:var(--ink3);text-decoration:line-through;text-decoration-color:var(--line2)}
+.todo li.is-done .rb,.todo li.is-done .acts{display:none}
+.grp{display:inline-block;font-size:11px;font-weight:700;color:var(--ink3);letter-spacing:.06em;margin-right:6px}
+.dl{font-size:11.5px;font-weight:700;border-radius:999px;padding:2px 8px;white-space:nowrap;margin-top:2px}
+.dl.now,.dl.late{background:var(--warn-bg);color:var(--warn-fg)}
+.dl.soon{background:var(--link-bg);color:var(--link)}
+.dl.later{background:var(--bg);color:var(--ink3)}
+.acc .todo{padding:0 12px 6px;border-radius:0}
+.fcs{display:flex;flex-direction:column;gap:6px}
+.fc{display:grid;grid-template-columns:50px minmax(0,1fr);gap:10px;background:var(--card);border-radius:12px;padding:10px}
+.fc-d{background:var(--flight-bg);color:var(--on-flight);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:6px 0;line-height:1.15;align-self:start}
+.fc-d b{font-family:var(--num);font-size:17px;font-weight:700}
+.fc-d small{font-size:11px;color:var(--on-flight2)}
+.fc-m{min-width:0;display:flex;flex-direction:column;gap:1px}
+.fc-t{display:flex;align-items:center;gap:6px;font-weight:700;font-size:15px}
+.fc-t svg{flex:0 0 auto;width:14px;height:14px;color:var(--flight)}
+.fc-time{font-family:var(--num);font-variant-numeric:tabular-nums;font-size:20px;font-weight:700;line-height:1.2}
+.fc-r,.fc-n{font-size:13px;line-height:1.45;color:var(--ink2);white-space:pre-line}
+.fc.past{opacity:.55}
+.pnr{display:flex;align-items:center;gap:6px;font-size:12.5px;color:var(--ink3)}
+.pnr b{font-family:var(--num);font-size:18px;letter-spacing:.06em;color:var(--ink)}
+
+/* bottom nav */
+.nav{position:fixed;left:0;right:0;bottom:0;z-index:8;background:var(--board);padding:4px 4px calc(4px + env(safe-area-inset-bottom,0px));display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.nb{min-height:46px;border:0;background:none;color:var(--on-board2);cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;font-size:11.5px;font-weight:500}
+.nb svg{width:22px;height:22px}
+.nb[aria-current="page"]{color:var(--signal);font-weight:700}
+
+/* driver mode */
+.driver{position:fixed;inset:0;z-index:20;background:var(--card);color:var(--ink);display:flex;flex-direction:column;padding:calc(10px + env(safe-area-inset-top,0px)) 16px calc(14px + env(safe-area-inset-bottom,0px));overflow-y:auto}
+.driver[hidden]{display:none}
+.dv-top{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:13.5px;color:var(--ink3)}
+.dv-back{min-height:44px;border:0;background:none;color:var(--link);font-size:16px;font-weight:700;display:inline-flex;align-items:center;gap:4px;cursor:pointer;padding:0 6px}
+.dv-main{flex:1;display:flex;flex-direction:column;justify-content:center;gap:16px;padding:16px 8px;font-family:var(--sc)}
+.dv-main p{margin:0}
+.dv-ask{font-size:21px;font-weight:700;color:var(--ink2)}
+.dv-name{font-size:clamp(40px,13vw,72px);line-height:1.15;font-weight:900;overflow-wrap:anywhere}
+.dv-addr{font-size:clamp(26px,7.5vw,40px);line-height:1.35;font-weight:700;overflow-wrap:anywhere;-webkit-user-select:text;user-select:text}
+.dv-tel{font-size:22px;font-weight:700;color:var(--ink2);-webkit-user-select:text;user-select:text}
+.dv-foot{display:flex;flex-direction:column;gap:10px}
+.dv-chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px}
+.dv-chip{flex:0 0 auto;min-height:36px;padding:0 14px;border-radius:999px;border:1.5px solid var(--line2);background:var(--card);color:var(--ink);font-size:15px;cursor:pointer;font-family:var(--sc)}
+.dv-chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--card);font-weight:700}
+.dv-foot .acts{display:grid;grid-template-columns:repeat(auto-fit,minmax(96px,1fr))}
+.dv-foot .act{min-height:42px;font-size:15px}
+
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(84px + env(safe-area-inset-bottom,0px));z-index:30;background:var(--ink);color:var(--card);padding:10px 16px;border-radius:10px;font-size:14.5px;opacity:0;pointer-events:none;transition:opacity .2s;max-width:calc(100% - 32px)}
+.toast.on{opacity:1}
+
+/* ── 餐廳 tab: collapsible sections (cascade) → meal plan / ranked rows → backups & address ── */
+.fsec{scroll-margin-top:12px}
+.fsec>summary{min-height:50px}
+.fsec>summary b{font-size:16px}
+.fsec>summary .cnt{font-family:var(--num);font-size:18px;font-weight:700;color:var(--ink3);margin-left:auto;padding-right:2px}
+.jump .xall{border-style:dashed;color:var(--ink3)}
+.fgrp{display:flex;align-items:baseline;justify-content:space-between;gap:8px;padding:8px 2px 0}
+.fgrp h2{margin:0;font-size:17px;font-weight:800}
+.fgrp small{font-size:12.5px;color:var(--ink3)}
+.ff{display:flex;gap:4px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:4px}
+.ff button{flex:1;min-width:0;min-height:36px;border:0;border-radius:9px;background:none;color:var(--ink2);font-size:13.5px;font-weight:600;cursor:pointer;white-space:nowrap;padding:0 4px}
+.ff button small{font-family:var(--num);font-size:14px;font-weight:600;margin-left:3px;color:var(--ink3)}
+.ff button[aria-pressed="true"]{background:var(--ink);color:var(--card)}
+.ff button[aria-pressed="true"] small{color:inherit;opacity:.75}
+.ftip{margin:0;font-size:13px;line-height:1.5;color:var(--ink2);background:var(--card);border-radius:10px;padding:8px 12px}
+.ftip b{color:var(--ink);margin-right:6px}
+.fempty{margin:0;padding:14px;text-align:center;font-size:13.5px;color:var(--ink3);background:var(--card);border-radius:14px}
+
+/* meal plan */
+.mplan{padding:0 0 6px}
+.mplan .pastb{margin:0 12px 6px;width:calc(100% - 24px);border:1px solid var(--line)}
+.mday{border-top:1px solid var(--line)}
+.mday:first-of-type{border-top:0}
+.mdh{width:100%;min-height:36px;border:0;background:none;display:flex;align-items:center;gap:8px;padding:8px 12px 0;cursor:pointer;text-align:left;color:var(--ink)}
+.mdh b{font-family:var(--num);font-size:18px;font-weight:700}
+.mdh small{font-size:12.5px;color:var(--ink3)}
+.mdh .t{flex:1;min-width:0;font-size:13px;font-weight:600;color:var(--ink2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.mdh .go{flex:0 0 auto;font-size:12px;color:var(--link);display:inline-flex;align-items:center}
+.mdh .go svg{width:14px;height:14px}
+.mdh .tg{font-family:var(--num);font-weight:700;letter-spacing:.1em;background:var(--signal);color:var(--on-signal);border-radius:4px;padding:0 6px;font-size:13px;line-height:1.5}
+.mday.past{opacity:.6}
+.mls{list-style:none;margin:0;padding:0}
+.ml{display:grid;grid-template-columns:46px minmax(0,1fr);column-gap:10px;padding:6px 12px 8px}
+.ml-tm{text-align:right;line-height:1.1;padding-top:3px}
+.ml-tm b{display:block;font-family:var(--num);font-variant-numeric:tabular-nums;font-size:18px;font-weight:700;color:var(--meal-ink)}
+.ml-tm small{display:block;font-size:11.5px;font-weight:700;color:var(--meal-ink);margin-top:2px}
+.ml-bd{min-width:0;display:flex;flex-direction:column;gap:2px;border-left:3px solid var(--meal);padding-left:10px}
+.ml-n{font-size:15.5px;font-weight:700;line-height:1.4}
+.ml-m{font-size:13px;line-height:1.45;color:var(--ink2)}
+.ml-m .ok{color:var(--hotel-ink);font-weight:700}
+.ml .acts{margin-top:4px}
+.vtag{display:inline-block;font-size:11.5px;font-weight:700;line-height:1.6;padding:0 6px;border-radius:4px;border:1px solid var(--line2);color:var(--ink3);margin-left:6px;vertical-align:2px;white-space:nowrap}
+.rk{font-family:var(--num);font-size:14.5px;font-weight:700;color:var(--ink3);margin-left:6px;white-space:nowrap}
+.bk{margin-top:5px;border:1px solid var(--line);border-radius:8px}
+.bk summary{min-height:34px;list-style:none;cursor:pointer;display:flex;align-items:center;gap:8px;padding:3px 10px;font-size:13px}
+.bk summary::-webkit-details-marker{display:none}
+.bk summary b{flex:0 0 auto;font-weight:700}
+.bk summary span{flex:1;min-width:0;color:var(--ink3);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bk summary svg{width:15px;height:15px;flex:0 0 auto}
+.bk[open] summary svg{transform:rotate(180deg)}
+.bk ol{list-style:none;margin:0;padding:2px 10px 10px;display:flex;flex-direction:column;gap:8px}
+.bk li{display:grid;grid-template-columns:18px minmax(0,1fr);gap:6px;font-size:13px;line-height:1.45}
+.bk .bn{font-family:var(--num);font-weight:700;font-size:15px;color:var(--ink3);line-height:1.3}
+.bk .bt{font-weight:700;color:var(--ink)}
+.bk .bx{color:var(--ink2)}
+.bk .acts{margin-top:4px}
+.mplan .wide{display:flex;align-items:center;justify-content:center;gap:6px;margin:6px 12px 4px;width:calc(100% - 24px)}
+.mplan .wide svg{width:16px;height:16px}
+
+/* ranked list */
+.frs{padding:0 12px 4px}
+.fr{border-top:1px solid var(--line)}
+.fr:first-child{border-top:0}
+.fr summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:28px minmax(0,1fr) 18px;column-gap:8px;align-items:start;padding:9px 0}
+.fr summary::-webkit-details-marker{display:none}
+.fr-rk{font-family:var(--num);font-variant-numeric:tabular-nums;font-size:24px;font-weight:700;line-height:1;text-align:center;color:var(--ink3);padding-top:1px}
+.fs0 .fr-rk{color:var(--meal-ink)}
+.fr-sx{min-width:0;display:flex;flex-direction:column;gap:1px}
+.fr-n{font-size:15.5px;font-weight:700;line-height:1.35}
+.fr-d{font-size:13px;line-height:1.4;color:var(--ink2)}
+.fr-c{display:flex;flex-wrap:wrap;gap:4px;margin-top:4px}
+.ch{font-size:12px;line-height:1;padding:4px 6px;border-radius:6px;background:var(--bg);color:var(--ink2);white-space:nowrap}
+.ch.on{background:var(--meal-ink);color:var(--card);font-weight:700}
+.ch.alt{background:none;border:1px solid var(--meal);color:var(--meal-ink);padding:3px 5px;font-weight:600}
+.fr summary>svg{width:18px;height:18px;color:var(--ink3);margin-top:3px}
+.fr[open] summary>svg{transform:rotate(180deg)}
+.fr-bd{padding:0 0 12px 36px;display:flex;flex-direction:column;gap:4px}
+.fr-bd p{margin:0;font-size:13.5px;line-height:1.5;color:var(--ink2)}
+.fr-bd dl{display:grid;grid-template-columns:2.6em minmax(0,1fr);gap:2px 10px;margin:2px 0 0;font-size:13px;line-height:1.45}
+.fr-bd dt{color:var(--ink3)}
+.fr-bd dd{margin:0;color:var(--ink);overflow-wrap:anywhere;-webkit-user-select:text;user-select:text}
+.fr-bd .acts{margin-top:4px}
+.nr>li .ra{font-size:14px}
+/* nested summaries inside an open section must not inherit the section chevron rotation */
+.fsec .fr summary>svg,.fsec .bk summary svg{transform:none}
+.fsec .fr[open] summary>svg,.fsec .bk[open] summary svg{transform:rotate(180deg)}
+
+@media (prefers-reduced-motion: reduce){.toast{transition:none}}
+
+/* ---- v2 ---- */
+:root{--ferry-m:url("data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2024%2024%22%20fill=%22none%22%20stroke=%22black%22%20stroke-width=%222.6%22%20stroke-linecap=%22round%22%20stroke-linejoin=%22round%22%3E%3Cpath%20d=%22M3%2016l2.5%204h13L21%2016l-9-3z%22/%3E%3Cpath%20d=%22M6%2014.5V9h12v5.5%22/%3E%3Cpath%20d=%22M12%203v6%22/%3E%3C/svg%3E");--bus-m:url("data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2024%2024%22%20fill=%22none%22%20stroke=%22black%22%20stroke-width=%222.6%22%20stroke-linecap=%22round%22%20stroke-linejoin=%22round%22%3E%3Crect%20x=%225%22%20y=%223%22%20width=%2214%22%20height=%2215%22%20rx=%222.5%22/%3E%3Cpath%20d=%22M5%2011h14M8%2021v-3M16%2021v-3%22/%3E%3C/svg%3E")}
+.dd.fe small::after,.dd.bu small::after{content:"";display:inline-block;width:10px;height:10px;margin-left:3px;vertical-align:-1px;background:currentColor;-webkit-mask:var(--ferry-m) center/contain no-repeat;mask:var(--ferry-m) center/contain no-repeat}
+.dd.bu small::after{-webkit-mask-image:var(--bus-m);mask-image:var(--bus-m)}
+.dayrow .dfl.fe::before{-webkit-mask-image:var(--ferry-m);mask-image:var(--ferry-m)}
+.dayrow .dfl.bu::before{-webkit-mask-image:var(--bus-m);mask-image:var(--bus-m)}
+.dayrow .dfl.tr::before{-webkit-mask-image:var(--train-m);mask-image:var(--train-m)}
+.dayrow .dfl .fr{margin-right:8px}
+.dayrow .dfl .ft{display:inline-block;white-space:nowrap;font-family:var(--num);font-size:14px}
+.dayrow .dt .wxs{margin-top:3px;font-family:var(--num);font-size:13px;color:var(--ink3);white-space:nowrap}
+.days li.sg{display:flex;align-items:baseline;flex-wrap:wrap;gap:2px 8px;padding:9px 12px 7px;background:var(--bg);border-top:1px solid var(--line)}
+.days li.sg:first-child{border-top:0}
+.days li.sg b{font-size:14px;font-weight:800;letter-spacing:.02em}
+.days li.sg small{font-size:12px;color:var(--ink3)}
+.days li.sg+li{border-top:0}
+/* compact place row: name toggles details, map stays one tap away */
+.pq{display:flex;align-items:flex-start;gap:6px;margin-top:5px}
+.pq .pd{flex:1 1 auto;min-width:0;margin:0}
+.pd summary{min-height:44px}
+.pd summary .pn{min-width:0;flex:1 1 auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pd[open] summary .pn{white-space:normal}
+.pd .acts{margin:2px 10px 10px}
+.pd .acts .act{margin:0}
+.pq .pq-map{flex:0 0 auto;min-height:44px}
+.pq .act{min-height:40px}
+.k-flight .pq .pq-map{border-color:var(--on-flight2);color:var(--on-flight)}
+.k-flight .pq .pq-map svg{color:var(--on-flight)}
+.ml-m .ok,.ml-m .need{white-space:nowrap}
+.ml-m .need{color:var(--warn-fg);font-weight:700}
+/* backups */
+.bkd{border:1px solid var(--line);border-radius:12px;background:var(--card)}
+.bkd summary{min-height:44px;list-style:none;cursor:pointer;display:flex;align-items:center;gap:8px;padding:4px 12px;font-size:14px}
+.bkd summary::-webkit-details-marker{display:none}
+.bkd summary span{flex:1;color:var(--ink3);font-size:12.5px}
+.bkd summary svg{flex:0 0 auto}
+.bkd[open] summary svg{transform:rotate(180deg)}
+.bkl{list-style:none;margin:0;padding:0 12px 10px;display:flex;flex-direction:column;gap:6px}
+.bkd .bkl{padding-top:2px}
+.bkl li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px;align-items:baseline;font-size:13.5px;line-height:1.5;color:var(--ink2)}
+.rows .bkl{padding:4px 0 0}
+.bt{font-size:11.5px;font-weight:700;padding:1px 6px;border-radius:4px;white-space:nowrap;border:1px solid currentColor}
+.bt-r{color:var(--link)}.bt-t{color:var(--hotel-ink)}.bt-o{color:var(--warn-fg)}
+
+/* ---- site v3: readability, touch targets, home link ---- */
+.home{display:inline-flex;align-items:center;gap:2px;min-height:36px;margin-left:-6px;padding:0 6px;border-radius:8px;color:var(--on-board2);text-decoration:none;font-family:var(--sans);font-size:14px;font-weight:600;letter-spacing:0}
+.home svg{width:18px;height:18px}
+.home:hover{color:var(--on-board)}
+.act{min-height:40px}
+.act.sm{min-height:36px}
+.bd .act{padding:0 9px}
+.nt,.rem,.mv,.rb,.ml-m,.fr-d,.fc-r,.fc-n,.pd dl,.fr-bd dl,.lg{font-size:14px}
+.pl,.sum,.warn,.fr-bd p,.ftip,.wxall{font-size:14.5px}
+.hint{font-size:13.5px}
+.dayrow .d2{font-size:13.5px}
+.ihd-sub{font-size:14px}
+</style>
+
+<div class="app"><main id="view"></main></div>
+<nav class="nav" id="nav" aria-label="主選單"></nav>
+<div class="driver" id="driver" role="dialog" aria-modal="true" aria-label="給司機看" hidden></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+/* ================================================================
+   TRIP DATA — the only part to edit. Everything below ENGINE is fixed.
+   Schema: see references/mobile-web.md
+   ================================================================ */
+const TRIP={"docTitle": "2027-06 芬蘭愛沙尼亞 19天18夜", "title": "芬蘭・愛沙尼亞親子行", "sub": "2027/06/25（五）– 07/13（二）　大人 1・小孩 1　Helsinki・Tampere・Tallinn・Tartu・Pärnu", "utcOffset": 3, "storageKey": "fiee-2027-tab", "map": "google", "city": 0, "wxNote": "天氣為 6–7 月氣候平均值，不是預報；出發前一週改看預報。6/25 與 7/13 的時間為台北時間，其餘為芬蘭／愛沙尼亞時間（UTC+3，比台北慢 5 小時）。", "drv": {"ask": "Hello, please take us to:", "tel": "Tel", "lang": "en", "copied": "已複製：可貼到 Bolt，或給司機看"}};
+const HOTELS={"hel": {"name": "Omena Hotel Helsinki Yrjönkatu", "addr": "Yrjönkatu 30, 00100 Helsinki", "q": "Omena Hotel Helsinki Yrjönkatu", "note": "Helsinki 6/25–6/29、7/10–7/12｜Family Room｜自助入住碼，無櫃台、無早餐、無行李寄放"}, "tam": {"name": "Scandic Tampere Station", "addr": "Ratapihankatu 37, 33100 Tampere", "q": "Scandic Tampere Station", "note": "Tampere 6/29–7/2｜Family Room 含早餐｜入住 15:00／退房 12:00"}, "tll": {"name": "Nordic Hotel Forum", "addr": "Viru väljak 3, 10111 Tallinn", "q": "Nordic Hotel Forum Tallinn", "note": "Tallinn 7/2–7/6｜Family Double 含早餐｜入住 15:00／退房 12:00｜頂樓泳池"}, "tar": {"name": "Dorpat Hotel", "addr": "Soola 6, 51013 Tartu", "q": "Dorpat Hotel Tartu", "note": "Tartu 7/6–7/8｜Family Room 含早餐｜入住 15:00／退房 12:00"}, "par": {"name": "Spa Tervise Paradiis", "addr": "Side 14, 80010 Pärnu", "q": "Tervise Paradiis Pärnu", "note": "Pärnu 7/8–7/10｜Family Room（含水上樂園方案）｜入住 15:00／退房 12:00"}};
+const HOTEL=(()=>{const d=new Date(Date.now()+3*3600000).toISOString().slice(0,10);return d>='2027-07-10'?HOTELS.hel:d>='2027-07-08'?HOTELS.par:d>='2027-07-06'?HOTELS.tar:d>='2027-07-02'?HOTELS.tll:d>='2027-06-29'?HOTELS.tam:HOTELS.hel;})();
+const PLACES={"hhel": {"n": "Omena Hotel Helsinki Yrjönkatu", "a": "Yrjönkatu 30, 00100 Helsinki", "h": "自助入住（入住碼）｜退房 12:00", "q": "Omena Hotel Helsinki Yrjönkatu", "x": "沒有櫃台與行李寄放；7/12 行李寄中央車站置物櫃"}, "htam": {"n": "Scandic Tampere Station", "a": "Ratapihankatu 37, 33100 Tampere", "h": "入住 15:00／退房 12:00", "q": "Scandic Tampere Station"}, "htll": {"n": "Nordic Hotel Forum", "a": "Viru väljak 3, 10111 Tallinn", "h": "入住 15:00／退房 12:00", "q": "Nordic Hotel Forum Tallinn"}, "htar": {"n": "Dorpat Hotel", "a": "Soola 6, 51013 Tartu", "h": "入住 15:00／退房 12:00", "q": "Dorpat Hotel Tartu"}, "hpar": {"n": "Spa Tervise Paradiis", "a": "Side 14, 80010 Pärnu", "h": "入住 15:00／退房 12:00", "q": "Tervise Paradiis Pärnu"}, "tpe": {"n": "桃園國際機場 第一航廈", "a": "桃園市大園區航站南路 15 號", "h": "CX 在第一航廈", "q": "Taoyuan International Airport Terminal 1"}, "hkg": {"n": "Hong Kong International Airport T1", "a": "Hong Kong International Airport Terminal 1", "h": "AY100／CX 都在 T1", "q": "Hong Kong International Airport Terminal 1"}, "helap": {"n": "Helsinki-Vantaan lentoasema", "a": "Lentoasemantie 1, 01530 Vantaa", "h": "Finnair 全部航班同一航廈（T2）", "q": "Helsinki Airport"}, "helc": {"n": "Helsingin päärautatieasema", "a": "Kaivokatu 1, 00100 Helsinki", "h": "車站 05:00–02:00｜置物櫃 地下層 06:00–24:00", "q": "Helsinki Central Station", "x": "置物櫃只收卡；XL 3 小時 €4.90 起，可訂 6／12／24 小時"}, "t2": {"n": "Länsiterminaali T2", "a": "Tyynenmerenkatu 14, 00220 Helsinki", "h": "週一、週三至週日 06:00–22:30｜週二至 23:00", "q": "West Terminal 2 Helsinki", "x": "Tallink 開船前 40 分鐘完成報到"}, "tlld": {"n": "Tallinna Vanasadam D-terminal", "a": "Lootsi 13, 10151 Tallinn", "h": "Tallink 專用碼頭", "q": "Tallinn D-terminal"}, "tamst": {"n": "Tampereen rautatieasema", "a": "Rautatienkatu 25, 33100 Tampere", "h": "VR 火車站｜飯店正對面", "q": "Tampere railway station"}, "baltij": {"n": "Balti jaam", "a": "Toompuiestee 37, 10133 Tallinn", "h": "Elron 火車站", "q": "Balti jaam Tallinn"}, "tartust": {"n": "Tartu raudteejaam", "a": "Vaksali 6, Tartu", "h": "", "q": "Tartu raudteejaam"}, "tartubus": {"n": "Tartu bussijaam", "a": "Turu 2, 51004 Tartu", "h": "行李寄放 平日 07:30–20:00｜週六 08:00–16:00｜週日 09:00–16:00", "q": "Tartu bussijaam", "x": "Dorpat 旁約 100 m"}, "parnubus": {"n": "Pärnu bussijaam", "a": "Pikk 13, 80010 Pärnu", "h": "每日 06:30–21:00｜售票 06:30–20:30", "q": "Pärnu bussijaam"}, "tllbus": {"n": "Tallinna bussijaam", "a": "Lastekodu 46, 10144 Tallinn", "h": "Lux Express 長途巴士站", "q": "Tallinna bussijaam"}, "kauppatori": {"n": "Kauppatori 渡輪碼頭", "a": "Kauppatori, 00170 Helsinki", "h": "HSL 19 號渡輪全年行駛", "q": "Kauppatori Suomenlinna ferry"}, "tikkurila": {"n": "Tikkurilan asema", "a": "Tikkurila, Vantaa", "h": "", "q": "Tikkurila station"}, "korkea": {"n": "Korkeasaaren eläintarha", "a": "Mischan ja Maschan aukio 1, 00570 Helsinki", "h": "夏季開到 21:00（仲夏節照常開放，時間待確認）", "q": "Korkeasaari Zoo", "x": "傍晚票 16:00 起現場買"}, "oodi": {"n": "Helsingin keskustakirjasto Oodi", "a": "Töölönlahdenkatu 4, 00100 Helsinki", "h": "週一至週五 08:00–21:00｜週六日 10:00–20:00", "q": "Oodi Helsinki"}, "linna": {"n": "Linnanmäki", "a": "Tivolikuja 1, 00510 Helsinki", "h": "依官網日曆（每日時間不同，待確認）", "q": "Linnanmäki", "x": "Tram 3 到 Linnanmäki north 站＝主門；Taiga 限 140 cm"}, "suomen": {"n": "Suomenlinna", "a": "Suomenlinna, 00190 Helsinki", "h": "島上全天開放", "q": "Suomenlinna main quay", "x": "回程票可在島上碼頭機器、感應卡或 HSL app 買"}, "vanhak": {"n": "Vanha kauppahalli", "a": "Eteläranta 1, 00130 Helsinki", "h": "週一至週六 08:00–18:00（各攤位不同）", "q": "Vanha Kauppahalli Helsinki"}, "moomin": {"n": "Muumimuseo", "a": "Tampere-talo, Yliopistonkatu 55, 33100 Tampere", "h": "週二至週五 10:00–18:00｜週六日 09:00–17:00｜週一休", "t": "+358405624941", "ts": "040 562 4941", "q": "Muumimuseo Tampere", "x": "從 Tampere-talo 正門進，在大廳櫃台買票"}, "sarkan": {"n": "Särkänniemi", "a": "Särkänniemi, Tampere", "h": "依官網日曆（待確認）", "q": "Särkänniemi", "x": "部分兒童設施 20:00 關閉"}, "vapriikki": {"n": "Museokeskus Vapriikki", "a": "Alaverstaanraitti 5, 33100 Tampere", "h": "週二至週日 10:00–18:00（售票至 17:30）｜週一休", "q": "Vapriikki Tampere"}, "pyynikki": {"n": "Pyynikin näkötorni", "a": "Näkötornintie 20, 33230 Tampere", "h": "每日 09:00–20:00", "t": "+35832123247", "ts": "03 212 3247", "q": "Pyynikin näkötorni", "x": "登塔票在咖啡館櫃台買"}, "lennusadam": {"n": "Lennusadam", "a": "Vesilennuki 6, 10145 Tallinn", "h": "5–9 月每日 10:00–19:00（售票至 18:30）", "q": "Lennusadam Seaplane Harbour Tallinn"}, "proto": {"n": "PROTO Avastustehas", "a": "Peetri 10, 10415 Tallinn", "h": "週二至週日 11:00–18:00｜週一休", "q": "PROTO Invention Factory Tallinn"}, "evm": {"n": "Vabaõhu­muuseum", "a": "Vabaõhumuuseumi tee 12, 13521 Tallinn", "h": "售票 10:00–17:00｜園區至 19:00", "t": "+3726549100", "ts": "654 9100", "q": "Estonian Open Air Museum", "x": "公車 41 到 Rocca al Mare 站＝園區大門"}, "toompea": {"n": "Kohtuotsa vaateplatvorm", "a": "Kohtu, Toompea, Tallinn", "h": "全天", "q": "Kohtuotsa viewing platform"}, "telliskivi": {"n": "Telliskivi Loomelinnak", "a": "Telliskivi 60a/2, 10412 Tallinn", "h": "園區全天開放｜店家各自營業", "q": "Telliskivi Creative City"}, "ahhaa": {"n": "Teaduskeskus AHHAA", "a": "Sadama 1, 51004 Tartu", "h": "週日至週四 10:00–19:00｜週五六 10:00–20:00", "q": "AHHAA Science Centre Tartu"}, "erm": {"n": "Eesti Rahva Muuseum", "a": "Muuseumi tee 2, 60532 Tartu", "h": "週二至週日 10:00–18:00｜週一休", "t": "+3727363051", "ts": "736 3051", "q": "Estonian National Museum Tartu"}, "toome": {"n": "Toomemägi", "a": "Toomemägi, Tartu", "h": "全天", "q": "Toomemägi Tartu"}, "lottemaa": {"n": "Lottemaa", "a": "Kanari, Reiu, 86508 Pärnu maakond", "h": "每日 10:00–18:00（2026 季：6/13–8/30）", "q": "Lottemaa", "x": "停車場到入口小火車 €2／趟"}, "heureka": {"n": "Tiedekeskus Heureka", "a": "Tiedepuisto 1, 01300 Vantaa", "h": "夏季 週一至週五 09:00–18:00｜週六日 10:00–18:00", "t": "+35898579288", "ts": "09 8579 288", "q": "Heureka Vantaa", "x": "線上票要在當天開館前買才便宜 €3"}, "seurasaari": {"n": "Seurasaari", "a": "Seurasaari, 00250 Helsinki", "h": "島上全天開放", "q": "Seurasaari"}, "sibelius": {"n": "Sibelius-monumentti", "a": "Sibeliuksen puisto, Mechelininkatu, Helsinki", "h": "全天", "q": "Sibelius Monument"}, "pobrecito": {"n": "Pobrecito", "a": "Kamppi 5F, Urho Kekkosen katu 1, 00100 Helsinki", "h": "週一至週四 11–20｜週五 11–21｜週六 12–21｜週日 12–18", "t": "+358449787821", "ts": "044 978 7821", "q": "Pobrecito Kamppi Helsinki"}, "lazyfox": {"n": "Lazy Fox Kamppi", "a": "Albertinkatu 36, 00180 Helsinki", "h": "週一至週三 08–15｜週四 08–22｜週五 08–23｜週六 08–17｜週日 09–15", "q": "Lazy Fox Kamppi"}, "factory": {"n": "Ravintola Factory Kamppi", "a": "Runeberginkatu 3, 00100 Helsinki", "h": "週一二 10:30–15｜週三至週五 10:30–20｜週六 12–20｜週日休", "t": "+358102053211", "ts": "010 205 3211", "q": "Ravintola Factory Kamppi", "x": "只收卡"}, "hurlumhei": {"n": "Hurlumhei（Linnanmäki 園內）", "a": "Linnanmäki, Tivolikuja 1, 00510 Helsinki", "h": "依園區開放時間", "q": "Linnanmäki"}, "seahorse": {"n": "Ravintola Sea Horse", "a": "Kapteeninkatu 11, 00140 Helsinki", "h": "週一二 12–22｜週三至週五 12–23｜週六 15–23｜週日 15–22", "t": "+3589628169", "ts": "09 628169", "q": "Restaurant Sea Horse Helsinki"}, "pontus": {"n": "Restaurant Pontus", "a": "Kapteeninkatu 26, 00140 Helsinki", "h": "週一至週四 16–22｜週五六 16–23｜週日 16–21", "t": "+358407759656", "ts": "040 775 9656", "q": "Restaurant Pontus Helsinki"}, "boneless": {"n": "Restaurant Boneless Ullanlinna", "a": "Vuorimiehenkatu 12, 00140 Helsinki", "h": "週一至週四 10:30–21｜週五 10:30–22｜週六 11–22｜週日 12–20", "t": "+358505364499", "ts": "050 536 4499", "q": "Restaurant Boneless Ullanlinna"}, "brewery": {"n": "Suomenlinnan Panimo", "a": "Suomenlinna C 1, 00190 Helsinki", "h": "週一二 10:30–14:30｜週三至週五 10:30–21｜週六 12–21｜週日休", "t": "+358207425307", "ts": "020 742 5307", "q": "Suomenlinna Brewery"}, "soupmore": {"n": "SOUP+MORE Vanha Kauppahalli", "a": "Eteläranta 1, 00130 Helsinki", "h": "週一至週六 11–16｜週日休", "t": "+358504130805", "ts": "050 413 0805", "q": "SOUP+MORE Vanha Kauppahalli"}, "lappi": {"n": "Ravintola Lappi", "a": "Annankatu 22, 00100 Helsinki", "h": "週一至週六 16–22｜週日休", "t": "+3589645550", "ts": "09 645550", "q": "Lappi Ravintola Helsinki"}, "villanepal": {"n": "Ravintola Villa Nepal Kamppi", "a": "Urho Kekkosen katu 1, 00100 Helsinki", "h": "每日 10:30–21", "t": "+358413657123", "ts": "041 365 7123", "q": "Villa Nepal Kamppi"}, "uyghur": {"n": "Uyghur Noodle House Kamppi", "a": "Malminrinne 3, 00100 Helsinki", "h": "週一休｜週二至週五 11–21｜週六日 11:30–21:30", "t": "+358503728692", "ts": "050 372 8692", "q": "Uyghur Noodle House Kamppi"}, "thaiorchid": {"n": "Thai Orchid Villa Kamppi", "a": "Kamppi 1F, Urho Kekkosen katu 1, 00100 Helsinki", "h": "週一至週四 11–22｜週五 11–23｜週六 12–23｜週日 12–22", "t": "+358453109228", "ts": "045 310 9228", "q": "Thai Orchid Villa Kamppi"}, "hoku": {"n": "Restaurant HOKU", "a": "Kamppi 5F, Urho Kekkosen katu 1, 00100 Helsinki", "h": "週一 11–15｜週二至週四 11–15、16–21｜週五六 11–15、16–22｜週日休", "t": "+358401646160", "ts": "040 164 6160", "q": "Restaurant HOKU Kamppi"}, "tmarket": {"n": "Tampereen Kauppahalli", "a": "Hämeenkatu 19, 33200 Tampere", "h": "週一至週五 09–18｜週六 09–16｜週日休", "q": "Tampere Market Hall"}, "munkki": {"n": "Pyynikin Munkkikahvila Kauppahalli", "a": "Hämeenkatu 19, 33200 Tampere", "h": "週一至週五 09–18｜週六 09–16｜週日休", "t": "+358345180063", "ts": "03 4518 0063", "q": "Pyynikin Munkkikahvila Kauppahalli"}, "puisto": {"n": "Puisto", "a": "Hämeenkatu 14a, 33100 Tampere", "h": "週一至週四 08–22｜週五 08–02｜週六 09–02｜週日 09–22", "t": "+358107672370", "ts": "010 767 2370", "q": "Puisto Tampere Hämeenkatu"}, "plevna": {"n": "Panimoravintola Plevna", "a": "Itäinenkatu 8, 33210 Tampere", "h": "週一至週四 10:30–23｜週五 10:30–01｜週六 12–01｜週日 12–23", "t": "+35832601200", "ts": "03 260 1200", "q": "Plevna Tampere"}, "brewhouse": {"n": "Pyynikin Brewhouse", "a": "Verkatehtaankatu 2, 33100 Tampere", "h": "週一至週四 17–23｜週五 16–02｜週六 14–02｜週日 14–22", "t": "+358104233279", "ts": "010 423 3279", "q": "Pyynikin Brewhouse Tampere"}, "pulcinella": {"n": "Ristorante Pulcinella", "a": "Kyttälänkatu 11, 33100 Tampere", "h": "週一至週三 16–23｜週四 11–23｜週五 11–24｜週六 12–24｜週日休", "t": "+358505547441", "ts": "050 554 7441", "q": "Ristorante Pulcinella Tampere"}, "baonami": {"n": "Baonami Tampere", "a": "Hämeenkatu 3, 33100 Tampere", "h": "週二 16–22｜週三四 16–23｜週五 16–24｜週六 13–24｜週日一休", "t": "+358107672360", "ts": "010 767 2360", "q": "Baonami Tampere"}, "fenno": {"n": "Gastropub Fenno", "a": "Tuomiokirkonkatu 38, 33100 Tampere", "h": "週二至週五 16–24｜週六 12–24｜週日 12–18｜週一休", "t": "+358505126992", "ts": "050 512 6992", "q": "Gastropub Fenno Tampere"}, "kompressor": {"n": "Pub Kompressor", "a": "Rataskaevu 3, 10123 Tallinn", "h": "每日 11–22", "t": "+3726464210", "ts": "646 4210", "q": "Pub Kompressor Tallinn", "x": "不能訂位，櫃台點餐"}, "oldehansa": {"n": "Restoran Olde Hansa", "a": "Vana turg 1, 10140 Tallinn", "h": "週日至週四 12–23｜週五六 11–24", "t": "+3726279020", "ts": "627 9020", "q": "Olde Hansa Tallinn"}, "tbilisi": {"n": "Tbilisi", "a": "Pikk 43, 10133 Tallinn", "h": "每日 12–23", "t": "+3727422828", "ts": "742 2828", "q": "Tbilisi restaurant Pikk Tallinn"}, "pohjala": {"n": "Põhjala Brewery & Tap Room", "a": "Peetri 5, 10415 Tallinn", "h": "週一休｜週二至週四 12–24｜週五六 12–01｜週日 10–17", "t": "+37256662800", "ts": "5666 2800", "q": "Põhjala Brewery Tap Room"}, "lore": {"n": "Lore Bistroo", "a": "Peetri 12, 10415 Tallinn", "h": "週一至週四 12–22｜週五六 12–23｜週日 13–20", "t": "+3725118613", "ts": "511 8613", "q": "Lore Bistroo Tallinn"}, "puente": {"n": "Puente Tallinn", "a": "Vesilennuki 80, 10415 Tallinn", "h": "週一至週四 12–23｜週五六 12–24｜週日 12–23", "t": "+3725545532", "ts": "554 5532", "q": "Puente Tallinn"}, "kolu": {"n": "Kolu kõrts", "a": "Vabaõhumuuseumi tee 12, 13521 Tallinn", "h": "週二至週日 10–17｜週一休", "t": "+3726549118", "ts": "654 9118", "q": "Kolu kõrts"}, "baltiturg": {"n": "Balti Jaama Turg", "a": "Kopli 1, 10412 Tallinn", "h": "週一至週六 09–19｜週日 09–17", "t": "+3725157211", "ts": "515 7211", "q": "Balti Jaama Turg"}, "bep": {"n": "BEP", "a": "Kalma 11, 10414 Tallinn", "h": "週一至週五 11:30–21｜週六日 12–21", "t": "+37254700076", "ts": "5470 0076", "q": "BEP Kalma Tallinn"}, "siesta": {"n": "Siesta Tapas & Bar", "a": "Rotermanni 2, 10111 Tallinn", "h": "週一至週四 17–24｜週五 17–02｜週六 13–02｜週日 13–24", "t": "+37254540181", "ts": "5454 0181", "q": "Siesta Tapas Bar Tallinn"}, "r14": {"n": "R14", "a": "Rotermanni 14, 10111 Tallinn", "h": "週一至週四 11–23｜週五 11–24｜週六 12–24｜週日 12–21", "t": "+37258558120", "ts": "5855 8120", "q": "R14 Rotermanni Tallinn"}, "omhouse": {"n": "Om house", "a": "Rotermanni 18-2, 10111 Tallinn", "h": "週一至週四 12–23｜週五六 12–02｜週日休", "t": "+37255505158", "ts": "5550 5158", "q": "Om house Tallinn"}, "bruxx": {"n": "Bruxx – New Belgian", "a": "Rotermanni 2, 10111 Tallinn", "h": "每日 12–24", "t": "+37255519945", "ts": "5551 9945", "q": "Bruxx Tallinn"}, "gallery": {"n": "Gallery Cafe", "a": "Rotermanni 6, 10111 Tallinn", "h": "週一至週五 08:30–19｜週六日 09:30–20", "t": "+37253533123", "ts": "5353 3123", "q": "Gallery Cafe Rotermanni"}, "monk": {"n": "Monk Tartu", "a": "Tasku, Turu 2, 51004 Tartu", "h": "每日 11–21", "t": "+37256663536", "ts": "5666 3536", "q": "Monk Tartu Tasku"}, "davinci": {"n": "Da Vinci Pasta & Pizza", "a": "Tasku, Turu 2, 51004 Tartu", "h": "週一至週六 10–21｜週日 10–19", "t": "+37258541919", "ts": "5854 1919", "q": "Da Vinci Tasku Tartu"}, "hansatall": {"n": "Hansa Tall & Hansa Hoov", "a": "Turu 27a, 50106 Tartu", "h": "週一至週四 08–22｜週五六 08–23｜週日 08–21", "t": "+3727371802", "ts": "737 1802", "q": "Hansa Tall Tartu"}, "kolmtilli": {"n": "Kolm Tilli", "a": "Kastani 42, 50410 Tartu", "h": "週一至週四 09–22｜週五 09–24｜週六 10–24｜週日 10–22", "t": "+37256277753", "ts": "5627 7753", "q": "Kolm Tilli Tartu"}, "gunpowder": {"n": "Püssirohukelder", "a": "Lossi 28, 51003 Tartu", "h": "週一二 12–22｜週三至週六 12–01｜週日 12–22", "t": "+3727303555", "ts": "730 3555", "q": "Gunpowder Cellar Tartu"}, "nokk": {"n": "NOKK", "a": "Tähe 21, 51013 Tartu", "h": "週三四 17–22｜週五六 12–22｜週日至週二休", "t": "+37258860229", "ts": "5886 0229", "q": "NOKK Tartu", "x": "雞肉可能賣完，早點到"}, "ruutlihoov": {"n": "Rüütlihoov pubi", "a": "Rüütli 29, 80011 Pärnu", "h": "每日 12 點起（週五六至 24）", "t": "+37253451638", "ts": "5345 1638", "q": "Rüütlihoov pubi Pärnu"}, "ephesus": {"n": "Ephesus Cafe & Brasserie", "a": "Rüütli 38, 80011 Pärnu", "h": "每日 11–22", "t": "+3724427557", "ts": "442 7557", "q": "Ephesus Cafe Brasserie Pärnu"}, "room": {"n": "Restaurant RÖÖM", "a": "Pühavaimu 15, 80011 Pärnu", "h": "週一至週四 09–21｜週五六 09–23｜週日 09–15", "t": "+3725055511", "ts": "505 5511", "q": "Restaurant RÖÖM Pärnu"}, "kurgo": {"n": "Kurgo Restoran", "a": "Papli 13, 80012 Pärnu", "h": "週三四 17–22｜週五 17–24｜週六 12–24｜週日 12–21｜週一二休", "t": "+37257842017", "ts": "5784 2017", "q": "Kurgo Restoran Pärnu"}, "steffani": {"n": "Steffani", "a": "Nikolai 24, 80011 Pärnu", "h": "週日至週四 11–22｜週五六 11–24", "t": "+3724431170", "ts": "443 1170", "q": "Steffani Pärnu"}, "regatta": {"n": "Cafe Regatta", "a": "Merikannontie 8, 00260 Helsinki", "h": "每日 09–21", "t": "+358404149167", "ts": "040 414 9167", "q": "Cafe Regatta Helsinki", "x": "只有濾泡咖啡；海鷗會搶食"}, "tram3": {"n": "Rautatieasema 電車站（Tram 3）", "a": "Kaivokatu, 00100 Helsinki（中央車站前）", "h": "往 Kuusitie 方向搭；Linnanmäki (pohj.) 下車", "q": "Rautatieasema tram stop Helsinki", "x": "從 Oodi 步行約 6 分"}, "vabv": {"n": "Vabaduse väljak 公車站", "a": "Vabaduse väljak, 10146 Tallinn", "h": "公車 41 往 Rocca al Mare", "q": "Vabaduse väljak bus stop Tallinn", "x": "2026/8 Tallinn 公車路網調整，出發前用 Google Maps 再確認班次"}, "kamppi24": {"n": "Kamppi 公車站（24 號起點）", "a": "Kamppi, 00100 Helsinki", "h": "24 號往 Seurasaari；約每 25 分一班", "q": "Kamppi bus 24 Seurasaari stop Helsinki", "x": "地面層市區公車站，不是地下長途巴士站；用 HSL app 確認月台"}, "raekoja": {"n": "Raekoja plats", "a": "Raekoja plats, 10146 Tallinn", "h": "廣場全天開放", "q": "Tallinn Town Hall Square"}, "parnurand": {"n": "Pärnu Rand", "a": "Ranna puiestee, 80010 Pärnu", "h": "全天開放", "q": "Pärnu Beach"}, "rotermann": {"n": "Rotermanni kvartal", "a": "Rotermanni, 10111 Tallinn", "h": "街區全天開放｜店家各自營業", "q": "Rotermann Quarter Tallinn"}, "stockmann": {"n": "Stockmann Helsingin keskusta", "a": "Aleksanterinkatu 52, 00100 Helsinki", "h": "週一至週五 10:00–20:00｜週六 10:00–19:00｜週日 12:00–18:00", "q": "Stockmann Helsinki"}};
+
+const DAYS=[
+ {"d": "2027-06-25", "main": "桃園 → 香港 → 夜班機", "tab": "6/25", "wd": "五", "title": "出發｜CX469＋AY100", "sum": "下午從桃園飛香港，晚上轉 Finnair 夜班機飛 Helsinki。", "wx": "台北出發；出發前查中央氣象署預報", "walk": "步行 ~1 km", "warn": "本日為台北時間；CX469 在其他月份是晚班，訂票時確認銜接得上 AY100。","items":[
+  ["10:30", "11:30", "hotel", "➡️ 離家｜計程車", "台北 → 桃園機場 T1", "約 NT$1,200–1,500／車", "", {"p": "tpe", "km": 45}],
+  ["11:30", "13:30", "plain", "報到、出境", "桃園機場第一航廈", "", "行李直掛 HEL", {"p": "tpe"}],
+  ["14:20", "16:25", "flight", "CX469 台北 → 香港", "TPE T1 → HKG T1", "機票另計", "2026 夏季時刻，待確認", {"km": 810, "min": 125}],
+  ["16:25", "20:15", "plain", "轉機＋晚餐", "香港機場 T1", "HK$150–250／人", "轉機安檢後吃晚餐", {"p": "hkg"}],
+  ["20:55", "05:35", "flight", "AY100 香港 → Helsinki", "HKG T1 → HEL", "機票另計", "6/26 05:35 抵達（芬蘭時間）", {"km": 7820, "min": 820}]
+ ]},
+ {"d": "2027-06-26", "main": "抵達・Korkeasaari 動物園", "tab": "6/26", "wd": "六", "title": "抵達 Helsinki（仲夏節）", "sum": "清晨落地直接進飯店補眠，傍晚去島上的 Korkeasaari 動物園。", "wx": "晴時多雲，氣溫約在 12°C 至 20°C 之間", "walk": "步行 ~4 km", "warn": "仲夏節當天多數店家不開；落地先在機場買早午餐。","items":[
+  ["05:35", "06:30", "plain", "入境、領行李", "HEL", "", "EES 首次登錄（12 歲以下免指紋）", {"p": "helap"}],
+  ["06:30", "06:50", "plain", "機場商店補給", "HEL 入境大廳", "約 €10–15／人", "買早午餐備品", {"p": "helap"}],
+  ["06:50", "07:25", "move", "HSL 通勤火車 I/P", "HEL → Helsinki Central", "ABC：大人 €4.50／小孩 €2.25", "用 HSL app 買；每 10 分一班", {"km": 31, "min": 30}],
+  ["07:25", "07:35", "hotel", "✅ 入住（前一晚已訂）", "Central → 飯店", "", "", {"p": "hhel", "km": 0.6, "min": 8}],
+  ["07:40", "11:45", "plain", "補眠", "飯店", "", "", {}],
+  ["11:50", "11:55", "hotel", "➡️ 出門", "飯店 → Kamppi 5F", "", "", {"p": "hhel", "km": 0.3, "min": 4}],
+  ["12:00", "13:00", "meal", "午餐｜Pobrecito", "Kamppi 5F", "€15–20／人｜2 人 €28–36", "菲律賓菜；仲夏節是否營業待確認", {"p": "pobrecito"}],
+  ["13:00", "15:20", "hotel", "✅ 回飯店休息", "", "", "", {"p": "hhel", "km": 0.3, "min": 4}],
+  ["15:20", "15:55", "hotel", "➡️ 出門｜地鐵＋步行", "Kamppi → Kalasatama → Mustikkamaa 橋", "AB：大人 €3.30／小孩 €1.65", "", {"p": "hhel", "km": 4.9, "min": 35}],
+  ["16:00", "19:30", "anchor", "Korkeasaari 動物園", "", "傍晚票 大人 €19／小孩 €13", "16:00 後進場", {"p": "korkea"}],
+  ["18:00", "18:45", "meal", "晚餐｜園內餐廳", "Korkeasaari", "約 €15–20／人", "", {}],
+  ["19:30", "20:05", "hotel", "✅ 回飯店", "原路返回", "AB 單程", "早點睡", {"p": "hhel", "km": 4.9, "min": 35}]
+ ]},
+ {"d": "2027-06-27", "main": "Oodi・Linnanmäki 遊樂園", "tab": "6/27", "wd": "日", "title": "Oodi 圖書館＋Linnanmäki", "sum": "早上逛 Oodi 中央圖書館，中午到傍晚在 Linnanmäki 玩，晚上吃芬蘭家常菜。", "wx": "晴時多雲，氣溫約在 12°C 至 20°C 之間", "walk": "步行 ~7 km", "warn": "Taiga 雲霄飛車限 140 cm；遊樂園開放時間前一晚看官網日曆。","items":[
+  ["09:45", "09:57", "hotel", "➡️ 出門", "飯店 → Oodi", "24h AB：大人 €10.60", "今天買 HSL 24 小時票", {"p": "hhel", "km": 0.9, "min": 12}],
+  ["10:00", "11:15", "plain", "Oodi 中央圖書館", "", "Free", "3 樓書的天堂、2 樓創客空間", {"p": "oodi"}],
+  ["11:15", "11:35", "move", "Tram 3", "Rautatieasema → Linnanmäki (pohj.)", "24h 票", "", {"p": "tram3", "km": 2.0, "min": 15}],
+  ["11:40", "17:00", "anchor", "Linnanmäki 遊樂園", "主門", "小孩 Isohupi €53｜大人入園 €5", "2026 價格；網購", {"p": "linna"}],
+  ["12:30", "13:15", "meal", "午餐｜Hurlumhei（園內）", "Linnanmäki", "€12–16／人", "墨西哥塔可", {"p": "hurlumhei"}],
+  ["17:00", "18:25", "hotel", "✅ 回飯店休息｜Tram 3＋步行", "", "24h 票", "", {"p": "hhel", "km": 3.0, "min": 30}],
+  ["18:25", "18:45", "hotel", "➡️ 出門", "飯店 → Kapteeninkatu", "", "", {"p": "hhel", "km": 1.4, "min": 18}],
+  ["18:45", "20:15", "meal", "晚餐｜Sea Horse", "Ullanlinna", "€30–40／人｜2 人 €55–70", "肉丸 lihapullat（配馬鈴薯泥、越橘醬）；需訂", {"p": "seahorse"}],
+  ["20:15", "20:35", "hotel", "✅ 回飯店", "", "", "", {"p": "hhel", "km": 1.4, "min": 18}]
+ ]},
+ {"d": "2027-06-28", "main": "Suomenlinna 海上要塞", "tab": "6/28", "wd": "一", "title": "Suomenlinna 世界遺產", "sum": "坐渡輪到 Suomenlinna，下午逛老市場與 Esplanadi，晚上吃拉普蘭菜。", "wx": "晴時多雲，氣溫約在 13°C 至 21°C 之間", "walk": "步行 ~8 km", "warn": "島上啤酒廠餐廳週一只開到 14:30，13:30 前入座。","items":[
+  ["09:15", "09:30", "hotel", "➡️ 出門", "飯店 → Kauppatori", "", "", {"p": "hhel", "km": 1.1, "min": 14}],
+  ["09:40", "09:55", "move", "HSL 渡輪 19", "Kauppatori → Suomenlinna", "AB：大人 €3.30／小孩 €1.65", "", {"p": "kauppatori", "km": 3}],
+  ["10:00", "12:30", "anchor", "Suomenlinna 海上要塞", "國王門、海岸砲台", "島上 Free", "穿好走的鞋", {"p": "suomen"}],
+  ["12:30", "13:30", "meal", "午餐｜Suomenlinna Brewery", "Suomenlinna C 1", "€20–28／人｜2 人 €38–50", "啤酒廠當日主菜", {"p": "brewery"}],
+  ["13:40", "13:55", "move", "HSL 渡輪 19", "Suomenlinna → Kauppatori", "AB 單程", "", {"p": "suomen", "km": 3}],
+  ["14:00", "15:00", "plain", "Vanha Kauppahalli＋Esplanadi", "港邊", "", "姆明周邊", {"p": "vanhak"}],
+  ["15:00", "17:55", "hotel", "✅ 回飯店休息", "", "", "", {"p": "hhel", "km": 1.1, "min": 14}],
+  ["17:55", "18:00", "hotel", "➡️ 出門", "飯店 → Annankatu", "", "", {"p": "hhel", "km": 0.2, "min": 3}],
+  ["18:00", "19:30", "meal", "晚餐｜Lappi", "Annankatu 22", "€35–45／人｜2 人 €60–80", "炒馴鹿肉 poronkäristys；需訂", {"p": "lappi"}],
+  ["19:30", "19:35", "hotel", "✅ 回飯店", "", "", "整理行李", {"p": "hhel", "km": 0.2, "min": 3}]
+ ]},
+ {"d": "2027-06-29", "main": "火車到 Tampere・姆明博物館", "tab": "6/29", "wd": "二", "title": "Tampere｜市場＋姆明博物館", "sum": "搭火車到 Tampere，午餐吃市場鮭魚湯，下午逛全世界唯一的姆明博物館。", "wx": "晴時多雲，氣溫約在 11°C 至 21°C 之間", "walk": "步行 ~5 km", "warn": "姆明博物館週一公休；今天週二。","items":[
+  ["09:30", "09:40", "hotel", "➡️ 退房", "飯店 → Helsinki Central", "", "", {"p": "hhel", "km": 0.6, "min": 8}],
+  ["10:00", "11:50", "flight", "火車 VR IC Helsinki → Tampere", "HEL → Tampere", "大人 €21–34／小孩打 6 折", "選 10:00–11:00 出發班次；劃位", {"p": "helc", "km": 187, "min": 110}],
+  ["11:55", "12:00", "hotel", "✅ 飯店寄放行李", "車站旁", "", "", {"p": "htam", "km": 0.2, "min": 3}],
+  ["12:00", "12:12", "move", "步行", "飯店 → Kauppahalli", "", "", {"km": 0.8, "min": 12}],
+  ["12:15", "13:15", "meal", "午餐｜Tampere Market Hall", "Hämeenkatu 19", "€14–16／人", "鮭魚湯 lohikeitto", {"p": "tmarket"}],
+  ["13:15", "13:40", "move", "步行", "→ Tampere-talo", "", "累了改 Bolt", {"km": 1.5, "min": 20}],
+  ["13:45", "15:45", "anchor", "Moomin Museum 姆明博物館", "Tampere-talo", "大人 €18／小孩 €9", "", {"p": "moomin"}],
+  ["15:45", "18:00", "hotel", "✅ 入住、休息", "", "", "三溫暖", {"p": "htam", "km": 0.7, "min": 9}],
+  ["18:00", "18:13", "hotel", "➡️ 出門", "飯店 → Finlayson", "", "", {"p": "htam", "km": 1.0, "min": 13}],
+  ["18:15", "19:45", "meal", "晚餐｜Plevna", "Itäinenkatu 8", "€25–35／人｜2 人 €45–60", "黑血腸 mustamakkara；需訂", {"p": "plevna"}],
+  ["19:45", "20:00", "hotel", "✅ 回飯店", "", "", "", {"p": "htam", "km": 1.0, "min": 13}]
+ ]},
+ {"d": "2027-06-30", "main": "Särkänniemi 樂園", "tab": "6/30", "wd": "三", "title": "Särkänniemi 一整天", "sum": "一整天在湖邊的 Särkänniemi：遊樂設施、水族館、觀景塔。", "wx": "晴時多雲，氣溫約在 11°C 至 21°C 之間", "walk": "步行 ~6 km", "warn": "遊樂設施時間和樂園不一定一樣，前一晚先看官網日曆。","items":[
+  ["10:30", "10:50", "hotel", "➡️ 出門｜Nysse 公車", "飯店 → Särkänniemi", "約 €3–4／人", "或步行 30 分", {"p": "htam", "km": 2.5, "min": 15}],
+  ["11:00", "17:30", "anchor", "Särkänniemi", "", "小孩全區手環 €52｜大人景點手環 €30", "2026 現場價；網購較便宜", {"p": "sarkan"}],
+  ["12:30", "13:15", "meal", "午餐｜園內", "Särkänniemi", "約 €15／人", "", {}],
+  ["17:30", "18:55", "hotel", "✅ 回飯店休息｜公車", "", "約 €3–4／人", "", {"p": "htam", "km": 2.5, "min": 15}],
+  ["18:55", "19:00", "hotel", "➡️ 出門", "飯店 → Kyttälänkatu", "", "", {"p": "htam", "km": 0.4, "min": 5}],
+  ["19:00", "20:15", "meal", "晚餐｜Pulcinella", "Kyttälänkatu 11", "€20–28／人｜2 人 €38–50", "義大利麵", {"p": "pulcinella"}],
+  ["20:15", "20:20", "hotel", "✅ 回飯店", "", "", "", {"p": "htam", "km": 0.4, "min": 5}]
+ ]},
+ {"d": "2027-07-01", "main": "Vapriikki・Pyynikki 觀景塔", "tab": "7/1", "wd": "四", "title": "遊戲博物館＋Pyynikki", "sum": "上午逛遊戲博物館與冰球名人堂，下午上 Pyynikki 觀景塔吃甜甜圈。", "wx": "晴時多雲，氣溫約在 11°C 至 21°C 之間", "walk": "步行 ~6 km", "warn": "Vapriikki 週一休、週二至週日 10–18；今天週四。","items":[
+  ["09:40", "09:58", "hotel", "➡️ 出門", "飯店 → Vapriikki", "", "", {"p": "htam", "km": 1.4, "min": 18}],
+  ["10:00", "12:30", "anchor", "Vapriikki｜遊戲博物館＋冰球名人堂", "", "大人 €16／小孩 €8", "", {"p": "vapriikki"}],
+  ["12:30", "12:42", "move", "步行", "→ Puisto", "", "", {"km": 0.9, "min": 12}],
+  ["12:45", "13:45", "meal", "午餐｜Puisto", "Hämeenkatu 14a", "€18–25／人", "河景小館，點單點", {"p": "puisto"}],
+  ["13:45", "14:00", "move", "Bolt", "→ Pyynikki", "約 €8–10／車", "", {"km": 2.5, "min": 12}],
+  ["14:00", "15:30", "plain", "Pyynikki 觀景塔＋甜甜圈 munkki", "", "登塔 €3／人｜甜甜圈約 €3／個", "", {"p": "pyynikki"}],
+  ["15:30", "16:00", "plain", "Pyynikki 森林步道（選配）", "山脊", "Free", "", {}],
+  ["16:00", "18:25", "hotel", "✅ 回飯店休息｜Bolt", "", "約 €9–11／車", "", {"p": "htam", "km": 2.9, "min": 12}],
+  ["18:25", "18:30", "hotel", "➡️ 出門", "飯店 → Tuomiokirkonkatu", "", "", {"p": "htam", "km": 0.3, "min": 4}],
+  ["18:30", "20:00", "meal", "晚餐｜Fenno", "Tuomiokirkonkatu 38", "€28–38／人｜2 人 €50–70", "駝鹿燉肉；需訂", {"p": "fenno"}],
+  ["20:00", "20:05", "hotel", "✅ 回飯店", "", "", "收行李", {"p": "htam", "km": 0.3, "min": 4}]
+ ]},
+ {"d": "2027-07-02", "main": "Tampere → Helsinki → 渡輪 Tallinn", "tab": "7/2", "wd": "五", "title": "移動日｜渡輪到 Tallinn", "sum": "火車回 Helsinki，轉電車到西碼頭，坐 2 小時渡輪到 Tallinn，晚上逛老城。", "wx": "晴時多雲，氣溫約在 13°C 至 21°C 之間", "walk": "步行 ~4 km", "warn": "火車誤點超過 45 分就改搭 16:30 渡輪（買可改期票）。","items":[
+  ["09:20", "09:25", "hotel", "➡️ 退房", "飯店 → Tampere 站", "", "", {"p": "htam", "km": 0.2, "min": 3}],
+  ["09:40", "11:30", "flight", "火車 VR IC Tampere → Helsinki", "Tampere → HEL", "大人 €21–34／小孩打 6 折", "選 11:30 前抵達的班次", {"p": "tamst", "km": 187, "min": 110}],
+  ["11:35", "11:55", "move", "Tram 7（或 9）", "Rautatieasema → Länsiterminaali T2", "AB：大人 €3.30／小孩 €1.65", "", {"p": "helc", "km": 2.5, "min": 20}],
+  ["12:00", "12:50", "plain", "Tallink 報到", "West Terminal 2", "", "", {"p": "t2"}],
+  ["13:30", "15:30", "flight", "渡輪 Tallink Helsinki → Tallinn", "HEL T2 → Tallinn D 碼頭", "單程約 €10–35／人", "Megastar／MyStar；13:30 班 2027 待確認；船上美食街午餐", {"p": "tlld", "km": 85}],
+  ["15:35", "18:20", "hotel", "✅ 入住｜Bolt", "D 碼頭 → 飯店", "約 €5–8／車", "頂樓泳池", {"p": "htll", "km": 1.3, "min": 10}],
+  ["18:20", "18:30", "hotel", "➡️ 出門", "飯店 → Rataskaevu", "", "", {"p": "htll", "km": 0.8, "min": 10}],
+  ["18:30", "19:30", "meal", "晚餐｜Kompressor", "Rataskaevu 3", "€10–15／人｜2 人 €18–26", "愛沙尼亞鬆餅", {"p": "kompressor"}],
+  ["19:30", "20:30", "plain", "老城散步", "市政廳廣場 → Viru 門", "Free", "", {"p": "raekoja"}],
+  ["20:30", "20:35", "hotel", "✅ 回飯店", "", "", "", {"p": "htll", "km": 0.4, "min": 5}]
+ ]},
+ {"d": "2027-07-03", "main": "Lennusadam・PROTO・Olde Hansa", "tab": "7/3", "wd": "六", "title": "潛艇、發明工廠、中世紀晚餐", "sum": "上午看潛艇和破冰船，下午玩 VR 發明工廠，晚上吃中世紀主題餐廳。", "wx": "晴時多雲，氣溫約在 13°C 至 21°C 之間", "walk": "步行 ~5 km", "warn": "Olde Hansa 週六晚上一定要先訂位。","items":[
+  ["09:40", "09:55", "hotel", "➡️ 出門｜Bolt", "飯店 → Lennusadam", "約 €6–8／車", "", {"p": "htll", "km": 2.6, "min": 15}],
+  ["10:00", "12:15", "anchor", "Lennusadam 水上飛機港", "", "家庭票 €28", "Lembit 潛艇、Suur Tõll 破冰船", {"p": "lennusadam"}],
+  ["12:15", "12:25", "move", "步行", "→ Peetri 5", "", "", {"km": 0.6, "min": 8}],
+  ["12:25", "13:40", "meal", "午餐｜Põhjala Brewery", "Peetri 5", "€18–25／人", "煙燻 BBQ 牛胸肉", {"p": "pohjala"}],
+  ["13:45", "13:50", "move", "步行", "→ Peetri 10", "", "", {"km": 0.2, "min": 3}],
+  ["13:50", "16:30", "plain", "PROTO 發明工廠", "", "家庭票 週末 €37（2027 待確認）", "VR 熱氣球、第一台汽車", {"p": "proto"}],
+  ["16:30", "18:50", "hotel", "✅ 回飯店休息｜Bolt", "", "約 €6–8／車", "泳池", {"p": "htll", "km": 2.4, "min": 15}],
+  ["18:50", "19:00", "hotel", "➡️ 出門", "飯店 → Vana turg", "", "", {"p": "htll", "km": 0.6, "min": 8}],
+  ["19:00", "20:45", "meal", "晚餐｜Olde Hansa", "Vana turg 1", "€35–50／人｜2 人 €60–85", "中世紀主題；需訂", {"p": "oldehansa"}],
+  ["20:45", "20:55", "hotel", "✅ 回飯店", "", "", "", {"p": "htll", "km": 0.6, "min": 8}]
+ ]},
+ {"d": "2027-07-04", "main": "愛沙尼亞露天博物館", "tab": "7/4", "wd": "日", "title": "露天博物館＋喬治亞菜", "sum": "搭公車到海邊的露天博物館，看百年農村建築，午餐吃老客棧。", "wx": "晴時多雲，氣溫約在 13°C 至 21°C 之間", "walk": "步行 ~8 km", "warn": "園區全走完約 3.5 km，可坐馬車代步。","items":[
+  ["09:15", "09:27", "hotel", "➡️ 出門｜步行", "飯店 → Vabaduse väljak 公車站", "", "", {"p": "htll", "km": 0.9, "min": 12}],
+  ["09:30", "10:00", "move", "公車 41", "Vabaduse väljak → Rocca al Mare", "感應刷卡 €2／人", "Rocca al Mare 站就在園區大門", {"p": "vabv", "km": 9, "min": 30}],
+  ["10:00", "14:30", "anchor", "愛沙尼亞露天博物館", "Rocca al Mare", "家庭票 €38", "大人 €18＋學生票 €12 較省，但要學生證", {"p": "evm"}],
+  ["12:30", "13:30", "meal", "午餐｜Kolu Kõrts", "園內老客棧", "€12–18／人", "豌豆湯 hernesupp", {"p": "kolu"}],
+  ["14:30", "15:00", "move", "公車 41", "Rocca al Mare → Vabaduse väljak", "€2／人", "", {"p": "evm", "km": 9, "min": 30}],
+  ["15:00", "17:50", "hotel", "✅ 回飯店休息｜步行", "Vabaduse väljak → 飯店", "", "泳池", {"p": "htll", "km": 0.9, "min": 12}],
+  ["17:50", "18:00", "hotel", "➡️ 出門", "飯店 → Pikk", "", "", {"p": "htll", "km": 0.7, "min": 9}],
+  ["18:00", "19:30", "meal", "晚餐｜Tbilisi", "Pikk 43", "€18–26／人｜2 人 €32–48", "船形起司麵包 khachapuri、湯包 khinkali", {"p": "tbilisi"}],
+  ["19:30", "19:40", "hotel", "✅ 回飯店", "", "", "", {"p": "htll", "km": 0.7, "min": 9}]
+ ]},
+ {"d": "2027-07-05", "main": "老城・Telliskivi", "tab": "7/5", "wd": "一", "title": "Tallinn 老城＋Telliskivi", "sum": "上午爬 Toompea 看老城全景，中午吃 Balti Jaama 市場，下午逛 Telliskivi。", "wx": "晴時多雲，氣溫約在 13°C 至 21°C 之間", "walk": "步行 ~7 km", "warn": "週一不少博物館公休，今天以戶外為主。","items":[
+  ["09:30", "09:42", "hotel", "➡️ 出門", "飯店 → Toompea", "", "上坡有階梯", {"p": "htll", "km": 0.9, "min": 12}],
+  ["09:45", "12:00", "anchor", "Tallinn 老城", "Toompea → 市政廳廣場", "Free", "Kohtuotsa、Patkuli 觀景台", {"p": "toompea"}],
+  ["12:00", "12:15", "move", "步行", "→ Balti Jaama Turg", "", "", {"km": 0.8, "min": 12}],
+  ["12:15", "13:30", "meal", "午餐｜Balti Jaama Turg", "Kopli 1", "€10–15／人", "市場美食區自選", {"p": "baltiturg"}],
+  ["13:30", "15:00", "plain", "Telliskivi 創意園區", "市場旁", "Free", "", {"p": "telliskivi"}],
+  ["15:00", "18:25", "hotel", "✅ 回飯店休息", "", "", "", {"p": "htll", "km": 1.4, "min": 18}],
+  ["18:25", "18:30", "hotel", "➡️ 出門", "飯店 → Rotermann", "", "", {"p": "htll", "km": 0.3, "min": 4}],
+  ["18:30", "19:45", "meal", "晚餐｜Siesta Tapas", "Rotermanni 2", "€22–30／人", "西班牙小菜；需訂", {"p": "siesta"}],
+  ["19:45", "19:50", "hotel", "✅ 回飯店", "", "", "收行李", {"p": "htll", "km": 0.3, "min": 4}]
+ ]},
+ {"d": "2027-07-06", "main": "火車到 Tartu・AHHAA", "tab": "7/6", "wd": "二", "title": "Tartu｜AHHAA 科學中心", "sum": "搭 Elron 火車到大學城 Tartu，下午玩波羅的海最大的科學中心。", "wx": "晴時多雲，氣溫約在 12°C 至 22°C 之間", "walk": "步行 ~4 km", "warn": "Elron 兒童票價待確認；車上沒有餐飲。","items":[
+  ["09:30", "09:45", "hotel", "➡️ 退房｜Bolt", "飯店 → Balti jaam", "約 €5–7／車", "", {"p": "htll", "km": 1.4, "min": 10}],
+  ["10:00", "12:15", "flight", "火車 Elron Tallinn → Tartu", "Balti jaam → Tartu", "大人 €10–18", "選上午班次", {"p": "baltij", "km": 190, "min": 135}],
+  ["12:15", "12:30", "hotel", "✅ 飯店寄放行李｜Bolt", "Tartu 站 → 飯店", "約 €4–5／車", "", {"p": "htar", "km": 1.8, "min": 8}],
+  ["12:40", "13:40", "meal", "午餐｜Monk Tartu", "Tasku 商場", "€14–20／人", "印度咖哩", {"p": "monk"}],
+  ["13:45", "17:30", "anchor", "AHHAA 科學中心", "Sadama 1", "大人 €17／小孩 €12", "", {"p": "ahhaa", "km": 0.3, "min": 4}],
+  ["17:30", "18:30", "hotel", "✅ 入住、休息", "", "", "", {"p": "htar", "km": 0.3, "min": 4}],
+  ["18:30", "18:45", "hotel", "➡️ 出門", "飯店 → Turu 27a", "", "", {"p": "htar", "km": 1.2, "min": 15}],
+  ["18:45", "20:15", "meal", "晚餐｜Hansa Tall", "Turu 27a", "€18–26／人", "香腸燉菜", {"p": "hansatall"}],
+  ["20:15", "20:30", "hotel", "✅ 回飯店", "", "", "", {"p": "htar", "km": 1.2, "min": 15}]
+ ]},
+ {"d": "2027-07-07", "main": "國家博物館・Tartu 老城", "tab": "7/7", "wd": "三", "title": "ERM 國家博物館＋老城", "sum": "上午看建在舊機場的國家博物館，下午走 Toome 山和市政廳廣場。", "wx": "晴時多雲，氣溫約在 12°C 至 22°C 之間", "walk": "步行 ~5 km", "warn": "NOKK 的雞肉可能賣完，晚餐早點到。","items":[
+  ["09:40", "09:52", "hotel", "➡️ 出門｜Bolt", "飯店 → ERM", "約 €5–6／車", "", {"p": "htar", "km": 3, "min": 12}],
+  ["10:00", "12:45", "anchor", "ERM 愛沙尼亞國家博物館", "Muuseumi tee 2", "大人 €15／小孩 €10", "", {"p": "erm"}],
+  ["12:45", "13:00", "move", "Bolt", "ERM → Lossi", "約 €5–6／車", "", {"km": 3, "min": 12}],
+  ["13:05", "14:15", "meal", "午餐｜Gunpowder Cellar", "Lossi 28", "€12–18／人", "舊火藥庫酒館，餃子", {"p": "gunpowder"}],
+  ["14:15", "15:30", "plain", "Toome 山＋市政廳廣場", "天使橋、親吻學生噴泉", "Free", "", {"p": "toome"}],
+  ["15:30", "18:15", "hotel", "✅ 回飯店休息", "", "", "", {"p": "htar", "km": 0.7, "min": 9}],
+  ["18:15", "18:30", "hotel", "➡️ 出門", "飯店 → Tähe 21", "", "", {"p": "htar", "km": 1.3, "min": 16}],
+  ["18:30", "19:45", "meal", "晚餐｜NOKK", "Tähe 21", "€16–22／人", "葡式辣烤雞 peri-peri", {"p": "nokk"}],
+  ["19:45", "20:00", "hotel", "✅ 回飯店", "", "", "收行李", {"p": "htar", "km": 1.3, "min": 16}]
+ ]},
+ {"d": "2027-07-08", "main": "巴士到 Pärnu・海灘", "tab": "7/8", "wd": "四", "title": "Pärnu｜海灘與水上樂園", "sum": "搭巴士到海濱度假城 Pärnu，下午玩水上樂園和海灘。", "wx": "晴時多雲，氣溫約在 13°C 至 21°C 之間", "walk": "步行 ~4 km", "warn": "房型一定要選含水上樂園的方案。","items":[
+  ["10:15", "10:20", "hotel", "➡️ 退房", "飯店 → Tartu 巴士站", "", "", {"p": "htar", "km": 0.1, "min": 2}],
+  ["10:30", "13:15", "flight", "巴士 Lux Express Tartu → Pärnu", "Tartu → Pärnu（經 Viljandi）", "€9 起／人", "動態票價，早買", {"p": "tartubus", "km": 175}],
+  ["13:15", "13:20", "move", "步行", "→ Rüütli 29", "", "", {"km": 0.3, "min": 4}],
+  ["13:20", "14:20", "meal", "午餐｜Rüütlihoov pubi", "Rüütli 29", "€12–18／人", "煎鱸魚", {"p": "ruutlihoov"}],
+  ["14:20", "14:35", "move", "Bolt", "→ 飯店", "約 €5–6／車", "", {"km": 1.5, "min": 8}],
+  ["15:00", "15:30", "hotel", "✅ 入住", "Side 14", "", "", {"p": "hpar"}],
+  ["15:30", "17:45", "anchor", "水上樂園＋海灘", "飯店內／海灘 250 m", "含在房價方案", "", {"p": "hpar"}],
+  ["18:20", "18:30", "hotel", "➡️ 出門", "飯店 → Papli 13", "", "", {"p": "hpar", "km": 0.5, "min": 6}],
+  ["18:30", "19:45", "meal", "晚餐｜Kurgo", "Papli 13", "€22–32／人", "牛肉 tataki", {"p": "kurgo"}],
+  ["19:45", "20:30", "plain", "海灘看夕陽", "Pärnu Rand", "Free", "", {"p": "parnurand"}],
+  ["20:30", "20:35", "hotel", "✅ 回飯店", "", "", "", {"p": "hpar", "km": 0.5, "min": 6}]
+ ]},
+ {"d": "2027-07-09", "main": "Lottemaa 主題樂園", "tab": "7/9", "wd": "五", "title": "Lottemaa 一整天", "sum": "一整天在波羅的海最大的主題樂園 Lottemaa（卡通《Lotte》的發明村）。", "wx": "晴時多雲，氣溫約在 13°C 至 21°C 之間", "walk": "步行 ~7 km", "warn": "2027 年開園季和票價還沒公布（2026：6/13–8/30）。","items":[
+  ["09:40", "09:55", "hotel", "➡️ 出門｜Bolt", "飯店 → Lottemaa", "約 €15–20／車", "", {"p": "hpar", "km": 10, "min": 15}],
+  ["10:00", "17:00", "anchor", "Lottemaa", "Reiu", "€28／人（2 歲以上同價）", "2026 價格；網購同價", {"p": "lottemaa"}],
+  ["12:30", "13:15", "meal", "午餐｜園內", "Lottemaa", "約 €12–15／人", "", {}],
+  ["17:00", "18:30", "hotel", "✅ 回飯店休息｜Bolt", "", "約 €15–20／車", "", {"p": "hpar", "km": 10, "min": 15}],
+  ["18:30", "18:45", "hotel", "➡️ 出門", "飯店 → Nikolai 24", "", "", {"p": "hpar", "km": 1.3, "min": 15}],
+  ["18:45", "20:00", "meal", "晚餐｜Steffani", "Nikolai 24", "€12–18／人", "披薩，花園露台", {"p": "steffani"}],
+  ["20:00", "20:16", "hotel", "✅ 回飯店", "", "", "收行李", {"p": "hpar", "km": 1.3, "min": 16}]
+ ]},
+ {"d": "2027-07-10", "main": "Pärnu → Tallinn → 渡輪 Helsinki", "tab": "7/10", "wd": "六", "title": "移動日｜渡輪回 Helsinki", "sum": "巴士回 Tallinn，在 Rotermann 區吃午餐，坐下午渡輪回 Helsinki。", "wx": "晴時多雲，氣溫約在 13°C 至 20°C 之間", "walk": "步行 ~2 km", "warn": "16:30 班 2027 待確認；15:50 前完成報到，趕不上改 19:30。","items":[
+  ["09:30", "09:40", "hotel", "➡️ 退房｜Bolt", "飯店 → Pärnu 巴士站", "約 €5–6／車", "", {"p": "hpar", "km": 1.5, "min": 8}],
+  ["10:00", "12:00", "flight", "巴士 Lux Express Pärnu → Tallinn", "Pärnu → Tallinn 巴士站", "€8–15／人", "", {"p": "parnubus", "km": 130}],
+  ["12:05", "12:20", "move", "Bolt", "巴士站 → Rotermann", "約 €6–8／車", "", {"km": 2.4, "min": 12}],
+  ["12:30", "14:00", "meal", "午餐｜Bruxx", "Rotermanni 2", "€20–30／人", "比利時淡菜配薯條", {"p": "bruxx"}],
+  ["14:00", "15:20", "plain", "Rotermann 區散步", "", "", "帶行李只在附近逛", {"p": "rotermann"}],
+  ["15:20", "15:35", "move", "步行", "→ D 碼頭", "", "", {"p": "tlld", "km": 0.8, "min": 12}],
+  ["16:30", "18:30", "flight", "渡輪 Tallink Tallinn → Helsinki", "D 碼頭 → HEL T2", "單程約 €10–35／人", "", {"km": 85}],
+  ["18:35", "19:20", "hotel", "✅ 入住｜Bolt", "T2 → 飯店", "約 €12–15／車", "", {"p": "hhel", "km": 2, "min": 15}],
+  ["19:20", "19:25", "hotel", "➡️ 出門", "飯店 → Kamppi 5F", "", "", {"p": "hhel", "km": 0.3, "min": 4}],
+  ["19:25", "20:45", "meal", "晚餐｜Hoku", "Kamppi 5F", "€18–25／人", "照燒鮭魚", {"p": "hoku"}],
+  ["20:45", "20:50", "hotel", "✅ 回飯店", "", "", "", {"p": "hhel", "km": 0.3, "min": 4}]
+ ]},
+ {"d": "2027-07-11", "main": "Heureka 科學中心", "tab": "7/11", "wd": "日", "title": "Heureka 科學中心", "sum": "搭 15 分鐘火車到 Vantaa 的 Heureka，晚上吃新疆手拉麵。", "wx": "晴時多雲，氣溫約在 13°C 至 21°C 之間", "walk": "步行 ~4 km", "warn": "線上票要在當天 10:00 開館前買才便宜 €3。","items":[
+  ["09:15", "09:25", "hotel", "➡️ 出門", "飯店 → Helsinki Central", "", "", {"p": "hhel", "km": 0.6, "min": 8}],
+  ["09:30", "09:47", "move", "HSL 通勤火車 I/P/K", "Central → Tikkurila", "AB：大人 €3.30／小孩 €1.65", "", {"p": "helc", "km": 16, "min": 15}],
+  ["09:47", "09:57", "move", "步行", "Tikkurila → Heureka", "", "", {"km": 0.5, "min": 7}],
+  ["10:00", "15:00", "anchor", "Heureka 科學中心", "Vantaa", "線上票 大人 €23／小孩 €16", "天象館《Asteroid Quest》建議 10 歲以上", {"p": "heureka"}],
+  ["12:30", "13:15", "meal", "午餐｜Heureka Science Restaurant", "館內", "€14–18／人", "", {}],
+  ["15:00", "17:55", "hotel", "✅ 回飯店休息｜火車＋步行", "", "AB 單程", "", {"p": "hhel", "km": 17, "min": 30}],
+  ["17:55", "18:00", "hotel", "➡️ 出門", "飯店 → Malminrinne", "", "", {"p": "hhel", "km": 0.4, "min": 5}],
+  ["18:00", "19:15", "meal", "晚餐｜Uyghur Noodle House", "Malminrinne 3", "€18–24／人", "新疆手拉麵 laghman", {"p": "uyghur"}],
+  ["19:15", "19:20", "hotel", "✅ 回飯店", "", "", "打包", {"p": "hhel", "km": 0.4, "min": 5}]
+ ]},
+ {"d": "2027-07-12", "main": "Seurasaari・晚班機回程", "tab": "7/12", "wd": "一", "title": "最後一天｜AY99 夜班機", "sum": "早上吃海邊咖啡館的肉桂捲，走 Seurasaari 島，傍晚去機場。", "wx": "晴時多雲，氣溫約在 13°C 至 21°C 之間", "walk": "步行 ~6 km", "warn": "飯店沒有行李寄放，寄中央車站置物櫃（只收卡）。","items":[
+  ["08:45", "09:00", "hotel", "➡️ 退房、寄放行李", "飯店 → 中央車站置物櫃", "XL 3 小時 €4.90 起", "訂 12 小時", {"p": "helc", "km": 0.6, "min": 8}],
+  ["09:10", "09:25", "move", "公車 24", "Kamppi → Sibeliuksen puisto", "AB：大人 €3.30／小孩 €1.65", "", {"p": "kamppi24", "km": 3, "min": 11}],
+  ["09:30", "10:30", "meal", "早餐｜Cafe Regatta", "Merikannontie 8", "€8–12／人", "肉桂捲、藍莓派", {"p": "regatta"}],
+  ["10:30", "10:50", "move", "步行（或公車 24）", "→ Seurasaari 橋", "", "", {"km": 1.8, "min": 20}],
+  ["10:50", "12:45", "plain", "Seurasaari 島", "", "島上 Free", "森林步道、紅松鼠", {"p": "seurasaari"}],
+  ["12:45", "13:10", "move", "公車 24", "Seurasaari → Kamppi", "AB 單程", "", {"km": 5, "min": 21}],
+  ["13:15", "14:15", "meal", "午餐｜Lazy Fox Kamppi", "Albertinkatu 36", "€15–20／人", "班尼迪克蛋", {"p": "lazyfox"}],
+  ["14:15", "16:20", "plain", "最後採買", "Esplanadi／Stockmann", "", "姆明、Fazer 巧克力", {"p": "stockmann"}],
+  ["16:30", "16:45", "plain", "領取行李", "中央車站地下層", "", "", {"p": "helc"}],
+  ["16:50", "17:25", "move", "HSL 通勤火車 I/P", "Central → 機場", "ABC：大人 €4.50／小孩 €2.25", "", {"km": 31, "min": 30}],
+  ["17:25", "18:35", "plain", "Finnair 報到", "HEL（全部同一航廈）", "", "起飛前 3 小時到", {"p": "helap"}],
+  ["18:45", "19:45", "meal", "晚餐｜機場餐廳", "HEL", "€18–25／人", "", {}],
+  ["21:35", "14:40", "flight", "AY99 Helsinki → 香港", "HEL → HKG T1", "機票另計", "7/13 14:40 抵達（香港時間，飛行約 12 小時）；也有 00:35 起飛、17:40 抵達的班表，訂票時確認", {"km": 7810, "min": 725}]
+ ]},
+ {"d": "2027-07-13", "main": "香港轉機 → 回台北", "tab": "7/13", "wd": "二", "title": "回到台北", "sum": "下午在香港轉機，晚上回到台北。", "wx": "回程日；出發前查中央氣象署預報", "walk": "步行 ~1 km", "warn": "本日為台北時間（香港同時區）；轉機約 3.5 小時，AY99 誤點就改搭 CX408（22:50 起飛、00:35 抵台）。","items":[
+  ["14:40", "17:45", "plain", "香港轉機", "HKG T1", "", "同一張票，行李直掛；管制區內吃點東西、休息", {"p": "hkg"}],
+  ["18:15", "20:05", "flight", "CX402 香港 → 台北", "HKG T1 → TPE T1", "機票另計", "2026 年 8 月時刻；訂票時確認 2027 時刻", {"km": 810, "min": 110}],
+  ["20:05", "21:00", "plain", "入境、領行李", "桃園機場 T1", "", "", {}],
+  ["21:00", "22:00", "hotel", "✅ 到家｜計程車", "桃園機場 → 台北", "約 NT$1,200–1,500／車", "", {"km": 45}]
+ ]}
+];
+
+const SUMSEC=[{"h": "雨天／累的備案", "rows": [{"a": "6/26", "b": "雨天去 Kamppi 商場（仲夏節營業待確認）；累了整天待飯店；動物園關閉就改 Kauppatori 海邊散步。"}, {"a": "6/27", "b": "雨天把 Linnanmäki 換到 7/11 下午，今天改 Heureka；累了只去遊樂園；遊樂園沒開改 SEA LIFE。"}, {"a": "6/28", "b": "雨天改 Oodi＋Kamppi；累了只走 Suomenlinna 主步道。"}, {"a": "6/29", "b": "行程本身大多在室內；博物館臨時閉館就和 7/1 Vapriikki 對調。"}, {"a": "6/30", "b": "雨天只用景點手環（室內）；累了 15:00 回飯店；樂園沒開改 Vapriikki。"}, {"a": "7/1", "b": "雨天下午改室內；累了只去 Vapriikki。"}, {"a": "7/2", "b": "火車誤點就改 16:30 渡輪；累了晚餐外帶 Kompressor。"}, {"a": "7/3", "b": "整天在室內，不受雨影響；累了不去 PROTO。"}, {"a": "7/4", "b": "雨天和 7/5 對調；累了 13:30 吃完就回。"}, {"a": "7/5", "b": "雨天下午改 Viru 商場或飯店泳池；累了不去 Telliskivi；晚餐改 R14 或 Om house。"}, {"a": "7/6", "b": "行程本身大多在室內；累了晚餐改在 Tasku 商場吃。"}, {"a": "7/7", "b": "累了只去 ERM；晚餐 NOKK 賣完改 Kolm Tilli。"}, {"a": "7/8", "b": "雨天整個下午待水上樂園；累了晚餐在飯店內吃。"}, {"a": "7/9", "b": "雨天改在水上樂園一整天；累了 15:00 提早回。"}, {"a": "7/10", "b": "渡輪趕不上改 19:30 班；晚餐改 Pobrecito。"}, {"a": "7/11", "b": "累了 13:00 提早回；晚餐改 Villa Nepal 或 Thai Orchid（Kamppi）。"}, {"a": "7/12", "b": "雨天上午改 Oodi；累了不去 Seurasaari。"}]}];
+const INFO=[{"h": "緊急", "rows": [{"a": "緊急電話 112", "b": "警察、救護、消防（芬蘭、愛沙尼亞相同）"}, {"a": "外交部急難救助（全球免付費）", "b": "撥 00 800 0885 0885"}]}, {"h": "飯店", "rows": [{"a": "6/25–6/29　Helsinki", "b": "Omena Hotel Yrjönkatu｜Family Room｜無早餐", "p": "hhel"}, {"a": "6/29–7/2　Tampere", "b": "Scandic Tampere Station｜含早餐", "p": "htam"}, {"a": "7/2–7/6　Tallinn", "b": "Nordic Hotel Forum｜含早餐｜頂樓泳池", "p": "htll"}, {"a": "7/6–7/8　Tartu", "b": "Dorpat Hotel｜含早餐", "p": "htar"}, {"a": "7/8–7/10　Pärnu", "b": "Tervise Paradiis｜選含水上樂園方案", "p": "hpar"}, {"a": "7/10–7/12　Helsinki", "b": "Omena Hotel Yrjönkatu（同第一間）", "p": "hhel"}]}, {"h": "預訂清單（依期限排序）", "rows": [{"a": "12/31 前｜機票 CX＋AY 同一張票", "b": "6/25 CX469＋AY100；7/12 AY99＋7/13 CX402｜訂票時確認 2027 時刻\n預算線：2 人機票 ≤ NT$96,000（大人約 ≤ 55,000、小孩約 ≤ 41,000）；超過就比 TK／EK 一次轉機"}, {"a": "3/31 前｜飯店 5 間（可免費取消房價）", "b": "Omena 加訂 6/25 前一晚；Tervise Paradiis 選含水上樂園方案"}, {"a": "5/21 前｜Tallink 7/2 13:30、7/10 16:30", "b": "提早 6 週以上較便宜；7/2 買可改期票（條件性：火車誤點改 16:30）"}, {"a": "5/31 前｜VR 火車 6/29、7/2", "b": "夏季班次約 2 月中開賣｜vr.fi"}, {"a": "6/13 前｜Sea Horse 6/27 18:45", "b": "電話 +358 9 628169"}, {"a": "6/14 前｜Lappi 6/28 18:00", "b": "電話 +358 9 645550"}, {"a": "6/15 前｜Plevna 6/29、Fenno 7/1", "b": "官網訂位"}, {"a": "6/15 前｜Elron 7/6、Lux Express 7/8、7/10", "b": "elron.ee／luxexpress.eu"}, {"a": "6/19 前｜Olde Hansa 7/3 19:00", "b": "電話 +372 627 9020"}, {"a": "6/21 前｜Siesta Tapas 7/5 18:30", "b": "電話 +372 5454 0181（店很小）"}, {"a": "6/26 前｜Linnanmäki Isohupi 手環", "b": "kauppa.linnanmaki.fi"}, {"a": "6/29 前｜Särkänniemi 手環", "b": "網購較現場便宜"}, {"a": "7/8 前｜Lottemaa 日票", "b": "lottemaa.ee，網購同價、免排隊"}, {"a": "7/11 10:00 前｜Heureka 線上票", "b": "比現場便宜 €3"}]}, {"h": "出發前待辦", "rows": [{"a": "立即｜護照", "b": "效期要超過 2027/10/13，且護照上有身分證字號"}, {"a": "3 月起｜ETIAS", "b": "2026/10 尚未上線、無公布日期；每月查 europa.eu/etias，只用官網（約 €7）"}, {"a": "5 月｜監護人同意書", "b": "若另一位法定監護人沒有同行，帶英文同意書與戶籍謄本英譯"}, {"a": "6 月｜安裝 app", "b": "HSL、Nysse、Bolt、pilet.ee、VR、Tallink；買歐洲 eSIM"}, {"a": "6 月｜打包", "b": "泳衣、眼罩（白夜）、防蚊液、薄外套、Heureka 換洗衣物"}, {"a": "出發前 2 週｜確認待確認項目", "b": "AY99 時刻、仲夏節營業、Linnanmäki／Särkänniemi 日曆、2027 票價"}]}, {"h": "Dining Chart（含備案）", "rows": [{"a": "6/26 午｜Pobrecito", "b": "菲律賓菜｜€15–20／人｜現場候位\n備案 1：Lazy Fox Kamppi（Albertinkatu 36，步行 9 分，€15–20）\n備案 2：Factory Kamppi（Runeberginkatu 3，步行 4 分，自助午餐）"}, {"a": "6/27 午｜Hurlumhei（Linnanmäki 園內）", "b": "墨西哥塔可｜€12–16／人｜現場\n備案 1：園內 Lintsiburger"}, {"a": "6/27 晚｜Sea Horse", "b": "肉丸 lihapullat｜€30–40／人｜需訂 18:45\n備案 1：Restaurant Pontus（Kapteeninkatu 26，步行 2 分，週日 16–21）\n備案 2：Boneless Ullanlinna（Vuorimiehenkatu 12，步行 3 分，週日 12–20，漢堡）"}, {"a": "6/28 午｜Suomenlinna Brewery", "b": "啤酒廠當日主菜｜€20–28／人｜現場\n備案 1：回城後 SOUP+MORE Vanha Kauppahalli（週一 11–16，€14）"}, {"a": "6/28 晚｜Lappi", "b": "炒馴鹿肉 poronkäristys｜€35–45／人｜需訂 18:00\n備案 1：Pobrecito（Kamppi 5F，步行 4 分，週一至 20:00）\n備案 2：Villa Nepal Kamppi（步行 4 分，至 21:00）"}, {"a": "6/29 午｜Tampere Market Hall", "b": "鮭魚湯 lohikeitto｜€14–16／人｜現場\n備案 1：Pyynikin Munkkikahvila（市場內，吐司）\n備案 2：Puisto（Hämeenkatu 14a，步行 7 分）"}, {"a": "6/29 晚｜Plevna", "b": "黑血腸 mustamakkara｜€25–35／人｜需訂 18:15\n備案 1：Pyynikin Brewhouse（Verkatehtaankatu 2，步行 8 分，週二 17–23）\n備案 2：Puisto（步行 8 分）"}, {"a": "6/30 晚｜Pulcinella", "b": "義大利麵｜€20–28／人｜現場\n備案 1：Baonami（Hämeenkatu 3，步行 3 分，週三 16–23）\n備案 2：Puisto（步行 7 分）"}, {"a": "7/1 午｜Puisto", "b": "河景小館｜€18–25／人｜現場\n備案 1：Tampere Market Hall（步行 7 分）\n備案 2：Plevna（步行 8 分）"}, {"a": "7/1 晚｜Fenno", "b": "駝鹿燉肉｜€28–38／人｜需訂 18:30\n備案 1：Pulcinella（步行 5 分，週四 11–23）\n備案 2：Baonami（步行 2 分，週四 16–23）"}, {"a": "7/2 晚｜Kompressor", "b": "愛沙尼亞鬆餅｜€10–15／人｜不能訂位\n備案 1：Olde Hansa（步行 2 分）\n備案 2：Tbilisi（Pikk 43，步行 5 分）"}, {"a": "7/3 午｜Põhjala Brewery", "b": "煙燻 BBQ 牛胸肉｜€18–25／人｜現場\n備案 1：Lore Bistroo（Peetri 12，步行 2 分）\n備案 2：Puente（Vesilennuki 80，步行 3 分）"}, {"a": "7/3 晚｜Olde Hansa", "b": "中世紀主題｜€35–50／人｜需訂 19:00\n備案 1：Kompressor（步行 2 分）\n備案 2：Tbilisi（步行 5 分）"}, {"a": "7/4 午｜Kolu Kõrts", "b": "豌豆湯 hernesupp｜€12–18／人｜現場\n備案：園內沒有查到其他店家"}, {"a": "7/4 晚｜Tbilisi", "b": "船形起司麵包 khachapuri｜€18–26／人｜建議訂位\n備案 1：Kompressor（步行 5 分）\n備案 2：Olde Hansa（步行 5 分）"}, {"a": "7/5 午｜Balti Jaama Turg", "b": "市場美食區｜€10–15／人｜現場\n備案 1：BEP（Kalma 11，步行 4 分，越南菜）"}, {"a": "7/5 晚｜Siesta Tapas", "b": "西班牙小菜｜€22–30／人｜需訂 18:30\n備案 1：R14（Rotermanni 14，步行 1 分）\n備案 2：Om house（Rotermanni 18，步行 1 分，日式）"}, {"a": "7/6 午｜Monk Tartu", "b": "印度咖哩｜€14–20／人｜現場\n備案 1：Da Vinci（同一個商場）"}, {"a": "7/6 晚｜Hansa Tall", "b": "香腸燉菜｜€18–26／人｜建議訂位\n備案 1：Kolm Tilli（Kastani 42，Bolt 5 分）"}, {"a": "7/7 午｜Gunpowder Cellar", "b": "餃子｜€12–18／人｜午間套餐\n備案 1：Tasku 商場 Monk／Da Vinci（步行 10 分）"}, {"a": "7/7 晚｜NOKK", "b": "葡式辣烤雞｜€16–22／人｜早點到\n備案 1：Kolm Tilli（步行 8 分）\n備案 2：Hansa Tall（步行 11 分）"}, {"a": "7/8 午｜Rüütlihoov pubi", "b": "煎鱸魚｜€12–18／人｜現場\n備案 1：Ephesus（Rüütli 38，步行 3 分，土耳其菜）\n備案 2：RÖÖM（Pühavaimu 15，步行 2 分）"}, {"a": "7/8 晚｜Kurgo", "b": "牛肉 tataki｜€22–32／人｜建議訂位\n備案 1：飯店內 Neptun Grill"}, {"a": "7/9 晚｜Steffani", "b": "披薩｜€12–18／人｜現場\n備案 1：RÖÖM（步行 3 分）\n備案 2：Ephesus（步行 4 分）"}, {"a": "7/10 午｜Bruxx", "b": "淡菜配薯條｜€20–30／人｜建議訂位\n備案 1：R14（步行 1 分）\n備案 2：Gallery Cafe（步行 1 分）"}, {"a": "7/10 晚｜Hoku", "b": "照燒鮭魚｜€18–25／人｜建議訂位\n備案 1：Pobrecito（同一層樓，週六至 21:00）\n備案 2：Thai Orchid Villa Kamppi（Kamppi 1F，週六至 23:00）"}, {"a": "7/11 晚｜Uyghur Noodle House", "b": "新疆手拉麵 laghman｜€18–24／人｜現場\n備案 1：Thai Orchid Villa Kamppi（步行 3 分，週日至 22:00）\n備案 2：Villa Nepal Kamppi（步行 4 分，至 21:00）"}, {"a": "7/12 早｜Cafe Regatta", "b": "肉桂捲、藍莓派｜€8–12／人｜現場排隊\n備案：Sibelius 公園內沒有其他店"}, {"a": "7/12 午｜Lazy Fox Kamppi", "b": "班尼迪克蛋｜€15–20／人｜現場\n備案 1：Factory Kamppi（步行 8 分，週一至 15:00）\n備案 2：Pobrecito（步行 7 分）"}]}, {"h": "航班", "rows": [{"a": "6/25　CX469　TPE 14:20 → HKG 16:25", "b": "2026 夏季時刻；其他月份此班號為晚班，訂票時確認"}, {"a": "6/25　AY100　HKG 20:55 → HEL 05:35(+1)", "b": "HKG T1；2026/3/29–10/23 時刻"}, {"a": "7/12　AY99　HEL 21:35 → HKG 14:40(+1)", "b": "21:35 起飛＋飛行約 12 小時；也有 00:35 起飛、17:40 抵達的班表，訂票時確認"}, {"a": "7/13　CX402　HKG 18:15 → TPE 20:05", "b": "2026 年 8 月時刻；誤點改 CX408 22:50 → 00:35(+1)"}]}, {"h": "交通", "rows": [{"a": "HSL（Helsinki）", "b": "AB 單程：大人 €3.30／小孩 €1.65（app）；感應刷卡只有大人價 €3.50\nABC（機場）：大人 €4.50／小孩 €2.25\nAB 24 小時票：大人 €10.60"}, {"a": "Tampere", "b": "Nysse 公車用 app 買票；VR 長途小孩（4–17 歲）打 6 折"}, {"a": "Tallinn", "b": "公車、電車感應刷卡 €2／小時（大人、小孩同價）"}, {"a": "Tartu、Pärnu", "b": "市區用 Bolt；Tartu 公車要先辦卡，不划算"}, {"a": "渡輪 Tallink", "b": "Helsinki West Terminal 2 ⇄ Tallinn D 碼頭，2 小時；開船前 40 分報到"}]}, {"h": "付款與匯率", "rows": [{"a": "付款", "b": "兩國都用歐元；感應式信用卡到處可刷，有些店只收卡；帶 €50 現金備用"}, {"a": "匯率", "b": "台銀歐元現鈔賣出 36.26（2026/10/13 09:45）；即期賣出 35.94"}, {"a": "每人估算（含機票）", "b": "大人 NT$115,150–159,800\n小孩 NT$94,290–126,980\n機票：大人約 NT$40,000–55,000、小孩約 NT$30,000–41,000（2027 票價待確認）"}, {"a": "總預算上限", "b": "2 人含機票 ≤ NT$30 萬；目前估算 NT$20.9–28.7 萬，最高情況仍剩 NT$1.3 萬"}]}, {"h": "規劃說明", "rows": [{"a": "仲夏節", "b": "6/25 仲夏夜、6/26 仲夏節，店家大多不開；抵達日只排休息和動物園"}, {"a": "湖區範圍", "b": "只排 Tampere；Savonlinna 單程 4–5 小時，可用 Tartu 2 天換"}, {"a": "公休日", "b": "Moomin Museum、Vapriikki、ERM、PROTO、Kolu Kõrts 週一休，都已避開；Suomenlinna 移到週一"}, {"a": "住宿預算", "b": "Tallinn、Pärnu 高價時超過 NT$2,500／人／晚；全程平均 NT$2,075–2,655"}, {"a": "價格與時刻", "b": "2027 年票價、時刻表都還沒公布，頁面上的價格是 2026 年資料"}, {"a": "餐廳分級", "b": "只依 Google 評分與評論內容，尚未比對當地媒體"}]}];
+const FOOD_NOTE="排名依據：Google 評分與評論數，加上評論中在地與遊客的比例；同城依此排序。提醒：Helsinki 週日很多餐廳休息，備案已挑週日有開的店。";
+const FOOD=[{"h": "Helsinki（1–8）", "rows": [{"a": "1　Sea Horse", "b": "肉丸 lihapullat｜正餐｜Google 4.4（2,027）｜€30–40／人｜Kamppi 搭電車約 15 分\n老字號芬蘭家常菜\n推薦：lihapullat（肉丸配馬鈴薯泥、越橘醬）、lohikeitto（鮭魚湯）", "p": "seahorse"}, {"a": "2　Lappi", "b": "炒馴鹿肉｜正餐｜Google 4.5（2,726）｜€35–45／人｜飯店步行 3 分\n拉普蘭小木屋風\n推薦：poronkäristys（炒馴鹿肉）", "p": "lappi"}, {"a": "3　Hoku", "b": "照燒鮭魚｜正餐｜Google 4.5（1,457）｜€18–25／人｜飯店步行 4 分\n日式夏威夷混搭，在地常客多\n推薦：照燒鮭魚、雞排 katsu", "p": "hoku"}, {"a": "4　Cafe Regatta", "b": "肉桂捲｜早餐｜Google 4.6（6,735）｜€8–12／人｜公車 24 約 11 分\n海邊紅色小木屋咖啡館\n推薦：korvapuusti（肉桂捲）、藍莓派", "p": "regatta"}, {"a": "5　Uyghur Noodle House", "b": "手拉麵｜正餐｜Google 4.7（308）｜€18–24／人｜飯店步行 5 分\n新疆菜，週日也開\n推薦：laghman（手拉麵）、煎餃", "p": "uyghur"}, {"a": "6　Pobrecito", "b": "菲律賓菜｜正餐｜Google 4.6（161）｜€15–20／人｜飯店步行 4 分\nKamppi 5 樓\n推薦：燉豬肉飯", "p": "pobrecito"}, {"a": "7　Lazy Fox Kamppi", "b": "早午餐｜早午｜Google 4.3（873）｜€15–20／人｜飯店步行 9 分\n推薦：班尼迪克蛋、鬆餅", "p": "lazyfox"}, {"a": "8　Suomenlinna Brewery", "b": "啤酒廠餐廳｜正餐｜Google 4.2（376）｜€20–28／人｜島上\n評論以遊客為主，排它是因為就在島上", "p": "brewery"}]}, {"h": "Tampere（1–5）", "rows": [{"a": "1　Tampere Market Hall", "b": "鮭魚湯｜小吃｜Google 4.6（4,219）｜€14–16／人｜飯店步行 12 分\n1901 年的市場\n推薦：lohikeitto（鮭魚湯）", "p": "tmarket"}, {"a": "2　Plevna", "b": "黑血腸｜正餐｜Google 4.3（5,860）｜€25–35／人｜飯店步行 13 分\nFinlayson 舊工廠自釀啤酒餐廳\n推薦：mustamakkara（黑血腸配越橘醬）", "p": "plevna"}, {"a": "3　Pyynikki 觀景塔咖啡館", "b": "甜甜圈｜小吃｜Google 4.5（7,329）｜€3／個｜Bolt 12 分\n推薦：munkki（小荳蔻甜甜圈）", "p": "pyynikki"}, {"a": "4　Fenno", "b": "駝鹿燉肉｜正餐｜Google 4.8（22）｜€28–38／人｜飯店步行 4 分\n芬蘭各地傳統菜，評論數少\n推薦：駝鹿燉肉、vorschmack", "p": "fenno"}, {"a": "5　Puisto", "b": "河景小館｜正餐｜Google 4.0（3,261）｜€18–25／人｜飯店步行 7 分", "p": "puisto"}]}, {"h": "Tallinn（1–7）", "rows": [{"a": "1　Kompressor", "b": "鬆餅｜正餐｜Google 4.6（8,694）｜€10–15／人｜飯店步行 10 分\n老城平價老店\n推薦：鹹鬆餅（牛肉酸黃瓜）、甜鬆餅", "p": "kompressor"}, {"a": "2　Balti Jaama Turg", "b": "市場美食區｜小吃｜Google 4.6（26,970）｜€10–15／人｜飯店步行 18 分", "p": "baltiturg"}, {"a": "3　Põhjala Brewery", "b": "BBQ 牛胸肉｜正餐｜Google 4.6（1,922）｜€18–25／人｜Lennusadam 步行 8 分", "p": "pohjala"}, {"a": "4　Tbilisi", "b": "喬治亞菜｜正餐｜Google 4.5（1,911）｜€18–26／人｜飯店步行 9 分\n推薦：khachapuri（船形起司麵包）、khinkali（湯包）", "p": "tbilisi"}, {"a": "5　Olde Hansa", "b": "中世紀主題｜正餐｜Google 4.5（12,378）｜€35–50／人｜飯店步行 8 分\n評論以遊客為主，排它是因為氣氛", "p": "oldehansa"}, {"a": "6　Bruxx", "b": "比利時菜｜正餐｜Google 4.5（2,113）｜€20–30／人｜D 碼頭步行 10 分\n推薦：淡菜配薯條", "p": "bruxx"}, {"a": "7　Siesta Tapas", "b": "西班牙小菜｜正餐｜Google 4.5（450）｜€22–30／人｜飯店步行 4 分", "p": "siesta"}]}, {"h": "露天博物館・Tartu・Pärnu（1–7）", "rows": [{"a": "1　Hansa Tall", "b": "香腸燉菜｜正餐｜Google 4.6（1,516）｜€18–26／人｜Tartu 飯店步行 15 分", "p": "hansatall"}, {"a": "2　Kolu Kõrts", "b": "豌豆湯｜正餐｜Google 4.5（666）｜€12–18／人｜露天博物館內\n300 年老客棧", "p": "kolu"}, {"a": "3　Gunpowder Cellar", "b": "酒館菜｜正餐｜Google 4.4（3,957）｜€12–18／人｜Toome 山下\n推薦：餃子、午間套餐", "p": "gunpowder"}, {"a": "4　NOKK", "b": "辣烤雞｜正餐｜Google 4.8（246）｜€16–22／人｜Tartu 飯店步行 16 分", "p": "nokk"}, {"a": "5　Steffani", "b": "披薩｜正餐｜Google 4.4（12,018）｜€12–18／人｜Pärnu 飯店步行 16 分\nPärnu 老字號，花園露台", "p": "steffani"}, {"a": "6　Kurgo", "b": "現代小酒館｜正餐｜Google 4.7（186）｜€22–32／人｜Pärnu 飯店步行 6 分", "p": "kurgo"}, {"a": "7　Monk Tartu", "b": "印度咖哩｜正餐｜Google 4.4（171）｜€14–20／人｜Tartu 飯店旁", "p": "monk"}]}, {"h": "這次不排的店", "rows": [{"a": "Jannseni Pizza（Pärnu）", "b": "Google 4.9 但評論只有 518 則、週一二休；披薩只排一次，留給 Steffani"}, {"a": "Morton（Helsinki）", "b": "週日只開到 19:00，7/11 改排 Uyghur Noodle House"}]}];
+const BUDGET={"rows": [["A 機票", "NT$7.00–9.60 萬"], ["B 住宿", "NT$7.06–9.03 萬"], ["C 交通", "NT$1.30–2.16 萬"], ["D 門票", "NT$1.74–1.77 萬"], ["E 餐飲", "NT$3.38–5.38 萬"], ["F 雜支", "NT$0.46–0.74 萬"]], "total": ["2 人合計（含機票）", "NT$20.9–28.7 萬"]};
+
+/* stays: overview groups days by where we sleep (k = first DAYS index) */
+const STAYS=[{"k": 0, "city": "去程", "sub": "TPE → HKG → HEL 夜班機"}, {"k": 1, "city": "Helsinki", "sub": "6/25–6/29・4 晚・Omena Hotel Yrjönkatu"}, {"k": 4, "city": "Tampere", "sub": "6/29–7/2・3 晚・Scandic Tampere Station"}, {"k": 7, "city": "Tallinn", "sub": "7/2–7/6・4 晚・Nordic Hotel Forum"}, {"k": 11, "city": "Tartu", "sub": "7/6–7/8・2 晚・Dorpat Hotel"}, {"k": 13, "city": "Pärnu", "sub": "7/8–7/10・2 晚・Spa Tervise Paradiis"}, {"k": 15, "city": "Helsinki", "sub": "7/10–7/12・2 晚・Omena Hotel Yrjönkatu"}, {"k": 17, "city": "回程", "sub": "AY99 夜班機 → HKG → TPE"}];
+/* ============================ ENGINE ============================ */
+const M=(q,c)=>TRIP.map==='baidu'
+  ?'https://map.baidu.com/search/'+encodeURIComponent(q)+'?querytype=s&wd='+encodeURIComponent(q)+'&c='+(c||TRIP.city)
+  :'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(q);
+const MAPLABEL='地圖';
+const CHAT=TRIP.map==='baidu'?'微信／LINE':'LINE';
+const HOME=`<a class="home" href="./">${'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>'}所有行程</a>`;
+const view=document.getElementById('view'),navEl=document.getElementById('nav'),drv=document.getElementById('driver'),toast=document.getElementById('toast');
+const KIND={anchor:'重點',meal:'用餐',hotel:'飯店',flight:'航班'};
+const HAS_FOOD=typeof FOOD!=='undefined'&&Array.isArray(FOOD)&&FOOD.length>0;
+const SUMS=typeof SUMSEC!=='undefined'&&Array.isArray(SUMSEC)?SUMSEC:[];
+const isTrain=t=>/高鐵|火車|列車|^G\d|^D\d/.test(clean(t));
+const isFerry=t=>/渡輪|Tallink|Viking Line|Eckerö|Ferry/i.test(clean(t));
+const isBus=t=>/巴士|客運|Lux Express|Flixbus/i.test(clean(t));
+const tmode=t=>isFerry(t)?'fe':isBus(t)?'bu':isTrain(t)?'tr':'fl';
+const MODE={fl:{lab:'航班',go:'起飛',in:'降落'},tr:{lab:/高鐵/.test(JSON.stringify(TRIP))?'高鐵':'火車',go:'出發',in:'抵達'},fe:{lab:'渡輪',go:'出發',in:'抵達'},bu:{lab:'巴士',go:'出發',in:'抵達'}};
+const kindLabel=(k,t)=>k==='flight'?MODE[tmode(t)].lab:KIND[k];
+const DRV=Object.assign(TRIP.map==='baidu'?{ask:'师傅您好，请带我们去：',tel:'电话',lang:'zh-Hans',copied:'已複製：可貼到滴滴，或給司機看'}:{ask:'Hello, please take us to:',tel:'Tel',lang:'en',copied:'已複製：可貼到叫車 app，或給司機看'},TRIP.drv||{});
+const WDEN=['SUN','MON','TUE','WED','THU','FRI','SAT'];
+const sv=(w,p)=>`<svg width="${w}" height="${w}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${p}</svg>`;
+const I={
+  pin:sv(17,'<path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/>'),
+  car:sv(17,'<path d="M4 15l1.5-5A2 2 0 0 1 7.4 8.5h9.2a2 2 0 0 1 1.9 1.5L20 15v3H4z"/><circle cx="7.5" cy="15" r="1"/><circle cx="16.5" cy="15" r="1"/>'),
+  phone:sv(17,'<path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/>'),
+  copy:sv(17,'<rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/>'),
+  chev:sv(18,'<path d="M6 9l6 6 6-6"/>'),
+  chevR:sv(18,'<path d="M9 6l6 6-6 6"/>'),
+  back:sv(20,'<path d="M15 6l-6 6 6 6"/>'),
+  clock:sv(24,'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>'),
+  cal:sv(24,'<rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/>'),
+  food:sv(24,'<path d="M5 3v7a2 2 0 0 0 4 0V3"/><path d="M7 12v9"/><path d="M17 21V3c-2 1-3 4-3 7h3"/>'),
+  plane:sv(13,'<path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/>'),
+  train:sv(13,'<rect x="5" y="3" width="14" height="14" rx="3"/><path d="M5 11h14M9 21l-2-4M15 21l2-4"/>'),
+  ferry:sv(13,'<path d="M3 16l2.5 4h13L21 16l-9-3z"/><path d="M6 14.5V9h12v5.5"/><path d="M12 3v6"/>'),
+  bus:sv(13,'<rect x="5" y="3" width="14" height="15" rx="2.5"/><path d="M5 11h14M8 21v-3M16 21v-3"/>'),
+  check:sv(14,'<path d="M5 12.5l4.5 4.5L19 7"/>'),
+  info:sv(24,'<circle cx="12" cy="12" r="9"/><path d="M12 11v6"/><path d="M12 7.5v.01"/>')
+};
+function esc(s){return String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+const AIR=/報到|出境|入境|轉機|安檢|候車|登機|領行李/;
+const hasFl=d=>d.items.some(it=>it[2]==='flight');
+const MICON=t=>({fl:I.plane,tr:I.train,fe:I.ferry,bu:I.bus})[tmode(t)];
+/* short route label for the header chips: code / operator + stop codes, never the long title */
+function shortLab(f){const t=clean(f[3]),m=t.match(CODE),pl=String(f[4]||'').replace(/\s*T\d\b/g,'').replace(/[（(][^）)]*[）)]/g,'').trim();
+  const okPl=/^[^→]+→/.test(pl);if(m&&okPl)return m[1]+' '+pl;
+  const body=t.replace(/^(火車|渡輪|巴士|高鐵)\s*/,''),rt=body.match(/(\S+\s*→.*)$/),op=rt?body.slice(0,rt.index).trim():body;
+  return okPl?(op+' '+pl).trim():body;}
+let REMSEEN=null,PREVP=null;
+const flMode=d=>{const ms=d.items.filter(it=>it[2]==='flight').map(f=>tmode(f[3]));return !ms.length?'':' '+(['fl','fe','tr','bu'].find(m=>ms.includes(m)));};
+function flHead(day){const fs=day.items.filter(it=>it[2]==='flight');if(!fs.length)return'';
+  return `<ul class="flh" aria-label="今日交通">${fs.map(f=>{const p1=f[1]&&mins(f[1])<mins(f[0])?'（+1）':'';
+    return `<li>${MICON(f[3])}<b>${esc(shortLab(f))}</b><span class="num">${esc(f[0])}${f[1]?' → '+esc(f[1])+p1:''}</span></li>`;}).join('')}</ul>`;}
+function clean(t){return String(t??'').replace(/^[✅➡⬅-⬇️‍\s]+/,'');}
+function localNow(){const n=new Date();return new Date(n.getTime()+n.getTimezoneOffset()*60000+TRIP.utcOffset*3600000);}
+function ymd(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');}
+function mins(s){if(!s)return null;const [h,m]=s.split(':').map(Number);return h*60+m;}
+/* leg: o.km = route distance (km); o.min overrides the row span when the row also holds a stop or a time-zone change */
+function legMin(it){const o=it[7]||{};if(o.min!=null)return o.min;if(!it[1])return null;let d=mins(it[1])-mins(it[0]);if(d<0)d+=1440;return d;}
+const fmtMin=d=>d==null?'':d<60?d+' 分':Math.floor(d/60)+' 小時'+(d%60?' '+d%60+' 分':'');
+const fmtKm=k=>(k>=1000?k.toLocaleString('en-US'):String(k))+' km';
+function legText(it){const o=it[7]||{};if(o.km==null)return'';const d=legMin(it);return (d!=null?fmtMin(d)+'・':'')+'約 '+fmtKm(o.km);}
+function legHTML(it){const o=it[7]||{};if(o.km==null)return'';const d=legMin(it);
+  return `<div class="lg">${sv(13,'<path d="M5 19c3-6 11-2 14-14"/><circle cx="5" cy="19" r="1.5"/><circle cx="19" cy="5" r="1.5"/>')}${d!=null?`<span>${fmtMin(d).replace(/\d+/g,m=>'<b>'+m+'</b>')}</span><i>·</i>`:''}<span>約 <b>${esc(fmtKm(o.km).replace(' km',''))}</b> km</span></div>`;}
+function dayDiff(a,b){return Math.round((Date.parse(b+'T00:00:00Z')-Date.parse(a+'T00:00:00Z'))/86400000);}
+function fmtLeft(m){return m<60?`${m} 分`:`${Math.floor(m/60)} 小時 ${m%60} 分`;}
+function show(msg){toast.textContent=msg;toast.classList.add('on');clearTimeout(show.t);show.t=setTimeout(()=>toast.classList.remove('on'),1800);}
+async function copy(text,msg){
+  try{await navigator.clipboard.writeText(text);show(msg||'已複製');}
+  catch(e){const t=document.createElement('textarea');t.value=text;t.style.position='fixed';t.style.opacity='0';document.body.appendChild(t);t.select();
+    try{document.execCommand('copy');show(msg||'已複製');}catch(_){show('無法複製，請長按文字選取');}document.body.removeChild(t);}
+}
+const hotelReady=!!(HOTEL.addr&&!/^待/.test(HOTEL.addr));
+/* normalized [start,end] minutes per item; handles rows after midnight and open-ended rows */
+function spans(day){let prev=-1,off=0;return day.items.map(it=>{let s=mins(it[0]);if(s==null)s=Math.max(prev,0);else{s+=off;if(s<prev){off+=1440;s+=1440;}}
+  let e=mins(it[1]);if(e==null)e=s+60;else{e+=off;while(e<=s)e+=1440;}prev=s;return [s,e];});}
+function state(i){const day=DAYS[i],sp=spans(day),j=localNow(),nm=j.getHours()*60+j.getMinutes(),isToday=todayIdx>=0&&day.d===DAYS[todayIdx].d;let cur=-1,next=-1;const past=[];
+  if(isToday)sp.forEach(([s,e],k)=>{if(nm>=e)past.push(k);else if(nm>=s&&cur<0)cur=k;else if(s>nm&&next<0)next=k;});
+  return {day,sp,nm,isToday,cur,next,past};}
+
+function placeActs(k,inBoard){const p=PLACES[k];if(!p)return'';
+  return `<div class="acts"><a class="act pri" href="${M(p.q,p.c)}" target="_blank" rel="noopener">${I.pin}${MAPLABEL}</a><button type="button" class="act" data-drv="${esc(k)}">${I.car}給司機看</button>${inBoard?`<button type="button" class="act" data-copy="${esc(p.n+'\n'+(p.a||''))}">${I.copy}複製地址</button>`:''}${p.t?`<a class="act" href="tel:${esc(p.t)}">${I.phone}撥打</a>`:''}</div>`;}
+function placeBlock(k,dk){const p=PLACES[k];if(!p)return'';
+  let h='';if(p.x&&!(REMSEEN&&REMSEEN.has(k))){h+=`<div class="rem"><b>提醒</b>${esc(p.x)}</div>`;if(REMSEEN)REMSEEN.add(k);}
+  h+=`<div class="pq"><details class="pd" data-dk="${esc(dk)}"><summary><span class="pn">${esc(p.n)}</span>${I.chev}</summary><dl>`+
+    (p.a?`<dt>地址</dt><dd>${esc(p.a)}</dd>`:'')+(p.h?`<dt>營業</dt><dd>${esc(p.h)}</dd>`:'')+(p.ts?`<dt>電話</dt><dd>${esc(p.ts)}</dd>`:'')+
+    `</dl>${placeActs(k,true)}</details><a class="act pri pq-map" href="${M(p.q,p.c)}" target="_blank" rel="noopener">${I.pin}${MAPLABEL}</a></div>`;
+  return h;}
+function hotelActs(full){const cp=full||!hotelReady;return `<div class="acts"><a class="act" href="${M(HOTEL.q)}" target="_blank" rel="noopener">${I.pin}${full?'飯店地圖':'地圖'}</a>${hotelReady?`<button type="button" class="act" data-drv="@hotel">${I.car}給司機看</button>`:''}${cp?`<button type="button" class="act" data-copy="${esc(HOTEL.name+'\n'+HOTEL.addr)}">${I.copy}${full?'複製飯店地址':'複製地址'}</button>`:''}</div>`;}
+function chips(o,dk){if(o.p&&o.p===PREVP)return o.hotel?hotelActs():'';return (o.p?placeBlock(o.p,dk):'')+(o.hotel?hotelActs():'');}
+function dayText(day){let s=`【${day.tab}（${day.wd}）${day.title}】\n${day.wx||''}\n`;
+  day.items.forEach(it=>{const [a,b,,t,pl,c,,x]=it;const p=x&&x.p?PLACES[x.p]:null;const lt=legText(it);s+=`${a}${b?'–'+b:''} ${clean(t)}${pl?'｜'+pl:''}${lt?'｜'+lt:''}${c?'｜'+c:''}\n`;if(p&&p.a)s+=`　　${p.n}｜${p.a}\n`;});return s.trim();}
+
+let todayIdx=-1,current='plan',showPast=false;
+const isTd=k=>todayIdx>=0&&DAYS[k].d===DAYS[todayIdx].d;
+const UD=[...new Set(DAYS.map(d=>d.d))];
+
+function strip(active){return `<div class="strip" role="tablist" aria-label="選擇日期">`+DAYS.map((d,k)=>`<button type="button" role="tab" class="dd${flMode(d)}${isTd(k)?' td':''}" aria-selected="${k===active}" data-go="d${k}"><b>${esc(d.tab)}</b><small>${d.alt?'備案':isTd(k)?'今天':esc(d.wd)}</small></button>`).join('')+'</div>';}
+function countdown(){const t=ymd(localNow());const n=dayDiff(t,DAYS[0].d);return n>0?`<p class="cd">距離出發還有<b>${n}</b>天</p>`:'';}
+
+function board(S){const {day,sp,nm,cur,next}=S;if(cur<0&&next<0)return'';let b='<section class="nowb" aria-label="現在與下一個">';
+  if(cur>=0){const it=day.items[cur],o=it[7]||{},p=o.p?PLACES[o.p]:null,[s,e]=sp[cur],pct=Math.max(0,Math.min(100,Math.round((nm-s)/(e-s)*100)));
+    const sub=[it[4],legText(it),it[5]].filter(Boolean).join(' · ');const rem=(p&&p.x)||it[6];
+    b+=`<div class="nrow"><span class="tag">NOW</span><span class="big">${esc(it[0])}${it[1]?'–'+esc(it[1]):''}</span><span class="left">還有 ${fmtLeft(e-nm)}</span></div>
+      <div class="nt1">${esc(clean(it[3]))}</div>${sub?`<div class="nsub">${esc(sub)}</div>`:''}${rem?`<div class="nrem">${esc(rem)}</div>`:''}
+      <div class="bar"><i style="width:${pct}%"></i></div>${p?placeActs(o.p,true):(o.hotel||it[2]==='hotel')?hotelActs():''}`;}
+  if(next>=0){const it=day.items[next];b+=`<div class="next"${cur<0?' style="border-top:0;padding-top:0"':''}><span class="tag2">NEXT</span><span class="nt2">${esc(it[0])}</span><span>${esc(clean(it[3]))}${it[4]?' · '+esc(it[4]):''}</span></div>`;}
+  return b+'</section>';}
+
+function bookTxt(txt,name){txt=String(txt||'');if(!/需訂/.test(txt))return txt;const b=nrm(splitName(String(name||'').split('｜').pop()).base);
+  return b.length>1&&[...doneSet()].some(k=>k.startsWith('預訂|')&&nrm(k).includes(b))?txt.replace(/需訂/g,'已訂'):txt;}
+function itemHTML(it,st,k){let [a,b,kind,t,pl,c,n,x]=it;let o=x||{};const dk='i'+k;
+  if(kind==='hotel'&&/^(出門|離家)/.test(clean(t))){kind='move';if(/^飯店/.test(pl||'')){o=Object.assign({},o);delete o.p;}}
+  const px=o.p&&PLACES[o.p]&&PLACES[o.p].x;if(n&&px)n=String(n).split('；').filter(z=>!nrm(px).includes(nrm(z))).join('；');
+  if(kind==='meal')n=bookTxt(n,t);
+  if(kind==='move')return `<li class="st k-move${st}"><div class="tm"><span class="t1">${esc(a)}</span></div><div class="rail"><span class="seg"></span></div><div class="bd"><div class="mv">${esc(clean(t))}${pl?' · '+esc(pl):''}${c?' · '+esc(c):''}</div>${legHTML(it)}${n?`<div class="nt">${esc(n)}</div>`:''}${chips(o,dk)}</div></li>`;
+  const isCur=st===' cur';const air=kind==='plain'&&AIR.test(clean(t));const lab=air?(/候車|車站|月台/.test(t)?'車站':'機場'):kindLabel(kind,t);
+  return `<li class="st k-${esc(kind)}${air?' k-air':''}${st}"><div class="tm"><span class="t1">${esc(a)}</span>${b?`<span class="t2">${esc(b)}</span>`:''}</div><div class="rail"><span class="seg"></span><span class="dot">${kind==='flight'?MICON(t):''}</span><span class="seg grow"></span></div><div class="bd">${lab||isCur?`<div class="kd">${isCur?'<span class="nowtag">NOW</span>':''}${lab?`<span class="kl">${esc(lab)}</span>`:''}</div>`:''}<div class="ttl">${esc(kind==='flight'?clean(t).replace(/^(火車|渡輪|巴士)\s+/,''):clean(t))}</div>${pl?`<div class="pl">${esc(pl)}</div>`:''}${legHTML(it)}${c?`<div class="cs">${esc(c)}</div>`:''}${n?`<div class="nt">${esc(n)}</div>`:''}${chips(o,dk)}</div></li>`;}
+
+function renderDay(i){const S=state(i),{day,sp,nm,isToday,cur,past}=S;const dow=new Date(day.d+'T00:00:00Z').getUTCDay();
+  const meta=[day.wx,day.walk].filter(Boolean).join(' · ');
+  let h=strip(i)+`<header class="hd"><div class="kick"><span>${esc(TRIP.title)}　${esc(day.tab)} ${WDEN[dow]}　DAY ${UD.indexOf(day.d)+1} / ${UD.length}</span><button type="button" class="sosb" data-go="info" data-sos="1">緊急</button></div>
+    <h1>${esc(day.title)}</h1>${meta?`<p class="meta">${esc(meta)}</p>`:''}${flHead(day)}${isToday?board(S):''}</header><div class="body">`;
+  const sib=DAYS.map((d,k)=>[d,k]).filter(([d])=>d.d===day.d);
+  if(sib.length>1)h+=`<div class="vt" role="group" aria-label="本日方案">${sib.map(([d,k])=>`<button type="button" data-go="d${k}" aria-pressed="${k===i}">${esc(d.variant||d.title)}</button>`).join('')}</div>`;
+  if(day.warn)h+=`<p class="warn"><b>注意</b>${esc(day.warn)}</p>`;
+  if(day.sum)h+=`<p class="sum">${esc(day.sum)}</p>`;
+  const bkr=BKSEC&&BKSEC.rows.find(r=>r.a===day.tab);if(bkr)h+=`<details class="bkd" data-dk="bkd"><summary><b>備案</b><span>${esc([...new Set(bkParts(bkr.b).map(x=>x.tag))].join('・'))}</span>${I.chev}</summary>${bkList(bkr.b)}</details>`;
+  if(past.length)h+=`<button type="button" class="pastb" id="pastb" aria-expanded="${showPast}"><span>已完成 ${past.length} 項：${esc(past.map(k=>clean(day.items[k][3])).join('、'))}</span>${I.chev}</button>`;
+  h+='<ol class="tl">';let lineDone=!isToday||cur>=0;REMSEEN=new Set();PREVP=null;
+  day.items.forEach((it,k)=>{const [s,e]=sp[k];let st='';if(isToday){if(nm>=e)st=' past';else if(nm>=s)st=' cur';}
+    if(st===' past'&&!showPast)return;
+    if(!lineDone&&nm<s){h+=`<li class="nowline" aria-label="現在時間"><span>NOW</span><hr></li>`;lineDone=true;}
+    h+=itemHTML(it,st,k);PREVP=(it[7]||{}).p||null;});REMSEEN=null;PREVP=null;
+  if(!lineDone)h+=`<li class="nowline" aria-label="現在時間"><span>NOW</span><hr></li>`;
+  h+=`</ol><button type="button" class="wide" id="cpday">${isToday?'複製今日行程（貼 '+CHAT+'）':'複製這天行程（貼 '+CHAT+'）'}</button></div>`;
+  view.innerHTML=h;
+  document.getElementById('cpday').onclick=()=>copy(dayText(day),'已複製 '+day.tab+' 行程');
+  const pb=document.getElementById('pastb');if(pb)pb.onclick=()=>{showPast=!showPast;renderDay(i);};
+  const sel=view.querySelector('.dd[aria-selected="true"]');if(sel)sel.scrollIntoView({inline:'center',block:'nearest'});}
+
+function secs(list,skip){let h='';list.forEach(sec=>{if(!sec.rows||!sec.rows.length||(skip&&skip.includes(sec.h)))return;
+  h+=`<section class="card"><h2>${esc(sec.h)}</h2><ul class="rows">`+sec.rows.map((r,k)=>`<li>${r.a?`<div class="ra">${esc(r.a)}</div>`:''}${r.b?`<div class="rb">${esc(r.b)}</div>`:''}${chips(r,sec.h+k)}</li>`).join('')+`</ul></section>`;});return h;}
+
+const flightsOf=day=>day.items.filter(it=>it[2]==='flight');
+function fparts(f){const md=tmode(f[3]),Mo=MODE[md],tr=md!=='fl';const p1=f[1]&&mins(f[1])<mins(f[0])?'（+1）':'';
+  return {tr,md,t:clean(f[3]),short:`${f[0]}${f[1]?' → '+f[1]+p1:''}`,span:`${f[0]} ${Mo.go}${f[1]?` → ${f[1]} ${Mo.in}${p1}`:''}`};}
+const BKSEC=SUMS.find(s=>/備案/.test(s.h)&&s.rows&&s.rows.every(r=>/^\d{1,2}\/\d{1,2}$/.test(r.a||'')))||null;
+function bkParts(t){return String(t||'').replace(/。$/,'').split('；').map(z=>z.trim()).filter(Boolean).map(z=>{const m=z.match(/^(雨天|累了)/);
+  return m?{tag:m[1],txt:z.slice(m[1].length).replace(/^[，、：:\s]+/,'')}:{tag:'臨時',txt:z};});}
+function bkList(t){return `<ul class="bkl">${bkParts(t).map(x=>`<li><span class="bt bt-${x.tag==='雨天'?'r':x.tag==='累了'?'t':'o'}">${esc(x.tag)}</span><span>${esc(x.txt)}</span></li>`).join('')}</ul>`;}
+const wxShort=w=>{const m=String(w||'').match(/(-?\d+)\s*°C\s*(?:至|–|-|~)\s*(-?\d+)\s*°C/);return m?m[1]+'–'+m[2]+'°':'';};
+const flightLine=f=>{const x=fparts(f);return `${x.t}｜${x.span}${f[4]?'｜'+f[4]:''}`;};
+function tripText(){let s=`【${TRIP.title}】\n${TRIP.sub}\n`;
+  DAYS.forEach(d=>{s+=`\n${d.alt?'　└ 備案　':`${d.tab}（${d.wd}）`}${d.main||d.title}\n`;flightsOf(d).forEach(f=>{s+=`　${tmode(f[3])==='fl'?'班機 ':''}${flightLine(f)}\n`;});if(d.sum)s+=`　${d.sum}\n`;});
+  return s.trim();}
+function renderPlan(){const wxs=[...new Set(DAYS.map(d=>d.wx).filter(Boolean))];
+  const stay=k=>typeof STAYS!=='undefined'&&Array.isArray(STAYS)?STAYS.find(x=>x.k===k):null;
+  let h=`<header class="hd"><div class="kick">${HOME}<button type="button" class="sosb" data-go="info" data-sos="1">緊急</button></div><h1>${esc(TRIP.title)}</h1><p class="meta">${esc(TRIP.sub)}</p>${countdown()}</header><div class="body">`;
+  if(wxs.length===1)h+=`<p class="wxall"><b>全程天氣</b>${esc(wxs[0])}</p>`;
+  h+='<ol class="days">'+DAYS.map((d,k)=>{const sg=stay(k),ws=wxShort(d.wx);return (sg?`<li class="sg"><b>${esc(sg.city)}</b><small>${esc(sg.sub)}</small></li>`:'')+`<li><button type="button" class="dayrow${isTd(k)?' td':''}" data-go="d${k}"><span class="dt"><b>${esc(d.tab)}</b><small>${d.alt?'備案':isTd(k)?'今天':'週'+esc(d.wd)}</small>${ws?`<small class="wxs">${esc(ws)}</small>`:''}</span><span><span class="d1">${esc(d.main||d.title)}</span>${flightsOf(d).map(f=>{const x=fparts(f);return `<span class="dfl ${x.md}"><span class="fr">${esc(shortLab(f))}</span><span class="ft">${esc(x.short)}</span></span>`;}).join('')}<span class="d2">${esc(d.sum)}</span>${wxs.length>1&&d.wx&&!ws?`<span class="d2">${esc(d.wx)}</span>`:''}</span>${I.chevR}</button></li>`;}).join('')+'</ol>';
+  h+=`<button type="button" class="wide" id="cpplan">${I.copy} 複製行程摘要（貼 ${CHAT}）</button>`;
+  if(TRIP.wxNote)h+=`<p class="hint">${esc(TRIP.wxNote)}</p>`;
+  view.innerHTML=h+secs(SUMS.filter(x=>x!==BKSEC))+(BKSEC?accHTML('sec-bk',BKSEC.h,`${BKSEC.rows.length} 天・每日頁也看得到`,`<ul class="rows">${BKSEC.rows.map(r=>`<li><div class="ra">${esc(r.a)}</div>${bkList(r.b)}</li>`).join('')}</ul>`,false):'')+'</div>';
+  document.getElementById('cpplan').onclick=()=>copy(tripText(),'已複製行程摘要，可貼到 '+CHAT);}
+
+
+const SEC_TODO=/預訂|出發前|準備/,SEC_FL=/^航班/,SEC_PAY=/付款|匯率/,SEC_PLAN=/規劃/;
+const DINING=()=>HAS_FOOD?INFO.filter(s=>/Dining|用餐/.test(s.h)&&s.rows&&s.rows.length):[];
+const isPointer=s=>/^餐廳/.test(s.h)&&s.rows.every(r=>/分頁|tab/i.test((r.a||'')+(r.b||'')));
+const isDir=s=>s.rows.length>0&&s.rows.every(r=>r.p&&!r.a&&!r.b);
+/* ---- 餐廳 tab (shared engine): meal plan from the Dining Chart (or DAYS meal rows), ranked list from FOOD; every section collapses ---- */
+const nrm=s=>String(s||'').replace(/[\s·・‧]/g,'');
+function splitName(s){s=String(s||'').trim();let base=s,inside='';const m=s.match(/^([^（(]+)[（(]([^）)]*)[）)]?/);if(m){base=m[1].trim();inside=m[2].trim();}
+  let branch='';const seg=inside.split(/[，,]/)[0].trim();if(/店$/.test(seg))branch=seg;
+  const sm=base.match(/^(.+?)[・·\s]+([^・·\s]+店)$/);if(sm){base=sm[1];branch=branch||sm[2];}
+  return {base,branch,inside,disp:s.replace(/[（(].*$/,'').trim()};}
+const sameBr=(a,b)=>!a||!b||nrm(a).replace(/總/g,'')===nrm(b).replace(/總/g,'');
+const TYPES=[['正餐',/正餐/],['小吃',/小吃/],['早餐',/早餐|早午/]];
+const RANK_RE=/^(?:No\.?\s*)?(\d{1,2})[\s　｜|.、]+|^([①-⑳])\s*/;
+const NOTE_RE=/排名|排序|怎麼/;
+const RANKSECS=[],OTHERSECS=[],NOTESECS=[],RANKED=[];
+function parseRanked(r,si){const a=String(r.a||'');const m=a.match(RANK_RE);const rank=m?(m[1]?+m[1]:m[2].charCodeAt(0)-0x245F):0;
+  let rest=m?a.slice(m[0].length):a;const st=rest.indexOf('★');const star=st>=0?rest.slice(st).replace(/^★\s*/,'').trim():'';if(st>=0)rest=rest.slice(0,st);
+  rest=rest.trim();const sp=rest.indexOf('　');const name=(sp>0?rest.slice(0,sp):rest).trim(),tagline=sp>0?rest.slice(sp+1).trim():'';
+  const lines=String(r.b||'').split('\n').map(l=>l.trim()).filter(Boolean);let used=new Set();
+  const o={rank,name,tagline,star,p:r.p,type:'',dishes:'',rating:'',avg:'',dist:'',chips:[],desc:[],sched:[],alt:[],sec:si,key:'fr'+si+'-'+rank};
+  const segs=(lines[0]||'').split('｜').map(x=>x.trim());const f=re=>segs.find(x=>re.test(x))||'';
+  o.type=f(/^(正餐|小吃|早餐|早午|宵夜|甜點)$/);
+  if(segs.length>=3&&o.type){used.add(0);o.dishes=segs[0];o.rating=f(/^(百度|食べログ|Google|大眾點評)/);o.avg=f(/^人均/);o.dist=f(/計程車|步行|地鐵|公車/);}
+  else if(segs.length>=2){used.add(0);segs.forEach(x=>{if(x.length<=10&&!/[，,。]/.test(x))o.chips.push(x);else o.desc.push(x);});}
+  lines.forEach((l,i)=>{if(used.has(i))return;const d=l.match(/^(?:推薦|必點)[：:\s]\s*(.+)$/);
+    if(d&&!o.dishes){o.dishes=d[1].split('｜')[0].trim();const rest2=d[1].split('｜').slice(1).join('｜').trim();if(rest2)o.desc.push(rest2);return;}
+    if(/^已排入/.test(l))return;o.desc.push(l);});
+  if(!o.dishes&&tagline){o.dishes=tagline;o.tagline='';}
+  return o;}
+if(HAS_FOOD)FOOD.forEach(sec=>{if(!sec.rows||!sec.rows.length)return;
+  const ranked=sec.rows.every(r=>RANK_RE.test(String(r.a||'')));
+  if(ranked){const si=RANKSECS.length;const list=sec.rows.map(r=>parseRanked(r,si));list.forEach(o=>RANKED.push(o));RANKSECS.push({h:sec.h,list});}
+  else if(NOTE_RE.test(sec.h)&&sec.rows.length<=2)NOTESECS.push(sec);else OTHERSECS.push(sec);});
+const foodByP=p=>p?RANKED.find(r=>r.p===p)||null:null;
+function matchFood(name){const s=splitName(name),nb=nrm(s.base);if(nb.length<2)return null;
+  return RANKED.find(r=>{const rs=splitName(r.name),nf=nrm(rs.base);return nf.length>=2&&(nb.startsWith(nf)||nf.startsWith(nb))&&sameBr(s.branch,rs.branch);})||null;}
+function topSplit(t){const out=[];let d=0,cur='';for(const ch of String(t)){if('（('.includes(ch))d++;else if('）)'.includes(ch))d=Math.max(0,d-1);if(!d&&ch==='／'){if(cur.trim())out.push(cur.trim());cur='';}else cur+=ch;}if(cur.trim())out.push(cur.trim());return out;}
+const SLOT_RE=/^(早餐|早午餐|午餐|晚餐|宵夜|下午茶)\s*[｜・|]?\s*/;
+const slotOf=t=>{const m=mins(t);return m==null?'':m<630?'早餐':m<870?'午餐':m<1020?'下午茶':'晚餐';};
+const MEALS=(()=>{const sec=DINING()[0];const out=[];
+  const dayOf=date=>DAYS.map((d,k)=>[d,k]).filter(([d])=>d.tab===date);
+  const add=(meal)=>{const lab=meal.date+' '+meal.slot.replace(/餐$/,'')+(meal.variant&&meal.variant!=='兩案共用'?'・'+meal.variant:'');
+    if(meal.food)meal.food.sched.push({lab,k:meal.k});meal.bks.forEach(b=>{if(b.food&&b.food!==meal.food)b.food.alt.push(lab);});out.push(meal);};
+  if(sec){sec.rows.forEach((r,i)=>{const a=String(r.a||'');const m=a.match(/^(\d{1,2}\/\d{1,2})\s*([^｜]*)｜(.+)$/);
+    if(!m){out.push({i,date:'',slot:'',name:a,head:'',notes:String(r.b||'').split('\n').filter(Boolean),bks:[]});return;}
+    const date=m[1],sr=m[2].trim(),name=m[3].trim();
+    const slot=/早午/.test(sr)?'早午餐':/午/.test(sr)?'午餐':/晚/.test(sr)?'晚餐':/早/.test(sr)?'早餐':sr;const vm=sr.match(/[（(](.+?)[）)]/);const vtxt=vm?vm[1]:'';
+    const lines=String(r.b||'').split('\n');const bks=[],notes=[];let head='';
+    lines.forEach((l,j)=>{const b=l.match(/^備案\s*\d*\s*[：:]\s*(.+)$/);if(b)topSplit(b[1]).forEach(x=>bks.push(x));else if(!j)head=l.trim();else if(l.trim())notes.push(l.trim());});
+    const dks=dayOf(date);let c=[];dks.forEach(([d,k])=>d.items.forEach(it=>{if(it[2]==='meal'&&(clean(it[3]).startsWith(slot)||slotOf(it[0])===slot))c.push({d,k,it});}));
+    if(vtxt&&!/共用/.test(vtxt)){const v=c.filter(x=>x.d.variant&&vtxt.includes(x.d.variant));if(v.length)c=v;}
+    const key=nrm(splitName(name).base).slice(0,2);const hit=c.find(x=>nrm(x.it[3]+x.it[4]).includes(key))||c[0]||null;
+    const multi=dks.length>1;const variant=!multi?'':/共用/.test(vtxt)?'兩案共用':(hit&&hit.d.variant)||vtxt;
+    const p=hit&&hit.it[7]&&hit.it[7].p||'';const food=foodByP(p)||matchFood(name);
+    add({i,date,slot,name,head,notes,variant,time:hit?hit.it[0]:'',k:hit?(/共用/.test(vtxt)?dks[0][1]:hit.k):(dks[0]?dks[0][1]:-1),p:p||(food&&food.p)||'',food,
+      bks:bks.map(b=>{const s=splitName(b);return {raw:b,disp:s.disp,inside:s.inside,food:matchFood(b)};})});});}
+  else{let i=0;DAYS.forEach((d,k)=>{const multi=DAYS.filter(x=>x.d===d.d).length>1;d.items.forEach(it=>{if(it[2]!=='meal')return;
+      const o=it[7]||{};const t=clean(it[3]);const sm=t.match(SLOT_RE);const rest=(sm?t.slice(sm[0].length):t).trim();
+      if(!o.p&&!rest)return;const food=foodByP(o.p);const slot=sm?sm[1]:slotOf(it[0]);
+      const loc0=String(it[4]||'').split('／')[0].trim();const name=food?food.name:(rest.length<=3&&loc0?loc0:(o.p&&it[4]&&rest.length<=6&&!/\d/.test(it[4])?it[4]:rest||it[4]));
+      const inName=x=>{const a=nrm(name),b=nrm(x);return !b||a.includes(b)||b.includes(a);};
+      const extra=rest.split(/\s+/).filter(t=>t&&!inName(t)).join(' ');
+      const head=[extra,it[4]&&!inName(it[4])&&!(loc0&&name===loc0)?it[4]:'',it[5]].filter(Boolean).join('｜');
+      add({i:i++,date:d.tab,slot,name,head,notes:it[6]?[it[6]]:[],variant:multi?(d.variant||''):'',time:it[0],k,p:o.p||'',food,bks:[]});});});}
+  return out;})();
+const FK=()=>TRIP.storageKey+'-food';
+function fget(){try{return JSON.parse(localStorage.getItem(FK())||'null')||{};}catch(e){return {};}}
+function fput(o){try{localStorage.setItem(FK(),JSON.stringify(Object.assign(fget(),o)));}catch(e){}}
+let showPastFood=false;
+function fsec(id,title,sub,cnt,inner,open,cls){return `<details class="acc fsec${cls?' '+cls:''}" id="${id}" data-dk="${id}"${open?' open':''}><summary><span class="sx"><b>${esc(title)}</b>${sub?`<small>${sub}</small>`:''}</span>${cnt!=null?`<span class="cnt">${cnt}</span>`:''}${I.chev}</summary>${inner}</details>`;}
+function segHTML(t){return String(t||'').split('｜').map(s=>s.trim()).filter(Boolean).map(s=>/已訂/.test(s)?`<span class="ok">${esc(s)}</span>`:/需訂/.test(s)?`<span class="need">${esc(s)}</span>`:esc(s)).join('・');}
+function mealRow(m){if(!m.date)return `<li class="ml"><div class="ml-tm"></div><div class="ml-bd"><div class="ml-n">${esc(m.name)}</div>${m.notes.map(n=>`<div class="ml-m">${esc(n)}</div>`).join('')}</div></li>`;
+  return `<li class="ml"><div class="ml-tm">${m.time?`<b>${esc(m.time)}</b>`:''}<small>${esc(m.slot)}</small></div><div class="ml-bd">
+    <div class="ml-n">${esc(m.name)}${m.food?`<span class="rk">#${m.food.rank}</span>`:''}${m.variant?`<span class="vtag">${esc(m.variant)}</span>`:''}</div>
+    ${m.head?`<div class="ml-m">${segHTML(bookTxt(m.head,m.name))}</div>`:''}${m.notes.map(n=>`<div class="ml-m">${segHTML(bookTxt(n,m.name))}</div>`).join('')}
+    ${m.p&&PLACES[m.p]&&PLACES[m.p].x?`<div class="rem"><b>提醒</b>${esc(PLACES[m.p].x)}</div>`:''}
+    ${m.p&&PLACES[m.p]?placeActs(m.p,false):''}
+    ${m.bks.length?`<details class="bk" data-dk="bk${m.i}"><summary><b>備案 ${m.bks.length}</b><span>${esc(m.bks.map(b=>splitName(b.disp).base).join('・'))}</span>${I.chev}</summary><ol>${m.bks.map((b,j)=>`<li><span class="bn">${j+1}</span><div><div class="bt">${esc(b.disp)}${b.food?`<span class="rk">#${b.food.rank}</span>`:''}</div>${b.inside?`<div class="bx">${esc(b.inside)}</div>`:''}${b.food&&b.food.p&&PLACES[b.food.p]?placeActs(b.food.p,false):''}</div></li>`).join('')}</ol></details>`:''}
+  </div></li>`;}
+function planHTML(){const tdy=ymd(localNow()),inTrip=todayIdx>=0;const groups=[];
+  MEALS.forEach(m=>{let g=groups.find(x=>x.date===m.date);if(!g){const dk=DAYS.findIndex(d=>d.tab===m.date&&!d.alt);g={date:m.date,day:DAYS[dk>=0?dk:0],k:dk>=0?dk:0,list:[]};groups.push(g);}g.list.push(m);});
+  const past=groups.filter(g=>inTrip&&g.day&&g.day.d<tdy);let h='<div class="mplan">';
+  if(past.length)h+=`<button type="button" class="pastb" id="fpast" aria-expanded="${showPastFood}"><span>已過 ${past.length} 天・${past.reduce((s,g)=>s+g.list.length,0)} 餐</span>${I.chev}</button>`;
+  groups.forEach(g=>{const isP=past.includes(g);if(isP&&!showPastFood)return;const td=g.day&&g.day.d===tdy;const sib=DAYS.filter(d=>d.tab===g.date);
+    h+=`<section class="mday${td?' td':''}${isP?' past':''}"><button type="button" class="mdh" data-go="d${g.k}"><b>${esc(g.date)}</b><small>${td?'<span class="tg">今天</span>':'週'+esc(g.day?g.day.wd:'')}</small><span class="t">${esc(sib.length>1?sib.map(d=>d.variant||d.title).join('／'):(g.day?g.day.title:''))}</span><span class="go">看當天${I.chevR}</span></button><ul class="mls">${g.list.map(mealRow).join('')}</ul></section>`;});
+  return h+`<button type="button" class="wide" id="cpmeal">${I.copy}複製用餐表（貼 ${CHAT}）</button></div>`;}
+function mealText(){let s=`【${TRIP.title} 用餐表】\n`;let last='';
+  MEALS.forEach(m=>{if(m.date&&m.date!==last){const d=DAYS.find(x=>x.tab===m.date);s+=`\n${m.date}（${d?d.wd:''}）\n`;last=m.date;}
+    const p=m.p&&PLACES[m.p];s+=`${m.slot}${m.time?' '+m.time:''}　${m.name}${m.variant?'（'+m.variant+'）':''}${m.head?'｜'+m.head:''}\n`;if(p&&p.a)s+=`　　${p.n}｜${p.a}\n`;
+    if(m.bks.length)s+=`　　備案：${m.bks.map(b=>b.disp).join('、')}\n`;});return s.trim();}
+function rankRow(r){const sched=r.sched.map(x=>`<span class="ch on">★ ${esc(x.lab)}</span>`).join('');
+  const tags=sched+([...new Set(r.alt)].map(x=>`<span class="ch alt">備案 ${esc(x)}</span>`).join(''))+(!r.sched.length&&!r.alt.length&&r.star&&!/已排/.test(r.star)?`<span class="ch alt">${esc(r.star)}</span>`:'');
+  const p=r.p&&PLACES[r.p];const tk=(TYPES.find(([,re])=>re.test(r.type))||['其他'])[0];
+  const chips=[r.type,r.rating,r.avg].concat(r.chips,r.tagline?[r.tagline]:[]).filter(Boolean).map(c=>`<span class="ch">${esc(c)}</span>`).join('');
+  return `<details class="fr" data-dk="${r.key}" data-ft="${tk}"><summary><span class="fr-rk">${r.rank||''}</span><span class="fr-sx"><span class="fr-n">${esc(r.name)}</span>${r.dishes?`<span class="fr-d">${esc(r.dishes)}</span>`:''}${chips||tags?`<span class="fr-c">${chips}${tags}</span>`:''}</span>${I.chev}</summary>
+    <div class="fr-bd">${r.desc.map(l=>`<p>${esc(l)}</p>`).join('')}${p&&p.x?`<div class="rem"><b>提醒</b>${esc(p.x)}</div>`:''}${p?`<dl>${p.a?`<dt>地址</dt><dd>${esc(p.a)}</dd>`:''}${p.h?`<dt>營業</dt><dd>${esc(p.h)}</dd>`:''}${p.ts?`<dt>電話</dt><dd>${esc(p.ts)}</dd>`:''}${r.dist?`<dt>距離</dt><dd>${esc(r.dist)}（從飯店）</dd>`:''}</dl>${placeActs(r.p,true)}`:(r.dist?`<p>${esc(r.dist)}</p>`:'')}</div></details>`;}
+function nextMeal(){if(todayIdx<0)return null;const j=localNow(),nm=j.getHours()*60+j.getMinutes();
+  for(let k=todayIdx;k<DAYS.length;k++){const d=DAYS[k];if(d.alt)continue;const sp=spans(d);
+    for(let i=0;i<d.items.length;i++){const it=d.items[i];if(it[2]!=='meal')continue;if(k===todayIdx&&nm>=sp[i][1])continue;
+      return {d,it,now:k===todayIdx&&nm>=sp[i][0],wait:sp[i][0]-nm,tom:d.d!==DAYS[todayIdx].d};}}return null;}
+function mealBoard(){const n=nextMeal();if(!n)return'';const o=n.it[7]||{},p=o.p&&PLACES[o.p]?o.p:'';
+  return `<section class="nowb" aria-label="下一餐"><div class="nrow"><span class="tag">${n.now?'NOW':'NEXT'}</span><span class="big">${esc(n.it[0])}</span><span class="left">${n.tom?esc(n.d.tab)+'（'+esc(n.d.wd)+'）':n.now?'用餐中':'還有 '+fmtLeft(n.wait)}</span></div><div class="nt1">${esc(clean(n.it[3]))}</div>${n.it[4]?`<div class="nsub">${esc(n.it[4])}</div>`:''}${p?placeActs(p,true):''}</section>`;}
+function applyFF(){const f=fget().ff||'全部';const has=!!view.querySelector(`.ff [data-ff="${f}"]`);const ff=has?f:'全部';
+  view.querySelectorAll('.ff button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.ff===ff)));let any=0;
+  view.querySelectorAll('.fsec.rk-sec').forEach(sec=>{let n=0;const rows=sec.querySelectorAll('.fr');rows.forEach(r=>{const on=ff==='全部'||r.dataset.ft===ff;r.hidden=!on;if(on)n++;});
+    sec.hidden=!n;any+=n;const c=sec.querySelector('.cnt');if(c)c.textContent=ff==='全部'?rows.length:n+'/'+rows.length;});
+  const e=document.getElementById('fempty');if(e)e.hidden=!!any||!RANKED.length;
+  view.querySelectorAll('.jump [data-jump]').forEach(b=>{const s=document.getElementById(b.dataset.jump);if(s)b.hidden=s.hidden;});xallLabel();}
+function xallLabel(){const b=view.querySelector('[data-xall]');if(!b)return;const s=[...view.querySelectorAll('.fsec:not([hidden])')];b.textContent=s.length&&s.every(d=>d.open)?'全部收合':'全部展開';}
+const shortH=h=>{h=String(h);if(/不推薦/.test(h))return '不推薦';const ps=h.split('｜');h=ps.length>1?(ps[0].trim().length<=2?ps[1]:ps[0]):h;return h.replace(/[（(].*$/,'').trim().split(/[　\s]/)[0];};
+function renderFood(){if(!HAS_FOOD&&!MEALS.length){current='plan';renderPlan();return;}
+  const st=fget(),openIds=st.open||['fs-plan','fs-r0'];const nMeal=MEALS.filter(m=>m.date).length;
+  const meta=[nMeal?`行程 ${nMeal} 餐`:'',RANKED.length?`推薦 ${RANKED.length} 家（依推薦程度排名）`:'',RANKED.length?'★ 已排入行程':''].filter(Boolean).join('・');
+  let h=`<header class="hd"><div class="kick"><span>${esc(TRIP.title)}</span><button type="button" class="sosb" data-go="info" data-sos="1">緊急</button></div><h1>餐廳</h1><p class="meta">${meta}</p>${mealBoard()}</header><div class="body">`;
+  const jump=[];if(MEALS.length)jump.push(['fs-plan','行程用餐']);RANKSECS.forEach((s,k)=>jump.push(['fs-r'+k,shortH(s.h)]));OTHERSECS.forEach((s,k)=>jump.push(['fs-o'+k,shortH(s.h)]));
+  if(jump.length>1)h+=`<nav class="jump" aria-label="跳到">${jump.map(([id,l])=>`<button type="button" data-jump="${id}">${esc(l)}</button>`).join('')}<button type="button" class="xall" data-xall>全部展開</button></nav>`;
+  if(MEALS.length){const nb=MEALS.reduce((s,m)=>s+m.bks.length,0);h+=fsec('fs-plan','行程用餐',nb?'依日期・每餐附備案（點開看）':'依日期・地圖與電話',nMeal,planHTML(),openIds.includes('fs-plan'));}
+  if(RANKED.length){
+    const note=[typeof FOOD_NOTE!=='undefined'&&FOOD_NOTE?String(FOOD_NOTE):''].concat(NOTESECS.flatMap(s=>s.rows.map(r=>r.b||r.a||''))).join('。');
+    const ns=note.split(/[。\n]/).map(x=>x.trim()).filter(Boolean);
+    const tips=ns.filter(x=>/^想|^提醒/.test(x)),basis=ns.filter(x=>!tips.includes(x));
+    h+=`<div class="fgrp"><h2>推薦排名</h2><small>點店名看地址・營業・地圖</small></div>`;
+    if(basis.length)h+=`<p class="hint">${esc(basis.join('。'))}。</p>`;
+    const cnt=t=>RANKED.filter(r=>t==='全部'||(TYPES.find(([k])=>k===t)[1]).test(r.type)).length;
+    const opts=['全部'].concat(TYPES.map(t=>t[0])).filter(t=>cnt(t));
+    if(opts.length>2)h+=`<div class="ff" role="group" aria-label="類型篩選">${opts.map(t=>`<button type="button" data-ff="${t}" aria-pressed="false">${t}<small>${cnt(t)}</small></button>`).join('')}</div>`;
+    tips.forEach(tp=>{const m=tp.match(/^([^：:]{2,10})[：:](.+)$/);h+=m?`<p class="ftip"><b>${esc(m[1])}</b>${esc(m[2])}。</p>`:`<p class="ftip">${esc(tp)}。</p>`;});
+    RANKSECS.forEach((s,k)=>{const sch=s.list.filter(r=>r.sched.length).length;h+=fsec('fs-r'+k,s.h,sch?`${sch} 家已排入行程`:'',s.list.length,`<div class="frs fs${k}">${s.list.map(rankRow).join('')}</div>`,openIds.includes('fs-r'+k),'rk-sec');});
+    h+=`<p class="fempty" id="fempty" hidden>沒有符合的餐廳</p>`;}
+  OTHERSECS.forEach((s,k)=>{const nr=/不推薦/.test(s.h);h+=fsec('fs-o'+k,s.h,nr?'評價偏低，附替代選擇':'',s.rows.length,`<ul class="rows nr">${s.rows.map(r=>`<li>${r.a?`<div class="ra">${esc(r.a)}</div>`:''}${r.b?`<div class="rb">${esc(r.b)}</div>`:''}${r.p&&PLACES[r.p]?placeActs(r.p,false):''}</li>`).join('')}</ul>`,openIds.includes('fs-o'+k));});
+  view.innerHTML=h+'</div>';
+  const cp=document.getElementById('cpmeal');if(cp)cp.onclick=()=>copy(mealText(),'已複製用餐表，可貼到 '+CHAT);
+  applyFF();}
+document.addEventListener('toggle',e=>{const d=e.target;if(!d||!d.classList||!d.classList.contains('fsec'))return;
+  fput({open:[...view.querySelectorAll('.fsec')].filter(x=>x.open).map(x=>x.id)});xallLabel();},true);
+document.addEventListener('click',e=>{const t=e.target;if(!t.closest||current!=='food')return;
+  const f=t.closest('[data-ff]');if(f){fput({ff:f.dataset.ff});applyFF();return;}
+  const x=t.closest('[data-xall]');if(x){const s=[...view.querySelectorAll('.fsec:not([hidden])')];const op=!s.every(d=>d.open);s.forEach(d=>d.open=op);fput({open:[...view.querySelectorAll('.fsec')].filter(d=>d.open).map(d=>d.id)});xallLabel();return;}
+  if(t.closest('#fpast')){showPastFood=!showPastFood;render(true);}});
+
+const CODE=/\b([A-Z]{2}\d{2,4}|[GD]\d{2,5})\b/;
+function dl(a){const t=String(a||'');
+  if(/已完成/.test(t))return{k:'done',l:'已完成'};
+  if(/不用預約|不需預訂|免預約/.test(t))return{k:'done',l:'免預約'};
+  if(/立即|今天|盡快|已放票/.test(t))return{k:'now',l:'立即'};
+  const m=t.match(/(\d{1,2})\/(\d{1,2})/);
+  if(m){const md='-'+m[1].padStart(2,'0')+'-'+m[2].padStart(2,'0'),y=+DAYS[0].d.slice(0,4),end=DAYS[DAYS.length-1].d;let ds=y+md;if(ds>end)ds=(y-1)+md;const n=dayDiff(ymd(localNow()),ds);
+    return n<0?{k:'late',l:'已過'}:n===0?{k:'now',l:'今天'}:{k:n<=3?'soon':'later',l:n+' 天後'};}
+  if(/出發前/.test(t))return{k:'later',l:'出發前'};
+  return null;}
+function doneSet(){try{return new Set(JSON.parse(localStorage.getItem(TRIP.storageKey+'-done')||'[]'));}catch(e){return new Set();}}
+function saveDone(s){try{localStorage.setItem(TRIP.storageKey+'-done',JSON.stringify([...s]));}catch(e){}}
+const RANK={late:0,now:1,soon:2,later:3,none:4};
+function todoItems(){const ds=doneSet(),out=[];
+  INFO.forEach(sec=>{if(!SEC_TODO.test(sec.h)||!sec.rows)return;const g=/預訂/.test(sec.h)?'預訂':'準備';
+    sec.rows.forEach(r=>{const d=dl(r.a),key=g+'|'+(r.a||'');out.push({g,r,d,key,done:(d&&d.k==='done')||ds.has(key)});});});
+  return out.map((t,i)=>[t,i]).sort((x,y)=>{const rx=x[0].done?9:RANK[x[0].d?x[0].d.k:'none'],ry=y[0].done?9:RANK[y[0].d?y[0].d.k:'none'];return rx-ry||x[1]-y[1];}).map(x=>x[0]);}
+function stripDl(a){const t=String(a||''),TOK=/^(立即|今天|盡快|出發前|\d{1,2}\/\d{1,2}\s*前)$/;
+  let m=t.match(/^([^：｜]+)[：｜](.+)$/);if(m&&TOK.test(m[1].trim()))return m[2].trim();
+  m=t.match(/^(.+)｜([^｜]+)$/);if(m&&TOK.test(m[2].trim()))return m[1].trim();return t;}
+function todoHTML(items){return `<ul class="todo">${items.map((t,i)=>{const fixed=t.d&&t.d.k==='done';
+  return `<li class="${t.done?'is-done':''}" data-tk="${esc(t.key)}"><button type="button" class="ck" aria-pressed="${t.done}" aria-label="標記完成"${fixed?' disabled':''}>${I.check}</button><div><div class="ra"><span class="grp">${t.g}</span>${esc(stripDl(t.r.a))}</div>${t.r.b?`<div class="rb">${esc(t.r.b)}</div>`:''}${chips(t.r,'td'+i)}</div>${t.d&&!fixed?`<span class="dl ${t.d.k}">${t.d.l}</span>`:''}</li>`;}).join('')}</ul>`;}
+function rowsHTML(rows,pre){return `<ul class="rows">${rows.map((r,k)=>`<li>${r.a?`<div class="ra">${esc(r.a)}</div>`:''}${r.b?`<div class="rb">${esc(r.b)}</div>`:''}${chips(r,pre+k)}</li>`).join('')}</ul>`;}
+function accHTML(id,title,sub,inner,open){return `<details class="acc isec" id="${id}" data-dk="${id}"${open?' open':''}><summary><span class="sx"><b>${esc(title)}</b>${sub?`<small>${esc(sub)}</small>`:''}</span>${I.chev}</summary>${inner}</details>`;}
+function flightSec(){const fsec=INFO.find(s=>SEC_FL.test(s.h));const legs=[];
+  DAYS.forEach(d=>{if(d.alt)return;d.items.forEach(it=>{if(it[2]==='flight')legs.push({d,it});});});
+  if(!legs.length&&!(fsec&&fsec.rows.length))return'';
+  const codeOf=t=>{const m=clean(t).match(CODE);return m?m[1]:null;};const infoB={},extra=[];
+  if(fsec)fsec.rows.forEach(r=>{const m=(r.a||'').match(CODE);if(m&&legs.some(l=>codeOf(l.it[3])===m[1]))infoB[m[1]]=r.b||'';else extra.push(r);});
+  const pn=new Set();legs.map(l=>l.it[6]||'').concat(fsec?fsec.rows.map(r=>(r.a||'')+' '+(r.b||'')):[]).forEach(t=>{const m=String(t).match(/(?:PNR|訂位代號)\s*([A-Z0-9]{5,7})/);if(m)pn.add(m[1]);});
+  const tdy=ymd(localNow()),ms=new Set(legs.map(l=>tmode(l.it[3])));
+  const title=ms.size===1&&ms.has('fl')?'航班':ms.has('fl')?'航班・交通':'交通';flightSec.title=title;
+  let h=`<section class="isec" id="sec-fl"><div class="sec-h"><h2>${title}</h2>${[...pn].map(p=>`<span class="pnr">訂位代號 <b>${esc(p)}</b><button type="button" class="act sm" data-copy="${esc(p)}">${I.copy}複製</button></span>`).join('')}</div><div class="fcs">`;
+  legs.forEach(({d,it})=>{const code=codeOf(it[3]);const b=code&&infoB[code]!=null?infoB[code]:(it[6]||'');
+    const p1=it[1]&&mins(it[1])<mins(it[0])?'（+1）':'';const showPl=it[4]&&!String(b).split('\n')[0].includes('→');
+    h+=`<article class="fc${d.d<tdy?' past':''}"><div class="fc-d"><b>${esc(d.tab)}</b><small>${d.d===tdy?'今天':'週'+esc(d.wd)}</small></div><div class="fc-m"><div class="fc-t">${MICON(it[3])}<span>${esc(clean(it[3]))}</span></div><div class="fc-time">${esc(it[0])}${it[1]?' → '+esc(it[1])+p1:''}</div>${showPl?`<div class="fc-r">${esc(it[4])}</div>`:''}${b?`<div class="fc-n">${esc(b)}</div>`:''}</div></article>`;});
+  h+='</div>';if(extra.length)h+=`<div class="card">${rowsHTML(extra.map(r=>pn.size&&/^(訂位代號|PNR)/.test(r.a||'')?{b:r.b,p:r.p}:r),'fx')}</div>`;return h+'</section>';}
+function renderInfo(){const sos=INFO.find(s=>s.h==='緊急');let tiles='';const other=[];
+  if(sos)sos.rows.forEach(r=>{const txt=(r.a||'')+' '+(r.b||'');const re=/([^\s\d]+)\s*(\d{3,})/g;let m,n=0;
+    while((m=re.exec(txt))){n++;tiles+=`<a class="sos" href="tel:${m[2]}"><b>${m[2]}</b><span>${esc(m[1])}</span></a>`;}if(!n)other.push(r);});
+  const tdy=ymd(localNow()),pre=dayDiff(tdy,DAYS[0].d)>0;
+  const todos=todoItems(),open=todos.filter(t=>!t.done).length;
+  let h=`<header class="hd"><div class="kick">${HOME}</div><h1>資訊</h1>`;
+  if(pre&&todos.length)h+=`<p class="ihd-sub">出發前待辦還有<b id="todo-n">${open}</b>項</p>`;
+  if(tiles)h+=`<div class="sosg" id="sos">${tiles}</div>`;
+  if(other.length)h+=`<ul class="sosx">${other.map(r=>`<li><b>${esc(r.a||'')}</b>${r.b?esc(r.b):''}</li>`).join('')}</ul>`;
+  h+=`<div class="hcard"><span class="lab">HOTEL</span><div class="hn">${esc(HOTEL.name)}</div><div class="ha">${esc(HOTEL.addr)}</div>${HOTEL.note?`<div class="ha">${esc(HOTEL.note)}</div>`:''}${hotelActs(true)}</div></header><div class="body">`;
+  const parts={},jump=[];
+  if(todos.length){const sub=open?`${open} 項未完成`:'全部完成';
+    parts.todo=pre?`<section class="isec" id="sec-todo"><div class="sec-h"><h2>出發前待辦</h2><small>依期限排序・勾選只存在這支手機</small></div>${todoHTML(todos)}</section>`
+      :accHTML('sec-todo','出發前待辦',sub,todoHTML(todos),false);jump.push(['sec-todo','待辦']);}
+  const fl=flightSec();if(fl){parts.fl=fl;jump.push(['sec-fl',flightSec.title==='航班'?'航班':'交通']);}
+  const pay=INFO.filter(s=>SEC_PAY.test(s.h)&&s.rows&&s.rows.length);
+  if(pay.length){parts.pay=pay.map(s=>`<section class="isec" id="sec-pay"><div class="sec-h"><h2>${esc(s.h)}</h2></div><div class="card">${rowsHTML(s.rows,'pay')}</div></section>`).join('');jump.push(['sec-pay','付款']);}
+  const others=INFO.filter(s=>s!==sos&&s.rows&&s.rows.length&&!SEC_TODO.test(s.h)&&!SEC_FL.test(s.h)&&!SEC_PAY.test(s.h)&&!SEC_PLAN.test(s.h)&&!DINING().includes(s)&&!isPointer(s)&&!isDir(s));
+  parts.other=others.map((s,k)=>accHTML('sec-o'+k,s.h,s.rows.slice(0,2).map(r=>r.a||'').filter(Boolean).join(' · '),rowsHTML(s.rows,'o'+k),false)).join('');
+  if(BUDGET&&BUDGET.rows.length){parts.bud=accHTML('sec-bud','預算（2 人）',BUDGET.total?BUDGET.total[1]:'',`<table class="bud">`+BUDGET.rows.map(r=>`<tr><td>${esc(r[0])}</td><td>${esc(r[1])}</td></tr>`).join('')+(BUDGET.total?`<tr class="tot"><td>${esc(BUDGET.total[0])}</td><td>${esc(BUDGET.total[1])}</td></tr>`:'')+`</table>`,false);jump.push(['sec-bud','預算']);}
+  const plan=INFO.find(s=>SEC_PLAN.test(s.h)&&s.rows&&s.rows.length);
+  if(plan){parts.plan=accHTML('sec-plan','規劃說明',`規劃時的取捨與限制・${plan.rows.length} 項`,rowsHTML(plan.rows,'pl'),false);jump.push(['sec-plan','規劃']);}
+  const order=pre?['todo','fl','pay','other','bud','plan']:['fl','pay','other','todo','bud','plan'];
+  const jo=order.map(k=>({todo:'sec-todo',fl:'sec-fl',pay:'sec-pay',bud:'sec-bud',plan:'sec-plan'})[k]).filter(Boolean);
+  jump.sort((a,b)=>jo.indexOf(a[0])-jo.indexOf(b[0]));
+  if(jump.length>2)h+=`<nav class="jump" aria-label="跳到">${jump.map(([id,l])=>`<button type="button" data-jump="${id}">${l}</button>`).join('')}</nav>`;
+  h+=order.map(k=>parts[k]||'').join('');
+  view.innerHTML=h+'</div>';}
+document.addEventListener('click',e=>{const t=e.target;if(!t.closest)return;
+  const j=t.closest('[data-jump]');if(j){const el=document.getElementById(j.dataset.jump);if(el){if(el.tagName==='DETAILS')el.open=true;el.scrollIntoView({block:'start'});}return;}
+  const b=t.closest('.ck');if(!b||b.disabled)return;const li=b.closest('li');const k=li.dataset.tk;const s=doneSet();const on=!li.classList.contains('is-done');
+  on?s.add(k):s.delete(k);saveDone(s);li.classList.toggle('is-done',on);b.setAttribute('aria-pressed',String(on));
+  const c=document.getElementById('todo-n');if(c)c.textContent=document.querySelectorAll('.todo li:not(.is-done)').length;});
+
+function dayNavTarget(){if(todayIdx>=0)return 'd'+todayIdx;const t=ymd(localNow());return dayDiff(t,DAYS[0].d)>0?'d0':'d'+(DAYS.length-1);}
+function renderNav(){const inTrip=todayIdx>=0;
+  const key=current==='plan'||current==='food'||current==='info'?current:(inTrip&&current!=='d'+todayIdx?'plan':'day');
+  const items=[['plan','plan','行程',I.cal],['day',dayNavTarget(),inTrip?'今天':'每日',I.clock]].concat(HAS_FOOD?[['food','food','餐廳',I.food]]:[],[['info','info','資訊',I.info]]);
+  navEl.style.gridTemplateColumns=`repeat(${items.length},minmax(0,1fr))`;
+  navEl.innerHTML=items.map(([k,id,l,ic])=>`<button type="button" class="nb" data-go="${id}"${k===key?' aria-current="page"':''}>${ic}${l}</button>`).join('');}
+
+function render(keepOpen){let open=[];if(keepOpen)open=[...view.querySelectorAll('details[open][data-dk]')].map(d=>d.dataset.dk);
+  if(current==='info')renderInfo();else if(current==='food')renderFood();else if(current==='plan')renderPlan();else renderDay(+current.slice(1));
+  if(keepOpen)open.forEach(k=>{const d=view.querySelector(`details[data-dk="${CSS.escape(k)}"]`);if(d)d.open=true;});
+  renderNav();}
+function select(id,toTop=true){if(id!==current)showPast=false;current=id;try{localStorage.setItem(TRIP.storageKey,id);}catch(e){}render(false);if(toTop)window.scrollTo({top:0});}
+
+function openDrv(k){const isH=k==='@hotel';const p=isH?{n:HOTEL.name,a:HOTEL.addr,q:HOTEL.q}:PLACES[k];if(!p)return;
+  const di=current.startsWith('d')?+current.slice(1):todayIdx;const keys=[];
+  if(di>=0)DAYS[di].items.forEach(it=>{const o=it[7]||{};if(o.p&&PLACES[o.p]&&!keys.includes(o.p))keys.push(o.p);});
+  if(!isH&&!keys.includes(k))keys.unshift(k);
+  const list=(hotelReady?['@hotel']:[]).concat(keys);
+  drv.innerHTML=`<div class="dv-top"><button type="button" class="dv-back" id="dvback">${I.back}返回</button><span>把手機轉向司機</span></div>
+    <div class="dv-main" lang="${DRV.lang}"><p class="dv-ask">${esc(DRV.ask)}</p><p class="dv-name">${esc(p.n)}</p>${p.a?`<p class="dv-addr">${esc(p.a)}</p>`:''}${p.ts?`<p class="dv-tel">${esc(DRV.tel)} ${esc(p.ts)}</p>`:''}</div>
+    <div class="dv-foot">${list.length>1?`<div class="dv-chips" aria-label="今日地點">${list.map(x=>`<button type="button" class="dv-chip" aria-pressed="${x===k}" data-drv="${esc(x)}">${x==='@hotel'?'飯店':esc(PLACES[x].n)}</button>`).join('')}</div>`:''}
+    <div class="acts"><a class="act pri" href="${M(p.q,p.c)}" target="_blank" rel="noopener">${I.pin}${MAPLABEL}</a><button type="button" class="act" data-copy="${esc(p.n+'\n'+(p.a||''))}">${I.copy}複製地址</button>${p.t?`<a class="act" href="tel:${esc(p.t)}">${I.phone}撥打</a>`:''}</div></div>`;
+  const wasOpen=!drv.hidden;drv.hidden=false;document.body.classList.add('lock');drv.scrollTop=0;
+  document.getElementById('dvback').onclick=closeDrv;if(!wasOpen)openDrv.from=document.activeElement;document.getElementById('dvback').focus();}
+function closeDrv(){drv.hidden=true;document.body.classList.remove('lock');if(openDrv.from&&openDrv.from.focus)openDrv.from.focus();}
+
+document.addEventListener('click',e=>{const t=e.target;if(!t.closest)return;
+  const c=t.closest('[data-copy]');if(c){copy(c.dataset.copy,DRV.copied);return;}
+  const d=t.closest('[data-drv]');if(d){openDrv(d.dataset.drv);return;}
+  const g=t.closest('[data-go]');if(g){const sos=g.dataset.sos;select(g.dataset.go,!sos);if(sos){const el=document.getElementById('sos');if(el)el.scrollIntoView({block:'start'});}}});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!drv.hidden)closeDrv();});
+
+(function init(){document.title=TRIP.docTitle||TRIP.title;
+  const j=localNow();todayIdx=DAYS.findIndex(d=>d.d===ymd(j));
+  const valid=id=>id==='plan'||(id==='food'&&HAS_FOOD)||id==='info'||/^d\d+$/.test(id)&&+id.slice(1)<DAYS.length;
+  let start=todayIdx>=0?'d'+todayIdx:null;
+  if(!start){try{start=localStorage.getItem(TRIP.storageKey);}catch(e){}}
+  if(!start||!valid(start))start='plan';
+  current=start;render(false);
+  let sig='';const sigOf=()=>{if(todayIdx<0)return'';const S=state(todayIdx);return S.cur+','+S.next+','+S.past.length+','+S.nm;};sig=sigOf();
+  setInterval(()=>{const nt=DAYS.findIndex(d=>d.d===ymd(localNow()));if(nt!==todayIdx){todayIdx=nt;render(true);sig=sigOf();return;}
+    const s=sigOf();if(s!==sig){sig=s;if(current.startsWith('d')&&DAYS[+current.slice(1)]&&isTd(+current.slice(1)))render(true);}},60000);
+})();
+if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));
+</script>
+
+</body></html>
