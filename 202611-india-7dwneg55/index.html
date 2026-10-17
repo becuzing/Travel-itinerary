@@ -584,6 +584,7 @@ const HOTEL=(()=>{const d=new Date(Date.now()+5.5*3600000).toISOString().slice(0
 // 地點資料：n 名稱 a 地址 h 營業 t 電話(E.164) ts 電話顯示 q 地圖搜尋字 x 提醒
 const PLACES={
  tpe:{n:'桃園國際機場',a:'桃園市大園區航站南路 9 號',h:'航廈依航班確認',q:'桃園國際機場'},
+ bkk:{n:'Suvarnabhumi Airport',a:'999 Nong Prue, Bang Phli District, Samut Prakan 10540, Thailand',h:'24 小時',q:'Suvarnabhumi Airport'},
  del3:{n:'Indira Gandhi International Airport Terminal 3',a:'Terminal 3, IGI Airport, New Delhi, Delhi 110037',h:'24 小時',q:'Indira Gandhi International Airport Terminal 3'},
  del2:{n:'Indira Gandhi International Airport Terminal 2',a:'Terminal 2, IGI Airport, New Delhi, Delhi 110037',h:'24 小時；國內線起飛前 2 小時到',q:'Indira Gandhi International Airport Terminal 2'},
  vns:{n:'Lal Bahadur Shastri International Airport',a:'Babatpur, Varanasi, Uttar Pradesh 221006',h:'國內線起飛前 2 小時到',q:'Lal Bahadur Shastri International Airport Varanasi'},
@@ -634,9 +635,13 @@ const PLACES={
 };
 
 const DAYS=[
- {d:'2026-11-05',main:'飛德里，入住 Aerocity',tab:'11/5',wd:'四',title:'抵達德里',sum:'從台灣飛德里，Naresh 接機入住 Aerocity，晚餐簡單吃就休息。',wx:'晴，氣溫約在 13°C 至 28°C 之間',walk:'步行 ~1 km',warn:'國際段航班待補；e-Visa 列印本隨身帶，入境排隊可能很久。',items:[
-  ['','','hotel','➡️ 離家｜前往桃園機場','台北 → 桃園機場','','起飛前 3 小時到；國際段航班待補',{p:'tpe'}],
-  ['','','plain','入境、領行李','DEL T3','','國際段航班抵達後；Naresh 接機',{p:'del3'}],
+ {d:'2026-11-05',main:'經曼谷飛德里，入住 Aerocity',tab:'11/5',wd:'四',title:'抵達德里',sum:'從台北經曼谷轉機飛德里，Naresh 接機入住 Aerocity，晚餐簡單吃就休息。',wx:'晴，氣溫約在 13°C 至 28°C 之間',walk:'步行 ~1 km',warn:'經曼谷轉機，航班時間待補；e-Visa 列印本隨身帶，入境排隊可能很久。',items:[
+  ['','','hotel','➡️ 離家｜前往桃園機場','台北 → 桃園機場','','',{}],
+  ['','','plain','報到、出境','桃園機場','','起飛前 3 小時到',{p:'tpe'}],
+  ['','','flight','國際航班 台北 → 曼谷（航班號待補）','TPE → BKK','機票已訂','時間待補；台北時間',{km:2500}],
+  ['','','plain','曼谷轉機','BKK','','同一張票：行李直掛、不用入境；分開買票：入境泰國重新報到',{p:'bkk'}],
+  ['','','flight','國際航班 曼谷 → 德里（航班號待補）','BKK → DEL T3','機票已訂','時間待補',{km:2950}],
+  ['','','plain','入境、領行李','DEL T3','','e-Visa 列印本；Naresh 接機',{p:'del3'}],
   ['','','hotel','✅ 接機入住','DEL T3 → Aloft Aerocity','含於包車','',{p:'haloft',km:6,min:15}],
   ['19:25','19:30','hotel','➡️ 出門｜步行','飯店 → Worldmark 4','','',{km:0.3,min:5}],
   ['19:30','20:45','meal',"晚餐｜P.F. Chang's",'Worldmark 4, Aerocity','₹1,500–2,000／人｜7 人約 ₹10,500–14,000','太晚落地就改客房服務',{p:'pfc'}],
@@ -717,45 +722,55 @@ const DAYS=[
   ['15:15','16:40','flight','6E2423 德里 → 瓦拉納西','DEL T2 → VNS','已付','IndiGo；託運 15 kg；已出票',{km:667,min:85}],
   ['16:40','17:15','plain','領行李','VNS','','',{p:'vns'}],
   ['17:15','18:30','move','專車接機','VNS → 瓦拉納西飯店','已安排','車程 45–75 分；距離以 ghat 區估算',{km:26}],
-  ['18:30','19:15','plain','✅ 入住','瓦拉納西飯店（名稱待補）','','',{}],
-  ['19:30','20:45','meal','晚餐｜Aadha-Aadha Café','Munshi Ghat 頂樓','₹700–1,000／人｜9 人約 ₹6,300–9,000','恆河景觀；21:00 打烊',{p:'aadha'}]
+  ['18:30','19:15','hotel','✅ 入住','瓦拉納西飯店（名稱待補）','','',{}],
+  ['19:15','19:30','hotel','➡️ 出門｜步行','飯店 → Munshi Ghat','','依飯店位置',{}],
+  ['19:30','20:45','meal','晚餐｜Aadha-Aadha Café','Munshi Ghat 頂樓','₹700–1,000／人｜9 人約 ₹6,300–9,000','恆河景觀；21:00 打烊',{p:'aadha'}],
+  ['20:45','21:00','hotel','✅ 回飯店','','','',{}]
  ]},
  {d:'2026-11-12',main:'恆河日出包船・鹿野苑・恆河夜祭',tab:'11/12',wd:'四',title:'恆河日出＋鹿野苑＋夜祭',sum:'清晨坐船看日出，上午去鹿野苑，下午回飯店休息，晚上看恆河夜祭。',wx:'晴，氣溫約在 15°C 至 29°C 之間',walk:'步行 ~6 km',warn:'長日：05:15 出門，夜祭 18:45 結束，中間兩段回飯店休息。',items:[
   ['05:15','05:45','hotel','➡️ 出門｜嘟嘟車','飯店 → Dashashwamedh Ghat','含於包車','',{}],
   ['05:45','07:15','anchor','恆河日出包船','Dashashwamedh → Manikarnika','含','日出約 06:15',{p:'ghat'}],
   ['07:15','08:00','plain','Ghat 晨走＋chai','Dashashwamedh Ghat','₹50','',{p:'ghat'}],
-  ['08:00','10:00','plain','✅ 回飯店早餐休息','','含','',{}],
-  ['10:00','10:40','move','包車','飯店 → Sarnath','含','',{km:11}],
+  ['08:00','10:00','hotel','✅ 回飯店早餐休息','','含','',{}],
+  ['10:00','10:40','hotel','➡️ 出門｜包車','飯店 → Sarnath','含','',{km:11}],
   ['10:40','12:30','anchor','Sarnath 鹿野苑','Dhamek Stupa・考古博物館','₹300＋博物館 ₹5（待確認）','佛陀初轉法輪處；阿育王獅子柱頭在博物館',{p:'sarnath'}],
   ['12:30','13:30','meal','午餐｜UP-65','Rishpattan Rd','₹600–900／人｜9 人約 ₹5,400–8,100','chicken handi',{p:'up65'}],
-  ['13:30','16:30','move','包車回飯店休息','Sarnath → 飯店','含','',{km:11,min:40}],
-  ['16:30','17:00','move','嘟嘟車','飯店 → Dashashwamedh Ghat','含','',{}],
+  ['13:30','16:30','hotel','✅ 回飯店休息｜包車','Sarnath → 飯店','含','',{km:11,min:40}],
+  ['16:30','17:00','hotel','➡️ 出門｜嘟嘟車','飯店 → Dashashwamedh Ghat','含','',{}],
   ['17:00','17:45','plain','占位等待','Dashashwamedh Ghat','','想坐船看夜祭：早上請導遊代訂（另計）',{p:'ghat'}],
   ['17:45','18:45','anchor','恆河夜祭 Ganga Aarti','Dashashwamedh Ghat','免費','開始時間當天再確認',{p:'ghat'}],
   ['18:45','19:00','move','步行','→ Niyati Cafe','','',{km:0.4}],
   ['19:00','20:15','meal','晚餐｜Niyati Cafe','Dashashwamedh Rd','₹400–700／人｜9 人約 ₹3,600–6,300','家庭式素食 thali',{p:'niyati'}],
-  ['20:15','20:35','move','回飯店','','含','',{}]
+  ['20:15','20:35','hotel','✅ 回飯店','','含','',{}]
  ]},
  {d:'2026-11-13',main:'瓦拉納西 → 德里 → 古爾岡',tab:'11/13',wd:'五',title:'瓦拉納西 → 德里 → 古爾岡',sum:'上午自由逛 ghat 區，13:30 出發去機場，搭 AI2568 回德里，入住古爾岡。',wx:'晴，氣溫約在 15°C 至 29°C 之間',walk:'步行 ~3 km',warn:'Chhath Puja 從今天開始，往機場可能塞車；13:30 準時出門。',items:[
+  ['08:30','08:45','hotel','➡️ 出門｜步行','飯店 → Vishwanath Gali','','',{}],
   ['08:45','10:45','plain','（可選）Kashi Vishwanath 一帶＋舊城巷弄','Vishwanath Gali','免費','也可改 ghat 晨走或留飯店休息',{p:'kashi'}],
+  ['10:45','11:45','hotel','✅ 回飯店打包','','','',{}],
+  ['11:45','12:00','hotel','➡️ 出門｜步行','飯店 → The Keshari','','',{}],
   ['12:00','13:00','meal','午餐｜The Keshari','Dashashwamedh Rd','₹400–700／人｜9 人約 ₹3,600–6,300','papri chaat 脆餅優格小吃、lassi',{p:'keshari'}],
-  ['13:30','14:45','move','退房，專車 → 機場','瓦拉納西飯店 → VNS','已安排','60–75 分',{km:26}],
+  ['13:00','13:30','hotel','✅ 回飯店取行李、退房','','','',{}],
+  ['13:30','14:45','hotel','➡️ 離開飯店｜專車 → 機場','瓦拉納西飯店 → VNS','已安排','60–75 分',{km:26}],
   ['14:45','15:45','plain','報到、安檢','VNS','','託運額度依票種，待確認',{p:'vns'}],
   ['16:30','18:10','flight','AI2568 瓦拉納西 → 德里','VNS → DEL T3','已付','Air India；航班時間已異動，以此為準',{km:667,min:100}],
   ['18:10','18:50','plain','領行李','DEL T3','','',{p:'del3'}],
   ['18:50','19:50','hotel','✅ 包車 → 入住古爾岡','DEL T3 → DoubleTree Gurgaon','含於包車','週五晚上車多',{p:'hgur',km:22,min:60}],
   ['20:15','21:30','meal','晚餐｜飯店內','DoubleTree Gurgaon','₹1,500–2,500／人（待確認）','明天搭國際線，早點休息',{p:'hgur'}]
  ]},
- {d:'2026-11-14',main:'古爾岡 → DEL → 台北',tab:'11/14',wd:'六',title:'回台',sum:'從古爾岡出發到德里 T3，搭國際線回台。',wx:'晴，氣溫約在 13°C 至 28°C 之間',walk:'步行 ~1 km',warn:'國際段航班待補：起飛前 4 小時 15 分離開飯店。',items:[
+ {d:'2026-11-14',main:'古爾岡 → DEL → 曼谷 → 台北',tab:'11/14',wd:'六',title:'回台',sum:'從古爾岡出發到德里 T3，經曼谷轉機回台北。',wx:'晴，氣溫約在 13°C 至 28°C 之間',walk:'步行 ~1 km',warn:'國際段航班待補：起飛前 4 小時 15 分離開飯店。',items:[
   ['','','hotel','➡️ 離開飯店｜退房，包車','DoubleTree Gurgaon → DEL T3','含於包車','45–60 分',{km:22}],
   ['','','plain','報到、出境','DEL T3','','起飛前 3 小時到',{p:'del3'}],
-  ['','','plain','國際航班｜德里 → 台北（待補）','DEL T3 → 桃園','','落地後回家',{p:'tpe'}]
+  ['','','flight','國際航班 德里 → 曼谷（航班號待補）','DEL T3 → BKK','機票已訂','時間待補',{km:2950}],
+  ['','','plain','曼谷轉機','BKK','','同一張票：行李直掛、不用入境；分開買票：入境泰國重新報到',{p:'bkk'}],
+  ['','','flight','國際航班 曼谷 → 台北（航班號待補）','BKK → TPE','機票已訂','時間待補',{km:2500}],
+  ['','','plain','入境、領行李','桃園機場','','',{p:'tpe'}],
+  ['','','hotel','✅ 到家','桃園機場 → 住家','','',{}]
  ]}
 ];
 
 const SUMSEC=[
  {h:'待確認／邏輯問題',rows:[
-  {a:'國際段航班未提供',b:'11/5、11/14 的時間先空著；給航班號就能補上接機與退房時間。'},
+  {a:'國際段航班號未提供',b:'已知經曼谷轉機（回程假設同路線）；11/5、11/14 的時間先空著，給航班號就能補上接機與退房時間。'},
   {a:'瓦拉納西飯店名稱未提供',b:'11/11–11/13 的接送距離以 ghat 區估算，也沒有飯店地址卡可給司機看。'},
   {a:'後加 2 人的會合方式',b:'假設 11/9 08:00 前到 Hilton Jaipur；他們怎麼到齋浦爾要確認。'},
   {a:'尾款時間 vs. 人數',b:'尾款 US$1,295 到當地收齊交給司機；若在齋浦爾（11/7–11/8）付，後加 2 人 11/9 才到，他們的 US$173 要先代墊。'},
@@ -817,7 +832,7 @@ const INFO=[
  ]},
  {h:'航班',rows:[
   {a:'11/13　AI2568　VNS 16:30 → DEL T3 18:10',b:'Air India；航班時間已異動，以此為準；已出票'},
-  {a:'國際段',b:'台北 ⇄ 德里航班待補'}
+  {a:'國際段',b:'台北 ⇄ 曼谷 ⇄ 德里，航班號與時間待補'}
  ]},
  {h:'付款與匯率',rows:[
   {a:'包車分攤（依參與天數）',b:'原 7 人每人：已轉 NT$2,337＋現金 US$160（約 NT$7,551）\n後加 2 人合計：已轉 NT$2,515＋現金 US$173（每人約 NT$4,077）\n總額 US$1,855＝訂金 US$560＋尾款 US$1,295'},
@@ -882,7 +897,7 @@ const BUDGET={rows:[
 ],total:['原 7 人每人合計','NT$21,110–28,430']};
 
 /* stays: overview groups days by where we sleep (k = first DAYS index) */
-const STAYS=[{k:0,city:'Delhi 德里',sub:'11/5–11/7・2 晚・Aloft Aerocity'},{k:2,city:'Jaipur 齋浦爾',sub:'11/7–11/9・2 晚・Hilton Jaipur'},{k:4,city:'Agra 阿格拉',sub:'11/9–11/11・2 晚・DoubleTree Agra'},{k:6,city:'Varanasi 瓦拉納西',sub:'11/11–11/13・2 晚・飯店待補'},{k:8,city:'Gurugram 古爾岡',sub:'11/13–11/14・1 晚・DoubleTree Gurgaon'},{k:9,city:'回程',sub:'DEL → 台北'}];
+const STAYS=[{k:0,city:'Delhi 德里',sub:'台北出發・11/5–11/7・2 晚・Aloft Aerocity'},{k:2,city:'Jaipur 齋浦爾',sub:'11/7–11/9・2 晚・Hilton Jaipur'},{k:4,city:'Agra 阿格拉',sub:'11/9–11/11・2 晚・DoubleTree Agra'},{k:6,city:'Varanasi 瓦拉納西',sub:'11/11–11/13・2 晚・飯店待補'},{k:8,city:'Gurugram 古爾岡',sub:'11/13–11/14・1 晚・DoubleTree Gurgaon'},{k:9,city:'回程',sub:'DEL → BKK → 台北'}];
 
 
 /* ============================ ENGINE ============================ */
