@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+<rect width="512" height="512" fill="#2B2D42"/>
+<g id="art">
+<g fill="none" stroke="#FFFFFF" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round" stroke-dasharray="1 18">
+<path d="M267 283 C 220 320, 170 340, 104 404"/>
+<path d="M120 208 C 90 230, 60 250, 28 272"/>
+<path d="M310 428 C 280 450, 252 470, 222 500"/>
+</g>
+<circle cx="440" cy="60" r="4" fill="#FFD166"/>
+<circle cx="470" cy="110" r="3" fill="#FFFFFF" fill-opacity="0.7"/>
+<circle cx="60" cy="440" r="3" fill="#80FFDB"/>
+<g transform="translate(140 170) scale(0.4) translate(-256 -256)">
+<polygon points="440,104 118,214 232,306" fill="#A4133C"/>
+<polygon points="72,262 440,104 152,284" fill="#FF70A6"/>
+<polygon points="152,284 440,104 232,306" fill="#FF4D8D"/>
+<polygon points="232,306 440,104 262,408" fill="#C9184A"/>
+<polygon points="232,306 262,408 206,352" fill="#800F2F"/>
+</g>
+<g transform="translate(330 390) scale(0.4) translate(-256 -256)">
+<polygon points="440,104 118,214 232,306" fill="#6930C3"/>
+<polygon points="72,262 440,104 152,284" fill="#80FFDB"/>
+<polygon points="152,284 440,104 232,306" fill="#48BFE3"/>
+<polygon points="232,306 440,104 262,408" fill="#5390D9"/>
+<polygon points="232,306 262,408 206,352" fill="#5E60CE"/>
+</g>
+<g transform="translate(300 220) scale(0.66) translate(-256 -256)">
+<polygon points="440,104 118,214 232,306" fill="#C4452F"/>
+<polygon points="72,262 440,104 152,284" fill="#FFD166"/>
+<polygon points="152,284 440,104 232,306" fill="#FFB703"/>
+<polygon points="232,306 440,104 262,408" fill="#FF6B4A"/>
+<polygon points="232,306 262,408 206,352" fill="#9E2A2B"/>
+<polyline points="152,284 440,104" fill="none" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="3"/>
+</g>
+</g>
+</svg>

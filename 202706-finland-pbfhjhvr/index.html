@@ -3,26 +3,30 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>2026-10 西安・洛陽 6天5夜</title>
+<title>2027-06 芬蘭愛沙尼亞 19天18夜</title>
 <meta name="robots" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
-<meta name="description" content="2026/10/15–10/20 西安・洛陽 4 人行程">
-<meta name="theme-color" content="#0F1B26">
+<meta name="format-detection" content="telephone=no">
+<link rel="preload" href="../assets/fonts/barlow-condensed-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="application-name" content="Ting 芬蘭">
+<meta name="apple-mobile-web-app-title" content="Ting 芬蘭">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="西安・洛陽">
-<meta name="format-detection" content="telephone=no">
-<link rel="icon" type="image/png" href="assets/icon-192.png">
-<link rel="apple-touch-icon" href="assets/icon-180.png">
-<link rel="manifest" href="manifest.webmanifest">
-<link rel="preload" href="assets/fonts/barlow-condensed-700.woff2" as="font" type="font/woff2" crossorigin>
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="theme-color" content="#0F1B26">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<link rel="icon" type="image/svg+xml" href="../icon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+<style id="app-top">#sbar{display:none}@media (display-mode:standalone){#sbar{display:block;position:fixed;top:0;left:0;right:0;height:calc(env(safe-area-inset-top,0px) + min(40px,env(safe-area-inset-top,0px)));background:var(--board,#0F1B26);z-index:50}html:root{padding-top:0;height:100%;overflow:hidden;background:var(--board,#0F1B26)}html body{position:fixed;top:0;left:0;right:0;bottom:0;overflow-x:hidden;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior-y:none;padding-top:calc(env(safe-area-inset-top,0px) + min(40px,env(safe-area-inset-top,0px)))}html body .strip{top:calc(env(safe-area-inset-top,0px) + min(40px,env(safe-area-inset-top,0px)))}}</style>
+<script id="app-scroll">(function(){if(!(window.matchMedia&&matchMedia("(display-mode: standalone)").matches))return;var o=window.scrollTo.bind(window);window.scrollTo=function(a,b){try{document.body.scrollTo(a,b)}catch(e){}return o(a,b)}})();</script>
+<script src="../a2hs.js?v=6" defer></script>
 </head>
-<body>
+<body><div id="sbar" aria-hidden="true"></div>
 <style>
 html{-webkit-tap-highlight-color:transparent}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}
-@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:500;font-display:swap;src:url(assets/fonts/barlow-condensed-500.woff2) format('woff2')}
-@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:600;font-display:swap;src:url(assets/fonts/barlow-condensed-600.woff2) format('woff2')}
-@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:700;font-display:swap;src:url(assets/fonts/barlow-condensed-700.woff2) format('woff2')}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/barlow-condensed-500.woff2) format('woff2')}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/barlow-condensed-600.woff2) format('woff2')}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:700;font-display:swap;src:url(../assets/fonts/barlow-condensed-700.woff2) format('woff2')}
 
 /* Layout: transit-board — navy departure board header (date strip, NOW/NEXT), metro-line timeline, bottom nav */
 :root{
@@ -220,7 +224,7 @@ button{font:inherit;color:inherit}
 
 /* place details */
 .pd{margin-top:4px;border:1px solid var(--line);border-radius:8px}
-.pd summary{min-height:32px;list-style:none;cursor:pointer;display:flex;align-items:center;gap:8px;padding:3px 10px;font-weight:700;font-size:13.5px}
+.pd summary{min-height:32px;list-style:none;cursor:pointer;display:flex;align-items:center;gap:8px;padding:3px 10px;font-weight:700;font-size:13.5px;min-width:0;overflow-wrap:anywhere}
 .pd summary::-webkit-details-marker{display:none}
 .pd summary span{font-weight:400;font-size:12px;color:var(--ink3);margin-left:auto;white-space:nowrap}
 .pd summary svg{width:15px;height:15px;flex:0 0 auto}
@@ -479,14 +483,10 @@ table.bud tr.tot td{font-weight:700;border-top:2px solid var(--ink)}
 .bkd .bkl{padding-top:2px}
 .bkl li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px;align-items:baseline;font-size:13.5px;line-height:1.5;color:var(--ink2)}
 .rows .bkl{padding:4px 0 0}
-.bkh{padding:2px 12px 2px;font-size:12.5px;font-weight:700;color:var(--ink3)}
 .bt{font-size:11.5px;font-weight:700;padding:1px 6px;border-radius:4px;white-space:nowrap;border:1px solid currentColor}
 .bt-r{color:var(--link)}.bt-t{color:var(--hotel-ink)}.bt-o{color:var(--warn-fg)}
 
-/* ---- site v3: readability, touch targets, home link ---- */
-.home{display:inline-flex;align-items:center;gap:2px;min-height:36px;margin-left:-6px;padding:0 6px;border-radius:8px;color:var(--on-board2);text-decoration:none;font-family:var(--sans);font-size:14px;font-weight:600;letter-spacing:0}
-.home svg{width:18px;height:18px}
-.home:hover{color:var(--on-board)}
+/* ---- site v3: readability, touch targets ---- */
 .act{min-height:40px}
 .act.sm{min-height:36px}
 .bd .act{padding:0 9px}
@@ -507,304 +507,241 @@ table.bud tr.tot td{font-weight:700;border-top:2px solid var(--ink)}
    TRIP DATA — the only part to edit. Everything below ENGINE is fixed.
    Schema: see references/mobile-web.md
    ================================================================ */
-const TRIP={
-  docTitle:'2026-10 西安・洛陽 6天5夜',
-  title:'西安・洛陽',
-  sub:'2026/10/15（四）– 10/20（二）　4 人　住 永寧門小雁塔亞朵',
-  utcOffset:8,
-  storageKey:'xian-2026-tab',
-  map:'baidu',
-  city:233,
-  wxNote:'天氣：中國天氣網 10/10 發布（10/15–16 加參考中央氣象台），8 天以後為模式預測，出發前 3 天再確認。'
-};
-const HOTEL={name:'西安永宁门小雁塔亚朵酒店',addr:'西安市碑林区友谊西路17号',q:'西安永宁门小雁塔亚朵酒店',
-  tel:'',telShow:'',note:'高級雙床房 ×2（含雙早）｜10/15 入住、10/20 退房｜近地鐵 2 號線南稍門站｜早餐供應到 11:00'};
-
-// 地點資料：n 顯示名稱（簡體，給司機看）a 地址 h 營業 t 電話(E.164) ts 電話顯示 q 百度搜尋字 c 城市(233 西安／153 洛陽) x 提醒
-const PLACES={
- zj:{n:'子午路张记肉夹馍（翠华路店）',a:'西安市雁塔区翠华路227号（大雁塔小学南侧）',h:'06:30–02:00',q:'子午路张记肉夹馍 翠华路店'},
- ah:{n:'爱骅裤带面馆（钟楼店）',a:'西安市碑林区南大街51号 陕西文物大厦1层',h:'百度未列營業時間',q:'爱骅裤带面馆 钟楼店'},
- xafz:{n:'西安饭庄·非遗陕菜（钟楼店）',a:'西安市碑林区南大街110号 西安钟楼饭店1楼',h:'10:30–21:00',q:'西安饭庄 钟楼店'},
- cfs:{n:'春发生饭店·非遗（南院门店）',a:'西安市碑林区南院门25号',h:'09:30–21:00',q:'春发生饭店 南院门店'},
- gyz:{n:'果渊斋老米家·非遗老字号（北广济街店）',a:'西安市莲湖区北广济街277号',h:'06:00–15:00',q:'果渊斋老米家 北广济街店'},
- zca:{n:'醉长安（永宁门店）',a:'西安市碑林区永宁里2层（书院门大牌楼旁）',h:'11:00–14:00、17:00–21:00',q:'醉长安 永宁门店'},
- szw:{n:'盛志望麻酱酿皮铺·非遗老字号',a:'西安市莲湖区大皮院西口225号（与北广济街交叉口）',h:'08:00–22:30',q:'盛志望麻酱酿皮'},
- mh:{n:'马洪小炒泡馍馆（钟楼回民街店）',a:'西安市莲湖区红埠街46号（莲湖区城市管理局对面）',h:'09:00–21:00',q:'马洪小炒泡馍'},
- qy:{n:'秦豫肉夹馍（骡马市总店）',a:'西安市碑林区 兴正元广场骡马市步行街南区1层3号',h:'07:00–13:00',q:'秦豫肉夹馍 骡马市总店'},
- cxb:{n:'澄城学斌水盆（钟楼店）',a:'西安市碑林区南大街17号',h:'百度未列營業時間',q:'澄城学斌水盆 钟楼店'},
- tm:{n:'唐猫庭院·千年陕菜（赛格店）',a:'西安市雁塔区长安中路123号 赛格国际购物中心12层',h:'百度未列營業時間',q:'唐猫庭院 赛格'},
- pz:{n:'胖子甑糕（洒金桥店）',a:'西安市莲湖区洒金桥138号',h:'早上開賣，中午前常賣完',q:'胖子甑糕 洒金桥店'},
- llh:{n:'刘老虎肉丸糊辣汤（总店）',a:'西安市莲湖区从新巷12号',h:'06:00–14:00',q:'刘老虎肉丸糊辣汤 总店'},
- hh:{n:'红红酸菜炒米（庙后街旗舰店）',a:'西安市莲湖区庙后街202号',h:'百度未列營業時間',q:'红红酸菜炒米 庙后街'},
- tsx:{n:'同盛祥羊肉泡馍（钟楼店）',a:'西安市西大街5号（近钟楼）',h:'10:00–14:30、17:00–21:00（百度地圖：09:30–21:00）',t:'+862987234179',ts:'029-8723 4179',q:'同盛祥 钟楼店'},
- bmy:{n:'秦始皇帝陵博物院（兵马俑）',a:'西安市临潼区秦陵北路（北门入园）',h:'08:30 開始驗票，17:00 停止驗票',t:'+862981399174',ts:'029-8139 9174',q:'秦始皇帝陵博物院'},
- ysy:{n:'华清御汤酒店·御膳苑',a:'西安市临潼区华清路038号（近骊山索道，望京门左侧）',h:'11:30–20:30（另一說 11:00–14:00、17:00–21:00）',t:'+862983839595',ts:'029-8383 9595',q:'华清御汤酒店',x:'備用電話 029-8382 6867'},
- hqg:{n:'华清宫',a:'西安市临潼区华清路38号',h:'07:00–18:30',q:'华清宫'},
- zgl:{n:'钟鼓楼广场',a:'西安市莲湖区 钟鼓楼广场',h:'全天開放',q:'钟鼓楼广场'},
- dfc:{n:'德发长饺子（钟楼店）',a:'西安市碑林区西大街3号（钟鼓楼广场旁）',h:'10:00–21:00（百度地圖：11:00–21:30）',t:'+862987218187',ts:'029-8721 8187',q:'德发长 钟楼店'},
- sxhm:{n:'陕西历史博物馆（本馆）',a:'西安市雁塔区小寨东路91号',h:'08:30–19:00，18:00 停止入館（夏秋時段，11/15 起改冬季時段）；週一休館',q:'陕西历史博物馆'},
- cadp:{n:'长安大牌档之陕历博文化餐厅（小寨店）',a:'西安市雁塔区长安中路123号 赛格国际购物中心 10F',h:'平日 10:00–22:00，週末 10:00–22:30',q:'长安大牌档 赛格'},
- dyt:{n:'大雁塔北广场',a:'西安市雁塔区 大雁塔北广场',h:'噴泉：週末 12:00、14:00、16:00、18:00、19:00、21:00（以現場公告為準）',q:'大雁塔北广场'},
- dce:{n:'大慈恩寺（大雁塔）',a:'西安市雁塔区 大慈恩寺',h:'09:00–17:00，16:30 停止售票入場（百度地圖）',q:'大慈恩寺'},
- gls:{n:'郭老三面庄·biangbiang面（大雁塔总店）',a:'西安市雁塔区翠华路 大雁塔小学南隔壁',h:'10:00–21:00（百度地圖）',t:'+8615349218476',ts:'153-4921-8476',q:'郭老三面庄'},
- dtb:{n:'大唐不夜城',a:'西安市雁塔区 雁塔南路步行街',h:'全天開放，10 月約 18:30–19:00 亮燈',q:'大唐不夜城'},
- ynm:{n:'西安城墙 永宁门（南门）',a:'西安市碑林区南大街2号',h:'08:00–22:00',q:'永宁门'},
- js:{n:'贾三灌汤包（北院门总店）',a:'西安市莲湖区北院门93号（近鼓楼）',h:'08:30–22:30（百度地圖：08:30–20:30）',t:'+862987257507',ts:'029-8725 7507',q:'贾三灌汤包子 北院门'},
- xam:{n:'西安博物院・小雁塔',a:'西安市碑林区友谊西路72号',h:'08:30–18:00，17:00 停止入園；週二休館',t:'+862987811081',ts:'029-8781 1081',q:'西安博物院'},
- slg:{n:'酸辣谷 陕派清真涮肉（钟楼店）',a:'西安市西大街 中环广场银泰百货4楼',h:'10:30–23:30（百度地圖）',t:'+8618092359162',ts:'180-9235-9162',q:'酸辣谷 钟楼',x:'百度地圖店名是「钟鼓楼景观店」，就是中環廣場銀泰 4 樓這家'},
- xab:{n:'西安北站',a:'西安市未央区尚新路 西安北站',h:'',q:'西安北站'},
- lmz:{n:'洛阳龙门站',a:'洛阳市洛龙区通衢路19号',h:'',q:'洛阳龙门站',c:153},
- lmx:{n:'龙门石窟 西北服务区',a:'洛阳市洛龙区 龙门石窟西北服务区',h:'',q:'龙门石窟西北服务区',c:153,x:'從這裡步行約 800 m 到西山檢票口'},
- lms:{n:'龙门石窟',a:'洛阳市洛龙区龙门中街13号',h:'07:30–18:00，17:00 停止售票（10/8–10/31）',q:'龙门石窟',c:153},
- gj:{n:'管记水席老店（仙果市街店）',a:'洛阳市老城区仙果市街12号（老集菜市场向南200米）',h:'11:00–14:00、17:00–21:00',t:'+8613937951844',ts:'139-3795-1844',q:'管记水席',c:153},
- wj:{n:'魏家凉皮（西门外店）',a:'西安市莲湖区环城西路78号',h:'07:30–22:00',t:'+862988619832',ts:'029-8861 9832',q:'魏家凉皮 西门'},
- bl:{n:'西安碑林博物馆',a:'西安市碑林区三学街15号',h:'09:00 開館，17:00 停止檢票',q:'西安碑林博物馆'},
- sym:{n:'书院门古文化街',a:'西安市碑林区 书院门（碑林博物馆西側）',h:'全天開放（店家約 09:00–18:00）',q:'书院门'},
- hj:{n:'西安化觉巷清真大寺',a:'西安市莲湖区化觉巷30号',h:'09:00–19:00，17:00 停止售票入場',q:'化觉巷清真大寺'},
-    xiy:{n:'西安咸阳国际机场 T5',a:'陕西省咸阳市渭城区底张镇 西安咸阳国际机场 T5 航站楼',h:'CX947 國際線出發；櫃檯約 12:50 開',q:'西安咸阳国际机场T5航站楼'},
-    hkg:{n:'香港國際機場 T1',a:'香港大嶼山赤鱲角 香港國際機場一號客運大樓',h:'管制區內轉機，不入境',q:'香港国际机场T1航站楼',c:'2912'},
-    hmj:{n:'回民街（北广济街）',a:'西安市莲湖区北广济街',h:'街區全天開放｜店家各自營業',q:'北广济街 回民街'}
-};
+const TRIP={"docTitle": "2027-06 芬蘭愛沙尼亞 19天18夜", "title": "芬蘭・愛沙尼亞親子行", "sub": "2027/06/25（五）– 07/13（二）　大人 1・小孩 1　Helsinki・Tampere・Tallinn・Tartu・Pärnu", "utcOffset": 3, "storageKey": "fiee-2027-tab", "map": "google", "city": 0, "wxNote": "天氣為 6–7 月氣候平均值，不是預報；出發前一週改看預報。6/25 與 7/13 的時間為台北時間，其餘為芬蘭／愛沙尼亞時間（UTC+3，比台北慢 5 小時）。", "drv": {"ask": "Hello, please take us to:", "tel": "Tel", "lang": "en", "copied": "已複製：可貼到 Bolt，或給司機看"}};
+const HOTELS={"hel": {"name": "Omena Hotel Helsinki Yrjönkatu", "addr": "Yrjönkatu 30, 00100 Helsinki", "q": "Omena Hotel Helsinki Yrjönkatu", "note": "Helsinki 6/25–6/29、7/10–7/12｜Family Room｜自助入住碼，無櫃台、無早餐、無行李寄放"}, "tam": {"name": "Scandic Tampere Station", "addr": "Ratapihankatu 37, 33100 Tampere", "q": "Scandic Tampere Station", "note": "Tampere 6/29–7/2｜Family Room 含早餐｜入住 15:00／退房 12:00"}, "tll": {"name": "Nordic Hotel Forum", "addr": "Viru väljak 3, 10111 Tallinn", "q": "Nordic Hotel Forum Tallinn", "note": "Tallinn 7/2–7/6｜Family Double 含早餐｜入住 15:00／退房 12:00｜頂樓泳池"}, "tar": {"name": "Dorpat Hotel", "addr": "Soola 6, 51013 Tartu", "q": "Dorpat Hotel Tartu", "note": "Tartu 7/6–7/8｜Family Room 含早餐｜入住 15:00／退房 12:00"}, "par": {"name": "Spa Tervise Paradiis", "addr": "Side 14, 80010 Pärnu", "q": "Tervise Paradiis Pärnu", "note": "Pärnu 7/8–7/10｜Family Room（含水上樂園方案）｜入住 15:00／退房 12:00"}};
+const HOTEL=(()=>{const d=new Date(Date.now()+3*3600000).toISOString().slice(0,10);return d>='2027-07-10'?HOTELS.hel:d>='2027-07-08'?HOTELS.par:d>='2027-07-06'?HOTELS.tar:d>='2027-07-02'?HOTELS.tll:d>='2027-06-29'?HOTELS.tam:HOTELS.hel;})();
+const PLACES={"hhel": {"n": "Omena Hotel Helsinki Yrjönkatu", "a": "Yrjönkatu 30, 00100 Helsinki", "h": "自助入住（入住碼）｜退房 12:00", "q": "Omena Hotel Helsinki Yrjönkatu", "x": "沒有櫃台與行李寄放；7/12 行李寄中央車站置物櫃"}, "htam": {"n": "Scandic Tampere Station", "a": "Ratapihankatu 37, 33100 Tampere", "h": "入住 15:00／退房 12:00", "q": "Scandic Tampere Station"}, "htll": {"n": "Nordic Hotel Forum", "a": "Viru väljak 3, 10111 Tallinn", "h": "入住 15:00／退房 12:00", "q": "Nordic Hotel Forum Tallinn"}, "htar": {"n": "Dorpat Hotel", "a": "Soola 6, 51013 Tartu", "h": "入住 15:00／退房 12:00", "q": "Dorpat Hotel Tartu"}, "hpar": {"n": "Spa Tervise Paradiis", "a": "Side 14, 80010 Pärnu", "h": "入住 15:00／退房 12:00", "q": "Tervise Paradiis Pärnu"}, "tpe": {"n": "桃園國際機場 第一航廈", "a": "桃園市大園區航站南路 15 號", "h": "CX 在第一航廈", "q": "Taoyuan International Airport Terminal 1"}, "hkg": {"n": "Hong Kong International Airport T1", "a": "Hong Kong International Airport Terminal 1", "h": "AY100／CX 都在 T1", "q": "Hong Kong International Airport Terminal 1"}, "helap": {"n": "Helsinki-Vantaan lentoasema", "a": "Lentoasemantie 1, 01530 Vantaa", "h": "Finnair 全部航班同一航廈（T2）", "q": "Helsinki Airport"}, "helc": {"n": "Helsingin päärautatieasema", "a": "Kaivokatu 1, 00100 Helsinki", "h": "車站 05:00–02:00｜置物櫃 地下層 06:00–24:00", "q": "Helsinki Central Station", "x": "置物櫃只收卡；XL 3 小時 €4.90 起，可訂 6／12／24 小時"}, "t2": {"n": "Länsiterminaali T2", "a": "Tyynenmerenkatu 14, 00220 Helsinki", "h": "週一、週三至週日 06:00–22:30｜週二至 23:00", "q": "West Terminal 2 Helsinki", "x": "Tallink 開船前 40 分鐘完成報到"}, "tlld": {"n": "Tallinna Vanasadam D-terminal", "a": "Lootsi 13, 10151 Tallinn", "h": "Tallink 專用碼頭", "q": "Tallinn D-terminal"}, "tamst": {"n": "Tampereen rautatieasema", "a": "Rautatienkatu 25, 33100 Tampere", "h": "VR 火車站｜飯店正對面", "q": "Tampere railway station"}, "baltij": {"n": "Balti jaam", "a": "Toompuiestee 37, 10133 Tallinn", "h": "Elron 火車站", "q": "Balti jaam Tallinn"}, "tartust": {"n": "Tartu raudteejaam", "a": "Vaksali 6, Tartu", "h": "", "q": "Tartu raudteejaam"}, "tartubus": {"n": "Tartu bussijaam", "a": "Turu 2, 51004 Tartu", "h": "行李寄放 平日 07:30–20:00｜週六 08:00–16:00｜週日 09:00–16:00", "q": "Tartu bussijaam", "x": "Dorpat 旁約 100 m"}, "parnubus": {"n": "Pärnu bussijaam", "a": "Pikk 13, 80010 Pärnu", "h": "每日 06:30–21:00｜售票 06:30–20:30", "q": "Pärnu bussijaam"}, "tllbus": {"n": "Tallinna bussijaam", "a": "Lastekodu 46, 10144 Tallinn", "h": "Lux Express 長途巴士站", "q": "Tallinna bussijaam"}, "kauppatori": {"n": "Kauppatori 渡輪碼頭", "a": "Kauppatori, 00170 Helsinki", "h": "HSL 19 號渡輪全年行駛", "q": "Kauppatori Suomenlinna ferry"}, "tikkurila": {"n": "Tikkurilan asema", "a": "Tikkurila, Vantaa", "h": "", "q": "Tikkurila station"}, "korkea": {"n": "Korkeasaaren eläintarha", "a": "Mischan ja Maschan aukio 1, 00570 Helsinki", "h": "夏季開到 21:00（仲夏節照常開放，時間待確認）", "q": "Korkeasaari Zoo", "x": "傍晚票 16:00 起現場買"}, "oodi": {"n": "Helsingin keskustakirjasto Oodi", "a": "Töölönlahdenkatu 4, 00100 Helsinki", "h": "週一至週五 08:00–21:00｜週六日 10:00–20:00", "q": "Oodi Helsinki"}, "linna": {"n": "Linnanmäki", "a": "Tivolikuja 1, 00510 Helsinki", "h": "依官網日曆（每日時間不同，待確認）", "q": "Linnanmäki", "x": "Tram 3 到 Linnanmäki north 站＝主門；Taiga 限 140 cm"}, "suomen": {"n": "Suomenlinna", "a": "Suomenlinna, 00190 Helsinki", "h": "島上全天開放", "q": "Suomenlinna main quay", "x": "回程票可在島上碼頭機器、感應卡或 HSL app 買"}, "vanhak": {"n": "Vanha kauppahalli", "a": "Eteläranta 1, 00130 Helsinki", "h": "週一至週六 08:00–18:00（各攤位不同）", "q": "Vanha Kauppahalli Helsinki"}, "moomin": {"n": "Muumimuseo", "a": "Tampere-talo, Yliopistonkatu 55, 33100 Tampere", "h": "週二至週五 10:00–18:00｜週六日 09:00–17:00｜週一休", "t": "+358405624941", "ts": "040 562 4941", "q": "Muumimuseo Tampere", "x": "從 Tampere-talo 正門進，在大廳櫃台買票"}, "sarkan": {"n": "Särkänniemi", "a": "Särkänniemi, Tampere", "h": "依官網日曆（待確認）", "q": "Särkänniemi", "x": "部分兒童設施 20:00 關閉"}, "vapriikki": {"n": "Museokeskus Vapriikki", "a": "Alaverstaanraitti 5, 33100 Tampere", "h": "週二至週日 10:00–18:00（售票至 17:30）｜週一休", "q": "Vapriikki Tampere"}, "pyynikki": {"n": "Pyynikin näkötorni", "a": "Näkötornintie 20, 33230 Tampere", "h": "每日 09:00–20:00", "t": "+35832123247", "ts": "03 212 3247", "q": "Pyynikin näkötorni", "x": "登塔票在咖啡館櫃台買"}, "lennusadam": {"n": "Lennusadam", "a": "Vesilennuki 6, 10145 Tallinn", "h": "5–9 月每日 10:00–19:00（售票至 18:30）", "q": "Lennusadam Seaplane Harbour Tallinn"}, "proto": {"n": "PROTO Avastustehas", "a": "Peetri 10, 10415 Tallinn", "h": "週二至週日 11:00–18:00｜週一休", "q": "PROTO Invention Factory Tallinn"}, "evm": {"n": "Vabaõhu­muuseum", "a": "Vabaõhumuuseumi tee 12, 13521 Tallinn", "h": "售票 10:00–17:00｜園區至 19:00", "t": "+3726549100", "ts": "654 9100", "q": "Estonian Open Air Museum", "x": "公車 41 到 Rocca al Mare 站＝園區大門"}, "toompea": {"n": "Kohtuotsa vaateplatvorm", "a": "Kohtu, Toompea, Tallinn", "h": "全天", "q": "Kohtuotsa viewing platform"}, "telliskivi": {"n": "Telliskivi Loomelinnak", "a": "Telliskivi 60a/2, 10412 Tallinn", "h": "園區全天開放｜店家各自營業", "q": "Telliskivi Creative City"}, "ahhaa": {"n": "Teaduskeskus AHHAA", "a": "Sadama 1, 51004 Tartu", "h": "週日至週四 10:00–19:00｜週五六 10:00–20:00", "q": "AHHAA Science Centre Tartu"}, "erm": {"n": "Eesti Rahva Muuseum", "a": "Muuseumi tee 2, 60532 Tartu", "h": "週二至週日 10:00–18:00｜週一休", "t": "+3727363051", "ts": "736 3051", "q": "Estonian National Museum Tartu"}, "toome": {"n": "Toomemägi", "a": "Toomemägi, Tartu", "h": "全天", "q": "Toomemägi Tartu"}, "lottemaa": {"n": "Lottemaa", "a": "Kanari, Reiu, 86508 Pärnu maakond", "h": "每日 10:00–18:00（2026 季：6/13–8/30）", "q": "Lottemaa", "x": "停車場到入口小火車 €2／趟"}, "heureka": {"n": "Tiedekeskus Heureka", "a": "Tiedepuisto 1, 01300 Vantaa", "h": "夏季 週一至週五 09:00–18:00｜週六日 10:00–18:00", "t": "+35898579288", "ts": "09 8579 288", "q": "Heureka Vantaa", "x": "線上票要在當天開館前買才便宜 €3"}, "seurasaari": {"n": "Seurasaari", "a": "Seurasaari, 00250 Helsinki", "h": "島上全天開放", "q": "Seurasaari"}, "sibelius": {"n": "Sibelius-monumentti", "a": "Sibeliuksen puisto, Mechelininkatu, Helsinki", "h": "全天", "q": "Sibelius Monument"}, "pobrecito": {"n": "Pobrecito", "a": "Kamppi 5F, Urho Kekkosen katu 1, 00100 Helsinki", "h": "週一至週四 11–20｜週五 11–21｜週六 12–21｜週日 12–18", "t": "+358449787821", "ts": "044 978 7821", "q": "Pobrecito Kamppi Helsinki"}, "lazyfox": {"n": "Lazy Fox Kamppi", "a": "Albertinkatu 36, 00180 Helsinki", "h": "週一至週三 08–15｜週四 08–22｜週五 08–23｜週六 08–17｜週日 09–15", "q": "Lazy Fox Kamppi"}, "factory": {"n": "Ravintola Factory Kamppi", "a": "Runeberginkatu 3, 00100 Helsinki", "h": "週一二 10:30–15｜週三至週五 10:30–20｜週六 12–20｜週日休", "t": "+358102053211", "ts": "010 205 3211", "q": "Ravintola Factory Kamppi", "x": "只收卡"}, "hurlumhei": {"n": "Hurlumhei（Linnanmäki 園內）", "a": "Linnanmäki, Tivolikuja 1, 00510 Helsinki", "h": "依園區開放時間", "q": "Linnanmäki"}, "seahorse": {"n": "Ravintola Sea Horse", "a": "Kapteeninkatu 11, 00140 Helsinki", "h": "週一二 12–22｜週三至週五 12–23｜週六 15–23｜週日 15–22", "t": "+3589628169", "ts": "09 628169", "q": "Restaurant Sea Horse Helsinki"}, "pontus": {"n": "Restaurant Pontus", "a": "Kapteeninkatu 26, 00140 Helsinki", "h": "週一至週四 16–22｜週五六 16–23｜週日 16–21", "t": "+358407759656", "ts": "040 775 9656", "q": "Restaurant Pontus Helsinki"}, "boneless": {"n": "Restaurant Boneless Ullanlinna", "a": "Vuorimiehenkatu 12, 00140 Helsinki", "h": "週一至週四 10:30–21｜週五 10:30–22｜週六 11–22｜週日 12–20", "t": "+358505364499", "ts": "050 536 4499", "q": "Restaurant Boneless Ullanlinna"}, "brewery": {"n": "Suomenlinnan Panimo", "a": "Suomenlinna C 1, 00190 Helsinki", "h": "週一二 10:30–14:30｜週三至週五 10:30–21｜週六 12–21｜週日休", "t": "+358207425307", "ts": "020 742 5307", "q": "Suomenlinna Brewery"}, "soupmore": {"n": "SOUP+MORE Vanha Kauppahalli", "a": "Eteläranta 1, 00130 Helsinki", "h": "週一至週六 11–16｜週日休", "t": "+358504130805", "ts": "050 413 0805", "q": "SOUP+MORE Vanha Kauppahalli"}, "lappi": {"n": "Ravintola Lappi", "a": "Annankatu 22, 00100 Helsinki", "h": "週一至週六 16–22｜週日休", "t": "+3589645550", "ts": "09 645550", "q": "Lappi Ravintola Helsinki"}, "villanepal": {"n": "Ravintola Villa Nepal Kamppi", "a": "Urho Kekkosen katu 1, 00100 Helsinki", "h": "每日 10:30–21", "t": "+358413657123", "ts": "041 365 7123", "q": "Villa Nepal Kamppi"}, "uyghur": {"n": "Uyghur Noodle House Kamppi", "a": "Malminrinne 3, 00100 Helsinki", "h": "週一休｜週二至週五 11–21｜週六日 11:30–21:30", "t": "+358503728692", "ts": "050 372 8692", "q": "Uyghur Noodle House Kamppi"}, "thaiorchid": {"n": "Thai Orchid Villa Kamppi", "a": "Kamppi 1F, Urho Kekkosen katu 1, 00100 Helsinki", "h": "週一至週四 11–22｜週五 11–23｜週六 12–23｜週日 12–22", "t": "+358453109228", "ts": "045 310 9228", "q": "Thai Orchid Villa Kamppi"}, "hoku": {"n": "Restaurant HOKU", "a": "Kamppi 5F, Urho Kekkosen katu 1, 00100 Helsinki", "h": "週一 11–15｜週二至週四 11–15、16–21｜週五六 11–15、16–22｜週日休", "t": "+358401646160", "ts": "040 164 6160", "q": "Restaurant HOKU Kamppi"}, "tmarket": {"n": "Tampereen Kauppahalli", "a": "Hämeenkatu 19, 33200 Tampere", "h": "週一至週五 09–18｜週六 09–16｜週日休", "q": "Tampere Market Hall"}, "munkki": {"n": "Pyynikin Munkkikahvila Kauppahalli", "a": "Hämeenkatu 19, 33200 Tampere", "h": "週一至週五 09–18｜週六 09–16｜週日休", "t": "+358345180063", "ts": "03 4518 0063", "q": "Pyynikin Munkkikahvila Kauppahalli"}, "puisto": {"n": "Puisto", "a": "Hämeenkatu 14a, 33100 Tampere", "h": "週一至週四 08–22｜週五 08–02｜週六 09–02｜週日 09–22", "t": "+358107672370", "ts": "010 767 2370", "q": "Puisto Tampere Hämeenkatu"}, "plevna": {"n": "Panimoravintola Plevna", "a": "Itäinenkatu 8, 33210 Tampere", "h": "週一至週四 10:30–23｜週五 10:30–01｜週六 12–01｜週日 12–23", "t": "+35832601200", "ts": "03 260 1200", "q": "Plevna Tampere"}, "brewhouse": {"n": "Pyynikin Brewhouse", "a": "Verkatehtaankatu 2, 33100 Tampere", "h": "週一至週四 17–23｜週五 16–02｜週六 14–02｜週日 14–22", "t": "+358104233279", "ts": "010 423 3279", "q": "Pyynikin Brewhouse Tampere"}, "pulcinella": {"n": "Ristorante Pulcinella", "a": "Kyttälänkatu 11, 33100 Tampere", "h": "週一至週三 16–23｜週四 11–23｜週五 11–24｜週六 12–24｜週日休", "t": "+358505547441", "ts": "050 554 7441", "q": "Ristorante Pulcinella Tampere"}, "baonami": {"n": "Baonami Tampere", "a": "Hämeenkatu 3, 33100 Tampere", "h": "週二 16–22｜週三四 16–23｜週五 16–24｜週六 13–24｜週日一休", "t": "+358107672360", "ts": "010 767 2360", "q": "Baonami Tampere"}, "fenno": {"n": "Gastropub Fenno", "a": "Tuomiokirkonkatu 38, 33100 Tampere", "h": "週二至週五 16–24｜週六 12–24｜週日 12–18｜週一休", "t": "+358505126992", "ts": "050 512 6992", "q": "Gastropub Fenno Tampere"}, "kompressor": {"n": "Pub Kompressor", "a": "Rataskaevu 3, 10123 Tallinn", "h": "每日 11–22", "t": "+3726464210", "ts": "646 4210", "q": "Pub Kompressor Tallinn", "x": "不能訂位，櫃台點餐"}, "oldehansa": {"n": "Restoran Olde Hansa", "a": "Vana turg 1, 10140 Tallinn", "h": "週日至週四 12–23｜週五六 11–24", "t": "+3726279020", "ts": "627 9020", "q": "Olde Hansa Tallinn"}, "tbilisi": {"n": "Tbilisi", "a": "Pikk 43, 10133 Tallinn", "h": "每日 12–23", "t": "+3727422828", "ts": "742 2828", "q": "Tbilisi restaurant Pikk Tallinn"}, "pohjala": {"n": "Põhjala Brewery & Tap Room", "a": "Peetri 5, 10415 Tallinn", "h": "週一休｜週二至週四 12–24｜週五六 12–01｜週日 10–17", "t": "+37256662800", "ts": "5666 2800", "q": "Põhjala Brewery Tap Room"}, "lore": {"n": "Lore Bistroo", "a": "Peetri 12, 10415 Tallinn", "h": "週一至週四 12–22｜週五六 12–23｜週日 13–20", "t": "+3725118613", "ts": "511 8613", "q": "Lore Bistroo Tallinn"}, "puente": {"n": "Puente Tallinn", "a": "Vesilennuki 80, 10415 Tallinn", "h": "週一至週四 12–23｜週五六 12–24｜週日 12–23", "t": "+3725545532", "ts": "554 5532", "q": "Puente Tallinn"}, "kolu": {"n": "Kolu kõrts", "a": "Vabaõhumuuseumi tee 12, 13521 Tallinn", "h": "週二至週日 10–17｜週一休", "t": "+3726549118", "ts": "654 9118", "q": "Kolu kõrts"}, "baltiturg": {"n": "Balti Jaama Turg", "a": "Kopli 1, 10412 Tallinn", "h": "週一至週六 09–19｜週日 09–17", "t": "+3725157211", "ts": "515 7211", "q": "Balti Jaama Turg"}, "bep": {"n": "BEP", "a": "Kalma 11, 10414 Tallinn", "h": "週一至週五 11:30–21｜週六日 12–21", "t": "+37254700076", "ts": "5470 0076", "q": "BEP Kalma Tallinn"}, "siesta": {"n": "Siesta Tapas & Bar", "a": "Rotermanni 2, 10111 Tallinn", "h": "週一至週四 17–24｜週五 17–02｜週六 13–02｜週日 13–24", "t": "+37254540181", "ts": "5454 0181", "q": "Siesta Tapas Bar Tallinn"}, "r14": {"n": "R14", "a": "Rotermanni 14, 10111 Tallinn", "h": "週一至週四 11–23｜週五 11–24｜週六 12–24｜週日 12–21", "t": "+37258558120", "ts": "5855 8120", "q": "R14 Rotermanni Tallinn"}, "omhouse": {"n": "Om house", "a": "Rotermanni 18-2, 10111 Tallinn", "h": "週一至週四 12–23｜週五六 12–02｜週日休", "t": "+37255505158", "ts": "5550 5158", "q": "Om house Tallinn"}, "bruxx": {"n": "Bruxx – New Belgian", "a": "Rotermanni 2, 10111 Tallinn", "h": "每日 12–24", "t": "+37255519945", "ts": "5551 9945", "q": "Bruxx Tallinn"}, "gallery": {"n": "Gallery Cafe", "a": "Rotermanni 6, 10111 Tallinn", "h": "週一至週五 08:30–19｜週六日 09:30–20", "t": "+37253533123", "ts": "5353 3123", "q": "Gallery Cafe Rotermanni"}, "monk": {"n": "Monk Tartu", "a": "Tasku, Turu 2, 51004 Tartu", "h": "每日 11–21", "t": "+37256663536", "ts": "5666 3536", "q": "Monk Tartu Tasku"}, "davinci": {"n": "Da Vinci Pasta & Pizza", "a": "Tasku, Turu 2, 51004 Tartu", "h": "週一至週六 10–21｜週日 10–19", "t": "+37258541919", "ts": "5854 1919", "q": "Da Vinci Tasku Tartu"}, "hansatall": {"n": "Hansa Tall & Hansa Hoov", "a": "Turu 27a, 50106 Tartu", "h": "週一至週四 08–22｜週五六 08–23｜週日 08–21", "t": "+3727371802", "ts": "737 1802", "q": "Hansa Tall Tartu"}, "kolmtilli": {"n": "Kolm Tilli", "a": "Kastani 42, 50410 Tartu", "h": "週一至週四 09–22｜週五 09–24｜週六 10–24｜週日 10–22", "t": "+37256277753", "ts": "5627 7753", "q": "Kolm Tilli Tartu"}, "gunpowder": {"n": "Püssirohukelder", "a": "Lossi 28, 51003 Tartu", "h": "週一二 12–22｜週三至週六 12–01｜週日 12–22", "t": "+3727303555", "ts": "730 3555", "q": "Gunpowder Cellar Tartu"}, "nokk": {"n": "NOKK", "a": "Tähe 21, 51013 Tartu", "h": "週三四 17–22｜週五六 12–22｜週日至週二休", "t": "+37258860229", "ts": "5886 0229", "q": "NOKK Tartu", "x": "雞肉可能賣完，早點到"}, "ruutlihoov": {"n": "Rüütlihoov pubi", "a": "Rüütli 29, 80011 Pärnu", "h": "每日 12 點起（週五六至 24）", "t": "+37253451638", "ts": "5345 1638", "q": "Rüütlihoov pubi Pärnu"}, "ephesus": {"n": "Ephesus Cafe & Brasserie", "a": "Rüütli 38, 80011 Pärnu", "h": "每日 11–22", "t": "+3724427557", "ts": "442 7557", "q": "Ephesus Cafe Brasserie Pärnu"}, "room": {"n": "Restaurant RÖÖM", "a": "Pühavaimu 15, 80011 Pärnu", "h": "週一至週四 09–21｜週五六 09–23｜週日 09–15", "t": "+3725055511", "ts": "505 5511", "q": "Restaurant RÖÖM Pärnu"}, "kurgo": {"n": "Kurgo Restoran", "a": "Papli 13, 80012 Pärnu", "h": "週三四 17–22｜週五 17–24｜週六 12–24｜週日 12–21｜週一二休", "t": "+37257842017", "ts": "5784 2017", "q": "Kurgo Restoran Pärnu"}, "steffani": {"n": "Steffani", "a": "Nikolai 24, 80011 Pärnu", "h": "週日至週四 11–22｜週五六 11–24", "t": "+3724431170", "ts": "443 1170", "q": "Steffani Pärnu"}, "regatta": {"n": "Cafe Regatta", "a": "Merikannontie 8, 00260 Helsinki", "h": "每日 09–21", "t": "+358404149167", "ts": "040 414 9167", "q": "Cafe Regatta Helsinki", "x": "只有濾泡咖啡；海鷗會搶食"}, "tram3": {"n": "Rautatieasema 電車站（Tram 3）", "a": "Kaivokatu, 00100 Helsinki（中央車站前）", "h": "往 Kuusitie 方向搭；Linnanmäki (pohj.) 下車", "q": "Rautatieasema tram stop Helsinki", "x": "從 Oodi 步行約 6 分"}, "vabv": {"n": "Vabaduse väljak 公車站", "a": "Vabaduse väljak, 10146 Tallinn", "h": "公車 41 往 Rocca al Mare", "q": "Vabaduse väljak bus stop Tallinn", "x": "2026/8 Tallinn 公車路網調整，出發前用 Google Maps 再確認班次"}, "kamppi24": {"n": "Kamppi 公車站（24 號起點）", "a": "Kamppi, 00100 Helsinki", "h": "24 號往 Seurasaari；約每 25 分一班", "q": "Kamppi bus 24 Seurasaari stop Helsinki", "x": "地面層市區公車站，不是地下長途巴士站；用 HSL app 確認月台"}, "raekoja": {"n": "Raekoja plats", "a": "Raekoja plats, 10146 Tallinn", "h": "廣場全天開放", "q": "Tallinn Town Hall Square"}, "parnurand": {"n": "Pärnu Rand", "a": "Ranna puiestee, 80010 Pärnu", "h": "全天開放", "q": "Pärnu Beach"}, "rotermann": {"n": "Rotermanni kvartal", "a": "Rotermanni, 10111 Tallinn", "h": "街區全天開放｜店家各自營業", "q": "Rotermann Quarter Tallinn"}, "stockmann": {"n": "Stockmann Helsingin keskusta", "a": "Aleksanterinkatu 52, 00100 Helsinki", "h": "週一至週五 10:00–20:00｜週六 10:00–19:00｜週日 12:00–18:00", "q": "Stockmann Helsinki"}};
 
 const DAYS=[
- {"d":"2026-10-15","main":"抵達西安・同盛祥泡饃","tab":"10/15","wd":"四","title":"抵達日","sum":"台北經香港飛西安，傍晚入住，晚餐吃羊肉泡饃後早睡。","wx":"小雨轉多雲，氣溫約在 11°C 至 23°C 之間","walk":"步行 ~2 km","warn":"香港轉機只有 70 分鐘：同一張票、行李直掛，下機直接走轉機通道，不入境。","items":[
-  ["05:00","05:50","plain","➡️ 出門｜機場接送","台北 → 桃園機場","NT$1,600–1,900／車（6–7 人座，清晨加價）","台胞證＋護照放隨身包",{}],
-  ["05:50","07:30","plain","報到・出境","桃園 T1","","行李直掛 XIY，確認拿到兩段登機證",{}],
-  ["08:00","10:00","flight","CX407 TPE→HKG","桃園 T1 → 香港 T1","含機票","每日航班",{"km":806}],
-  ["10:00","11:10","plain","香港轉機（不入境）","HKG 管制區內","","如需輪椅協助，出發前向國泰提出",{}],
-  ["11:10","14:30","flight","CX946 HKG→XIY","香港 → 西安咸陽 T5","含機票","機上供午餐",{"km":1440}],
-  ["14:30","15:30","plain","入境・領行李","咸陽機場 T5","","走台胞證通道",{}],
-  ["15:30","16:30","move","7 座包車 → 飯店","咸陽機場 → 南稍門","¥300–400／車（7 座接機行情）","4 個大行李箱，5 座車放不下",{"hotel":1,"km":50}],
-  ["16:30","17:50","hotel","✅ 入住・休息","亞朵（南稍門）","","",{}],
-  ["17:50","18:05","hotel","➡️ 出門｜計程車 → 鐘樓","約 3.5 km","¥15／車","用滴滴叫車，目的地貼下方地址",{"km":3.5}],
-  ["18:05","19:15","meal","晚餐｜同盛祥 羊肉泡饃","","¥30–60／人｜4 人 ¥120–240","可自己掰饃或請店家代切",{"p":"tsx"}],
-  ["19:15","19:30","hotel","✅ 計程車回飯店","","¥15／車","",{"hotel":1,"km":3.5}]
+ {"d": "2027-06-25", "main": "桃園 → 香港 → 夜班機", "tab": "6/25", "wd": "五", "title": "出發｜CX469＋AY100", "sum": "下午從桃園飛香港，晚上轉 Finnair 夜班機飛 Helsinki。", "wx": "台北出發；出發前查中央氣象署預報", "walk": "步行 ~1 km", "warn": "本日為台北時間；CX469 在其他月份是晚班，訂票時確認銜接得上 AY100。","items":[
+  ["10:30", "11:30", "hotel", "➡️ 離家｜計程車", "台北 → 桃園機場 T1", "約 NT$1,200–1,500／車", "", {"p": "tpe", "km": 45}],
+  ["11:30", "13:30", "plain", "報到、出境", "桃園機場第一航廈", "", "行李直掛 HEL", {"p": "tpe"}],
+  ["14:20", "16:25", "flight", "CX469 台北 → 香港", "TPE T1 → HKG T1", "機票另計", "2026 夏季時刻，待確認", {"km": 810, "min": 125}],
+  ["16:25", "20:15", "plain", "轉機＋晚餐", "香港機場 T1", "HK$150–250／人", "轉機安檢後吃晚餐", {"p": "hkg"}],
+  ["20:55", "05:35", "flight", "AY100 香港 → Helsinki", "HKG T1 → HEL", "機票另計", "6/26 05:35 抵達（芬蘭時間）", {"km": 7820, "min": 820}]
  ]},
- {"d":"2026-10-16","main":"兵馬俑・華清宮・鐘鼓樓","tab":"10/16","wd":"五","title":"兵馬俑・華清宮","sum":"包車到臨潼看兵馬俑，午餐御膳苑後逛華清宮，回飯店休息 90 分鐘，傍晚鐘鼓樓散步後吃餃子宴。","wx":"陰，氣溫約在 13°C 至 24°C 之間","walk":"步行 ~4 km","warn":"預約時段前 30 分鐘要到北門排隊；北門是唯一入口。","items":[
-  ["07:30","08:25","hotel","➡️ 出門｜東線包車","飯店 → 兵馬俑北門（約 45 km）","¥480–500／車 全天（5 座）","司機在大廳等；早餐 07:00 起",{"km":45}],
-  ["08:25","09:00","plain","北門排隊・驗證","人、票、證三者一致","","輪椅租借：北廣場遊客中心",{}],
-  ["09:00","11:45","anchor","兵馬俑 一號坑→三號坑→二號坑","","¥120／人","65 歲以上免票官方只寫大陸身分證，預算以全票計",{"p":"bmy"}],
-  ["11:45","12:00","move","包車 → 華清宮","約 10 min","包車已含","",{"km":8,"min":10}],
-  ["12:00","13:15","meal","午餐｜華清御湯·御膳苑","","¥140／人｜4 人 ¥560","已訂 12:00",{"p":"ysy"}],
-  ["13:15","14:30","plain","華清宮（平地前段）","九龍湖、唐御湯遺址；不上驪山","¥120／人","65 歲以上免票未確認台胞適用，可問售票處",{"p":"hqg"}],
-  ["14:30","15:30","hotel","✅ 包車回飯店","臨潼 → 飯店","包車已含","",{"km":40}],
-  ["15:30","17:00","hotel","休息 90 分鐘","飯店","","",{}],
-  ["17:00","17:15","hotel","➡️ 出門｜計程車 → 鐘鼓樓","","¥15／車","",{"km":3.5}],
-  ["17:15","17:55","plain","鐘鼓樓廣場散步","平地，不登樓","免費","傍晚拍鐘樓、鼓樓；累就直接進餐廳",{"p":"zgl"}],
-  ["18:00","19:30","meal","晚餐｜德發長 餃子宴","","¥70–150／人｜4 人 ¥280–600","建議電話訂位",{"p":"dfc"}],
-  ["19:30","19:50","hotel","✅ 看鐘樓夜景後搭車回飯店","","¥15／車","",{"hotel":1,"km":3.5}]
+ {"d": "2027-06-26", "main": "抵達・Korkeasaari 動物園", "tab": "6/26", "wd": "六", "title": "抵達 Helsinki（仲夏節）", "sum": "清晨落地直接進飯店補眠，傍晚去島上的 Korkeasaari 動物園。", "wx": "晴時多雲，氣溫約在 12°C 至 20°C 之間", "walk": "步行 ~4 km", "warn": "仲夏節當天多數店家不開；落地先在機場買早午餐。","items":[
+  ["05:35", "06:30", "plain", "入境、領行李", "HEL", "", "EES 首次登錄（12 歲以下免指紋）", {"p": "helap"}],
+  ["06:30", "06:50", "plain", "機場商店補給", "HEL 入境大廳", "約 €10–15／人", "買早午餐備品", {"p": "helap"}],
+  ["06:50", "07:25", "move", "HSL 通勤火車 I/P", "HEL → Helsinki Central", "ABC：大人 €4.50／小孩 €2.25", "用 HSL app 買；每 10 分一班", {"km": 31, "min": 30}],
+  ["07:25", "07:35", "hotel", "✅ 入住（前一晚已訂）", "Central → 飯店", "", "", {"p": "hhel", "km": 0.6, "min": 8}],
+  ["07:40", "11:45", "plain", "補眠", "飯店", "", "", {}],
+  ["11:50", "11:55", "hotel", "➡️ 出門", "飯店 → Kamppi 5F", "", "", {"p": "hhel", "km": 0.3, "min": 4}],
+  ["12:00", "13:00", "meal", "午餐｜Pobrecito", "Kamppi 5F", "€15–20／人｜2 人 €28–36", "菲律賓菜；仲夏節是否營業待確認", {"p": "pobrecito"}],
+  ["13:00", "15:20", "hotel", "✅ 回飯店休息", "", "", "", {"p": "hhel", "km": 0.3, "min": 4}],
+  ["15:20", "15:55", "hotel", "➡️ 出門｜地鐵＋步行", "Kamppi → Kalasatama → Mustikkamaa 橋", "AB：大人 €3.30／小孩 €1.65", "", {"p": "hhel", "km": 4.9, "min": 35}],
+  ["16:00", "19:30", "anchor", "Korkeasaari 動物園", "", "傍晚票 大人 €19／小孩 €13", "16:00 後進場", {"p": "korkea"}],
+  ["18:00", "18:45", "meal", "晚餐｜園內餐廳", "Korkeasaari", "約 €15–20／人", "", {}],
+  ["19:30", "20:05", "hotel", "✅ 回飯店", "原路返回", "AB 單程", "早點睡", {"p": "hhel", "km": 4.9, "min": 35}]
  ]},
- {"d":"2026-10-17","main":"陝博・大雁塔・大唐不夜城","tab":"10/17","wd":"六","title":"陝博・大雁塔","sum":"早上看陝博本館，小寨午餐後回飯店休息 50 分鐘，14:45 先進大慈恩寺，16:00 看北廣場噴泉，提早吃 biangbiang 麵，再看大唐不夜城點燈。","wx":"雨轉陰，氣溫約在 13°C 至 19°C 之間","walk":"步行 ~4 km","warn":"大慈恩寺 16:30 停止入場：14:45 入寺，留有 1 小時以上緩衝。大唐不夜城可省略，長輩累了晚餐後直接回飯店。","items":[
-  ["08:30","08:45","hotel","➡️ 出門｜計程車 → 陝博","約 4 km","¥15／車","",{"km":4}],
-  ["09:00","11:45","anchor","陝西歷史博物館 本館","","基本陳列免費；大唐遺寶 ¥30／人（可選）","必看鑲金獸首瑪瑙杯",{"p":"sxhm"}],
-  ["11:45","11:55","move","計程車 → 小寨賽格","約 1 km","¥10／車","",{"km":1}],
-  ["12:00","13:15","meal","午餐｜長安大牌檔 葫蘆雞","","¥60–90／人｜4 人 ¥240–360","再點毛筆酥、稠酒",{"p":"cadp"}],
-  ["13:15","13:35","hotel","✅ 計程車回飯店","","¥15／車","",{"hotel":1,"km":3.3}],
-  ["13:35","14:25","hotel","休息 50 分鐘","飯店","","",{}],
-  ["14:25","14:45","hotel","➡️ 出門｜計程車 → 大慈恩寺","約 5 km","¥15／車","",{"km":5}],
-  ["14:45","15:45","anchor","大慈恩寺・大雁塔","寺院平地；登塔可選","門票 ¥10–50（各來源說法不一）；登塔 +¥25–30","16:30 停止入場；登塔目前只開到 5 樓",{"p":"dce"}],
-  ["15:45","16:00","move","步行 → 大雁塔北廣場","約 500 m，平地","","",{"km":0.5}],
-  ["16:00","16:30","plain","北廣場 16:00 音樂噴泉","坐著看，約 10 分鐘，之後原地休息","免費","以現場公告為準",{"p":"dyt"}],
-  ["16:30","16:45","move","計程車 → 郭老三面莊","約 5 分鐘","¥10／車","",{"km":1.5,"min":5}],
-  ["16:45","17:45","meal","晚餐｜郭老三 biangbiang 麵","","¥18–25／人｜4 人 ¥72–100","點三合一；提早吃避開晚餐排隊",{"p":"gls"}],
-  ["17:45","17:55","move","計程車 → 大唐不夜城 北口","","¥10／車","",{"km":1.5}],
-  ["18:00","19:00","plain","大唐不夜城 北段（可選）","只走北段約 1 km","免費","日落約 18:10，18:30 後陸續亮燈",{"p":"dtb"}],
-  ["19:00","19:20","hotel","✅ 計程車回飯店","","¥20／車","",{"hotel":1,"km":5.8}]
+ {"d": "2027-06-27", "main": "Oodi・Linnanmäki 遊樂園", "tab": "6/27", "wd": "日", "title": "Oodi 圖書館＋Linnanmäki", "sum": "早上逛 Oodi 中央圖書館，中午到傍晚在 Linnanmäki 玩，晚上吃芬蘭家常菜。", "wx": "晴時多雲，氣溫約在 12°C 至 20°C 之間", "walk": "步行 ~7 km", "warn": "Taiga 雲霄飛車限 140 cm；遊樂園開放時間前一晚看官網日曆。","items":[
+  ["09:45", "09:57", "hotel", "➡️ 出門", "飯店 → Oodi", "24h AB：大人 €10.60", "今天買 HSL 24 小時票", {"p": "hhel", "km": 0.9, "min": 12}],
+  ["10:00", "11:15", "plain", "Oodi 中央圖書館", "", "Free", "3 樓書的天堂、2 樓創客空間", {"p": "oodi"}],
+  ["11:15", "11:35", "move", "Tram 3", "Rautatieasema → Linnanmäki (pohj.)", "24h 票", "", {"p": "tram3", "km": 2.0, "min": 15}],
+  ["11:40", "17:00", "anchor", "Linnanmäki 遊樂園", "主門", "小孩 Isohupi €53｜大人入園 €5", "2026 價格；網購", {"p": "linna"}],
+  ["12:30", "13:15", "meal", "午餐｜Hurlumhei（園內）", "Linnanmäki", "€12–16／人", "墨西哥塔可", {"p": "hurlumhei"}],
+  ["17:00", "18:25", "hotel", "✅ 回飯店休息｜Tram 3＋步行", "", "24h 票", "", {"p": "hhel", "km": 3.0, "min": 30}],
+  ["18:25", "18:45", "hotel", "➡️ 出門", "飯店 → Kapteeninkatu", "", "", {"p": "hhel", "km": 1.4, "min": 18}],
+  ["18:45", "20:15", "meal", "晚餐｜Sea Horse", "Ullanlinna", "€30–40／人｜2 人 €55–70", "肉丸 lihapullat（配馬鈴薯泥、越橘醬）；需訂", {"p": "seahorse"}],
+  ["20:15", "20:35", "hotel", "✅ 回飯店", "", "", "", {"p": "hhel", "km": 1.4, "min": 18}]
  ]},
- {"d":"2026-10-18","main":"城牆・西安博物院","tab":"10/18","wd":"日","title":"城牆・西安博物院","sum":"從永寧門登城牆坐電瓶車繞一圈，中午吃灌湯包，回飯店休息 90 分鐘，下午看西安博物院和小雁塔，傍晚直接去吃涮羊肉。","wx":"雨，氣溫約在 13°C 至 18°C 之間","walk":"步行 ~4 km","warn":"目前預報 10/18 下雨：城牆上沒有遮蔽，下雨就改走雨天備案（見摘要）；今晚決定明天去不去洛陽。","items":[
-  ["09:00","09:10","hotel","➡️ 出門｜計程車 → 永寧門","約 1 km","¥10／車","",{"km":1}],
-  ["09:10","09:30","plain","購票・登城","永寧門（南門）","¥54／人","65 歲以上免票要敬老優待證，台胞以全票計；需要無障礙電梯先問南門遊客服務中心",{"p":"ynm"}],
-  ["09:30","10:45","anchor","城牆電瓶車繞一圈","城牆頂，全長 13.74 km","¥80／人（全程不下車）","一圈約 45 min；單段票價現場確認",{}],
-  ["10:45","11:15","plain","回南門拍城樓・下城","永寧門","","",{"p":"ynm"}],
-  ["11:15","11:30","move","計程車 → 北院門","","¥15／車","",{"km":2.5}],
-  ["11:30","12:30","meal","午餐｜賈三灌湯包","","¥36–50／人｜4 人 ¥144–200","週日人多，盡量準時到；只吃這頓，不逛回民街",{"p":"js"}],
-  ["12:30","12:50","hotel","✅ 計程車回飯店","","¥15／車","",{"hotel":1,"km":2.9}],
-  ["12:50","14:20","hotel","休息 90 分鐘","飯店","","",{}],
-  ["14:20","14:30","hotel","➡️ 出門｜計程車 → 西安博物院","約 600 m","¥10／車","",{"km":0.6}],
-  ["14:30","16:45","plain","西安博物院・小雁塔","館內＋薦福寺園林","免費（需預約）；不登塔","三彩騰空馬",{"p":"xam"}],
-  ["16:45","17:05","move","計程車 → 鐘樓","約 3 km","¥15／車","",{"km":3}],
-  ["17:15","18:45","meal","晚餐｜酸辣谷 涮羊肉","","¥80–120／人｜4 人 ¥320–480","可選不辣鍋底",{"p":"slg"}],
-  ["18:45","19:00","hotel","✅ 計程車回飯店","","¥15／車","決定 Day 5 去不去洛陽",{"hotel":1,"km":3.5}]
+ {"d": "2027-06-28", "main": "Suomenlinna 海上要塞", "tab": "6/28", "wd": "一", "title": "Suomenlinna 世界遺產", "sum": "坐渡輪到 Suomenlinna，下午逛老市場與 Esplanadi，晚上吃拉普蘭菜。", "wx": "晴時多雲，氣溫約在 13°C 至 21°C 之間", "walk": "步行 ~8 km", "warn": "島上啤酒廠餐廳週一只開到 14:30，13:30 前入座。","items":[
+  ["09:15", "09:30", "hotel", "➡️ 出門", "飯店 → Kauppatori", "", "", {"p": "hhel", "km": 1.1, "min": 14}],
+  ["09:40", "09:55", "move", "HSL 渡輪 19", "Kauppatori → Suomenlinna", "AB：大人 €3.30／小孩 €1.65", "", {"p": "kauppatori", "km": 3}],
+  ["10:00", "12:30", "anchor", "Suomenlinna 海上要塞", "國王門、海岸砲台", "島上 Free", "穿好走的鞋", {"p": "suomen"}],
+  ["12:30", "13:30", "meal", "午餐｜Suomenlinna Brewery", "Suomenlinna C 1", "€20–28／人｜2 人 €38–50", "啤酒廠當日主菜", {"p": "brewery"}],
+  ["13:40", "13:55", "move", "HSL 渡輪 19", "Suomenlinna → Kauppatori", "AB 單程", "", {"p": "suomen", "km": 3}],
+  ["14:00", "15:00", "plain", "Vanha Kauppahalli＋Esplanadi", "港邊", "", "姆明周邊", {"p": "vanhak"}],
+  ["15:00", "17:55", "hotel", "✅ 回飯店休息", "", "", "", {"p": "hhel", "km": 1.1, "min": 14}],
+  ["17:55", "18:00", "hotel", "➡️ 出門", "飯店 → Annankatu", "", "", {"p": "hhel", "km": 0.2, "min": 3}],
+  ["18:00", "19:30", "meal", "晚餐｜Lappi", "Annankatu 22", "€35–45／人｜2 人 €60–80", "炒馴鹿肉 poronkäristys；需訂", {"p": "lappi"}],
+  ["19:30", "19:35", "hotel", "✅ 回飯店", "", "", "整理行李", {"p": "hhel", "km": 0.2, "min": 3}]
  ]},
- {"d":"2026-10-19","variant":"去洛陽","main":"洛陽龍門石窟・水席","tab":"10/19","wd":"一","title":"洛陽龍門石窟","sum":"坐高鐵到洛陽看龍門西山盧舍那大佛，在洛陽老城吃水席，傍晚回西安。","wx":"洛陽雨轉陰，氣溫約在 14°C 至 19°C 之間；西安陰","walk":"步行 ~4 km","warn":"管記水席午市 14:00 結束，12:45 前要到；回程 G2007 15:30 是硬性時間。不去的話看「留在西安」頁，龍門票當日 20:00 前可退。","items":[
-  ["06:40","07:20","hotel","➡️ 出門｜計程車 → 西安北站","約 18 km","¥45–55／車","早餐請飯店打包",{"km":18}],
-  ["07:20","08:12","plain","安檢・候車","西安北站","","台胞證刷不過閘門就走人工通道",{"p":"xab"}],
-  ["08:12","09:44","flight","高鐵 G3162","西安北 → 洛陽龍門","二等座 ¥178／人","攜程 10/10 查班次正常；下單以 12306 為準",{"km":380}],
-  ["09:44","10:15","move","計程車 → 西北服務區，步行到西山檢票口","洛陽龍門站 → 西北服務區，再走約 800 m","¥20–25／車","一定要停「西北」服務區；司機說關閉也不要換",{"p":"lmx","km":5}],
-  ["10:15","12:15","anchor","龍門石窟 西山","賓陽三洞→萬佛洞→奉先寺盧舍那大佛→漫水橋出園","¥90／人","預約 10:00–11:00 時段；60 歲以上免票未確認台胞適用；不進香山寺、白園",{"p":"lms"}],
-  ["12:15","12:45","move","電瓶車＋計程車 → 洛陽老城","出園坐電瓶車到東北服務區，再叫車到仙果市街","電瓶車 ¥10／人＋¥30–40／車","",{"km":15}],
-  ["12:45","13:50","meal","午餐｜管記水席","","¥50–70／人｜4 人 ¥200–280","坐下就點：牡丹燕菜、焦炸丸子，3–4 道就夠",{"p":"gj"}],
-  ["13:50","14:20","move","計程車 → 洛陽龍門站","約 25 min","¥30–40／車","",{"p":"lmz","km":13,"min":25}],
-  ["14:20","15:30","plain","候車（緩衝時間）","洛陽龍門站","","提早到可改簽 G2195 14:54，客滿就照原票；萬一錯過 G2007，改簽 G671 15:39",{}],
-  ["15:30","16:45","flight","高鐵 G2007","洛陽龍門 → 西安北","二等座 ¥174／人","",{"km":380}],
-  ["16:45","17:30","hotel","✅ 計程車回飯店・休息","西安北 → 飯店","¥45–55／車","",{"hotel":1,"km":18}],
-  ["18:30","18:45","hotel","➡️ 出門｜計程車 → 西門","約 3 km","¥15／車","",{"km":3}],
-  ["18:45","19:30","meal","晚餐｜魏家涼皮","","¥23–35／人｜4 人 ¥92–140","",{"p":"wj"}],
-  ["19:30","19:45","hotel","✅ 計程車回飯店","","¥15／車","",{"hotel":1,"km":3}]
+ {"d": "2027-06-29", "main": "火車到 Tampere・姆明博物館", "tab": "6/29", "wd": "二", "title": "Tampere｜市場＋姆明博物館", "sum": "搭火車到 Tampere，午餐吃市場鮭魚湯，下午逛全世界唯一的姆明博物館。", "wx": "晴時多雲，氣溫約在 11°C 至 21°C 之間", "walk": "步行 ~5 km", "warn": "姆明博物館週一公休；今天週二。","items":[
+  ["09:30", "09:40", "hotel", "➡️ 退房", "飯店 → Helsinki Central", "", "", {"p": "hhel", "km": 0.6, "min": 8}],
+  ["10:00", "11:50", "flight", "火車 VR IC Helsinki → Tampere", "HEL → Tampere", "大人 €21–34／小孩打 6 折", "選 10:00–11:00 出發班次；劃位", {"p": "helc", "km": 187, "min": 110}],
+  ["11:55", "12:00", "hotel", "✅ 飯店寄放行李", "車站旁", "", "", {"p": "htam", "km": 0.2, "min": 3}],
+  ["12:00", "12:12", "move", "步行", "飯店 → Kauppahalli", "", "", {"km": 0.8, "min": 12}],
+  ["12:15", "13:15", "meal", "午餐｜Tampere Market Hall", "Hämeenkatu 19", "€14–16／人", "鮭魚湯 lohikeitto", {"p": "tmarket"}],
+  ["13:15", "13:40", "move", "步行", "→ Tampere-talo", "", "累了改 Bolt", {"km": 1.5, "min": 20}],
+  ["13:45", "15:45", "anchor", "Moomin Museum 姆明博物館", "Tampere-talo", "大人 €18／小孩 €9", "", {"p": "moomin"}],
+  ["15:45", "18:00", "hotel", "✅ 入住、休息", "", "", "三溫暖", {"p": "htam", "km": 0.7, "min": 9}],
+  ["18:00", "18:13", "hotel", "➡️ 出門", "飯店 → Finlayson", "", "", {"p": "htam", "km": 1.0, "min": 13}],
+  ["18:15", "19:45", "meal", "晚餐｜Plevna", "Itäinenkatu 8", "€25–35／人｜2 人 €45–60", "黑血腸 mustamakkara；需訂", {"p": "plevna"}],
+  ["19:45", "20:00", "hotel", "✅ 回飯店", "", "", "", {"p": "htam", "km": 1.0, "min": 13}]
  ]},
- {"d":"2026-10-19","alt":true,"variant":"留在西安","main":"備案：碑林・書院門・回坊","tab":"10/19","wd":"一","title":"留在西安（不去洛陽）","sum":"不去洛陽的備案：睡晚一點，上午碑林＋書院門，午餐葫蘆頭泡饃，下午休息後看化覺巷清真大寺、逛回坊。","wx":"西安陰，氣溫約在 11°C 至 22°C 之間","walk":"步行 ~3.5 km","warn":"選這頁的話：龍門票 10/19 20:00 前退、高鐵在 12306 退票；碑林要預約 10/19 10:00 時段。如果 10/18 雨天備案已去過碑林，上午改登城牆（永寧門，¥54＋電瓶車 ¥80）。化覺巷 17:00 停止入場，要遮肩膝。","items":[
-  ["08:00","09:30","plain","睡晚一點・飯店早餐","飯店","房價已含","",{}],
-  ["09:40","09:55","hotel","➡️ 出門｜計程車 → 碑林","約 1.5 km","¥10／車","",{"km":1.5}],
-  ["10:00","11:45","anchor","西安碑林博物館","碑林七室→石刻藝術館，不用全看","¥85／人","需預約 10:00 時段；館內有座椅可休息",{"p":"bl"}],
-  ["11:45","12:15","plain","書院門古文化街散步","碑林出口往西，平路約 400 m","免費","文房四寶、字畫店，看看就好",{"p":"sym"}],
-  ["12:15","12:25","move","計程車 → 南院門","約 1.5 km","¥10／車","",{"km":1.5}],
-  ["12:30","13:30","meal","午餐｜春發生 葫蘆頭泡饃","","¥43／人｜4 人約 ¥170","非遺老字號；吃不慣大腸可點小炒",{"p":"cfs"}],
-  ["13:30","13:45","hotel","✅ 計程車回飯店","","¥10／車","",{"hotel":1,"km":1.8}],
-  ["13:45","15:15","plain","回飯店休息","飯店","","休息 90 分鐘",{}],
-  ["15:15","15:35","hotel","➡️ 出門｜計程車 → 化覺巷","約 3 km","¥15／車","",{"km":3}],
-  ["15:40","16:40","anchor","化覺巷清真大寺","明代中式清真寺，庭院四進","¥25／人（淡季 ¥15）","遮肩膝；禮拜大殿只能在外面看",{"p":"hj"}],
-  ["16:40","17:40","plain","回坊散步","北廣濟街 → 大皮院，平路約 800 m","","18:00 吃晚餐，別吃太飽",{"p":"hmj"}],
-  ["17:40","17:55","move","計程車 → 西門外","約 2 km","¥10／車","",{"km":2}],
-  ["18:00","19:00","meal","晚餐｜魏家涼皮","","¥23–35／人｜4 人 ¥92–140","",{"p":"wj"}],
-  ["19:00","19:15","hotel","✅ 計程車回飯店","","¥15／車","",{"hotel":1,"km":3}]
+ {"d": "2027-06-30", "main": "Särkänniemi 樂園", "tab": "6/30", "wd": "三", "title": "Särkänniemi 一整天", "sum": "一整天在湖邊的 Särkänniemi：遊樂設施、水族館、觀景塔。", "wx": "晴時多雲，氣溫約在 11°C 至 21°C 之間", "walk": "步行 ~6 km", "warn": "遊樂設施時間和樂園不一定一樣，前一晚先看官網日曆。","items":[
+  ["10:30", "10:50", "hotel", "➡️ 出門｜Nysse 公車", "飯店 → Särkänniemi", "約 €3–4／人", "或步行 30 分", {"p": "htam", "km": 2.5, "min": 15}],
+  ["11:00", "17:30", "anchor", "Särkänniemi", "", "小孩全區手環 €52｜大人景點手環 €30", "2026 現場價；網購較便宜", {"p": "sarkan"}],
+  ["12:30", "13:15", "meal", "午餐｜園內", "Särkänniemi", "約 €15／人", "", {}],
+  ["17:30", "18:55", "hotel", "✅ 回飯店休息｜公車", "", "約 €3–4／人", "", {"p": "htam", "km": 2.5, "min": 15}],
+  ["18:55", "19:00", "hotel", "➡️ 出門", "飯店 → Kyttälänkatu", "", "", {"p": "htam", "km": 0.4, "min": 5}],
+  ["19:00", "20:15", "meal", "晚餐｜Pulcinella", "Kyttälänkatu 11", "€20–28／人｜2 人 €38–50", "義大利麵", {"p": "pulcinella"}],
+  ["20:15", "20:20", "hotel", "✅ 回飯店", "", "", "", {"p": "htam", "km": 0.4, "min": 5}]
  ]},
- {"d":"2026-10-20","main":"碑林（可選）・返台","tab":"10/20","wd":"二","title":"返台","sum":"早上可選去碑林，11:20 出發去機場，經香港飛回台北（10/21 00:35 抵達）。","wx":"陰轉晴，氣溫約在 14°C 至 21°C 之間","walk":"步行 ~2 km","warn":"11:20 一定要上車去機場。香港轉機約 3 小時 45 分，晚餐在香港機場吃。","items":[
-  ["08:00","08:45","plain","早餐・收行李","飯店","房價已含","",{}],
-  ["08:45","08:55","hotel","➡️ 出門｜計程車 → 碑林（可選）","約 1.5 km","¥10／車","累或下雨就跳過",{"km":1.5}],
-  ["09:00","10:15","plain","碑林博物館（可選）","","¥85／人","需預約",{"p":"bl"}],
-  ["10:15","10:25","hotel","✅ 計程車回飯店","","¥10／車","",{"hotel":1,"km":1.5}],
-  ["11:00","11:20","plain","退房","","","",{"hotel":true}],
-  ["11:20","12:20","hotel","➡️ 出發｜7 座包車 → 咸陽機場 T5","約 50 km","¥300–400／車（7 座送機行情）","",{"km":50}],
-  ["12:20","13:10","meal","午餐｜機場簡餐（出境前）","咸陽 T5 出發層","約 ¥60–90／人","櫃檯約 12:50 開",{"p":"xiy"}],
-  ["13:10","14:00","plain","報到・出境","咸陽機場 T5","","進管制區後候機",{"p":"xiy"}],
-  ["15:50","19:05","flight","CX947 XIY→HKG","西安咸陽 T5 → 香港 T1","含機票","",{"km":1440}],
-  ["19:30","21:00","meal","晚餐｜香港機場 港式","HKG 管制區內","約 HK$120–180／人","",{"p":"hkg"}],
-  ["22:50","00:35","flight","CX408 HKG→TPE","抵達桃園 10/21（三）00:35","含機票","機場捷運已收班，搭預約的接送（6–7 人座 NT$1,600–1,900）",{"km":806}]
+ {"d": "2027-07-01", "main": "Vapriikki・Pyynikki 觀景塔", "tab": "7/1", "wd": "四", "title": "遊戲博物館＋Pyynikki", "sum": "上午逛遊戲博物館與冰球名人堂，下午上 Pyynikki 觀景塔吃甜甜圈。", "wx": "晴時多雲，氣溫約在 11°C 至 21°C 之間", "walk": "步行 ~6 km", "warn": "Vapriikki 週一休、週二至週日 10–18；今天週四。","items":[
+  ["09:40", "09:58", "hotel", "➡️ 出門", "飯店 → Vapriikki", "", "", {"p": "htam", "km": 1.4, "min": 18}],
+  ["10:00", "12:30", "anchor", "Vapriikki｜遊戲博物館＋冰球名人堂", "", "大人 €16／小孩 €8", "", {"p": "vapriikki"}],
+  ["12:30", "12:42", "move", "步行", "→ Puisto", "", "", {"km": 0.9, "min": 12}],
+  ["12:45", "13:45", "meal", "午餐｜Puisto", "Hämeenkatu 14a", "€18–25／人", "河景小館，點單點", {"p": "puisto"}],
+  ["13:45", "14:00", "move", "Bolt", "→ Pyynikki", "約 €8–10／車", "", {"km": 2.5, "min": 12}],
+  ["14:00", "15:30", "plain", "Pyynikki 觀景塔＋甜甜圈 munkki", "", "登塔 €3／人｜甜甜圈約 €3／個", "", {"p": "pyynikki"}],
+  ["15:30", "16:00", "plain", "Pyynikki 森林步道（選配）", "山脊", "Free", "", {}],
+  ["16:00", "18:25", "hotel", "✅ 回飯店休息｜Bolt", "", "約 €9–11／車", "", {"p": "htam", "km": 2.9, "min": 12}],
+  ["18:25", "18:30", "hotel", "➡️ 出門", "飯店 → Tuomiokirkonkatu", "", "", {"p": "htam", "km": 0.3, "min": 4}],
+  ["18:30", "20:00", "meal", "晚餐｜Fenno", "Tuomiokirkonkatu 38", "€28–38／人｜2 人 €50–70", "駝鹿燉肉；需訂", {"p": "fenno"}],
+  ["20:00", "20:05", "hotel", "✅ 回飯店", "", "", "收行李", {"p": "htam", "km": 0.3, "min": 4}]
+ ]},
+ {"d": "2027-07-02", "main": "Tampere → Helsinki → 渡輪 Tallinn", "tab": "7/2", "wd": "五", "title": "移動日｜渡輪到 Tallinn", "sum": "火車回 Helsinki，轉電車到西碼頭，坐 2 小時渡輪到 Tallinn，晚上逛老城。", "wx": "晴時多雲，氣溫約在 13°C 至 21°C 之間", "walk": "步行 ~4 km", "warn": "火車誤點超過 45 分就改搭 16:30 渡輪（買可改期票）。","items":[
+  ["09:20", "09:25", "hotel", "➡️ 退房", "飯店 → Tampere 站", "", "", {"p": "htam", "km": 0.2, "min": 3}],
+  ["09:40", "11:30", "flight", "火車 VR IC Tampere → Helsinki", "Tampere → HEL", "大人 €21–34／小孩打 6 折", "選 11:30 前抵達的班次", {"p": "tamst", "km": 187, "min": 110}],
+  ["11:35", "11:55", "move", "Tram 7（或 9）", "Rautatieasema → Länsiterminaali T2", "AB：大人 €3.30／小孩 €1.65", "", {"p": "helc", "km": 2.5, "min": 20}],
+  ["12:00", "12:50", "plain", "Tallink 報到", "West Terminal 2", "", "", {"p": "t2"}],
+  ["13:30", "15:30", "flight", "渡輪 Tallink Helsinki → Tallinn", "HEL T2 → Tallinn D 碼頭", "單程約 €10–35／人", "Megastar／MyStar；13:30 班 2027 待確認；船上美食街午餐", {"p": "tlld", "km": 85}],
+  ["15:35", "18:20", "hotel", "✅ 入住｜Bolt", "D 碼頭 → 飯店", "約 €5–8／車", "頂樓泳池", {"p": "htll", "km": 1.3, "min": 10}],
+  ["18:20", "18:30", "hotel", "➡️ 出門", "飯店 → Rataskaevu", "", "", {"p": "htll", "km": 0.8, "min": 10}],
+  ["18:30", "19:30", "meal", "晚餐｜Kompressor", "Rataskaevu 3", "€10–15／人｜2 人 €18–26", "愛沙尼亞鬆餅", {"p": "kompressor"}],
+  ["19:30", "20:30", "plain", "老城散步", "市政廳廣場 → Viru 門", "Free", "", {"p": "raekoja"}],
+  ["20:30", "20:35", "hotel", "✅ 回飯店", "", "", "", {"p": "htll", "km": 0.4, "min": 5}]
+ ]},
+ {"d": "2027-07-03", "main": "Lennusadam・PROTO・Olde Hansa", "tab": "7/3", "wd": "六", "title": "潛艇、發明工廠、中世紀晚餐", "sum": "上午看潛艇和破冰船，下午玩 VR 發明工廠，晚上吃中世紀主題餐廳。", "wx": "晴時多雲，氣溫約在 13°C 至 21°C 之間", "walk": "步行 ~5 km", "warn": "Olde Hansa 週六晚上一定要先訂位。","items":[
+  ["09:40", "09:55", "hotel", "➡️ 出門｜Bolt", "飯店 → Lennusadam", "約 €6–8／車", "", {"p": "htll", "km": 2.6, "min": 15}],
+  ["10:00", "12:15", "anchor", "Lennusadam 水上飛機港", "", "家庭票 €28", "Lembit 潛艇、Suur Tõll 破冰船", {"p": "lennusadam"}],
+  ["12:15", "12:25", "move", "步行", "→ Peetri 5", "", "", {"km": 0.6, "min": 8}],
+  ["12:25", "13:40", "meal", "午餐｜Põhjala Brewery", "Peetri 5", "€18–25／人", "煙燻 BBQ 牛胸肉", {"p": "pohjala"}],
+  ["13:45", "13:50", "move", "步行", "→ Peetri 10", "", "", {"km": 0.2, "min": 3}],
+  ["13:50", "16:30", "plain", "PROTO 發明工廠", "", "家庭票 週末 €37（2027 待確認）", "VR 熱氣球、第一台汽車", {"p": "proto"}],
+  ["16:30", "18:50", "hotel", "✅ 回飯店休息｜Bolt", "", "約 €6–8／車", "泳池", {"p": "htll", "km": 2.4, "min": 15}],
+  ["18:50", "19:00", "hotel", "➡️ 出門", "飯店 → Vana turg", "", "", {"p": "htll", "km": 0.6, "min": 8}],
+  ["19:00", "20:45", "meal", "晚餐｜Olde Hansa", "Vana turg 1", "€35–50／人｜2 人 €60–85", "中世紀主題；需訂", {"p": "oldehansa"}],
+  ["20:45", "20:55", "hotel", "✅ 回飯店", "", "", "", {"p": "htll", "km": 0.6, "min": 8}]
+ ]},
+ {"d": "2027-07-04", "main": "愛沙尼亞露天博物館", "tab": "7/4", "wd": "日", "title": "露天博物館＋喬治亞菜", "sum": "搭公車到海邊的露天博物館，看百年農村建築，午餐吃老客棧。", "wx": "晴時多雲，氣溫約在 13°C 至 21°C 之間", "walk": "步行 ~8 km", "warn": "園區全走完約 3.5 km，可坐馬車代步。","items":[
+  ["09:15", "09:27", "hotel", "➡️ 出門｜步行", "飯店 → Vabaduse väljak 公車站", "", "", {"p": "htll", "km": 0.9, "min": 12}],
+  ["09:30", "10:00", "move", "公車 41", "Vabaduse väljak → Rocca al Mare", "感應刷卡 €2／人", "Rocca al Mare 站就在園區大門", {"p": "vabv", "km": 9, "min": 30}],
+  ["10:00", "14:30", "anchor", "愛沙尼亞露天博物館", "Rocca al Mare", "家庭票 €38", "大人 €18＋學生票 €12 較省，但要學生證", {"p": "evm"}],
+  ["12:30", "13:30", "meal", "午餐｜Kolu Kõrts", "園內老客棧", "€12–18／人", "豌豆湯 hernesupp", {"p": "kolu"}],
+  ["14:30", "15:00", "move", "公車 41", "Rocca al Mare → Vabaduse väljak", "€2／人", "", {"p": "evm", "km": 9, "min": 30}],
+  ["15:00", "17:50", "hotel", "✅ 回飯店休息｜步行", "Vabaduse väljak → 飯店", "", "泳池", {"p": "htll", "km": 0.9, "min": 12}],
+  ["17:50", "18:00", "hotel", "➡️ 出門", "飯店 → Pikk", "", "", {"p": "htll", "km": 0.7, "min": 9}],
+  ["18:00", "19:30", "meal", "晚餐｜Tbilisi", "Pikk 43", "€18–26／人｜2 人 €32–48", "船形起司麵包 khachapuri、湯包 khinkali", {"p": "tbilisi"}],
+  ["19:30", "19:40", "hotel", "✅ 回飯店", "", "", "", {"p": "htll", "km": 0.7, "min": 9}]
+ ]},
+ {"d": "2027-07-05", "main": "老城・Telliskivi", "tab": "7/5", "wd": "一", "title": "Tallinn 老城＋Telliskivi", "sum": "上午爬 Toompea 看老城全景，中午吃 Balti Jaama 市場，下午逛 Telliskivi。", "wx": "晴時多雲，氣溫約在 13°C 至 21°C 之間", "walk": "步行 ~7 km", "warn": "週一不少博物館公休，今天以戶外為主。","items":[
+  ["09:30", "09:42", "hotel", "➡️ 出門", "飯店 → Toompea", "", "上坡有階梯", {"p": "htll", "km": 0.9, "min": 12}],
+  ["09:45", "12:00", "anchor", "Tallinn 老城", "Toompea → 市政廳廣場", "Free", "Kohtuotsa、Patkuli 觀景台", {"p": "toompea"}],
+  ["12:00", "12:15", "move", "步行", "→ Balti Jaama Turg", "", "", {"km": 0.8, "min": 12}],
+  ["12:15", "13:30", "meal", "午餐｜Balti Jaama Turg", "Kopli 1", "€10–15／人", "市場美食區自選", {"p": "baltiturg"}],
+  ["13:30", "15:00", "plain", "Telliskivi 創意園區", "市場旁", "Free", "", {"p": "telliskivi"}],
+  ["15:00", "18:25", "hotel", "✅ 回飯店休息", "", "", "", {"p": "htll", "km": 1.4, "min": 18}],
+  ["18:25", "18:30", "hotel", "➡️ 出門", "飯店 → Rotermann", "", "", {"p": "htll", "km": 0.3, "min": 4}],
+  ["18:30", "19:45", "meal", "晚餐｜Siesta Tapas", "Rotermanni 2", "€22–30／人", "西班牙小菜；需訂", {"p": "siesta"}],
+  ["19:45", "19:50", "hotel", "✅ 回飯店", "", "", "收行李", {"p": "htll", "km": 0.3, "min": 4}]
+ ]},
+ {"d": "2027-07-06", "main": "火車到 Tartu・AHHAA", "tab": "7/6", "wd": "二", "title": "Tartu｜AHHAA 科學中心", "sum": "搭 Elron 火車到大學城 Tartu，下午玩波羅的海最大的科學中心。", "wx": "晴時多雲，氣溫約在 12°C 至 22°C 之間", "walk": "步行 ~4 km", "warn": "Elron 兒童票價待確認；車上沒有餐飲。","items":[
+  ["09:30", "09:45", "hotel", "➡️ 退房｜Bolt", "飯店 → Balti jaam", "約 €5–7／車", "", {"p": "htll", "km": 1.4, "min": 10}],
+  ["10:00", "12:15", "flight", "火車 Elron Tallinn → Tartu", "Balti jaam → Tartu", "大人 €10–18", "選上午班次", {"p": "baltij", "km": 190, "min": 135}],
+  ["12:15", "12:30", "hotel", "✅ 飯店寄放行李｜Bolt", "Tartu 站 → 飯店", "約 €4–5／車", "", {"p": "htar", "km": 1.8, "min": 8}],
+  ["12:40", "13:40", "meal", "午餐｜Monk Tartu", "Tasku 商場", "€14–20／人", "印度咖哩", {"p": "monk"}],
+  ["13:45", "17:30", "anchor", "AHHAA 科學中心", "Sadama 1", "大人 €17／小孩 €12", "", {"p": "ahhaa", "km": 0.3, "min": 4}],
+  ["17:30", "18:30", "hotel", "✅ 入住、休息", "", "", "", {"p": "htar", "km": 0.3, "min": 4}],
+  ["18:30", "18:45", "hotel", "➡️ 出門", "飯店 → Turu 27a", "", "", {"p": "htar", "km": 1.2, "min": 15}],
+  ["18:45", "20:15", "meal", "晚餐｜Hansa Tall", "Turu 27a", "€18–26／人", "香腸燉菜", {"p": "hansatall"}],
+  ["20:15", "20:30", "hotel", "✅ 回飯店", "", "", "", {"p": "htar", "km": 1.2, "min": 15}]
+ ]},
+ {"d": "2027-07-07", "main": "國家博物館・Tartu 老城", "tab": "7/7", "wd": "三", "title": "ERM 國家博物館＋老城", "sum": "上午看建在舊機場的國家博物館，下午走 Toome 山和市政廳廣場。", "wx": "晴時多雲，氣溫約在 12°C 至 22°C 之間", "walk": "步行 ~5 km", "warn": "NOKK 的雞肉可能賣完，晚餐早點到。","items":[
+  ["09:40", "09:52", "hotel", "➡️ 出門｜Bolt", "飯店 → ERM", "約 €5–6／車", "", {"p": "htar", "km": 3, "min": 12}],
+  ["10:00", "12:45", "anchor", "ERM 愛沙尼亞國家博物館", "Muuseumi tee 2", "大人 €15／小孩 €10", "", {"p": "erm"}],
+  ["12:45", "13:00", "move", "Bolt", "ERM → Lossi", "約 €5–6／車", "", {"km": 3, "min": 12}],
+  ["13:05", "14:15", "meal", "午餐｜Gunpowder Cellar", "Lossi 28", "€12–18／人", "舊火藥庫酒館，餃子", {"p": "gunpowder"}],
+  ["14:15", "15:30", "plain", "Toome 山＋市政廳廣場", "天使橋、親吻學生噴泉", "Free", "", {"p": "toome"}],
+  ["15:30", "18:15", "hotel", "✅ 回飯店休息", "", "", "", {"p": "htar", "km": 0.7, "min": 9}],
+  ["18:15", "18:30", "hotel", "➡️ 出門", "飯店 → Tähe 21", "", "", {"p": "htar", "km": 1.3, "min": 16}],
+  ["18:30", "19:45", "meal", "晚餐｜NOKK", "Tähe 21", "€16–22／人", "葡式辣烤雞 peri-peri", {"p": "nokk"}],
+  ["19:45", "20:00", "hotel", "✅ 回飯店", "", "", "收行李", {"p": "htar", "km": 1.3, "min": 16}]
+ ]},
+ {"d": "2027-07-08", "main": "巴士到 Pärnu・海灘", "tab": "7/8", "wd": "四", "title": "Pärnu｜海灘與水上樂園", "sum": "搭巴士到海濱度假城 Pärnu，下午玩水上樂園和海灘。", "wx": "晴時多雲，氣溫約在 13°C 至 21°C 之間", "walk": "步行 ~4 km", "warn": "房型一定要選含水上樂園的方案。","items":[
+  ["10:15", "10:20", "hotel", "➡️ 退房", "飯店 → Tartu 巴士站", "", "", {"p": "htar", "km": 0.1, "min": 2}],
+  ["10:30", "13:15", "flight", "巴士 Lux Express Tartu → Pärnu", "Tartu → Pärnu（經 Viljandi）", "€9 起／人", "動態票價，早買", {"p": "tartubus", "km": 175}],
+  ["13:15", "13:20", "move", "步行", "→ Rüütli 29", "", "", {"km": 0.3, "min": 4}],
+  ["13:20", "14:20", "meal", "午餐｜Rüütlihoov pubi", "Rüütli 29", "€12–18／人", "煎鱸魚", {"p": "ruutlihoov"}],
+  ["14:20", "14:35", "move", "Bolt", "→ 飯店", "約 €5–6／車", "", {"km": 1.5, "min": 8}],
+  ["15:00", "15:30", "hotel", "✅ 入住", "Side 14", "", "", {"p": "hpar"}],
+  ["15:30", "17:45", "anchor", "水上樂園＋海灘", "飯店內／海灘 250 m", "含在房價方案", "", {"p": "hpar"}],
+  ["18:20", "18:30", "hotel", "➡️ 出門", "飯店 → Papli 13", "", "", {"p": "hpar", "km": 0.5, "min": 6}],
+  ["18:30", "19:45", "meal", "晚餐｜Kurgo", "Papli 13", "€22–32／人", "牛肉 tataki", {"p": "kurgo"}],
+  ["19:45", "20:30", "plain", "海灘看夕陽", "Pärnu Rand", "Free", "", {"p": "parnurand"}],
+  ["20:30", "20:35", "hotel", "✅ 回飯店", "", "", "", {"p": "hpar", "km": 0.5, "min": 6}]
+ ]},
+ {"d": "2027-07-09", "main": "Lottemaa 主題樂園", "tab": "7/9", "wd": "五", "title": "Lottemaa 一整天", "sum": "一整天在波羅的海最大的主題樂園 Lottemaa（卡通《Lotte》的發明村）。", "wx": "晴時多雲，氣溫約在 13°C 至 21°C 之間", "walk": "步行 ~7 km", "warn": "2027 年開園季和票價還沒公布（2026：6/13–8/30）。","items":[
+  ["09:40", "09:55", "hotel", "➡️ 出門｜Bolt", "飯店 → Lottemaa", "約 €15–20／車", "", {"p": "hpar", "km": 10, "min": 15}],
+  ["10:00", "17:00", "anchor", "Lottemaa", "Reiu", "€28／人（2 歲以上同價）", "2026 價格；網購同價", {"p": "lottemaa"}],
+  ["12:30", "13:15", "meal", "午餐｜園內", "Lottemaa", "約 €12–15／人", "", {}],
+  ["17:00", "18:30", "hotel", "✅ 回飯店休息｜Bolt", "", "約 €15–20／車", "", {"p": "hpar", "km": 10, "min": 15}],
+  ["18:30", "18:45", "hotel", "➡️ 出門", "飯店 → Nikolai 24", "", "", {"p": "hpar", "km": 1.3, "min": 15}],
+  ["18:45", "20:00", "meal", "晚餐｜Steffani", "Nikolai 24", "€12–18／人", "披薩，花園露台", {"p": "steffani"}],
+  ["20:00", "20:16", "hotel", "✅ 回飯店", "", "", "收行李", {"p": "hpar", "km": 1.3, "min": 16}]
+ ]},
+ {"d": "2027-07-10", "main": "Pärnu → Tallinn → 渡輪 Helsinki", "tab": "7/10", "wd": "六", "title": "移動日｜渡輪回 Helsinki", "sum": "巴士回 Tallinn，在 Rotermann 區吃午餐，坐下午渡輪回 Helsinki。", "wx": "晴時多雲，氣溫約在 13°C 至 20°C 之間", "walk": "步行 ~2 km", "warn": "16:30 班 2027 待確認；15:50 前完成報到，趕不上改 19:30。","items":[
+  ["09:30", "09:40", "hotel", "➡️ 退房｜Bolt", "飯店 → Pärnu 巴士站", "約 €5–6／車", "", {"p": "hpar", "km": 1.5, "min": 8}],
+  ["10:00", "12:00", "flight", "巴士 Lux Express Pärnu → Tallinn", "Pärnu → Tallinn 巴士站", "€8–15／人", "", {"p": "parnubus", "km": 130}],
+  ["12:05", "12:20", "move", "Bolt", "巴士站 → Rotermann", "約 €6–8／車", "", {"km": 2.4, "min": 12}],
+  ["12:30", "14:00", "meal", "午餐｜Bruxx", "Rotermanni 2", "€20–30／人", "比利時淡菜配薯條", {"p": "bruxx"}],
+  ["14:00", "15:20", "plain", "Rotermann 區散步", "", "", "帶行李只在附近逛", {"p": "rotermann"}],
+  ["15:20", "15:35", "move", "步行", "→ D 碼頭", "", "", {"p": "tlld", "km": 0.8, "min": 12}],
+  ["16:30", "18:30", "flight", "渡輪 Tallink Tallinn → Helsinki", "D 碼頭 → HEL T2", "單程約 €10–35／人", "", {"km": 85}],
+  ["18:35", "19:20", "hotel", "✅ 入住｜Bolt", "T2 → 飯店", "約 €12–15／車", "", {"p": "hhel", "km": 2, "min": 15}],
+  ["19:20", "19:25", "hotel", "➡️ 出門", "飯店 → Kamppi 5F", "", "", {"p": "hhel", "km": 0.3, "min": 4}],
+  ["19:25", "20:45", "meal", "晚餐｜Hoku", "Kamppi 5F", "€18–25／人", "照燒鮭魚", {"p": "hoku"}],
+  ["20:45", "20:50", "hotel", "✅ 回飯店", "", "", "", {"p": "hhel", "km": 0.3, "min": 4}]
+ ]},
+ {"d": "2027-07-11", "main": "Heureka 科學中心", "tab": "7/11", "wd": "日", "title": "Heureka 科學中心", "sum": "搭 15 分鐘火車到 Vantaa 的 Heureka，晚上吃新疆手拉麵。", "wx": "晴時多雲，氣溫約在 13°C 至 21°C 之間", "walk": "步行 ~4 km", "warn": "線上票要在當天 10:00 開館前買才便宜 €3。","items":[
+  ["09:15", "09:25", "hotel", "➡️ 出門", "飯店 → Helsinki Central", "", "", {"p": "hhel", "km": 0.6, "min": 8}],
+  ["09:30", "09:47", "move", "HSL 通勤火車 I/P/K", "Central → Tikkurila", "AB：大人 €3.30／小孩 €1.65", "", {"p": "helc", "km": 16, "min": 15}],
+  ["09:47", "09:57", "move", "步行", "Tikkurila → Heureka", "", "", {"km": 0.5, "min": 7}],
+  ["10:00", "15:00", "anchor", "Heureka 科學中心", "Vantaa", "線上票 大人 €23／小孩 €16", "天象館《Asteroid Quest》建議 10 歲以上", {"p": "heureka"}],
+  ["12:30", "13:15", "meal", "午餐｜Heureka Science Restaurant", "館內", "€14–18／人", "", {}],
+  ["15:00", "17:55", "hotel", "✅ 回飯店休息｜火車＋步行", "", "AB 單程", "", {"p": "hhel", "km": 17, "min": 30}],
+  ["17:55", "18:00", "hotel", "➡️ 出門", "飯店 → Malminrinne", "", "", {"p": "hhel", "km": 0.4, "min": 5}],
+  ["18:00", "19:15", "meal", "晚餐｜Uyghur Noodle House", "Malminrinne 3", "€18–24／人", "新疆手拉麵 laghman", {"p": "uyghur"}],
+  ["19:15", "19:20", "hotel", "✅ 回飯店", "", "", "打包", {"p": "hhel", "km": 0.4, "min": 5}]
+ ]},
+ {"d": "2027-07-12", "main": "Seurasaari・晚班機回程", "tab": "7/12", "wd": "一", "title": "最後一天｜AY99 夜班機", "sum": "早上吃海邊咖啡館的肉桂捲，走 Seurasaari 島，傍晚去機場。", "wx": "晴時多雲，氣溫約在 13°C 至 21°C 之間", "walk": "步行 ~6 km", "warn": "飯店沒有行李寄放，寄中央車站置物櫃（只收卡）。","items":[
+  ["08:45", "09:00", "hotel", "➡️ 退房、寄放行李", "飯店 → 中央車站置物櫃", "XL 3 小時 €4.90 起", "訂 12 小時", {"p": "helc", "km": 0.6, "min": 8}],
+  ["09:10", "09:25", "move", "公車 24", "Kamppi → Sibeliuksen puisto", "AB：大人 €3.30／小孩 €1.65", "", {"p": "kamppi24", "km": 3, "min": 11}],
+  ["09:30", "10:30", "meal", "早餐｜Cafe Regatta", "Merikannontie 8", "€8–12／人", "肉桂捲、藍莓派", {"p": "regatta"}],
+  ["10:30", "10:50", "move", "步行（或公車 24）", "→ Seurasaari 橋", "", "", {"km": 1.8, "min": 20}],
+  ["10:50", "12:45", "plain", "Seurasaari 島", "", "島上 Free", "森林步道、紅松鼠", {"p": "seurasaari"}],
+  ["12:45", "13:10", "move", "公車 24", "Seurasaari → Kamppi", "AB 單程", "", {"km": 5, "min": 21}],
+  ["13:15", "14:15", "meal", "午餐｜Lazy Fox Kamppi", "Albertinkatu 36", "€15–20／人", "班尼迪克蛋", {"p": "lazyfox"}],
+  ["14:15", "16:20", "plain", "最後採買", "Esplanadi／Stockmann", "", "姆明、Fazer 巧克力", {"p": "stockmann"}],
+  ["16:30", "16:45", "plain", "領取行李", "中央車站地下層", "", "", {"p": "helc"}],
+  ["16:50", "17:25", "move", "HSL 通勤火車 I/P", "Central → 機場", "ABC：大人 €4.50／小孩 €2.25", "", {"km": 31, "min": 30}],
+  ["17:25", "18:35", "plain", "Finnair 報到", "HEL（全部同一航廈）", "", "起飛前 3 小時到", {"p": "helap"}],
+  ["18:45", "19:45", "meal", "晚餐｜機場餐廳", "HEL", "€18–25／人", "", {}],
+  ["21:35", "14:40", "flight", "AY99 Helsinki → 香港", "HEL → HKG T1", "機票另計", "7/13 14:40 抵達（香港時間，飛行約 12 小時）；也有 00:35 起飛、17:40 抵達的班表，訂票時確認", {"km": 7810, "min": 725}]
+ ]},
+ {"d": "2027-07-13", "main": "香港轉機 → 回台北", "tab": "7/13", "wd": "二", "title": "回到台北", "sum": "下午在香港轉機，晚上回到台北。", "wx": "回程日；出發前查中央氣象署預報", "walk": "步行 ~1 km", "warn": "本日為台北時間（香港同時區）；轉機約 3.5 小時，AY99 誤點就改搭 CX408（22:50 起飛、00:35 抵台）。","items":[
+  ["14:40", "17:45", "plain", "香港轉機", "HKG T1", "", "同一張票，行李直掛；管制區內吃點東西、休息", {"p": "hkg"}],
+  ["18:15", "20:05", "flight", "CX402 香港 → 台北", "HKG T1 → TPE T1", "機票另計", "2026 年 8 月時刻；訂票時確認 2027 時刻", {"km": 810, "min": 110}],
+  ["20:05", "21:00", "plain", "入境、領行李", "桃園機場 T1", "", "", {}],
+  ["21:00", "22:00", "hotel", "✅ 到家｜計程車", "桃園機場 → 台北", "約 NT$1,200–1,500／車", "", {"km": 45}]
  ]}
 ];
 
-const INFO=[
- {h:'規劃限制',rows:[
-  {a:'1. 沒有直飛',b:'桃園→香港→西安同一張票（CX407＋CX946／CX947＋CX408）；回程 10/21 00:35 才抵達桃園'},
-  {a:'2. 台胞證是所有預約的前提',b:'景點、高鐵都要用台胞證號碼實名預約，今天確認 4 人效期。咸陽機場可辦一次有效台胞證，但落地才辦就來不及預約'},
-  {a:'3. 休館日',b:'陝博週一休館 → 10/19（一）排洛陽；西安博物院週二休館 → 排 10/18（日）'},
-  {a:'4. 三個放票時間點',b:'兵馬俑已開放（7 天前放票）、陝博 10/13 17:00（5 天前，含當天）、龍門 10/13 00:10（7 天前，含當天）；現場不售票或量極少'},
-  {a:'5. 長輩體力（Tier A）',b:'每天步行 ≤4 km、午後回飯店休息 90 分鐘、市區一律計程車'},
-  {a:'6. 管記水席午市 14:00 結束',b:'龍門只排 2 小時（10:15–12:15），12:45 前要到餐廳'},
-  {a:'7. 大慈恩寺 16:30 停止入場',b:'10/17 改為 14:45 入寺（午休縮短為 50 分鐘），留 1 小時以上緩衝'},
-  {a:'8. 長者免票多半限大陸證件',b:'城牆要敬老優待證、兵馬俑寫大陸身分證，台胞證能否適用沒有官方說明；預算一律以全票計，現場可問政策免票窗口（龍門是 60 歲以上）'},
-  {a:'9. 地圖用百度',b:'Google 地圖在中國的地址資料不完整；給司機看用「複製地址」'}
- ]},
- {h:'出發前準備',rows:[
-  {a:'立即：確認 4 人台胞證效期',b:'所有景點和高鐵都要用台胞證號碼預約。咸陽機場可辦一次有效台胞證，但落地才辦就來不及預約景點'},
-  {a:'立即：支付寶＋微信實名、綁台灣信用卡',b:'審核 1–3 天，出發只剩 5 天；單筆超過 ¥200 收 3% 手續費'},
-  {a:'今天：裝滴滴、百度地圖、攜程',b:'用台灣手機號註冊'},
-  {a:'10/12 前：漫遊或 eSIM',b:'沒有漫遊或 eSIM，在中國用不了 LINE'},
-  {a:'出發前：人民幣現金約 ¥300／人',b:'臺銀 10/10 現金賣出 4.83，約 NT$1,450'},
-  {a:'出發前 3 天：查天氣',b:'目前預報 10/17–10/18 下雨，帶雨具和薄外套（11–24°C）'}
- ]},
- {h:'預訂清單（依期限排序）',rows:[
-  {a:'機票 ×4｜立即',b:'去程 CX407＋CX946，回程 CX947＋CX408，同一張票（國泰官網）'},
-  {a:'飯店 雙床房 ×2｜立即',b:'10/15–10/20 共 5 晚，訂含早方案（攜程／Trip.com）'},
-  {a:'兵馬俑 ×4｜已放票，立即訂',b:'10/16 09:00–10:00 時段；官網或微信公眾號「秦始皇帝陵博物院」，用台胞證'},
-  {a:'陝博本館 ×4｜10/13 17:00 放票',b:'10/17 09:00 時段；陝歷博公眾號 → 門票預約，選本館'},
-  {a:'大慈恩寺｜不用預約',b:'10/17 14:45 現場實名購票，帶台胞證'},
-  {a:'西安博物院 ×4｜今天就約',b:'10/18 14:30 時段（下雨走備案就改約上午）；免費，官方公眾號線上預約（放票時間沒查到，所以早點約）'},
-  {a:'高鐵 ×4｜10/12 前',b:'10/19 去程 G3162 08:12，回程 G2007 15:30（Trip.com 或 12306，用台胞證）；閘機讀不到台胞證就走人工通道'},
-  {a:'龍門石窟 ×4｜10/13 00:10 放票',b:'10/19 10:00–11:00 時段；微信公眾號「龍門石窟」'},
-  {a:'包車 ×3｜10/13 前',b:'10/15 接機（7 座）、10/16 兵馬俑東線、10/20 送機（7 座）'},
-  {a:'御膳苑 4 位｜10/15 前',b:'10/16 12:00；電話 029-8383 9595'},
-  {a:'管記水席 4 位｜10/18 前',b:'10/19 12:45；午市 14:00 結束，電話 139-3795-1844'},
-  {a:'桃園機場接送｜出發前',b:'10/21 00:35 抵達的深夜接機'},
-  {a:'碑林 ×4（條件式，只訂一次）',b:'10/18 下雨走備案 → 10/17 晚上訂 10/18 下午；不去洛陽 → 10/18 晚上訂 10/19 10:00；去洛陽又想看 → 訂 10/20 09:00。公眾號、官網或支付寶預約'}
- ]},
- {h:'Dining Chart（含備案）',rows:[
-  {a:'10/15 晚｜同盛祥（鐘樓店）',b:'羊肉泡饃｜¥30–60／人｜現場候位\n備案 1：老陝地牛羊肉泡饃（鐘樓郵電廣場店，北大街 1 號，鐘樓盤道旁，¥23）\n備案 2：清真老孫家泡饃（北院門老店，北院門 21 號，步行約 5 分鐘，¥33）'},
-  {a:'10/16 午｜華清御湯·御膳苑',b:'宮廷御膳｜¥140／人｜已訂 12:00，029-8383 9595\n備案 1：華清御湯酒店 唐吧（同酒店內，咖啡輕食，¥64）\n備案 2：紅川大盤雞（臨潼 東關街 26 號，新疆菜，包車約 5 分鐘，¥54）'},
-  {a:'10/16 晚｜德發長（鐘樓店）',b:'餃子宴｜¥70–150／人｜電話訂位 029-8721 8187\n備案 1：白雲章·餃子（易俗社店，西一路易俗社文化街區 1 樓，步行約 5 分鐘，¥40）\n備案 2：五一飯店·非遺（易俗街區店，案板街 26 號，鐘樓盤道 6 號口出直走 100 m，¥15）'},
-  {a:'10/17 午｜長安大牌檔（小寨店）',b:'陝菜・葫蘆雞｜¥60–90／人｜現場候位\n備案 1：唐貓庭院·千年陝菜（同棟賽格 12F，¥83）\n備案 2：賽格美食廣場（同棟賽格 4F，小吃自選，¥30）'},
-  {a:'10/17 晚｜郭老三面莊（大雁塔總店）',b:'biangbiang 麵｜¥18–25／人｜現場候位，153-4921-8476\n備案 1：子午路張記肉夾饃（翠華路店）\n備案 2：澄城學斌水盆羊肉（大唐不夜城總店）'},
-  {a:'10/18 午｜賈三灌湯包（北院門總店）',b:'灌湯包｜¥36–50／人｜11:30 前到\n備案 1：賈三 麻傢什字店（西羊市街 121 號，08:00–22:30）\n備案 2：盛志望麻醬釀皮（大皮院西口 225 號，步行約 6 分鐘，08:00–22:30，¥16）'},
-  {a:'10/18 晚｜酸辣谷（鐘樓店）',b:'清真涮羊肉｜¥80–120／人｜電話 180-9235-9162，10:30–23:30\n備案 1：雁歸巷涮肉館（同棟中環廣場 2F 西北角，西大街 48 號，¥60）\n備案 2：清雅齋·清真涮肉（鐘樓店，西大街 5 號，步行約 3 分鐘，¥47）'},
-  {a:'10/19 午｜管記水席（仙果市街店）',b:'洛陽水席｜¥50–70／人｜電話訂位 139-3795-1844，14:00 結束\n備案 1：杜記水席（西大街，11:00–22:00）\n備案 2：真不同飯店（中州東路店，百年老字號，11:00–14:30，同在老城區，計程車約 5–10 分鐘，¥68）'},
-  {a:'10/19 午（留在西安）｜春發生（南院門店）',b:'葫蘆頭泡饃｜¥43／人｜現場，09:30–21:00\n備案 1：西安飯莊・鐘樓店（陝菜，10:30–21:00）\n備案 2：醉長安・永寧門店（11:00–14:00）'},
-  {a:'10/19 晚（兩頁共用）｜魏家涼皮（西門外店）',b:'涼皮｜¥23–35／人｜現場\n備案 1：魏家涼皮 大唐西市店（07:30–24:00）\n備案 2：飯店叫外送（美團）'},
-  {a:'10/20 午｜咸陽機場 T5 簡餐',b:'¥60–90／人\n備案：出發前在飯店附近先吃'},
-  {a:'10/20 晚｜香港機場 港式',b:'HK$120–180／人\n備案：管制區內其他餐廳'}
- ]},
- {h:'景點與車站',rows:[{p:'bmy'},{p:'hqg'},{p:'zgl'},{p:'sxhm'},{p:'dyt'},{p:'dce'},{p:'dtb'},{p:'ynm'},{p:'xam'},{p:'bl'},{p:'xab'},{p:'lmz'},{p:'lmx'},{p:'lms'}]},
- {h:'航班',rows:[
-  {a:'10/15　CX407　TPE 08:00 → HKG 10:00',b:'桃園 T1 → 香港 T1'},
-  {a:'10/15　CX946　HKG 11:10 → XIY 14:30',b:'每日航班；香港轉機 70 分鐘（最短轉機時間約 60 分鐘），行李直掛'},
-  {a:'10/20　CX947　XIY 15:50 → HKG 19:05',b:'咸陽 T5；每日航班'},
-  {a:'10/20　CX408　HKG 22:50 → TPE 00:35（+1）',b:'每日航班；夏季班表到 10/24，抵台時機場捷運已收班'}
- ]},
- {h:'付款與匯率',rows:[
-  {a:'付款',b:'掃碼為主（支付寶／微信）；景點和高鐵一律帶台胞證'},
-  {a:'匯率',b:'臺灣銀行 2026/10/10 人民幣現金賣出 4.83、港幣 4.111'}
- ]},
- {h:'緊急',rows:[
-  {a:'警察 110　急救 120　消防 119'},
-  {a:'兵馬俑醫務室',b:'一號坑前廣場南側遊客服務中心'}
- ]}
-];
-const SUMSEC=[
- {h:'Day 5 去不去洛陽（10/18 晚上決定）',rows:[
-  {a:'去：照原計畫',b:'全程最累的一天，交通約 5 小時、步行約 4 km；目前預報洛陽雨轉陰（14–19°C）'},
-  {a:'不去：留在西安',b:'改看「10/19 留在西安」那一頁：碑林・書院門・春發生午餐・休息・化覺巷・回坊・魏家涼皮。龍門票 10/19 20:00 前退，高鐵 4 人來回 ¥1,408，12306 退票費：開車前 48 小時以上 5%（10/17 08:00 前決定，約 ¥70）、24–48 小時 10%（約 ¥140）、不到 24 小時 20%（10/18 晚上才決定，約 ¥280）'}
- ]},
- {h:'雨天／累的備案',rows:[
-  {a:'10/16 下午',b:'累的話跳過華清宮與鐘鼓樓散步，直接回飯店'},
-  {a:'10/17 下午',b:'陝博室內照走。雨天或累：跳過大雁塔與不夜城，晚餐改愛驊褲帶麵（鐘樓附近）'},
-  {a:'10/18 城牆（目前預報下雨）',b:'雨天上午改西安博物院（室內，要改約上午時段），下午改碑林（¥85，要預約）。城牆移到 10/19（留在西安）；或 10/20 早上只坐單段電瓶車（約 1 小時，11:00 前回飯店退房）'},
-  {a:'10/19 洛陽',b:'見總覽「Day 5 去不去洛陽」'},
-  {a:'餐廳客滿',b:'泡饃改老陝地（北大街 1 號）或清真老孫家（北院門 21 號）；水席改杜記水席（西大街，11:00–22:00）；涮肉改雁歸巷（同棟 2F）'}
- ]}
-];
-// 餐廳 Top 20（依推薦程度排名）。排名依據見 FOOD_NOTE；★ = 已排入行程
-const FOOD_NOTE='排名依據：多份美食指南共同推薦、老字號／非遺、百度評分（10/10 查詢），以及是否適合長輩坐下用餐。只列西安市區。想吃早餐小吃：10/19 留在西安那天早上，或 10/20 不去碑林時，8 點出門去回坊（果渊斋、秦豫、劉老虎、胖子甑糕）。';
-const FOOD=[
- {h:'必吃（1–7）',rows:[
-  {a:'1　同盛祥（鐘樓店）★',b:'羊肉泡饃｜正餐｜百度 4.5｜人均 ¥56｜計程車約 10 分\n1920 年創立的泡饃老字號，各家攻略都推；店大有座位，最適合長輩\n已排入 10/15 晚餐',p:'tsx'},
-  {a:'2　子午路張記肉夾饃（翠華路店）',b:'臘汁肉夾饃、秦鎮米皮｜小吃｜百度 4.4｜人均 ¥25｜計程車約 15 分\n老字號，攻略推薦次數最多的肉夾饃；就在 10/17 晚餐郭老三隔壁，可以順便買',p:'zj'},
-  {a:'3　德發長（鐘樓店）★',b:'餃子宴｜正餐｜百度 4.5｜人均 ¥82｜計程車約 10 分\n1936 年老字號，餃子宴列入非遺；有包廂，長輩吃得舒服\n已排入 10/16 晚餐',p:'dfc'},
-  {a:'4　賈三灌湯包（北院門總店）★',b:'牛肉／羊肉灌湯包、八寶粥｜小吃｜百度 4.5｜人均 ¥44｜計程車約 12 分\n1903 年創立，回坊最有名的灌湯包\n已排入 10/18 午餐',p:'js'},
-  {a:'5　愛驊褲帶麵（鐘樓店）',b:'biangbiang 麵（三合一）｜小吃｜百度 4.6｜人均 ¥23｜計程車約 8 分\n20 年老店，上過《風味人間》；在南大街，離飯店近',p:'ah'},
-  {a:'6　西安飯莊（鐘樓店）',b:'葫蘆雞、金線油塔｜正餐｜百度 4.7｜人均 ¥109｜計程車約 8 分\n1929 年創立的陝菜老字號，非遺；正式餐廳，適合請長輩吃一頓好的',p:'xafz'},
-  {a:'7　春發生（南院門店）★備案頁',b:'葫蘆頭泡饃（豬腸泡饃）｜正餐｜百度 4.5｜人均 ¥43｜計程車約 8 分\n葫蘆頭泡饃老字號，非遺；和羊肉泡饃是不同口味',p:'cfs'}
- ]},
- {h:'強烈推薦（8–14）',rows:[
-  {a:'8　果渊斋老米家（北廣濟街店）',b:'羊肉泡饃｜早午｜百度 5.0｜人均 ¥32｜計程車約 12 分\n回坊泡饃老店，非遺；只營業到 15:00',p:'gyz'},
-  {a:'9　醉長安（永寧門店）',b:'松鼠魚、葫蘆雞、油潑麵｜正餐｜百度 5.0｜人均 ¥60｜計程車約 5 分\n在永寧門書院門旁，離飯店最近的陝菜正餐',p:'zca'},
-  {a:'10　郭老三面莊（大雁塔總店）★',b:'biangbiang 麵（三合一）｜小吃｜百度 4.6｜人均 ¥24｜計程車約 15 分\n大眾點評必吃榜；和愛驊是同一道麵，選順路的那家就好\n已排入 10/17 晚餐',p:'gls'},
-  {a:'11　盛志望麻醬釀皮',b:'麻醬涼皮｜小吃｜百度 4.3｜人均 ¥16｜計程車約 12 分\n回坊涼皮老字號，非遺；現點現做',p:'szw'},
-  {a:'12　馬洪小炒泡饃',b:'生肉小炒泡饃（酸辣口）｜小吃｜百度 5.0｜人均 ¥36｜計程車約 12 分\n小炒泡饃名店，跟一般泡饃吃法不同',p:'mh'},
-  {a:'13　長安大牌檔（小寨店）★',b:'葫蘆雞、毛筆酥、稠酒｜正餐｜百度 4.4｜人均 ¥60｜計程車約 12 分\n有表演、唐風裝潢；套餐選擇多，適合第一次吃陝菜\n已排入 10/17 午餐',p:'cadp'},
-  {a:'14　秦豫肉夾饃（騾馬市總店）',b:'臘汁肉夾饃｜早午｜百度 4.5｜人均 ¥15｜計程車約 10 分\n攻略常推的肉夾饃老店；只營業到 13:00',p:'qy'}
- ]},
- {h:'值得一試（15–20）',rows:[
-  {a:'15　澄城學斌水盆（鐘樓店）',b:'水盆羊肉、月牙餅｜小吃｜百度 4.5｜人均 ¥33｜計程車約 8 分\n清湯羊肉，比泡饃清爽；在南大街離飯店近',p:'cxb'},
-  {a:'16　唐貓庭院（賽格店）',b:'陝菜｜正餐｜百度 5.0｜人均 ¥83｜計程車約 12 分\n賽格 12 樓的陝菜餐廳，環境好；和長安大牌檔同一棟，可互為備案',p:'tm'},
-  {a:'17　胖子甑糕（洒金橋店）',b:'甑糕（糯米紅棗）｜早餐｜百度 4.8｜人均 ¥5｜計程車約 12 分\n洒金橋早市名攤；甜點，早上去',p:'pz'},
-  {a:'18　劉老虎肉丸糊辣湯（總店）',b:'肉丸糊辣湯｜早餐｜百度 4.2｜人均 ¥16｜計程車約 12 分\n西安人的早餐，回坊老店',p:'llh'},
-  {a:'19　酸辣谷（鐘樓店）★',b:'清真涮羊肉｜正餐｜百度 4.3｜人均 ¥61｜計程車約 10 分\n秋天晚上吃熱鍋，可選不辣鍋底\n已排入 10/18 晚餐',p:'slg'},
-  {a:'20　紅紅酸菜炒米（廟後街旗艦店）',b:'酸菜炒米｜小吃｜百度 4.6｜人均 ¥29｜計程車約 12 分\n回坊特色，在別的城市吃不到',p:'hh'}
- ]},
- {h:'攻略常見、但這次不推薦',rows:[
-  {a:'老孫家飯莊（東關店）百度 2.0',b:'攻略常推，但近期評價差'},
-  {a:'樊記臘汁肉（竹笆市總店）百度 2.0',b:'評價提到份量小、服務差；肉夾饃改去子午路張記或秦豫'},
-  {a:'東南亞甑糕 百度 1.5',b:'甑糕改去胖子甑糕'},
-  {a:'柳巷面（吉慶大廈店）百度 2.2',b:'評價提到份量小、價格偏高'},
-  {a:'劉信泡饃（回民街店）百度 2.3、一真樓 3.2',b:'泡饃改去同盛祥或果渊斋老米家'},
-  {a:'馬峰小炒泡饃 1.1、定家小酥肉 2.0、天下第一面 1.3',b:'評價偏低'}
- ]}
-];
-const BUDGET={rows:[
-  ['住宿（5 晚，2 人一間）','NT$4,800–6,600'],
-  ['交通（包車、計程車、高鐵、電瓶車）','NT$4,000–4,500'],
-  ['門票（全票計；台胞若適用長者免票，長輩可再省）','NT$1,900–2,800'],
-  ['餐飲（11 個正餐＋點心）','NT$4,000–5,800'],
-  ['桃園機場接送（來回 2 趟，6–7 人座）','NT$800–950'],
-  ['雜支（eSIM 等）','NT$800–1,600']
- ],total:['合計（不含機票、購物）','NT$16,300–22,250']};
+const SUMSEC=[{"h": "雨天／累的備案", "rows": [{"a": "6/26", "b": "雨天去 Kamppi 商場（仲夏節營業待確認）；累了整天待飯店；動物園關閉就改 Kauppatori 海邊散步。"}, {"a": "6/27", "b": "雨天把 Linnanmäki 換到 7/11 下午，今天改 Heureka；累了只去遊樂園；遊樂園沒開改 SEA LIFE。"}, {"a": "6/28", "b": "雨天改 Oodi＋Kamppi；累了只走 Suomenlinna 主步道。"}, {"a": "6/29", "b": "行程本身大多在室內；博物館臨時閉館就和 7/1 Vapriikki 對調。"}, {"a": "6/30", "b": "雨天只用景點手環（室內）；累了 15:00 回飯店；樂園沒開改 Vapriikki。"}, {"a": "7/1", "b": "雨天下午改室內；累了只去 Vapriikki。"}, {"a": "7/2", "b": "火車誤點就改 16:30 渡輪；累了晚餐外帶 Kompressor。"}, {"a": "7/3", "b": "整天在室內，不受雨影響；累了不去 PROTO。"}, {"a": "7/4", "b": "雨天和 7/5 對調；累了 13:30 吃完就回。"}, {"a": "7/5", "b": "雨天下午改 Viru 商場或飯店泳池；累了不去 Telliskivi；晚餐改 R14 或 Om house。"}, {"a": "7/6", "b": "行程本身大多在室內；累了晚餐改在 Tasku 商場吃。"}, {"a": "7/7", "b": "累了只去 ERM；晚餐 NOKK 賣完改 Kolm Tilli。"}, {"a": "7/8", "b": "雨天整個下午待水上樂園；累了晚餐在飯店內吃。"}, {"a": "7/9", "b": "雨天改在水上樂園一整天；累了 15:00 提早回。"}, {"a": "7/10", "b": "渡輪趕不上改 19:30 班；晚餐改 Pobrecito。"}, {"a": "7/11", "b": "累了 13:00 提早回；晚餐改 Villa Nepal 或 Thai Orchid（Kamppi）。"}, {"a": "7/12", "b": "雨天上午改 Oodi；累了不去 Seurasaari。"}]}];
+const INFO=[{"h": "緊急", "rows": [{"a": "緊急電話 112", "b": "警察、救護、消防（芬蘭、愛沙尼亞相同）"}, {"a": "外交部急難救助（全球免付費）", "b": "撥 00 800 0885 0885"}]}, {"h": "飯店", "rows": [{"a": "6/25–6/29　Helsinki", "b": "Omena Hotel Yrjönkatu｜Family Room｜無早餐", "p": "hhel"}, {"a": "6/29–7/2　Tampere", "b": "Scandic Tampere Station｜含早餐", "p": "htam"}, {"a": "7/2–7/6　Tallinn", "b": "Nordic Hotel Forum｜含早餐｜頂樓泳池", "p": "htll"}, {"a": "7/6–7/8　Tartu", "b": "Dorpat Hotel｜含早餐", "p": "htar"}, {"a": "7/8–7/10　Pärnu", "b": "Tervise Paradiis｜選含水上樂園方案", "p": "hpar"}, {"a": "7/10–7/12　Helsinki", "b": "Omena Hotel Yrjönkatu（同第一間）", "p": "hhel"}]}, {"h": "預訂清單（依期限排序）", "rows": [{"a": "12/31 前｜機票 CX＋AY 同一張票", "b": "6/25 CX469＋AY100；7/12 AY99＋7/13 CX402｜訂票時確認 2027 時刻\n預算線：2 人機票 ≤ NT$96,000（大人約 ≤ 55,000、小孩約 ≤ 41,000）；超過就比 TK／EK 一次轉機"}, {"a": "3/31 前｜飯店 5 間（可免費取消房價）", "b": "Omena 加訂 6/25 前一晚；Tervise Paradiis 選含水上樂園方案"}, {"a": "5/21 前｜Tallink 7/2 13:30、7/10 16:30", "b": "提早 6 週以上較便宜；7/2 買可改期票（條件性：火車誤點改 16:30）"}, {"a": "5/31 前｜VR 火車 6/29、7/2", "b": "夏季班次約 2 月中開賣｜vr.fi"}, {"a": "6/13 前｜Sea Horse 6/27 18:45", "b": "電話 +358 9 628169"}, {"a": "6/14 前｜Lappi 6/28 18:00", "b": "電話 +358 9 645550"}, {"a": "6/15 前｜Plevna 6/29、Fenno 7/1", "b": "官網訂位"}, {"a": "6/15 前｜Elron 7/6、Lux Express 7/8、7/10", "b": "elron.ee／luxexpress.eu"}, {"a": "6/19 前｜Olde Hansa 7/3 19:00", "b": "電話 +372 627 9020"}, {"a": "6/21 前｜Siesta Tapas 7/5 18:30", "b": "電話 +372 5454 0181（店很小）"}, {"a": "6/26 前｜Linnanmäki Isohupi 手環", "b": "kauppa.linnanmaki.fi"}, {"a": "6/29 前｜Särkänniemi 手環", "b": "網購較現場便宜"}, {"a": "7/8 前｜Lottemaa 日票", "b": "lottemaa.ee，網購同價、免排隊"}, {"a": "7/11 10:00 前｜Heureka 線上票", "b": "比現場便宜 €3"}]}, {"h": "出發前待辦", "rows": [{"a": "立即｜護照", "b": "效期要超過 2027/10/13，且護照上有身分證字號"}, {"a": "3 月起｜ETIAS", "b": "2026/10 尚未上線、無公布日期；每月查 europa.eu/etias，只用官網（約 €7）"}, {"a": "5 月｜監護人同意書", "b": "若另一位法定監護人沒有同行，帶英文同意書與戶籍謄本英譯"}, {"a": "6 月｜安裝 app", "b": "HSL、Nysse、Bolt、pilet.ee、VR、Tallink；買歐洲 eSIM"}, {"a": "6 月｜打包", "b": "泳衣、眼罩（白夜）、防蚊液、薄外套、Heureka 換洗衣物"}, {"a": "出發前 2 週｜確認待確認項目", "b": "AY99 時刻、仲夏節營業、Linnanmäki／Särkänniemi 日曆、2027 票價"}]}, {"h": "Dining Chart（含備案）", "rows": [{"a": "6/26 午｜Pobrecito", "b": "菲律賓菜｜€15–20／人｜現場候位\n備案 1：Lazy Fox Kamppi（Albertinkatu 36，步行 9 分，€15–20）\n備案 2：Factory Kamppi（Runeberginkatu 3，步行 4 分，自助午餐）"}, {"a": "6/27 午｜Hurlumhei（Linnanmäki 園內）", "b": "墨西哥塔可｜€12–16／人｜現場\n備案 1：園內 Lintsiburger"}, {"a": "6/27 晚｜Sea Horse", "b": "肉丸 lihapullat｜€30–40／人｜需訂 18:45\n備案 1：Restaurant Pontus（Kapteeninkatu 26，步行 2 分，週日 16–21）\n備案 2：Boneless Ullanlinna（Vuorimiehenkatu 12，步行 3 分，週日 12–20，漢堡）"}, {"a": "6/28 午｜Suomenlinna Brewery", "b": "啤酒廠當日主菜｜€20–28／人｜現場\n備案 1：回城後 SOUP+MORE Vanha Kauppahalli（週一 11–16，€14）"}, {"a": "6/28 晚｜Lappi", "b": "炒馴鹿肉 poronkäristys｜€35–45／人｜需訂 18:00\n備案 1：Pobrecito（Kamppi 5F，步行 4 分，週一至 20:00）\n備案 2：Villa Nepal Kamppi（步行 4 分，至 21:00）"}, {"a": "6/29 午｜Tampere Market Hall", "b": "鮭魚湯 lohikeitto｜€14–16／人｜現場\n備案 1：Pyynikin Munkkikahvila（市場內，吐司）\n備案 2：Puisto（Hämeenkatu 14a，步行 7 分）"}, {"a": "6/29 晚｜Plevna", "b": "黑血腸 mustamakkara｜€25–35／人｜需訂 18:15\n備案 1：Pyynikin Brewhouse（Verkatehtaankatu 2，步行 8 分，週二 17–23）\n備案 2：Puisto（步行 8 分）"}, {"a": "6/30 晚｜Pulcinella", "b": "義大利麵｜€20–28／人｜現場\n備案 1：Baonami（Hämeenkatu 3，步行 3 分，週三 16–23）\n備案 2：Puisto（步行 7 分）"}, {"a": "7/1 午｜Puisto", "b": "河景小館｜€18–25／人｜現場\n備案 1：Tampere Market Hall（步行 7 分）\n備案 2：Plevna（步行 8 分）"}, {"a": "7/1 晚｜Fenno", "b": "駝鹿燉肉｜€28–38／人｜需訂 18:30\n備案 1：Pulcinella（步行 5 分，週四 11–23）\n備案 2：Baonami（步行 2 分，週四 16–23）"}, {"a": "7/2 晚｜Kompressor", "b": "愛沙尼亞鬆餅｜€10–15／人｜不能訂位\n備案 1：Olde Hansa（步行 2 分）\n備案 2：Tbilisi（Pikk 43，步行 5 分）"}, {"a": "7/3 午｜Põhjala Brewery", "b": "煙燻 BBQ 牛胸肉｜€18–25／人｜現場\n備案 1：Lore Bistroo（Peetri 12，步行 2 分）\n備案 2：Puente（Vesilennuki 80，步行 3 分）"}, {"a": "7/3 晚｜Olde Hansa", "b": "中世紀主題｜€35–50／人｜需訂 19:00\n備案 1：Kompressor（步行 2 分）\n備案 2：Tbilisi（步行 5 分）"}, {"a": "7/4 午｜Kolu Kõrts", "b": "豌豆湯 hernesupp｜€12–18／人｜現場\n備案：園內沒有查到其他店家"}, {"a": "7/4 晚｜Tbilisi", "b": "船形起司麵包 khachapuri｜€18–26／人｜建議訂位\n備案 1：Kompressor（步行 5 分）\n備案 2：Olde Hansa（步行 5 分）"}, {"a": "7/5 午｜Balti Jaama Turg", "b": "市場美食區｜€10–15／人｜現場\n備案 1：BEP（Kalma 11，步行 4 分，越南菜）"}, {"a": "7/5 晚｜Siesta Tapas", "b": "西班牙小菜｜€22–30／人｜需訂 18:30\n備案 1：R14（Rotermanni 14，步行 1 分）\n備案 2：Om house（Rotermanni 18，步行 1 分，日式）"}, {"a": "7/6 午｜Monk Tartu", "b": "印度咖哩｜€14–20／人｜現場\n備案 1：Da Vinci（同一個商場）"}, {"a": "7/6 晚｜Hansa Tall", "b": "香腸燉菜｜€18–26／人｜建議訂位\n備案 1：Kolm Tilli（Kastani 42，Bolt 5 分）"}, {"a": "7/7 午｜Gunpowder Cellar", "b": "餃子｜€12–18／人｜午間套餐\n備案 1：Tasku 商場 Monk／Da Vinci（步行 10 分）"}, {"a": "7/7 晚｜NOKK", "b": "葡式辣烤雞｜€16–22／人｜早點到\n備案 1：Kolm Tilli（步行 8 分）\n備案 2：Hansa Tall（步行 11 分）"}, {"a": "7/8 午｜Rüütlihoov pubi", "b": "煎鱸魚｜€12–18／人｜現場\n備案 1：Ephesus（Rüütli 38，步行 3 分，土耳其菜）\n備案 2：RÖÖM（Pühavaimu 15，步行 2 分）"}, {"a": "7/8 晚｜Kurgo", "b": "牛肉 tataki｜€22–32／人｜建議訂位\n備案 1：飯店內 Neptun Grill"}, {"a": "7/9 晚｜Steffani", "b": "披薩｜€12–18／人｜現場\n備案 1：RÖÖM（步行 3 分）\n備案 2：Ephesus（步行 4 分）"}, {"a": "7/10 午｜Bruxx", "b": "淡菜配薯條｜€20–30／人｜建議訂位\n備案 1：R14（步行 1 分）\n備案 2：Gallery Cafe（步行 1 分）"}, {"a": "7/10 晚｜Hoku", "b": "照燒鮭魚｜€18–25／人｜建議訂位\n備案 1：Pobrecito（同一層樓，週六至 21:00）\n備案 2：Thai Orchid Villa Kamppi（Kamppi 1F，週六至 23:00）"}, {"a": "7/11 晚｜Uyghur Noodle House", "b": "新疆手拉麵 laghman｜€18–24／人｜現場\n備案 1：Thai Orchid Villa Kamppi（步行 3 分，週日至 22:00）\n備案 2：Villa Nepal Kamppi（步行 4 分，至 21:00）"}, {"a": "7/12 早｜Cafe Regatta", "b": "肉桂捲、藍莓派｜€8–12／人｜現場排隊\n備案：Sibelius 公園內沒有其他店"}, {"a": "7/12 午｜Lazy Fox Kamppi", "b": "班尼迪克蛋｜€15–20／人｜現場\n備案 1：Factory Kamppi（步行 8 分，週一至 15:00）\n備案 2：Pobrecito（步行 7 分）"}]}, {"h": "航班", "rows": [{"a": "6/25　CX469　TPE 14:20 → HKG 16:25", "b": "2026 夏季時刻；其他月份此班號為晚班，訂票時確認"}, {"a": "6/25　AY100　HKG 20:55 → HEL 05:35(+1)", "b": "HKG T1；2026/3/29–10/23 時刻"}, {"a": "7/12　AY99　HEL 21:35 → HKG 14:40(+1)", "b": "21:35 起飛＋飛行約 12 小時；也有 00:35 起飛、17:40 抵達的班表，訂票時確認"}, {"a": "7/13　CX402　HKG 18:15 → TPE 20:05", "b": "2026 年 8 月時刻；誤點改 CX408 22:50 → 00:35(+1)"}]}, {"h": "交通", "rows": [{"a": "HSL（Helsinki）", "b": "AB 單程：大人 €3.30／小孩 €1.65（app）；感應刷卡只有大人價 €3.50\nABC（機場）：大人 €4.50／小孩 €2.25\nAB 24 小時票：大人 €10.60"}, {"a": "Tampere", "b": "Nysse 公車用 app 買票；VR 長途小孩（4–17 歲）打 6 折"}, {"a": "Tallinn", "b": "公車、電車感應刷卡 €2／小時（大人、小孩同價）"}, {"a": "Tartu、Pärnu", "b": "市區用 Bolt；Tartu 公車要先辦卡，不划算"}, {"a": "渡輪 Tallink", "b": "Helsinki West Terminal 2 ⇄ Tallinn D 碼頭，2 小時；開船前 40 分報到"}]}, {"h": "付款與匯率", "rows": [{"a": "付款", "b": "兩國都用歐元；感應式信用卡到處可刷，有些店只收卡；帶 €50 現金備用"}, {"a": "匯率", "b": "台銀歐元現鈔賣出 36.26（2026/10/13 09:45）；即期賣出 35.94"}, {"a": "每人估算（含機票）", "b": "大人 NT$115,150–159,800\n小孩 NT$94,290–126,980\n機票：大人約 NT$40,000–55,000、小孩約 NT$30,000–41,000（2027 票價待確認）"}, {"a": "總預算上限", "b": "2 人含機票 ≤ NT$30 萬；目前估算 NT$20.9–28.7 萬，最高情況仍剩 NT$1.3 萬"}]}, {"h": "規劃說明", "rows": [{"a": "仲夏節", "b": "6/25 仲夏夜、6/26 仲夏節，店家大多不開；抵達日只排休息和動物園"}, {"a": "湖區範圍", "b": "只排 Tampere；Savonlinna 單程 4–5 小時，可用 Tartu 2 天換"}, {"a": "公休日", "b": "Moomin Museum、Vapriikki、ERM、PROTO、Kolu Kõrts 週一休，都已避開；Suomenlinna 移到週一"}, {"a": "住宿預算", "b": "Tallinn、Pärnu 高價時超過 NT$2,500／人／晚；全程平均 NT$2,075–2,655"}, {"a": "價格與時刻", "b": "2027 年票價、時刻表都還沒公布，頁面上的價格是 2026 年資料"}, {"a": "餐廳分級", "b": "只依 Google 評分與評論內容，尚未比對當地媒體"}]}];
+const FOOD_NOTE="排名依據：Google 評分與評論數，加上評論中在地與遊客的比例；同城依此排序。提醒：Helsinki 週日很多餐廳休息，備案已挑週日有開的店。";
+const FOOD=[{"h": "Helsinki（1–8）", "rows": [{"a": "1　Sea Horse", "b": "肉丸 lihapullat｜正餐｜Google 4.4（2,027）｜€30–40／人｜Kamppi 搭電車約 15 分\n老字號芬蘭家常菜\n推薦：lihapullat（肉丸配馬鈴薯泥、越橘醬）、lohikeitto（鮭魚湯）", "p": "seahorse"}, {"a": "2　Lappi", "b": "炒馴鹿肉｜正餐｜Google 4.5（2,726）｜€35–45／人｜飯店步行 3 分\n拉普蘭小木屋風\n推薦：poronkäristys（炒馴鹿肉）", "p": "lappi"}, {"a": "3　Hoku", "b": "照燒鮭魚｜正餐｜Google 4.5（1,457）｜€18–25／人｜飯店步行 4 分\n日式夏威夷混搭，在地常客多\n推薦：照燒鮭魚、雞排 katsu", "p": "hoku"}, {"a": "4　Cafe Regatta", "b": "肉桂捲｜早餐｜Google 4.6（6,735）｜€8–12／人｜公車 24 約 11 分\n海邊紅色小木屋咖啡館\n推薦：korvapuusti（肉桂捲）、藍莓派", "p": "regatta"}, {"a": "5　Uyghur Noodle House", "b": "手拉麵｜正餐｜Google 4.7（308）｜€18–24／人｜飯店步行 5 分\n新疆菜，週日也開\n推薦：laghman（手拉麵）、煎餃", "p": "uyghur"}, {"a": "6　Pobrecito", "b": "菲律賓菜｜正餐｜Google 4.6（161）｜€15–20／人｜飯店步行 4 分\nKamppi 5 樓\n推薦：燉豬肉飯", "p": "pobrecito"}, {"a": "7　Lazy Fox Kamppi", "b": "早午餐｜早午｜Google 4.3（873）｜€15–20／人｜飯店步行 9 分\n推薦：班尼迪克蛋、鬆餅", "p": "lazyfox"}, {"a": "8　Suomenlinna Brewery", "b": "啤酒廠餐廳｜正餐｜Google 4.2（376）｜€20–28／人｜島上\n評論以遊客為主，排它是因為就在島上", "p": "brewery"}]}, {"h": "Tampere（1–5）", "rows": [{"a": "1　Tampere Market Hall", "b": "鮭魚湯｜小吃｜Google 4.6（4,219）｜€14–16／人｜飯店步行 12 分\n1901 年的市場\n推薦：lohikeitto（鮭魚湯）", "p": "tmarket"}, {"a": "2　Plevna", "b": "黑血腸｜正餐｜Google 4.3（5,860）｜€25–35／人｜飯店步行 13 分\nFinlayson 舊工廠自釀啤酒餐廳\n推薦：mustamakkara（黑血腸配越橘醬）", "p": "plevna"}, {"a": "3　Pyynikki 觀景塔咖啡館", "b": "甜甜圈｜小吃｜Google 4.5（7,329）｜€3／個｜Bolt 12 分\n推薦：munkki（小荳蔻甜甜圈）", "p": "pyynikki"}, {"a": "4　Fenno", "b": "駝鹿燉肉｜正餐｜Google 4.8（22）｜€28–38／人｜飯店步行 4 分\n芬蘭各地傳統菜，評論數少\n推薦：駝鹿燉肉、vorschmack", "p": "fenno"}, {"a": "5　Puisto", "b": "河景小館｜正餐｜Google 4.0（3,261）｜€18–25／人｜飯店步行 7 分", "p": "puisto"}]}, {"h": "Tallinn（1–7）", "rows": [{"a": "1　Kompressor", "b": "鬆餅｜正餐｜Google 4.6（8,694）｜€10–15／人｜飯店步行 10 分\n老城平價老店\n推薦：鹹鬆餅（牛肉酸黃瓜）、甜鬆餅", "p": "kompressor"}, {"a": "2　Balti Jaama Turg", "b": "市場美食區｜小吃｜Google 4.6（26,970）｜€10–15／人｜飯店步行 18 分", "p": "baltiturg"}, {"a": "3　Põhjala Brewery", "b": "BBQ 牛胸肉｜正餐｜Google 4.6（1,922）｜€18–25／人｜Lennusadam 步行 8 分", "p": "pohjala"}, {"a": "4　Tbilisi", "b": "喬治亞菜｜正餐｜Google 4.5（1,911）｜€18–26／人｜飯店步行 9 分\n推薦：khachapuri（船形起司麵包）、khinkali（湯包）", "p": "tbilisi"}, {"a": "5　Olde Hansa", "b": "中世紀主題｜正餐｜Google 4.5（12,378）｜€35–50／人｜飯店步行 8 分\n評論以遊客為主，排它是因為氣氛", "p": "oldehansa"}, {"a": "6　Bruxx", "b": "比利時菜｜正餐｜Google 4.5（2,113）｜€20–30／人｜D 碼頭步行 10 分\n推薦：淡菜配薯條", "p": "bruxx"}, {"a": "7　Siesta Tapas", "b": "西班牙小菜｜正餐｜Google 4.5（450）｜€22–30／人｜飯店步行 4 分", "p": "siesta"}]}, {"h": "露天博物館・Tartu・Pärnu（1–7）", "rows": [{"a": "1　Hansa Tall", "b": "香腸燉菜｜正餐｜Google 4.6（1,516）｜€18–26／人｜Tartu 飯店步行 15 分", "p": "hansatall"}, {"a": "2　Kolu Kõrts", "b": "豌豆湯｜正餐｜Google 4.5（666）｜€12–18／人｜露天博物館內\n300 年老客棧", "p": "kolu"}, {"a": "3　Gunpowder Cellar", "b": "酒館菜｜正餐｜Google 4.4（3,957）｜€12–18／人｜Toome 山下\n推薦：餃子、午間套餐", "p": "gunpowder"}, {"a": "4　NOKK", "b": "辣烤雞｜正餐｜Google 4.8（246）｜€16–22／人｜Tartu 飯店步行 16 分", "p": "nokk"}, {"a": "5　Steffani", "b": "披薩｜正餐｜Google 4.4（12,018）｜€12–18／人｜Pärnu 飯店步行 16 分\nPärnu 老字號，花園露台", "p": "steffani"}, {"a": "6　Kurgo", "b": "現代小酒館｜正餐｜Google 4.7（186）｜€22–32／人｜Pärnu 飯店步行 6 分", "p": "kurgo"}, {"a": "7　Monk Tartu", "b": "印度咖哩｜正餐｜Google 4.4（171）｜€14–20／人｜Tartu 飯店旁", "p": "monk"}]}, {"h": "這次不排的店", "rows": [{"a": "Jannseni Pizza（Pärnu）", "b": "Google 4.9 但評論只有 518 則、週一二休；披薩只排一次，留給 Steffani"}, {"a": "Morton（Helsinki）", "b": "週日只開到 19:00，7/11 改排 Uyghur Noodle House"}]}];
+const BUDGET={"rows": [["A 機票", "NT$7.00–9.60 萬"], ["B 住宿", "NT$7.06–9.03 萬"], ["C 交通", "NT$1.30–2.16 萬"], ["D 門票", "NT$1.74–1.77 萬"], ["E 餐飲", "NT$3.38–5.38 萬"], ["F 雜支", "NT$0.46–0.74 萬"]], "total": ["2 人合計（含機票）", "NT$20.9–28.7 萬"]};
 
+/* stays: overview groups days by where we sleep (k = first DAYS index) */
+const STAYS=[{"k": 0, "city": "去程", "sub": "TPE → HKG → HEL 夜班機"}, {"k": 1, "city": "Helsinki", "sub": "6/25–6/29・4 晚・Omena Hotel Yrjönkatu"}, {"k": 4, "city": "Tampere", "sub": "6/29–7/2・3 晚・Scandic Tampere Station"}, {"k": 7, "city": "Tallinn", "sub": "7/2–7/6・4 晚・Nordic Hotel Forum"}, {"k": 11, "city": "Tartu", "sub": "7/6–7/8・2 晚・Dorpat Hotel"}, {"k": 13, "city": "Pärnu", "sub": "7/8–7/10・2 晚・Spa Tervise Paradiis"}, {"k": 15, "city": "Helsinki", "sub": "7/10–7/12・2 晚・Omena Hotel Yrjönkatu"}, {"k": 17, "city": "回程", "sub": "AY99 夜班機 → HKG → TPE"}];
 /* ============================ ENGINE ============================ */
 const M=(q,c)=>TRIP.map==='baidu'
   ?'https://map.baidu.com/search/'+encodeURIComponent(q)+'?querytype=s&wd='+encodeURIComponent(q)+'&c='+(c||TRIP.city)
   :'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(q);
 const MAPLABEL='地圖';
-const CHAT=TRIP.map==='baidu'?'微信／LINE':'LINE';
-const HOME=`<a class="home" href="./">${'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>'}所有行程</a>`;
 const view=document.getElementById('view'),navEl=document.getElementById('nav'),drv=document.getElementById('driver'),toast=document.getElementById('toast');
 const KIND={anchor:'重點',meal:'用餐',hotel:'飯店',flight:'航班'};
 const HAS_FOOD=typeof FOOD!=='undefined'&&Array.isArray(FOOD)&&FOOD.length>0;
@@ -813,9 +750,8 @@ const isTrain=t=>/高鐵|火車|列車|^G\d|^D\d/.test(clean(t));
 const isFerry=t=>/渡輪|Tallink|Viking Line|Eckerö|Ferry/i.test(clean(t));
 const isBus=t=>/巴士|客運|Lux Express|Flixbus/i.test(clean(t));
 const tmode=t=>isFerry(t)?'fe':isBus(t)?'bu':isTrain(t)?'tr':'fl';
-const MODE={fl:{lab:'航班',go:'起飛',in:'降落'},tr:{lab:'火車',go:'出發',in:'抵達'},fe:{lab:'渡輪',go:'出發',in:'抵達'},bu:{lab:'巴士',go:'出發',in:'抵達'}};
-const isHSR=t=>/高鐵|^[GD]\d|\b[GD]\d{2,5}\b/.test(clean(t));
-const kindLabel=(k,t)=>k==='flight'?(tmode(t)==='tr'&&isHSR(t)?'高鐵':MODE[tmode(t)].lab):KIND[k];
+const MODE={fl:{lab:'航班',go:'起飛',in:'降落'},tr:{lab:/高鐵/.test(JSON.stringify(TRIP))?'高鐵':'火車',go:'出發',in:'抵達'},fe:{lab:'渡輪',go:'出發',in:'抵達'},bu:{lab:'巴士',go:'出發',in:'抵達'}};
+const kindLabel=(k,t)=>k==='flight'?MODE[tmode(t)].lab:KIND[k];
 const DRV=Object.assign(TRIP.map==='baidu'?{ask:'师傅您好，请带我们去：',tel:'电话',lang:'zh-Hans',copied:'已複製：可貼到滴滴，或給司機看'}:{ask:'Hello, please take us to:',tel:'Tel',lang:'en',copied:'已複製：可貼到叫車 app，或給司機看'},TRIP.drv||{});
 const WDEN=['SUN','MON','TUE','WED','THU','FRI','SAT'];
 const sv=(w,p)=>`<svg width="${w}" height="${w}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${p}</svg>`;
@@ -925,7 +861,7 @@ function renderDay(i){const S=state(i),{day,sp,nm,isToday,cur,past}=S;const dow=
   if(sib.length>1)h+=`<div class="vt" role="group" aria-label="本日方案">${sib.map(([d,k])=>`<button type="button" data-go="d${k}" aria-pressed="${k===i}">${esc(d.variant||d.title)}</button>`).join('')}</div>`;
   if(day.warn)h+=`<p class="warn"><b>注意</b>${esc(day.warn)}</p>`;
   if(day.sum)h+=`<p class="sum">${esc(day.sum)}</p>`;
-  const bkr=bkRows(day.tab);if(bkr.length){const lead=r=>String(r.a).slice(day.tab.length).trim();h+=`<details class="bkd" data-dk="bkd"><summary><b>備案</b><span>${esc([...new Set(bkr.flatMap(r=>bkParts(r.b).map(x=>x.tag)))].join('・'))}</span>${I.chev}</summary>${bkr.map(r=>(lead(r)?`<div class="bkh">${esc(lead(r))}</div>`:'')+bkList(r.b)).join('')}</details>`;}
+  const bkr=BKSEC&&BKSEC.rows.find(r=>r.a===day.tab);if(bkr)h+=`<details class="bkd" data-dk="bkd"><summary><b>備案</b><span>${esc([...new Set(bkParts(bkr.b).map(x=>x.tag))].join('・'))}</span>${I.chev}</summary>${bkList(bkr.b)}</details>`;
   if(past.length)h+=`<button type="button" class="pastb" id="pastb" aria-expanded="${showPast}"><span>已完成 ${past.length} 項：${esc(past.map(k=>clean(day.items[k][3])).join('、'))}</span>${I.chev}</button>`;
   h+='<ol class="tl">';let lineDone=!isToday||cur>=0;REMSEEN=new Set();PREVP=null;
   day.items.forEach((it,k)=>{const [s,e]=sp[k];let st='';if(isToday){if(nm>=e)st=' past';else if(nm>=s)st=' cur';}
@@ -933,7 +869,7 @@ function renderDay(i){const S=state(i),{day,sp,nm,isToday,cur,past}=S;const dow=
     if(!lineDone&&nm<s){h+=`<li class="nowline" aria-label="現在時間"><span>NOW</span><hr></li>`;lineDone=true;}
     h+=itemHTML(it,st,k);PREVP=(it[7]||{}).p||null;});REMSEEN=null;PREVP=null;
   if(!lineDone)h+=`<li class="nowline" aria-label="現在時間"><span>NOW</span><hr></li>`;
-  h+=`</ol><button type="button" class="wide" id="cpday">${isToday?'複製今日行程（貼 '+CHAT+'）':'複製這天行程（貼 '+CHAT+'）'}</button></div>`;
+  h+=`</ol><button type="button" class="wide" id="cpday">${isToday?'複製今日行程（貼 LINE）':'複製這天行程（貼 LINE）'}</button></div>`;
   view.innerHTML=h;
   document.getElementById('cpday').onclick=()=>copy(dayText(day),'已複製 '+day.tab+' 行程');
   const pb=document.getElementById('pastb');if(pb)pb.onclick=()=>{showPast=!showPast;renderDay(i);};
@@ -945,10 +881,9 @@ function secs(list,skip){let h='';list.forEach(sec=>{if(!sec.rows||!sec.rows.len
 const flightsOf=day=>day.items.filter(it=>it[2]==='flight');
 function fparts(f){const md=tmode(f[3]),Mo=MODE[md],tr=md!=='fl';const p1=f[1]&&mins(f[1])<mins(f[0])?'（+1）':'';
   return {tr,md,t:clean(f[3]),short:`${f[0]}${f[1]?' → '+f[1]+p1:''}`,span:`${f[0]} ${Mo.go}${f[1]?` → ${f[1]} ${Mo.in}${p1}`:''}`};}
-const BKSEC=SUMS.find(s=>/備案/.test(s.h)&&s.rows&&s.rows.filter(r=>/^\d{1,2}\/\d{1,2}(?!\d)/.test(r.a||'')).length*2>=s.rows.length)||null;
-const bkRows=tab=>BKSEC?BKSEC.rows.filter(r=>{const a=String(r.a||'');return a.startsWith(tab)&&!/^\d/.test(a.slice(tab.length));}):[];
-function bkParts(t){return String(t||'').replace(/。$/,'').split('；').map(z=>z.trim()).filter(Boolean).map(z=>{const m=z.match(/^(雨天或累|雨天|累的話|累了)/);
-  const tag=!m?'臨時':/^雨/.test(m[1])?'雨天':'累了';return {tag,txt:m?z.slice(m[1].length).replace(/^[，、：:\s]+/,''):z};});}
+const BKSEC=SUMS.find(s=>/備案/.test(s.h)&&s.rows&&s.rows.every(r=>/^\d{1,2}\/\d{1,2}$/.test(r.a||'')))||null;
+function bkParts(t){return String(t||'').replace(/。$/,'').split('；').map(z=>z.trim()).filter(Boolean).map(z=>{const m=z.match(/^(雨天|累了)/);
+  return m?{tag:m[1],txt:z.slice(m[1].length).replace(/^[，、：:\s]+/,'')}:{tag:'臨時',txt:z};});}
 function bkList(t){return `<ul class="bkl">${bkParts(t).map(x=>`<li><span class="bt bt-${x.tag==='雨天'?'r':x.tag==='累了'?'t':'o'}">${esc(x.tag)}</span><span>${esc(x.txt)}</span></li>`).join('')}</ul>`;}
 const wxShort=w=>{const m=String(w||'').match(/(-?\d+)\s*°C\s*(?:至|–|-|~)\s*(-?\d+)\s*°C/);return m?m[1]+'–'+m[2]+'°':'';};
 const flightLine=f=>{const x=fparts(f);return `${x.t}｜${x.span}${f[4]?'｜'+f[4]:''}`;};
@@ -957,13 +892,13 @@ function tripText(){let s=`【${TRIP.title}】\n${TRIP.sub}\n`;
   return s.trim();}
 function renderPlan(){const wxs=[...new Set(DAYS.map(d=>d.wx).filter(Boolean))];
   const stay=k=>typeof STAYS!=='undefined'&&Array.isArray(STAYS)?STAYS.find(x=>x.k===k):null;
-  let h=`<header class="hd"><div class="kick">${HOME}<button type="button" class="sosb" data-go="info" data-sos="1">緊急</button></div><h1>${esc(TRIP.title)}</h1><p class="meta">${esc(TRIP.sub)}</p>${countdown()}</header><div class="body">`;
+  let h=`<header class="hd"><div class="kick"><span>行程總覽</span><button type="button" class="sosb" data-go="info" data-sos="1">緊急</button></div><h1>${esc(TRIP.title)}</h1><p class="meta">${esc(TRIP.sub)}</p>${countdown()}</header><div class="body">`;
   if(wxs.length===1)h+=`<p class="wxall"><b>全程天氣</b>${esc(wxs[0])}</p>`;
   h+='<ol class="days">'+DAYS.map((d,k)=>{const sg=stay(k),ws=wxShort(d.wx);return (sg?`<li class="sg"><b>${esc(sg.city)}</b><small>${esc(sg.sub)}</small></li>`:'')+`<li><button type="button" class="dayrow${isTd(k)?' td':''}" data-go="d${k}"><span class="dt"><b>${esc(d.tab)}</b><small>${d.alt?'備案':isTd(k)?'今天':'週'+esc(d.wd)}</small>${ws?`<small class="wxs">${esc(ws)}</small>`:''}</span><span><span class="d1">${esc(d.main||d.title)}</span>${flightsOf(d).map(f=>{const x=fparts(f);return `<span class="dfl ${x.md}"><span class="fr">${esc(shortLab(f))}</span><span class="ft">${esc(x.short)}</span></span>`;}).join('')}<span class="d2">${esc(d.sum)}</span>${wxs.length>1&&d.wx&&!ws?`<span class="d2">${esc(d.wx)}</span>`:''}</span>${I.chevR}</button></li>`;}).join('')+'</ol>';
-  h+=`<button type="button" class="wide" id="cpplan">${I.copy} 複製行程摘要（貼 ${CHAT}）</button>`;
+  h+=`<button type="button" class="wide" id="cpplan">${I.copy} 複製行程摘要（貼 LINE）</button>`;
   if(TRIP.wxNote)h+=`<p class="hint">${esc(TRIP.wxNote)}</p>`;
   view.innerHTML=h+secs(SUMS.filter(x=>x!==BKSEC))+(BKSEC?accHTML('sec-bk',BKSEC.h,`${BKSEC.rows.length} 天・每日頁也看得到`,`<ul class="rows">${BKSEC.rows.map(r=>`<li><div class="ra">${esc(r.a)}</div>${bkList(r.b)}</li>`).join('')}</ul>`,false):'')+'</div>';
-  document.getElementById('cpplan').onclick=()=>copy(tripText(),'已複製行程摘要，可貼到 '+CHAT);}
+  document.getElementById('cpplan').onclick=()=>copy(tripText(),'已複製行程摘要，可貼到 LINE');}
 
 
 const SEC_TODO=/預訂|出發前|準備/,SEC_FL=/^航班/,SEC_PAY=/付款|匯率/,SEC_PLAN=/規劃/;
@@ -1051,7 +986,7 @@ function planHTML(){const tdy=ymd(localNow()),inTrip=todayIdx>=0;const groups=[]
   if(past.length)h+=`<button type="button" class="pastb" id="fpast" aria-expanded="${showPastFood}"><span>已過 ${past.length} 天・${past.reduce((s,g)=>s+g.list.length,0)} 餐</span>${I.chev}</button>`;
   groups.forEach(g=>{const isP=past.includes(g);if(isP&&!showPastFood)return;const td=g.day&&g.day.d===tdy;const sib=DAYS.filter(d=>d.tab===g.date);
     h+=`<section class="mday${td?' td':''}${isP?' past':''}"><button type="button" class="mdh" data-go="d${g.k}"><b>${esc(g.date)}</b><small>${td?'<span class="tg">今天</span>':'週'+esc(g.day?g.day.wd:'')}</small><span class="t">${esc(sib.length>1?sib.map(d=>d.variant||d.title).join('／'):(g.day?g.day.title:''))}</span><span class="go">看當天${I.chevR}</span></button><ul class="mls">${g.list.map(mealRow).join('')}</ul></section>`;});
-  return h+`<button type="button" class="wide" id="cpmeal">${I.copy}複製用餐表（貼 ${CHAT}）</button></div>`;}
+  return h+`<button type="button" class="wide" id="cpmeal">${I.copy}複製用餐表（貼 LINE）</button></div>`;}
 function mealText(){let s=`【${TRIP.title} 用餐表】\n`;let last='';
   MEALS.forEach(m=>{if(m.date&&m.date!==last){const d=DAYS.find(x=>x.tab===m.date);s+=`\n${m.date}（${d?d.wd:''}）\n`;last=m.date;}
     const p=m.p&&PLACES[m.p];s+=`${m.slot}${m.time?' '+m.time:''}　${m.name}${m.variant?'（'+m.variant+'）':''}${m.head?'｜'+m.head:''}\n`;if(p&&p.a)s+=`　　${p.n}｜${p.a}\n`;
@@ -1097,7 +1032,7 @@ function renderFood(){if(!HAS_FOOD&&!MEALS.length){current='plan';renderPlan();r
     h+=`<p class="fempty" id="fempty" hidden>沒有符合的餐廳</p>`;}
   OTHERSECS.forEach((s,k)=>{const nr=/不推薦/.test(s.h);h+=fsec('fs-o'+k,s.h,nr?'評價偏低，附替代選擇':'',s.rows.length,`<ul class="rows nr">${s.rows.map(r=>`<li>${r.a?`<div class="ra">${esc(r.a)}</div>`:''}${r.b?`<div class="rb">${esc(r.b)}</div>`:''}${r.p&&PLACES[r.p]?placeActs(r.p,false):''}</li>`).join('')}</ul>`,openIds.includes('fs-o'+k));});
   view.innerHTML=h+'</div>';
-  const cp=document.getElementById('cpmeal');if(cp)cp.onclick=()=>copy(mealText(),'已複製用餐表，可貼到 '+CHAT);
+  const cp=document.getElementById('cpmeal');if(cp)cp.onclick=()=>copy(mealText(),'已複製用餐表，可貼到 LINE');
   applyFF();}
 document.addEventListener('toggle',e=>{const d=e.target;if(!d||!d.classList||!d.classList.contains('fsec'))return;
   fput({open:[...view.querySelectorAll('.fsec')].filter(x=>x.open).map(x=>x.id)});xallLabel();},true);
@@ -1137,8 +1072,7 @@ function flightSec(){const fsec=INFO.find(s=>SEC_FL.test(s.h));const legs=[];
   if(fsec)fsec.rows.forEach(r=>{const m=(r.a||'').match(CODE);if(m&&legs.some(l=>codeOf(l.it[3])===m[1]))infoB[m[1]]=r.b||'';else extra.push(r);});
   const pn=new Set();legs.map(l=>l.it[6]||'').concat(fsec?fsec.rows.map(r=>(r.a||'')+' '+(r.b||'')):[]).forEach(t=>{const m=String(t).match(/(?:PNR|訂位代號)\s*([A-Z0-9]{5,7})/);if(m)pn.add(m[1]);});
   const tdy=ymd(localNow()),ms=new Set(legs.map(l=>tmode(l.it[3])));
-  const hsr=[...ms].every(m=>m==='fl'||m==='tr')&&legs.every(l=>tmode(l.it[3])!=='tr'||isHSR(l.it[3]));
-  const title=ms.size===1&&ms.has('fl')?'航班':hsr?(ms.has('fl')?'航班・高鐵':'高鐵'):ms.has('fl')?'航班・交通':'交通';flightSec.title=title;
+  const title=ms.size===1&&ms.has('fl')?'航班':ms.has('fl')?'航班・交通':'交通';flightSec.title=title;
   let h=`<section class="isec" id="sec-fl"><div class="sec-h"><h2>${title}</h2>${[...pn].map(p=>`<span class="pnr">訂位代號 <b>${esc(p)}</b><button type="button" class="act sm" data-copy="${esc(p)}">${I.copy}複製</button></span>`).join('')}</div><div class="fcs">`;
   legs.forEach(({d,it})=>{const code=codeOf(it[3]);const b=code&&infoB[code]!=null?infoB[code]:(it[6]||'');
     const p1=it[1]&&mins(it[1])<mins(it[0])?'（+1）':'';const showPl=it[4]&&!String(b).split('\n')[0].includes('→');
@@ -1149,7 +1083,7 @@ function renderInfo(){const sos=INFO.find(s=>s.h==='緊急');let tiles='';const 
     while((m=re.exec(txt))){n++;tiles+=`<a class="sos" href="tel:${m[2]}"><b>${m[2]}</b><span>${esc(m[1])}</span></a>`;}if(!n)other.push(r);});
   const tdy=ymd(localNow()),pre=dayDiff(tdy,DAYS[0].d)>0;
   const todos=todoItems(),open=todos.filter(t=>!t.done).length;
-  let h=`<header class="hd"><div class="kick">${HOME}</div><h1>資訊</h1>`;
+  let h=`<header class="hd"><h1>資訊</h1>`;
   if(pre&&todos.length)h+=`<p class="ihd-sub">出發前待辦還有<b id="todo-n">${open}</b>項</p>`;
   if(tiles)h+=`<div class="sosg" id="sos">${tiles}</div>`;
   if(other.length)h+=`<ul class="sosx">${other.map(r=>`<li><b>${esc(r.a||'')}</b>${r.b?esc(r.b):''}</li>`).join('')}</ul>`;
@@ -1163,7 +1097,7 @@ function renderInfo(){const sos=INFO.find(s=>s.h==='緊急');let tiles='';const 
   if(pay.length){parts.pay=pay.map(s=>`<section class="isec" id="sec-pay"><div class="sec-h"><h2>${esc(s.h)}</h2></div><div class="card">${rowsHTML(s.rows,'pay')}</div></section>`).join('');jump.push(['sec-pay','付款']);}
   const others=INFO.filter(s=>s!==sos&&s.rows&&s.rows.length&&!SEC_TODO.test(s.h)&&!SEC_FL.test(s.h)&&!SEC_PAY.test(s.h)&&!SEC_PLAN.test(s.h)&&!DINING().includes(s)&&!isPointer(s)&&!isDir(s));
   parts.other=others.map((s,k)=>accHTML('sec-o'+k,s.h,s.rows.slice(0,2).map(r=>r.a||'').filter(Boolean).join(' · '),rowsHTML(s.rows,'o'+k),false)).join('');
-  if(BUDGET&&BUDGET.rows.length){parts.bud=accHTML('sec-bud','預算（每人）',BUDGET.total?BUDGET.total[1]:'',`<table class="bud">`+BUDGET.rows.map(r=>`<tr><td>${esc(r[0])}</td><td>${esc(r[1])}</td></tr>`).join('')+(BUDGET.total?`<tr class="tot"><td>${esc(BUDGET.total[0])}</td><td>${esc(BUDGET.total[1])}</td></tr>`:'')+`</table>`,false);jump.push(['sec-bud','預算']);}
+  if(BUDGET&&BUDGET.rows.length){parts.bud=accHTML('sec-bud','預算（2 人）',BUDGET.total?BUDGET.total[1]:'',`<table class="bud">`+BUDGET.rows.map(r=>`<tr><td>${esc(r[0])}</td><td>${esc(r[1])}</td></tr>`).join('')+(BUDGET.total?`<tr class="tot"><td>${esc(BUDGET.total[0])}</td><td>${esc(BUDGET.total[1])}</td></tr>`:'')+`</table>`,false);jump.push(['sec-bud','預算']);}
   const plan=INFO.find(s=>SEC_PLAN.test(s.h)&&s.rows&&s.rows.length);
   if(plan){parts.plan=accHTML('sec-plan','規劃說明',`規劃時的取捨與限制・${plan.rows.length} 項`,rowsHTML(plan.rows,'pl'),false);jump.push(['sec-plan','規劃']);}
   const order=pre?['todo','fl','pay','other','bud','plan']:['fl','pay','other','todo','bud','plan'];

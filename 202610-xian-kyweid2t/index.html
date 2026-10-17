@@ -3,26 +3,30 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>2026-12 義大利 11天10夜</title>
+<title>2026-10 西安・洛陽 6天5夜</title>
 <meta name="robots" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
-<meta name="description" content="2026/12/20–12/30 義大利三城聖誕行">
-<meta name="theme-color" content="#0F1B26">
+<meta name="format-detection" content="telephone=no">
+<link rel="preload" href="../assets/fonts/barlow-condensed-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="application-name" content="Ting 西安">
+<meta name="apple-mobile-web-app-title" content="Ting 西安">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="義大利">
-<meta name="format-detection" content="telephone=no">
-<link rel="icon" type="image/png" href="assets/icon-192.png">
-<link rel="apple-touch-icon" href="assets/icon-180.png">
-<link rel="manifest" href="manifest.webmanifest">
-<link rel="preload" href="assets/fonts/barlow-condensed-700.woff2" as="font" type="font/woff2" crossorigin>
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="theme-color" content="#0F1B26">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<link rel="icon" type="image/svg+xml" href="../icon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+<style id="app-top">#sbar{display:none}@media (display-mode:standalone){#sbar{display:block;position:fixed;top:0;left:0;right:0;height:calc(env(safe-area-inset-top,0px) + min(40px,env(safe-area-inset-top,0px)));background:var(--board,#0F1B26);z-index:50}html:root{padding-top:0;height:100%;overflow:hidden;background:var(--board,#0F1B26)}html body{position:fixed;top:0;left:0;right:0;bottom:0;overflow-x:hidden;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior-y:none;padding-top:calc(env(safe-area-inset-top,0px) + min(40px,env(safe-area-inset-top,0px)))}html body .strip{top:calc(env(safe-area-inset-top,0px) + min(40px,env(safe-area-inset-top,0px)))}}</style>
+<script id="app-scroll">(function(){if(!(window.matchMedia&&matchMedia("(display-mode: standalone)").matches))return;var o=window.scrollTo.bind(window);window.scrollTo=function(a,b){try{document.body.scrollTo(a,b)}catch(e){}return o(a,b)}})();</script>
+<script src="../a2hs.js?v=6" defer></script>
 </head>
-<body>
+<body><div id="sbar" aria-hidden="true"></div>
 <style>
 html{-webkit-tap-highlight-color:transparent}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}
-@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:500;font-display:swap;src:url(assets/fonts/barlow-condensed-500.woff2) format('woff2')}
-@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:600;font-display:swap;src:url(assets/fonts/barlow-condensed-600.woff2) format('woff2')}
-@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:700;font-display:swap;src:url(assets/fonts/barlow-condensed-700.woff2) format('woff2')}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/barlow-condensed-500.woff2) format('woff2')}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/barlow-condensed-600.woff2) format('woff2')}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:700;font-display:swap;src:url(../assets/fonts/barlow-condensed-700.woff2) format('woff2')}
 
 /* Layout: transit-board — navy departure board header (date strip, NOW/NEXT), metro-line timeline, bottom nav */
 :root{
@@ -483,10 +487,7 @@ table.bud tr.tot td{font-weight:700;border-top:2px solid var(--ink)}
 .bt{font-size:11.5px;font-weight:700;padding:1px 6px;border-radius:4px;white-space:nowrap;border:1px solid currentColor}
 .bt-r{color:var(--link)}.bt-t{color:var(--hotel-ink)}.bt-o{color:var(--warn-fg)}
 
-/* ---- site v3: readability, touch targets, home link ---- */
-.home{display:inline-flex;align-items:center;gap:2px;min-height:36px;margin-left:-6px;padding:0 6px;border-radius:8px;color:var(--on-board2);text-decoration:none;font-family:var(--sans);font-size:14px;font-weight:600;letter-spacing:0}
-.home svg{width:18px;height:18px}
-.home:hover{color:var(--on-board)}
+/* ---- site v3: readability, touch targets ---- */
 .act{min-height:40px}
 .act.sm{min-height:36px}
 .bd .act{padding:0 9px}
@@ -507,165 +508,302 @@ table.bud tr.tot td{font-weight:700;border-top:2px solid var(--ink)}
    TRIP DATA — the only part to edit. Everything below ENGINE is fixed.
    Schema: see references/mobile-web.md
    ================================================================ */
-const TRIP={"docTitle": "2026-12 義大利 11天10夜", "title": "義大利三城聖誕行", "sub": "2026/12/20（日）– 12/30（三）　2 人　佛羅倫斯・威尼斯・羅馬", "utcOffset": 1, "storageKey": "italy-2026-tab", "map": "google", "city": 0, "wxNote": "天氣為 12 月氣候平均值（Wanderlog、Intrepid Travel），不是預報；出發前一週改看預報。12/20 的時間為台北時間，其餘為義大利時間。"};
-const HOTELS={"fl": {"name": "Hotel Davanzati", "addr": "Via Porta Rossa 5, 50123 Firenze FI", "q": "Hotel Davanzati Firenze", "note": "佛羅倫斯 12/21–12/24｜入住 14:00／退房 11:00｜含早餐｜城市稅 €6／人／晚"}, "ve": {"name": "Hotel ai Mori d'Oriente", "addr": "Fondamenta della Sensa 3319, Cannaregio, 30121 Venezia VE", "q": "Hotel ai Mori d'Oriente Venezia", "note": "威尼斯 12/24–12/27｜入住 14:00／退房 12:00｜含早餐｜城市稅 €4.50／人／晚｜水上巴士 Madonna dell'Orto 站步行 2 分"}, "ro": {"name": "Hotel Raffaello", "addr": "Via Urbana 3/5, 00184 Roma RM", "q": "Hotel Raffaello Roma Via Urbana", "note": "羅馬 12/27–12/30｜入住 14:00｜早餐若未含 €14／人｜城市稅 €6／人／晚｜地鐵 B 線 Cavour 站步行 5 分"}};
-const HOTEL=(()=>{const d=new Date(Date.now()+3600000).toISOString().slice(0,10);return d>='2026-12-27'?HOTELS.ro:d>='2026-12-24'?HOTELS.ve:HOTELS.fl;})();
-const PLACES={"hfl": {"n": "Hotel Davanzati", "a": "Via Porta Rossa 5, 50123 Firenze FI", "h": "入住 14:00／退房 11:00", "q": "Hotel Davanzati Firenze"}, "hve": {"n": "Hotel ai Mori d'Oriente", "a": "Fondamenta della Sensa 3319, Cannaregio, 30121 Venezia VE", "h": "入住 14:00／退房 12:00", "q": "Hotel ai Mori d'Oriente Venezia"}, "hro": {"n": "Hotel Raffaello", "a": "Via Urbana 3/5, 00184 Roma RM", "h": "入住 14:00", "q": "Hotel Raffaello Roma Via Urbana"}, "nerbone": {"n": "Da Nerbone", "a": "Mercato Centrale 一樓，Piazza del Mercato Centrale, 50123 Firenze FI", "h": "週一至週六 08:30–15:00｜週日休", "q": "Da Nerbone Mercato Centrale Firenze", "t": "+393396480251", "ts": "339 648 0251", "x": "在中央市場一樓（不是二樓美食街）"}, "sostanza": {"n": "Trattoria Sostanza", "a": "Via del Porcellana 25/R, 50123 Firenze FI", "h": "週一至週五 12:30–14:00、19:30–21:45｜週六、週日休", "q": "Trattoria Sostanza Firenze", "t": "+39055212691", "ts": "055 212691", "x": "只接受電話訂位"}, "ino": {"n": "'Ino", "a": "Via dei Georgofili 3r/7r, 50122 Firenze FI", "h": "每日 12:00–15:00", "q": "Ino panini Via dei Georgofili Firenze", "t": "+39055214154", "ts": "055 214154", "x": "座位很少，可外帶"}, "coquinarius": {"n": "Coquinarius", "a": "Via dell'Oche 11R, 50122 Firenze FI", "h": "週一至週六 12:00–15:00、18:30–23:00｜週日只有晚餐", "q": "Coquinarius Firenze Via delle Oche", "t": "+390552302153", "ts": "055 230 2153", "x": "Duomo 南側巷內；TheFork 或電話訂位"}, "casalinga": {"n": "Trattoria La Casalinga", "a": "Via dei Michelozzi 9R, 50125 Firenze FI", "h": "12:00–14:30、19:00–22:00｜週日休", "q": "Trattoria La Casalinga Firenze", "t": "+39055218624", "ts": "055 218624"}, "mario": {"n": "Trattoria Mario", "a": "Via Rosina 2r, 50123 Firenze FI", "h": "12:00–15:00（週五加 19:30–21:00）｜週日休", "q": "Trattoria Mario Via Rosina Firenze", "t": "+39055218550", "ts": "055 218550", "x": "可能只收現金；開門前先排隊"}, "uffizi": {"n": "Galleria degli Uffizi", "a": "Piazzale degli Uffizi, 50122 Firenze FI", "h": "週二至週日 08:15–18:30｜週一、12/25、1/1 休", "q": "Galleria degli Uffizi Firenze"}, "accademia": {"n": "Galleria dell'Accademia", "a": "Via Ricasoli 58/60, 50122 Firenze FI", "h": "週一、12/25、1/1 休", "q": "Galleria dell'Accademia Firenze"}, "duomo": {"n": "Cupola del Brunelleschi", "a": "Piazza del Duomo, 50122 Firenze FI", "h": "圓頂需預約時段；12/23 時段待確認", "q": "Cupola del Brunelleschi Firenze", "x": "463 階，沒有電梯"}, "pmich": {"n": "Piazzale Michelangelo", "a": "Piazzale Michelangelo, 50125 Firenze FI", "h": "全天開放", "q": "Piazzale Michelangelo Firenze"}, "dospade": {"n": "Cantina Do Spade", "a": "San Polo 859, 30125 Venezia VE", "h": "每日 10:00–15:00、18:00–22:00；平安夜待確認", "q": "Cantina Do Spade Venezia", "t": "+390415210583", "ts": "041 521 0583"}, "basilica": {"n": "Basilica di San Marco", "a": "Piazza San Marco 328, 30124 Venezia VE", "h": "週一至週六 09:30–17:15（最後入場 16:45）｜週日、國定假日 14:00 起", "q": "Basilica di San Marco Venezia", "x": "禮儀進行時可能暫停參觀"}, "anice": {"n": "Osteria Anice Stellato", "a": "Fondamenta de la Sensa 3272, Cannaregio, 30121 Venezia VE", "h": "週二至週日 12:30–22:00｜週一休；平安夜待確認", "q": "Osteria Anice Stellato Venezia", "t": "+393420842837", "ts": "342 084 2837"}, "gigio": {"n": "Vini da Gigio", "a": "Calle Stua, Cannaregio 3628A, 30121 Venezia VE", "h": "週三至週六 12:00–14:30、19:00–22:30；週日 12:30 起｜週一、週二休；聖誕節待確認", "q": "Vini da Gigio Venezia", "t": "+390415285140", "ts": "041 528 5140"}, "vedova": {"n": "Ca' d'Oro alla Vedova", "a": "Ramo Ca' d'Oro 3912, Cannaregio, 30121 Venezia VE", "h": "11:30–14:30、18:30–22:30｜週四休；聖誕節待確認", "q": "Ca' d'Oro alla Vedova Venezia", "t": "+390415285324", "ts": "041 528 5324", "x": "招牌 polpette 肉丸"}, "ortomori": {"n": "Osteria L'Orto dei Mori", "a": "Cannaregio 3386, 30121 Venezia VE", "h": "12:30–14:30、19:00–22:30｜週二、週三休", "q": "Osteria L'Orto dei Mori Venezia", "t": "+390415243677", "ts": "041 524 3677"}, "doge": {"n": "Palazzo Ducale", "a": "Piazzetta San Marco, 30124 Venezia VE", "h": "11/1–3/31 09:00–18:00（最後入場 17:00）；2025 年 12/25 10:00 開門", "q": "Palazzo Ducale Venezia"}, "murano": {"n": "Museo del Vetro", "a": "Fondamenta Giustinian 8, 30141 Murano VE", "h": "開放時間待確認", "q": "Museo del Vetro Murano"}, "gattonero": {"n": "Trattoria Al Gatto Nero", "a": "Via Giudecca 88, 30142 Burano VE", "h": "12:30–15:00（週二、五、六加 19:30–21:00）｜週一休", "q": "Trattoria Al Gatto Nero Burano", "t": "+39041730120", "ts": "041 730120"}, "pontini": {"n": "Trattoria Bar Pontini", "a": "Cannaregio 1268, 30121 Venezia VE", "h": "週二至週六 07:30–22:30、週日 10:00–22:30｜週一休", "q": "Trattoria Bar Pontini Venezia", "t": "+39041714123", "ts": "041 714123"}, "guglie": {"n": "L'Osteria Le Guglie", "a": "Fondamenta Cannaregio 1078, 30121 Venezia VE", "h": "每日 10:30–23:30", "q": "L'Osteria Le Guglie Venezia", "t": "+390417129772", "ts": "041 712 9772"}, "trevi": {"n": "Fontana di Trevi", "a": "Piazza di Trevi, 00187 Roma RM", "h": "全天開放", "q": "Fontana di Trevi"}, "trescalini": {"n": "Ai Tre Scalini", "a": "Via Panisperna 251, 00184 Roma RM", "h": "每日 12:00–24:00", "q": "Ai Tre Scalini Roma", "t": "+390648907495", "ts": "06 4890 7495", "x": "不收訂位，週末排隊約 15 分"}, "tmonti": {"n": "Trattoria Monti", "a": "Via di San Vito 13, 00185 Roma RM", "h": "週二至週六 13:00–14:45、20:00–22:45｜週日晚、週一休", "q": "Trattoria Monti Roma Via di San Vito", "t": "+39064466573", "ts": "06 446 6573", "x": "馬爾凱菜；要訂位"}, "vatican": {"n": "Musei Vaticani", "a": "Viale Vaticano, 00165 Roma RM", "h": "週一至週六 08:00–20:00（最後入場 18:00）｜12/25、12/26 休", "q": "Musei Vaticani", "x": "實名票，帶護照"}, "pizzarium": {"n": "Bonci Pizzarium", "a": "Via della Meloria 43, 00136 Roma RM", "h": "每日 11:15–22:00", "q": "Bonci Pizzarium Roma", "t": "+390639745416", "ts": "06 3974 5416", "x": "抽號碼牌；座位很少"}, "stpeter": {"n": "Basilica di San Pietro", "a": "Piazza San Pietro, 00120 Città del Vaticano", "h": "時間待確認", "q": "Basilica di San Pietro", "x": "遮肩、遮膝；要過安檢"}, "roscioli": {"n": "Roscioli Salumeria con Cucina", "a": "Via dei Giubbonari 21, 00186 Roma RM", "h": "每日 09:00–23:30", "q": "Roscioli Salumeria con Cucina Roma", "t": "+39066875287", "ts": "06 687 5287"}, "colosseo": {"n": "Colosseo", "a": "Piazza del Colosseo, 00184 Roma RM", "h": "冬季 08:30–16:30（最後入場 15:30）｜12/25 休", "q": "Colosseo Roma"}, "enzo": {"n": "Trattoria Da Enzo al 29", "a": "Via dei Vascellari 29, 00153 Roma RM", "h": "12:00–15:00、18:30–22:30｜週日休", "q": "Trattoria Da Enzo al 29 Roma", "t": "+39065812260", "ts": "06 581 2260", "x": "不收訂位，18:30 開門前排隊"}, "tpe1": {"n": "桃園國際機場 第一航廈", "a": "桃園市大園區航站南路15號", "h": "華航 CI75 在第一航廈", "q": "Taoyuan International Airport Terminal 1"}, "fco": {"n": "Roma Fiumicino 機場 T3", "a": "Via dell'Aeroporto di Fiumicino, 00054 Fiumicino RM", "h": "Leonardo Express 在航廈旁機場火車站搭", "q": "Fiumicino Airport Terminal 3"}, "termini": {"n": "Roma Termini", "a": "Piazza dei Cinquecento, 00185 Roma RM", "q": "Roma Termini station"}, "smn": {"n": "Firenze Santa Maria Novella", "a": "Piazza della Stazione, 50123 Firenze FI", "q": "Firenze Santa Maria Novella station"}, "slucia": {"n": "Venezia Santa Lucia", "a": "Fondamenta Santa Lucia, 30121 Venezia VE", "h": "車站前就是 Ferrovia 水上巴士站", "q": "Venezia Santa Lucia station"}, "sanlorenzo": {"n": "Basilica di San Lorenzo", "a": "Piazza di San Lorenzo 9, 50123 Firenze FI", "q": "Basilica di San Lorenzo Firenze"}, "signoria": {"n": "Piazza della Signoria", "a": "Piazza della Signoria, 50122 Firenze FI", "h": "廣場全天開放", "q": "Piazza della Signoria"}, "ponte": {"n": "Ponte Vecchio", "a": "Ponte Vecchio, 50125 Firenze FI", "h": "全天開放", "q": "Ponte Vecchio"}, "spirito": {"n": "Piazza Santo Spirito", "a": "Piazza Santo Spirito, 50125 Firenze FI", "h": "廣場全天開放", "q": "Piazza Santo Spirito"}, "mercato": {"n": "Mercato di San Lorenzo（皮件市場）", "a": "Via dell'Ariento, 50123 Firenze FI", "q": "San Lorenzo leather market Firenze"}, "rialto": {"n": "Ponte di Rialto／Mercato di Rialto", "a": "Sestiere San Polo, 30125 Venezia VE", "q": "Ponte di Rialto"}, "szacc": {"n": "San Zaccaria（水上巴士站）", "a": "Riva degli Schiavoni, 30122 Venezia VE", "q": "San Zaccaria vaporetto stop"}, "fnove": {"n": "Fondamente Nove（水上巴士站）", "a": "Fondamente Nove, Cannaregio, 30121 Venezia VE", "q": "Fondamente Nove vaporetto stop"}, "faro": {"n": "Murano Faro（水上巴士站）", "a": "Murano, 30141 Venezia VE", "q": "Murano Faro vaporetto stop"}, "burano": {"n": "Burano", "a": "Burano, 30142 Venezia VE", "h": "島上全天開放", "q": "Burano Venezia"}, "ghetto": {"n": "Campo di Ghetto Novo", "a": "Campo di Ghetto Novo, Cannaregio, 30121 Venezia VE", "h": "廣場全天開放", "q": "Campo di Ghetto Novo"}, "santangelo": {"n": "Castel Sant'Angelo", "a": "Lungotevere Castello 50, 00193 Roma RM", "q": "Castel Sant'Angelo"}, "foro": {"n": "Foro Romano／Palatino", "a": "Via della Salara Vecchia 5/6, 00186 Roma RM", "h": "與 Colosseo 同一張票", "q": "Roman Forum"}, "spagna": {"n": "Piazza di Spagna（西班牙階梯）", "a": "Piazza di Spagna, 00187 Roma RM", "h": "全天開放", "q": "Spanish Steps Rome"}, "trastevere": {"n": "Piazza di Santa Maria in Trastevere", "a": "Piazza di Santa Maria in Trastevere, 00153 Roma RM", "h": "廣場全天開放", "q": "Piazza di Santa Maria in Trastevere"}};
+const TRIP={
+  docTitle:'2026-10 西安・洛陽 6天5夜',
+  title:'西安・洛陽',
+  sub:'2026/10/15（四）– 10/20（二）　4 人　住 永寧門小雁塔亞朵',
+  utcOffset:8,
+  storageKey:'xian-2026-tab',
+  map:'baidu',
+  city:233,
+  wxNote:'天氣：中國天氣網 10/10 發布（10/15–16 加參考中央氣象台），8 天以後為模式預測，出發前 3 天再確認。'
+};
+const HOTEL={name:'西安永宁门小雁塔亚朵酒店',addr:'西安市碑林区友谊西路17号',q:'西安永宁门小雁塔亚朵酒店',
+  tel:'',telShow:'',note:'高級雙床房 ×2（含雙早）｜10/15 入住、10/20 退房｜近地鐵 2 號線南稍門站｜早餐供應到 11:00'};
+
+// 地點資料：n 顯示名稱（簡體，給司機看）a 地址 h 營業 t 電話(E.164) ts 電話顯示 q 百度搜尋字 c 城市(233 西安／153 洛陽) x 提醒
+const PLACES={
+ zj:{n:'子午路张记肉夹馍（翠华路店）',a:'西安市雁塔区翠华路227号（大雁塔小学南侧）',h:'06:30–02:00',q:'子午路张记肉夹馍 翠华路店'},
+ ah:{n:'爱骅裤带面馆（钟楼店）',a:'西安市碑林区南大街51号 陕西文物大厦1层',h:'百度未列營業時間',q:'爱骅裤带面馆 钟楼店'},
+ xafz:{n:'西安饭庄·非遗陕菜（钟楼店）',a:'西安市碑林区南大街110号 西安钟楼饭店1楼',h:'10:30–21:00',q:'西安饭庄 钟楼店'},
+ cfs:{n:'春发生饭店·非遗（南院门店）',a:'西安市碑林区南院门25号',h:'09:30–21:00',q:'春发生饭店 南院门店'},
+ gyz:{n:'果渊斋老米家·非遗老字号（北广济街店）',a:'西安市莲湖区北广济街277号',h:'06:00–15:00',q:'果渊斋老米家 北广济街店'},
+ zca:{n:'醉长安（永宁门店）',a:'西安市碑林区永宁里2层（书院门大牌楼旁）',h:'11:00–14:00、17:00–21:00',q:'醉长安 永宁门店'},
+ szw:{n:'盛志望麻酱酿皮铺·非遗老字号',a:'西安市莲湖区大皮院西口225号（与北广济街交叉口）',h:'08:00–22:30',q:'盛志望麻酱酿皮'},
+ mh:{n:'马洪小炒泡馍馆（钟楼回民街店）',a:'西安市莲湖区红埠街46号（莲湖区城市管理局对面）',h:'09:00–21:00',q:'马洪小炒泡馍'},
+ qy:{n:'秦豫肉夹馍（骡马市总店）',a:'西安市碑林区 兴正元广场骡马市步行街南区1层3号',h:'07:00–13:00',q:'秦豫肉夹馍 骡马市总店'},
+ cxb:{n:'澄城学斌水盆（钟楼店）',a:'西安市碑林区南大街17号',h:'百度未列營業時間',q:'澄城学斌水盆 钟楼店'},
+ tm:{n:'唐猫庭院·千年陕菜（赛格店）',a:'西安市雁塔区长安中路123号 赛格国际购物中心12层',h:'百度未列營業時間',q:'唐猫庭院 赛格'},
+ pz:{n:'胖子甑糕（洒金桥店）',a:'西安市莲湖区洒金桥138号',h:'早上開賣，中午前常賣完',q:'胖子甑糕 洒金桥店'},
+ llh:{n:'刘老虎肉丸糊辣汤（总店）',a:'西安市莲湖区从新巷12号',h:'06:00–14:00',q:'刘老虎肉丸糊辣汤 总店'},
+ hh:{n:'红红酸菜炒米（庙后街旗舰店）',a:'西安市莲湖区庙后街202号',h:'百度未列營業時間',q:'红红酸菜炒米 庙后街'},
+ tsx:{n:'同盛祥羊肉泡馍（钟楼店）',a:'西安市西大街5号（近钟楼）',h:'10:00–14:30、17:00–21:00（百度地圖：09:30–21:00）',t:'+862987234179',ts:'029-8723 4179',q:'同盛祥 钟楼店'},
+ bmy:{n:'秦始皇帝陵博物院（兵马俑）',a:'西安市临潼区秦陵北路（北门入园）',h:'08:30 開始驗票，17:00 停止驗票',t:'+862981399174',ts:'029-8139 9174',q:'秦始皇帝陵博物院'},
+ ysy:{n:'华清御汤酒店·御膳苑',a:'西安市临潼区华清路038号（近骊山索道，望京门左侧）',h:'11:30–20:30（另一說 11:00–14:00、17:00–21:00）',t:'+862983839595',ts:'029-8383 9595',q:'华清御汤酒店',x:'備用電話 029-8382 6867'},
+ hqg:{n:'华清宫',a:'西安市临潼区华清路38号',h:'07:00–18:30',q:'华清宫'},
+ zgl:{n:'钟鼓楼广场',a:'西安市莲湖区 钟鼓楼广场',h:'全天開放',q:'钟鼓楼广场'},
+ dfc:{n:'德发长饺子（钟楼店）',a:'西安市碑林区西大街3号（钟鼓楼广场旁）',h:'10:00–21:00（百度地圖：11:00–21:30）',t:'+862987218187',ts:'029-8721 8187',q:'德发长 钟楼店'},
+ sxhm:{n:'陕西历史博物馆（本馆）',a:'西安市雁塔区小寨东路91号',h:'08:30–19:00，18:00 停止入館（夏秋時段，11/15 起改冬季時段）；週一休館',q:'陕西历史博物馆'},
+ cadp:{n:'长安大牌档之陕历博文化餐厅（小寨店）',a:'西安市雁塔区长安中路123号 赛格国际购物中心 10F',h:'平日 10:00–22:00，週末 10:00–22:30',q:'长安大牌档 赛格'},
+ dyt:{n:'大雁塔北广场',a:'西安市雁塔区 大雁塔北广场',h:'噴泉：週末 12:00、14:00、16:00、18:00、19:00、21:00（以現場公告為準）',q:'大雁塔北广场'},
+ dce:{n:'大慈恩寺（大雁塔）',a:'西安市雁塔区 大慈恩寺',h:'09:00–17:00，16:30 停止售票入場（百度地圖）',q:'大慈恩寺'},
+ gls:{n:'郭老三面庄·biangbiang面（大雁塔总店）',a:'西安市雁塔区翠华路 大雁塔小学南隔壁',h:'10:00–21:00（百度地圖）',t:'+8615349218476',ts:'153-4921-8476',q:'郭老三面庄'},
+ dtb:{n:'大唐不夜城',a:'西安市雁塔区 雁塔南路步行街',h:'全天開放，10 月約 18:30–19:00 亮燈',q:'大唐不夜城'},
+ ynm:{n:'西安城墙 永宁门（南门）',a:'西安市碑林区南大街2号',h:'08:00–22:00',q:'永宁门'},
+ js:{n:'贾三灌汤包（北院门总店）',a:'西安市莲湖区北院门93号（近鼓楼）',h:'08:30–22:30（百度地圖：08:30–20:30）',t:'+862987257507',ts:'029-8725 7507',q:'贾三灌汤包子 北院门'},
+ xam:{n:'西安博物院・小雁塔',a:'西安市碑林区友谊西路72号',h:'08:30–18:00，17:00 停止入園；週二休館',t:'+862987811081',ts:'029-8781 1081',q:'西安博物院'},
+ slg:{n:'酸辣谷 陕派清真涮肉（钟楼店）',a:'西安市西大街 中环广场银泰百货4楼',h:'10:30–23:30（百度地圖）',t:'+8618092359162',ts:'180-9235-9162',q:'酸辣谷 钟楼',x:'百度地圖店名是「钟鼓楼景观店」，就是中環廣場銀泰 4 樓這家'},
+ xab:{n:'西安北站',a:'西安市未央区尚新路 西安北站',h:'',q:'西安北站'},
+ lmz:{n:'洛阳龙门站',a:'洛阳市洛龙区通衢路19号',h:'',q:'洛阳龙门站',c:153},
+ lmx:{n:'龙门石窟 西北服务区',a:'洛阳市洛龙区 龙门石窟西北服务区',h:'',q:'龙门石窟西北服务区',c:153,x:'從這裡步行約 800 m 到西山檢票口'},
+ lms:{n:'龙门石窟',a:'洛阳市洛龙区龙门中街13号',h:'07:30–18:00，17:00 停止售票（10/8–10/31）',q:'龙门石窟',c:153},
+ gj:{n:'管记水席老店（仙果市街店）',a:'洛阳市老城区仙果市街12号（老集菜市场向南200米）',h:'11:00–14:00、17:00–21:00',t:'+8613937951844',ts:'139-3795-1844',q:'管记水席',c:153},
+ wj:{n:'魏家凉皮（西门外店）',a:'西安市莲湖区环城西路78号',h:'07:30–22:00',t:'+862988619832',ts:'029-8861 9832',q:'魏家凉皮 西门'},
+ bl:{n:'西安碑林博物馆',a:'西安市碑林区三学街15号',h:'09:00 開館，17:00 停止檢票',q:'西安碑林博物馆'},
+ sym:{n:'书院门古文化街',a:'西安市碑林区 书院门（碑林博物馆西側）',h:'全天開放（店家約 09:00–18:00）',q:'书院门'},
+ hj:{n:'西安化觉巷清真大寺',a:'西安市莲湖区化觉巷30号',h:'09:00–19:00，17:00 停止售票入場',q:'化觉巷清真大寺'},
+    xiy:{n:'西安咸阳国际机场 T5',a:'陕西省咸阳市渭城区底张镇 西安咸阳国际机场 T5 航站楼',h:'CX947 國際線出發；櫃檯約 12:50 開',q:'西安咸阳国际机场T5航站楼'},
+    hkg:{n:'香港國際機場 T1',a:'香港大嶼山赤鱲角 香港國際機場一號客運大樓',h:'管制區內轉機，不入境',q:'香港国际机场T1航站楼',c:'2912'},
+    hmj:{n:'回民街（北广济街）',a:'西安市莲湖区北广济街',h:'街區全天開放｜店家各自營業',q:'北广济街 回民街'}
+};
+
 const DAYS=[
- {"d":"2026-12-20","main":"桃園 → 羅馬夜班機","tab":"12/20","wd":"日","title":"出發｜CI75 夜班機","sum":"晚上從台北到桃園機場，搭 CI75 夜班機飛羅馬。","wx":"台北出發；出發前查中央氣象署預報","walk":"步行 ~1 km","warn":"本日為台北時間；這班在第一航廈報到。","items":[
-  ["19:30","20:15","hotel","➡️ 離家｜機場捷運直達車","台北車站 A1 → 機場第一航廈 A12","NT$160／人","",{"km":36}],
-  ["20:25","23:00","plain","報到、出境","桃園機場第一航廈","","起飛前 3 小時到",{"p":"tpe1"}],
-  ["23:25","07:15","flight","CI75 台北 → 羅馬","TPE T1 → FCO T3","機票另計","12/21 07:15 抵達（羅馬時間）",{"km":9610,"min":890}]
+ {"d":"2026-10-15","main":"抵達西安・同盛祥泡饃","tab":"10/15","wd":"四","title":"抵達日","sum":"台北經香港飛西安，傍晚入住，晚餐吃羊肉泡饃後早睡。","wx":"小雨轉多雲，氣溫約在 11°C 至 23°C 之間","walk":"步行 ~2 km","warn":"香港轉機只有 70 分鐘：同一張票、行李直掛，下機直接走轉機通道，不入境。","items":[
+  ["05:00","05:50","plain","➡️ 出門｜機場接送","台北 → 桃園機場","NT$1,600–1,900／車（6–7 人座，清晨加價）","台胞證＋護照放隨身包",{}],
+  ["05:50","07:30","plain","報到・出境","桃園 T1","","行李直掛 XIY，確認拿到兩段登機證",{}],
+  ["08:00","10:00","flight","CX407 TPE→HKG","桃園 T1 → 香港 T1","含機票","每日航班",{"km":806}],
+  ["10:00","11:10","plain","香港轉機（不入境）","HKG 管制區內","","如需輪椅協助，出發前向國泰提出",{}],
+  ["11:10","14:30","flight","CX946 HKG→XIY","香港 → 西安咸陽 T5","含機票","機上供午餐",{"km":1440}],
+  ["14:30","15:30","plain","入境・領行李","咸陽機場 T5","","走台胞證通道",{}],
+  ["15:30","16:30","move","7 座包車 → 飯店","咸陽機場 → 南稍門","¥300–400／車（7 座接機行情）","4 個大行李箱，5 座車放不下",{"hotel":1,"km":50}],
+  ["16:30","17:50","hotel","✅ 入住・休息","亞朵（南稍門）","","",{}],
+  ["17:50","18:05","hotel","➡️ 出門｜計程車 → 鐘樓","約 3.5 km","¥15／車","用滴滴叫車，目的地貼下方地址",{"km":3.5}],
+  ["18:05","19:15","meal","晚餐｜同盛祥 羊肉泡饃","","¥30–60／人｜4 人 ¥120–240","可自己掰饃或請店家代切",{"p":"tsx"}],
+  ["19:15","19:30","hotel","✅ 計程車回飯店","","¥15／車","",{"hotel":1,"km":3.5}]
  ]},
- {"d":"2026-12-21","main":"抵羅馬 → 高鐵到佛羅倫斯","tab":"12/21","wd":"一","title":"落地羅馬，前往佛羅倫斯","sum":"清晨降落羅馬，換兩段火車到佛羅倫斯；中午在中央市場吃牛肚包，下午補眠，晚上吃老牌 Sostanza。","wx":"佛羅倫斯 12 月氣候平均，氣溫約在 1°C 至 9°C 之間","walk":"步行 ~4 km","warn":"入境加領行李可能超過 1 小時；高鐵買可改時間的 Base fare。","items":[
-  ["07:15","08:30","plain","入境、領行李","FCO 第三航廈","","",{"p":"fco"}],
-  ["08:35","09:07","move","Leonardo Express","FCO 機場站 → Roma Termini","€14／人","每 15 分一班",{"km":32}],
-  ["09:07","10:00","plain","轉車緩衝","Roma Termini","","預留 50 分吸收落地延誤",{"p":"termini"}],
-  ["10:00","11:30","flight","高鐵 Roma → Firenze","Roma Termini → Firenze SMN","€20–50／人","Frecciarossa／Italo；班次待確認",{"km":260}],
-  ["11:30","11:45","hotel","✅ 飯店寄放行李","Firenze SMN → Hotel Davanzati","","",{"p":"hfl","km":1.1,"min":11}],
-  ["11:45","12:00","move","步行","飯店 → 中央市場","","",{"km":0.9,"min":12}],
-  ["12:00","13:00","meal","午餐｜Da Nerbone","中央市場一樓","€10–15／人｜2 人 €20–30","lampredotto 牛肚包、bollito 夾餅",{"p":"nerbone"}],
-  ["13:00","13:40","plain","散步｜San Lorenzo、Duomo 外觀","","Free","順路回飯店",{"p":"sanlorenzo"}],
-  ["13:40","16:30","hotel","✅ 入住、補眠","Hotel Davanzati","","14:00 起可入住",{"p":"hfl"}],
-  ["17:00","17:05","hotel","➡️ 出門","飯店 → Piazza della Signoria","","",{"p":"hfl","km":0.3,"min":3}],
-  ["17:05","19:15","plain","Signoria、Via Tornabuoni 聖誕燈飾","Piazza della Signoria → Via Tornabuoni","Free","",{"p":"signoria"}],
-  ["19:15","19:30","move","步行","→ Via del Porcellana","","",{"km":0.5,"min":8}],
-  ["19:30","21:00","meal","晚餐｜Trattoria Sostanza","","€40–55／人｜2 人 €80–110","奶油煎雞胸、朝鮮薊烘蛋；需訂",{"p":"sostanza"}],
-  ["21:00","21:15","hotel","✅ 回飯店","","","",{"p":"hfl","km":0.7,"min":10}]
+ {"d":"2026-10-16","main":"兵馬俑・華清宮・鐘鼓樓","tab":"10/16","wd":"五","title":"兵馬俑・華清宮","sum":"包車到臨潼看兵馬俑，午餐御膳苑後逛華清宮，回飯店休息 90 分鐘，傍晚鐘鼓樓散步後吃餃子宴。","wx":"陰，氣溫約在 13°C 至 24°C 之間","walk":"步行 ~4 km","warn":"預約時段前 30 分鐘要到北門排隊；北門是唯一入口。","items":[
+  ["07:30","08:25","hotel","➡️ 出門｜東線包車","飯店 → 兵馬俑北門（約 45 km）","¥480–500／車 全天（5 座）","司機在大廳等；早餐 07:00 起",{"km":45}],
+  ["08:25","09:00","plain","北門排隊・驗證","人、票、證三者一致","","輪椅租借：北廣場遊客中心",{}],
+  ["09:00","11:45","anchor","兵馬俑 一號坑→三號坑→二號坑","","¥120／人","65 歲以上免票官方只寫大陸身分證，預算以全票計",{"p":"bmy"}],
+  ["11:45","12:00","move","包車 → 華清宮","約 10 min","包車已含","",{"km":8,"min":10}],
+  ["12:00","13:15","meal","午餐｜華清御湯·御膳苑","","¥140／人｜4 人 ¥560","已訂 12:00",{"p":"ysy"}],
+  ["13:15","14:30","plain","華清宮（平地前段）","九龍湖、唐御湯遺址；不上驪山","¥120／人","65 歲以上免票未確認台胞適用，可問售票處",{"p":"hqg"}],
+  ["14:30","15:30","hotel","✅ 包車回飯店","臨潼 → 飯店","包車已含","",{"km":40}],
+  ["15:30","17:00","hotel","休息 90 分鐘","飯店","","",{}],
+  ["17:00","17:15","hotel","➡️ 出門｜計程車 → 鐘鼓樓","","¥15／車","",{"km":3.5}],
+  ["17:15","17:55","plain","鐘鼓樓廣場散步","平地，不登樓","免費","傍晚拍鐘樓、鼓樓；累就直接進餐廳",{"p":"zgl"}],
+  ["18:00","19:30","meal","晚餐｜德發長 餃子宴","","¥70–150／人｜4 人 ¥280–600","建議電話訂位",{"p":"dfc"}],
+  ["19:30","19:50","hotel","✅ 看鐘樓夜景後搭車回飯店","","¥15／車","",{"hotel":1,"km":3.5}]
  ]},
- {"d":"2026-12-22","main":"Uffizi・Oltrarno・米開朗基羅廣場","tab":"12/22","wd":"二","title":"Uffizi、Oltrarno、日落","sum":"早上看 Uffizi，下午過河到 Oltrarno，上米開朗基羅廣場看日落，晚餐在 Santo Spirito 一帶。","wx":"佛羅倫斯 12 月氣候平均，氣溫約在 1°C 至 9°C 之間","walk":"步行 ~8 km","warn":"日落約 16:40，16:00 前要到廣場。","items":[
-  ["08:10","08:15","hotel","➡️ 出門","飯店 → Uffizi","","",{"p":"hfl","km":0.4,"min":5}],
-  ["08:30","11:30","anchor","Uffizi 烏菲茲美術館","","€29 線上／人","需訂 08:30",{"p":"uffizi"}],
-  ["11:30","12:20","plain","Palazzo Vecchio、傭兵涼廊","Piazza della Signoria","Free","",{"p":"signoria"}],
-  ["12:20","12:30","move","步行","→ Via dei Georgofili","","約 5 分，回到 Uffizi 旁",{"km":0.2,"min":5}],
-  ["12:30","13:15","meal","午餐｜'Ino","","€12–18／人｜2 人 €24–36","panini；座位少，可外帶到河邊",{"p":"ino"}],
-  ["13:15","14:45","hotel","✅ 回飯店休息","","","",{"p":"hfl","km":0.3,"min":5}],
-  ["14:45","14:50","hotel","➡️ 出門","飯店 → Ponte Vecchio","","",{"p":"hfl","km":0.3}],
-  ["14:50","15:15","plain","Ponte Vecchio 老橋","→ Oltrarno","Free","",{"p":"ponte"}],
-  ["15:15","16:00","move","步行上坡","→ Piazzale Michelangelo","","約 30 分，有坡和階梯",{"km":2.1,"min":30}],
-  ["16:00","17:00","anchor","米開朗基羅廣場日落","","Free","日落約 16:40",{"p":"pmich"}],
-  ["17:00","17:40","move","步行下坡","→ Piazza Santo Spirito","","",{"km":2.2,"min":30}],
-  ["17:40","19:00","plain","Aperitivo（自由）","Piazza Santo Spirito","€8–12／人","",{"p":"spirito"}],
-  ["19:00","20:30","meal","晚餐｜Trattoria La Casalinga","","€30–45／人｜2 人 €60–90","ribollita、鴨肉醬麵；需訂",{"p":"casalinga"}],
-  ["20:30","20:45","hotel","✅ 回飯店","","","步行 12 分過河",{"p":"hfl","km":0.7,"min":12}]
+ {"d":"2026-10-17","main":"陝博・大雁塔・大唐不夜城","tab":"10/17","wd":"六","title":"陝博・大雁塔","sum":"早上看陝博本館，小寨午餐後回飯店休息 50 分鐘，14:45 先進大慈恩寺，16:00 看北廣場噴泉，提早吃 biangbiang 麵，再看大唐不夜城點燈。","wx":"雨轉陰，氣溫約在 13°C 至 19°C 之間","walk":"步行 ~4 km","warn":"大慈恩寺 16:30 停止入場：14:45 入寺，留有 1 小時以上緩衝。大唐不夜城可省略，長輩累了晚餐後直接回飯店。","items":[
+  ["08:30","08:45","hotel","➡️ 出門｜計程車 → 陝博","約 4 km","¥15／車","",{"km":4}],
+  ["09:00","11:45","anchor","陝西歷史博物館 本館","","基本陳列免費；大唐遺寶 ¥30／人（可選）","必看鑲金獸首瑪瑙杯",{"p":"sxhm"}],
+  ["11:45","11:55","move","計程車 → 小寨賽格","約 1 km","¥10／車","",{"km":1}],
+  ["12:00","13:15","meal","午餐｜長安大牌檔 葫蘆雞","","¥60–90／人｜4 人 ¥240–360","再點毛筆酥、稠酒",{"p":"cadp"}],
+  ["13:15","13:35","hotel","✅ 計程車回飯店","","¥15／車","",{"hotel":1,"km":3.3}],
+  ["13:35","14:25","hotel","休息 50 分鐘","飯店","","",{}],
+  ["14:25","14:45","hotel","➡️ 出門｜計程車 → 大慈恩寺","約 5 km","¥15／車","",{"km":5}],
+  ["14:45","15:45","anchor","大慈恩寺・大雁塔","寺院平地；登塔可選","門票 ¥10–50（各來源說法不一）；登塔 +¥25–30","16:30 停止入場；登塔目前只開到 5 樓",{"p":"dce"}],
+  ["15:45","16:00","move","步行 → 大雁塔北廣場","約 500 m，平地","","",{"km":0.5}],
+  ["16:00","16:30","plain","北廣場 16:00 音樂噴泉","坐著看，約 10 分鐘，之後原地休息","免費","以現場公告為準",{"p":"dyt"}],
+  ["16:30","16:45","move","計程車 → 郭老三面莊","約 5 分鐘","¥10／車","",{"km":1.5,"min":5}],
+  ["16:45","17:45","meal","晚餐｜郭老三 biangbiang 麵","","¥18–25／人｜4 人 ¥72–100","點三合一；提早吃避開晚餐排隊",{"p":"gls"}],
+  ["17:45","17:55","move","計程車 → 大唐不夜城 北口","","¥10／車","",{"km":1.5}],
+  ["18:00","19:00","plain","大唐不夜城 北段（可選）","只走北段約 1 km","免費","日落約 18:10，18:30 後陸續亮燈",{"p":"dtb"}],
+  ["19:00","19:20","hotel","✅ 計程車回飯店","","¥20／車","",{"hotel":1,"km":5.8}]
  ]},
- {"d":"2026-12-23","main":"David・丁骨牛排・Duomo 圓頂","tab":"12/23","wd":"三","title":"David、牛排、登圓頂","sum":"早上看 David，中午吃丁骨牛排，下午爬 Duomo 圓頂，晚上在 Duomo 旁吃 Coquinarius。","wx":"佛羅倫斯 12 月氣候平均，氣溫約在 1°C 至 9°C 之間","walk":"步行 ~5 km","warn":"圓頂有 463 階、沒有電梯，午餐別吃太撐。","items":[
-  ["07:55","08:10","hotel","➡️ 出門","飯店 → Accademia","","",{"p":"hfl","km":1.1,"min":12}],
-  ["08:15","09:45","anchor","Accademia｜David","","€26＋€4 預約費／人（含 Bargello）","需訂 08:15",{"p":"accademia","bk":"Accademia"}],
-  ["09:45","11:45","plain","San Marco 修道院或皮件市場","San Lorenzo 一帶","","自由逛",{"p":"mercato"}],
-  ["11:45","12:00","move","步行","→ Via Rosina","","5 分；開門前排隊",{"km":0.6,"min":5}],
-  ["12:00","13:15","meal","午餐｜Trattoria Mario","","€45–70／人｜2 人 €90–140","丁骨牛排兩人分一份；論公斤計價",{"p":"mario"}],
-  ["13:15","14:40","hotel","✅ 回飯店休息","","","",{"p":"hfl","km":0.8,"min":15}],
-  ["14:40","14:50","hotel","➡️ 出門","飯店 → Piazza del Duomo","","",{"p":"hfl","km":0.5,"min":5}],
-  ["15:00","16:45","anchor","Brunelleschi 圓頂、洗禮堂","","€30／人（Brunelleschi Pass）","圓頂 15:00 需訂",{"p":"duomo","bk":"Brunelleschi"}],
-  ["16:45","17:00","hotel","✅ 回飯店","","","",{"p":"hfl","km":0.5}],
-  ["18:50","19:00","hotel","➡️ 出門","飯店 → Via dell'Oche","","",{"p":"hfl","km":0.4,"min":7}],
-  ["19:00","20:30","meal","晚餐｜Coquinarius","","€30–45／人｜2 人 €60–90","crostini 綜合烤麵包、ravioli（義式餃）；需訂",{"p":"coquinarius"}],
-  ["20:30","20:40","hotel","✅ 回飯店，整理行李","","","",{"p":"hfl","km":0.4,"min":7}]
+ {"d":"2026-10-18","main":"城牆・西安博物院","tab":"10/18","wd":"日","title":"城牆・西安博物院","sum":"從永寧門登城牆坐電瓶車繞一圈，中午吃灌湯包，回飯店休息 90 分鐘，下午看西安博物院和小雁塔，傍晚直接去吃涮羊肉。","wx":"雨，氣溫約在 13°C 至 18°C 之間","walk":"步行 ~4 km","warn":"目前預報 10/18 下雨：城牆上沒有遮蔽，下雨就改走雨天備案（見摘要）；今晚決定明天去不去洛陽。","items":[
+  ["09:00","09:10","hotel","➡️ 出門｜計程車 → 永寧門","約 1 km","¥10／車","",{"km":1}],
+  ["09:10","09:30","plain","購票・登城","永寧門（南門）","¥54／人","65 歲以上免票要敬老優待證，台胞以全票計；需要無障礙電梯先問南門遊客服務中心",{"p":"ynm"}],
+  ["09:30","10:45","anchor","城牆電瓶車繞一圈","城牆頂，全長 13.74 km","¥80／人（全程不下車）","一圈約 45 min；單段票價現場確認",{}],
+  ["10:45","11:15","plain","回南門拍城樓・下城","永寧門","","",{"p":"ynm"}],
+  ["11:15","11:30","move","計程車 → 北院門","","¥15／車","",{"km":2.5}],
+  ["11:30","12:30","meal","午餐｜賈三灌湯包","","¥36–50／人｜4 人 ¥144–200","週日人多，盡量準時到；只吃這頓，不逛回民街",{"p":"js"}],
+  ["12:30","12:50","hotel","✅ 計程車回飯店","","¥15／車","",{"hotel":1,"km":2.9}],
+  ["12:50","14:20","hotel","休息 90 分鐘","飯店","","",{}],
+  ["14:20","14:30","hotel","➡️ 出門｜計程車 → 西安博物院","約 600 m","¥10／車","",{"km":0.6}],
+  ["14:30","16:45","plain","西安博物院・小雁塔","館內＋薦福寺園林","免費（需預約）；不登塔","三彩騰空馬",{"p":"xam"}],
+  ["16:45","17:05","move","計程車 → 鐘樓","約 3 km","¥15／車","",{"km":3}],
+  ["17:15","18:45","meal","晚餐｜酸辣谷 涮羊肉","","¥80–120／人｜4 人 ¥320–480","可選不辣鍋底",{"p":"slg"}],
+  ["18:45","19:00","hotel","✅ 計程車回飯店","","¥15／車","決定 Day 5 去不去洛陽",{"hotel":1,"km":3.5}]
  ]},
- {"d":"2026-12-24","main":"高鐵到威尼斯・San Marco 大教堂","tab":"12/24","wd":"四","title":"前往威尼斯，平安夜","sum":"搭高鐵到威尼斯，中午在 Rialto 吃 cicchetti，下午參觀 San Marco 大教堂，晚上在飯店旁吃平安夜晚餐。","wx":"威尼斯 12 月氣候平均，氣溫約在 1°C 至 7°C 之間","walk":"步行 ~6 km","warn":"平安夜很多店提早關門；大教堂最後入場 16:45。","items":[
-  ["07:45","08:00","hotel","➡️ 退房","Hotel Davanzati → Firenze SMN","","",{"p":"hfl","km":1.1,"min":11}],
-  ["08:05","10:25","flight","高鐵 Firenze → Venezia","Firenze SMN → Venezia S. Lucia","€29–55／人","班次待確認",{"p":"smn","km":240}],
-  ["10:35","11:00","move","Vaporetto｜啟用 72 小時票","Ferrovia → Madonna dell'Orto","€45／人（72h）","線別待確認",{"p":"slucia","km":2.3}],
-  ["11:00","11:10","hotel","✅ 飯店寄放行李","Hotel ai Mori d'Oriente","","下船步行 2 分",{"p":"hve"}],
-  ["11:10","11:40","hotel","➡️ 出門｜步行","飯店 → Rialto","","",{"p":"hve","km":1.3,"min":30}],
-  ["11:40","12:30","plain","Rialto 市場、Rialto 橋","","Free","市場平安夜營業待確認",{"p":"rialto"}],
-  ["12:30","13:30","meal","午餐｜Cantina Do Spade","","€15–25／人｜2 人 €30–50","cicchetti：sarde in saor、小章魚",{"p":"dospade"}],
-  ["13:30","14:05","move","步行｜Mercerie","Rialto → Piazza San Marco","","約 15 分，順路逛",{"km":0.8,"min":15}],
-  ["14:15","15:15","anchor","San Marco 大教堂","","€10 基本票／人","需訂 14:15",{"p":"basilica"}],
-  ["15:15","15:45","plain","San Marco 聖誕樹","Piazzetta San Marco","Free","",{}],
-  ["15:45","16:25","hotel","✅ 回飯店入住","San Zaccaria → Madonna dell'Orto","72h 票","",{"p":"hve","km":3.5}],
-  ["18:55","19:00","hotel","➡️ 出門","飯店 → 同一條運河邊","","",{"p":"hve","km":0.2,"min":2}],
-  ["19:00","21:00","meal","平安夜晚餐｜Osteria Anice Stellato","","€45–65／人｜2 人 €90–130","威尼斯海鮮，可點主廚套餐；需訂",{"p":"anice"}],
-  ["21:00","21:05","hotel","✅ 回飯店","","","",{"p":"hve","km":0.2}]
+ {"d":"2026-10-19","variant":"去洛陽","main":"洛陽龍門石窟・水席","tab":"10/19","wd":"一","title":"洛陽龍門石窟","sum":"坐高鐵到洛陽看龍門西山盧舍那大佛，在洛陽老城吃水席，傍晚回西安。","wx":"洛陽雨轉陰，氣溫約在 14°C 至 19°C 之間；西安陰","walk":"步行 ~4 km","warn":"管記水席午市 14:00 結束，12:45 前要到；回程 G2007 15:30 是硬性時間。不去的話看「留在西安」頁，龍門票當日 20:00 前可退。","items":[
+  ["06:40","07:20","hotel","➡️ 出門｜計程車 → 西安北站","約 18 km","¥45–55／車","早餐請飯店打包",{"km":18}],
+  ["07:20","08:12","plain","安檢・候車","西安北站","","台胞證刷不過閘門就走人工通道",{"p":"xab"}],
+  ["08:12","09:44","flight","高鐵 G3162","西安北 → 洛陽龍門","二等座 ¥178／人","攜程 10/10 查班次正常；下單以 12306 為準",{"km":380}],
+  ["09:44","10:15","move","計程車 → 西北服務區，步行到西山檢票口","洛陽龍門站 → 西北服務區，再走約 800 m","¥20–25／車","一定要停「西北」服務區；司機說關閉也不要換",{"p":"lmx","km":5}],
+  ["10:15","12:15","anchor","龍門石窟 西山","賓陽三洞→萬佛洞→奉先寺盧舍那大佛→漫水橋出園","¥90／人","預約 10:00–11:00 時段；60 歲以上免票未確認台胞適用；不進香山寺、白園",{"p":"lms"}],
+  ["12:15","12:45","move","電瓶車＋計程車 → 洛陽老城","出園坐電瓶車到東北服務區，再叫車到仙果市街","電瓶車 ¥10／人＋¥30–40／車","",{"km":15}],
+  ["12:45","13:50","meal","午餐｜管記水席","","¥50–70／人｜4 人 ¥200–280","坐下就點：牡丹燕菜、焦炸丸子，3–4 道就夠",{"p":"gj"}],
+  ["13:50","14:20","move","計程車 → 洛陽龍門站","約 25 min","¥30–40／車","",{"p":"lmz","km":13,"min":25}],
+  ["14:20","15:30","plain","候車（緩衝時間）","洛陽龍門站","","提早到可改簽 G2195 14:54，客滿就照原票；萬一錯過 G2007，改簽 G671 15:39",{}],
+  ["15:30","16:45","flight","高鐵 G2007","洛陽龍門 → 西安北","二等座 ¥174／人","",{"km":380}],
+  ["16:45","17:30","hotel","✅ 計程車回飯店・休息","西安北 → 飯店","¥45–55／車","",{"hotel":1,"km":18}],
+  ["18:30","18:45","hotel","➡️ 出門｜計程車 → 西門","約 3 km","¥15／車","",{"km":3}],
+  ["18:45","19:30","meal","晚餐｜魏家涼皮","","¥23–35／人｜4 人 ¥92–140","",{"p":"wj"}],
+  ["19:30","19:45","hotel","✅ 計程車回飯店","","¥15／車","",{"hotel":1,"km":3}]
  ]},
- {"d":"2026-12-25","main":"總督宮・聖誕午餐","tab":"12/25","wd":"五","title":"威尼斯聖誕節","sum":"早上參觀總督宮，中午回 Cannaregio 吃聖誕午餐，下午休息，晚上吃 Vedova 肉丸。","wx":"威尼斯 12 月氣候平均，氣溫約在 1°C 至 7°C 之間","walk":"步行 ~5 km","warn":"總督宮 12/25：官方未公告聖誕營業，部分資料寫聖誕節休館。訂票時先確認；休館就改 12/26 09:00 進場，Murano／Burano 延後 2 小時。","items":[
-  ["09:15","09:50","hotel","➡️ 出門｜Vaporetto","Madonna dell'Orto → San Zaccaria","72h 票","",{"p":"hve","km":3.5,"min":30}],
-  ["10:00","12:00","anchor","總督宮、嘆息橋","","€25–30／人","需訂 10:00；含 Correr 博物館",{"p":"doge"}],
-  ["12:00","12:30","move","Vaporetto Line 1","San Zaccaria → Ca' d'Oro","72h 票","",{"p":"szacc","km":2.6,"min":25}],
-  ["12:30","14:15","meal","聖誕午餐｜Vini da Gigio","","€45–65／人｜2 人 €90–130","小干貝、整尾鱸魚；需訂，聖誕營業待確認",{"p":"gigio"}],
-  ["14:15","14:30","hotel","✅ 回飯店休息","","","",{"p":"hve","km":0.6,"min":10}],
-  ["18:30","18:45","hotel","➡️ 出門｜步行","飯店 → Ca' d'Oro","","",{"p":"hve","km":0.7,"min":10}],
-  ["18:45","20:15","meal","晚餐｜Ca' d'Oro alla Vedova","","€25–35／人｜2 人 €50–70","polpette 肉丸；需訂，聖誕營業待確認",{"p":"vedova"}],
-  ["20:15","20:30","hotel","✅ 回飯店","","","",{"p":"hve","km":0.7,"min":10}]
+ {"d":"2026-10-19","alt":true,"variant":"留在西安","main":"備案：碑林・書院門・回坊","tab":"10/19","wd":"一","title":"留在西安（不去洛陽）","sum":"不去洛陽的備案：睡晚一點，上午碑林＋書院門，午餐葫蘆頭泡饃，下午休息後看化覺巷清真大寺、逛回坊。","wx":"西安陰，氣溫約在 11°C 至 22°C 之間","walk":"步行 ~3.5 km","warn":"選這頁的話：龍門票 10/19 20:00 前退、高鐵在 12306 退票；碑林要預約 10/19 10:00 時段。如果 10/18 雨天備案已去過碑林，上午改登城牆（永寧門，¥54＋電瓶車 ¥80）。化覺巷 17:00 停止入場，要遮肩膝。","items":[
+  ["08:00","09:30","plain","睡晚一點・飯店早餐","飯店","房價已含","",{}],
+  ["09:40","09:55","hotel","➡️ 出門｜計程車 → 碑林","約 1.5 km","¥10／車","",{"km":1.5}],
+  ["10:00","11:45","anchor","西安碑林博物館","碑林七室→石刻藝術館，不用全看","¥85／人","需預約 10:00 時段；館內有座椅可休息",{"p":"bl"}],
+  ["11:45","12:15","plain","書院門古文化街散步","碑林出口往西，平路約 400 m","免費","文房四寶、字畫店，看看就好",{"p":"sym"}],
+  ["12:15","12:25","move","計程車 → 南院門","約 1.5 km","¥10／車","",{"km":1.5}],
+  ["12:30","13:30","meal","午餐｜春發生 葫蘆頭泡饃","","¥43／人｜4 人約 ¥170","非遺老字號；吃不慣大腸可點小炒",{"p":"cfs"}],
+  ["13:30","13:45","hotel","✅ 計程車回飯店","","¥10／車","",{"hotel":1,"km":1.8}],
+  ["13:45","15:15","plain","回飯店休息","飯店","","休息 90 分鐘",{}],
+  ["15:15","15:35","hotel","➡️ 出門｜計程車 → 化覺巷","約 3 km","¥15／車","",{"km":3}],
+  ["15:40","16:40","anchor","化覺巷清真大寺","明代中式清真寺，庭院四進","¥25／人（淡季 ¥15）","遮肩膝；禮拜大殿只能在外面看",{"p":"hj"}],
+  ["16:40","17:40","plain","回坊散步","北廣濟街 → 大皮院，平路約 800 m","","18:00 吃晚餐，別吃太飽",{"p":"hmj"}],
+  ["17:40","17:55","move","計程車 → 西門外","約 2 km","¥10／車","",{"km":2}],
+  ["18:00","19:00","meal","晚餐｜魏家涼皮","","¥23–35／人｜4 人 ¥92–140","",{"p":"wj"}],
+  ["19:00","19:15","hotel","✅ 計程車回飯店","","¥15／車","",{"hotel":1,"km":3}]
  ]},
- {"d":"2026-12-26","main":"Murano・Burano 彩色島","tab":"12/26","wd":"六","title":"Murano、Burano","sum":"早上先到玻璃島 Murano 散步，再搭船到彩色島 Burano 吃燉飯，傍晚回 Cannaregio。","wx":"威尼斯 12 月氣候平均，氣溫約在 1°C 至 7°C 之間","walk":"步行 ~6 km","warn":"12/26 是國定假日，Murano 玻璃工坊多半休息，以散步為主。","items":[
-  ["09:30","09:50","hotel","➡️ 出門｜步行","飯店 → Fondamente Nove","","",{"p":"hve","km":0.9,"min":15}],
-  ["10:00","10:15","move","Vaporetto","Fondamente Nove → Murano","72h 票","線別待確認",{"p":"fnove","km":1.6}],
-  ["10:15","11:30","plain","Murano 散步","Fondamenta dei Vetrai","Free","玻璃博物館開放待確認",{"p":"murano"}],
-  ["11:40","12:15","move","Vaporetto 12","Murano Faro → Burano","72h 票","時刻待確認",{"p":"faro","km":6.5}],
-  ["12:15","12:30","plain","Burano 彩色房子","","Free","",{"p":"burano"}],
-  ["12:30","14:00","meal","午餐｜Trattoria Al Gatto Nero","","€45–65／人｜2 人 €90–130","risotto di gò（鰕虎魚燉飯）；需訂",{"p":"gattonero"}],
-  ["14:00","15:20","plain","Burano、Mazzorbo 散步","","Free","",{"p":"burano"}],
-  ["15:30","16:15","move","Vaporetto 12","Burano → Fondamente Nove","72h 票","",{"km":8.5}],
-  ["16:15","16:35","hotel","✅ 回飯店休息","","","步行",{"p":"hve","km":0.9,"min":10}],
-  ["19:00","19:15","hotel","➡️ 出門","飯店 → Cannaregio 1268","","",{"p":"hve","km":0.9,"min":12}],
-  ["19:15","20:45","meal","晚餐｜Trattoria Bar Pontini","","€30–45／人｜2 人 €60–90","墨魚麵；建議訂位",{"p":"pontini"}],
-  ["20:45","21:00","hotel","✅ 回飯店","","","",{"p":"hve","km":0.9}]
- ]},
- {"d":"2026-12-27","main":"高鐵到羅馬・Trevi・Pantheon","tab":"12/27","wd":"日","title":"前往羅馬","sum":"早上在 Cannaregio 散步，早午餐後搭高鐵到羅馬，晚上看 Trevi 和 Pantheon 夜景，在 Roscioli 吃晚餐。","wx":"羅馬 12 月氣候平均，氣溫約在 3°C 至 14°C 之間","walk":"步行 ~6 km","warn":"今天是梵蒂岡免費日，人潮最多，不要過去。","items":[
-  ["09:00","10:30","plain","Ghetto 猶太區晨間散步","Cannaregio","Free","",{"p":"ghetto"}],
-  ["10:30","10:50","hotel","➡️ 退房｜步行","飯店 → Fondamenta Cannaregio","","約 15 分；72h 票已過期",{"p":"hve","km":1,"min":15}],
-  ["11:00","11:50","meal","早午餐｜L'Osteria Le Guglie","","€25–35／人｜2 人 €50–70","spaghetti allo scoglio（海鮮麵）",{"p":"guglie"}],
-  ["11:50","12:05","move","步行","→ Venezia S. Lucia","","",{"km":0.6,"min":8}],
-  ["12:26","16:11","flight","高鐵 Venezia → Roma","Venezia S. Lucia → Roma Termini","€25–75／人","班次待確認",{"p":"slucia","km":500}],
-  ["16:15","16:45","move","地鐵 B 線 1 站＋步行","Termini → Cavour → 飯店","約 €1.50／人","",{"p":"termini","km":1.4}],
-  ["16:45","17:30","hotel","✅ 入住 Hotel Raffaello","","","",{"p":"hro"}],
-  ["17:30","17:50","hotel","➡️ 出門｜步行","飯店 → Trevi","","",{"p":"hro","km":1.4,"min":20}],
-  ["17:50","19:15","anchor","Trevi → Pantheon → Navona","Centro Storico","Pantheon 約 €5／人","Pantheon 時間待確認",{"p":"trevi"}],
-  ["19:15","19:25","move","步行","Piazza Navona → Via dei Giubbonari","","",{"km":0.8,"min":8}],
-  ["19:30","21:00","meal","晚餐｜Roscioli Salumeria","","€45–65／人｜2 人 €90–130","cacio e pepe、carbonara；需訂",{"p":"roscioli"}],
-  ["21:00","21:25","hotel","✅ 計程車回飯店","","€12–15／車","",{"p":"hro","km":2.4}]
- ]},
- {"d":"2026-12-28","main":"梵蒂岡博物館・聖彼得大教堂","tab":"12/28","wd":"一","title":"梵蒂岡","sum":"早上參觀梵蒂岡博物館和西斯汀禮拜堂，中午吃方塊披薩，下午看聖彼得大教堂，晚上在 Monti 的老酒館吃晚餐。","wx":"羅馬 12 月氣候平均，氣溫約在 3°C 至 14°C 之間","walk":"步行 ~8 km","warn":"門票實名，要帶護照；大教堂要求遮肩、遮膝。","items":[
-  ["07:30","08:10","hotel","➡️ 出門｜地鐵 B → A","Cavour → Termini → Cipro","約 €1.50／人","",{"p":"hro","km":7.5}],
-  ["08:30","11:45","anchor","梵蒂岡博物館、西斯汀禮拜堂","","€25 線上／人","需訂 08:30；帶護照",{"p":"vatican"}],
-  ["11:45","12:00","move","步行","→ Via della Meloria","","",{"km":0.7,"min":7}],
-  ["12:00","12:45","meal","午餐｜Bonci Pizzarium","","€10–20／人｜2 人 €20–40","pizza al taglio 秤重；supplì",{"p":"pizzarium"}],
-  ["12:45","13:15","move","步行","→ 聖彼得廣場","","",{"km":1.3,"min":20}],
-  ["13:15","15:00","anchor","聖彼得大教堂","","Free","米開朗基羅《聖殤》",{"p":"stpeter"}],
-  ["15:00","16:00","plain","聖天使堡外觀、台伯河","","Free","",{"p":"santangelo"}],
-  ["16:00","16:40","hotel","✅ 回飯店休息","計程車或地鐵","","",{"p":"hro","km":3.3,"min":20}],
-  ["19:00","19:10","hotel","➡️ 出門｜步行","飯店 → Via Panisperna","","",{"p":"hro","km":0.3,"min":8}],
-  ["19:10","20:40","meal","晚餐｜Ai Tre Scalini","","€25–40／人｜2 人 €50–80","pollo alla romana（羅馬燉雞）；不收訂位",{"p":"trescalini"}],
-  ["20:40","20:50","hotel","✅ 回飯店","","","",{"p":"hro","km":0.3,"min":8}]
- ]},
- {"d":"2026-12-29","main":"競技場・古羅馬廣場・Trastevere","tab":"12/29","wd":"二","title":"古羅馬、Trastevere","sum":"早上看競技場、古羅馬廣場和帕拉提諾山，中午吃 Trattoria Monti，晚上去 Trastevere。","wx":"羅馬 12 月氣候平均，氣溫約在 3°C 至 14°C 之間","walk":"步行 ~8 km","warn":"競技場熱門時段開賣幾小時就賣完，11/29 要準時搶票。","items":[
-  ["08:10","08:20","hotel","➡️ 出門｜步行","飯店 → Colosseo","","",{"p":"hro","km":0.8,"min":10}],
-  ["08:30","10:00","anchor","競技場","","€18／人（含古羅馬廣場、帕拉提諾山）","需訂 08:30",{"p":"colosseo"}],
-  ["10:00","12:30","anchor","古羅馬廣場、帕拉提諾山","同一區","同一張票","",{"p":"foro"}],
-  ["12:30","12:55","move","步行","→ Via di San Vito","","",{"km":1.3,"min":20}],
-  ["13:00","14:20","meal","午餐｜Trattoria Monti","","€35–50／人｜2 人 €70–100","tortello al rosso d'uovo（蛋黃大餃）；需訂",{"p":"tmonti"}],
-  ["14:20","15:45","hotel","✅ 回飯店休息","","","",{"p":"hro","km":0.8,"min":10}],
-  ["16:00","16:05","hotel","➡️ 出門","飯店 → Via del Corso","","",{"p":"hro","km":1.3,"min":15}],
-  ["16:05","17:40","plain","自由購物","Via del Corso／西班牙階梯","","",{"p":"spagna"}],
-  ["17:40","18:00","move","計程車","→ Trastevere","€12–15／車","",{"km":2.7}],
-  ["18:00","20:00","meal","晚餐｜Trattoria Da Enzo al 29","","€30–45／人｜2 人 €60–90","coda alla vaccinara（燉牛尾）；排隊",{"p":"enzo"}],
-  ["20:00","20:45","plain","Trastevere 夜間散步","","Free","",{"p":"trastevere"}],
-  ["20:45","21:05","hotel","✅ 計程車回飯店，打包","","€12–15／車","",{"p":"hro","km":3}]
- ]},
- {"d":"2026-12-30","main":"計程車到機場・CI76 返台","tab":"12/30","wd":"三","title":"返台","sum":"清晨搭計程車去機場，搭 CI76 回台北，12/31 05:45 抵達。","wx":"羅馬 12 月氣候平均，氣溫約在 3°C 至 14°C 之間","walk":"步行 ~1 km","warn":"先在機場辦退稅，再去報到托運。","items":[
-  ["06:30","07:10","hotel","➡️ 退房｜計程車","飯店 → FCO T3","€55／車（每人 €27.5）","固定價；備案 Leonardo Express",{"p":"hro","km":32}],
-  ["07:10","10:00","plain","退稅、報到","FCO 第三航廈","","起飛前 3 小時",{"p":"fco"}],
-  ["10:25","05:45","flight","CI76 羅馬 → 台北","FCO T3 → TPE T1","","12/31 05:45 抵台（台北時間）",{"km":9610,"min":740}]
+ {"d":"2026-10-20","main":"碑林（可選）・返台","tab":"10/20","wd":"二","title":"返台","sum":"早上可選去碑林，11:20 出發去機場，經香港飛回台北（10/21 00:35 抵達）。","wx":"陰轉晴，氣溫約在 14°C 至 21°C 之間","walk":"步行 ~2 km","warn":"11:20 一定要上車去機場。香港轉機約 3 小時 45 分，晚餐在香港機場吃。","items":[
+  ["08:00","08:45","plain","早餐・收行李","飯店","房價已含","",{}],
+  ["08:45","08:55","hotel","➡️ 出門｜計程車 → 碑林（可選）","約 1.5 km","¥10／車","累或下雨就跳過",{"km":1.5}],
+  ["09:00","10:15","plain","碑林博物館（可選）","","¥85／人","需預約",{"p":"bl"}],
+  ["10:15","10:25","hotel","✅ 計程車回飯店","","¥10／車","",{"hotel":1,"km":1.5}],
+  ["11:00","11:20","plain","退房","","","",{"hotel":true}],
+  ["11:20","12:20","hotel","➡️ 出發｜7 座包車 → 咸陽機場 T5","約 50 km","¥300–400／車（7 座送機行情）","",{"km":50}],
+  ["12:20","13:10","meal","午餐｜機場簡餐（出境前）","咸陽 T5 出發層","約 ¥60–90／人","櫃檯約 12:50 開",{"p":"xiy"}],
+  ["13:10","14:00","plain","報到・出境","咸陽機場 T5","","進管制區後候機",{"p":"xiy"}],
+  ["15:50","19:05","flight","CX947 XIY→HKG","西安咸陽 T5 → 香港 T1","含機票","",{"km":1440}],
+  ["19:30","21:00","meal","晚餐｜香港機場 港式","HKG 管制區內","約 HK$120–180／人","",{"p":"hkg"}],
+  ["22:50","00:35","flight","CX408 HKG→TPE","抵達桃園 10/21（三）00:35","含機票","機場捷運已收班，搭預約的接送（6–7 人座 NT$1,600–1,900）",{"km":806}]
  ]}
 ];
-const SUMSEC=[{"h": "雨天／累的備案", "rows": [{"a": "12/21", "b": "雨天待中央市場一樓；太累只吃午餐，晚餐在飯店附近解決；高鐵延誤就改搭下一班（Base fare 可改）。"}, {"a": "12/22", "b": "雨天把米開朗基羅廣場換成 Pitti 宮室內；太累只看 Uffizi，搭計程車上廣場（約 €10–15／車，待確認）。"}, {"a": "12/23", "b": "雨天去 Bargello（聯票內）；太累把圓頂換成洗禮堂加博物館，不用爬。"}, {"a": "12/24", "b": "淹水改走 Strada Nova 高處路線；太累略過聖誕樹直接回飯店；大教堂因禮儀暫停就改逛 Mercerie。"}, {"a": "12/25", "b": "雨天整天待總督宮和 Correr；總督宮沒開就搭 Line 1 遊大運河，再看 San Marco 聖誕樹。"}, {"a": "12/26", "b": "雨天或大霧取消 Murano，只去 Burano 午餐；太累只去 Burano。"}, {"a": "12/27", "b": "Pantheon 是室內；太累略過 Navona，只看 Trevi。"}, {"a": "12/28", "b": "博物館和大教堂都在室內；太累跳過聖彼得大教堂。"}, {"a": "12/29", "b": "雨天下午改去 Borghese（要預訂）；太累只看競技場，跳過帕拉提諾山。"}]}];
-const INFO=[{"h": "緊急", "rows": [{"a": "緊急電話 112", "b": "警察、救護、消防"}, {"a": "外交部急難救助（全球免付費）", "b": "撥 00 800 0885 0885"}]}, {"h": "飯店", "rows": [{"a": "12/21–12/24　佛羅倫斯", "b": "Hotel Davanzati｜含早餐", "p": "hfl"}, {"a": "12/24–12/27　威尼斯", "b": "Hotel ai Mori d'Oriente｜含早餐", "p": "hve"}, {"a": "12/27–12/30　羅馬", "b": "Hotel Raffaello｜早餐若未含 €14／人", "p": "hro"}]}, {"h": "預訂清單（依期限排序）", "rows": [{"a": "立即｜機票 CI75／CI76", "b": "china-airlines.com"}, {"a": "立即｜飯店 3 間（可取消房價）", "b": "Double／Twin；Twin 滿房改訂 Double 並備註 two beds"}, {"a": "立即｜Uffizi 12/22 08:30", "b": "B-ticket 官方"}, {"a": "立即｜Accademia＋Bargello 聯票 12/23 08:15", "b": "B-ticket 官方"}, {"a": "立即｜Brunelleschi Pass 12/23 15:00", "b": "duomo.firenze.it"}, {"a": "立即｜高鐵 3 段", "b": "12/21 Roma→Firenze（Base fare，可改）、12/24 Firenze→Venezia、12/27 Venezia→Roma｜Trenitalia／Italo"}, {"a": "立即｜San Marco 大教堂 12/24 14:15", "b": "開賣即訂｜tickets.basilicasanmarco.it"}, {"a": "立即｜梵蒂岡博物館 12/28 08:30", "b": "開賣即訂｜tickets.museivaticani.va（實名）"}, {"a": "11/25 前｜總督宮 12/25 10:00", "b": "11/25 23:59 CET = 11/26 06:59 台北；30 天前網購價｜visitmuve.it"}, {"a": "11/29 開賣｜競技場 12/29 08:30", "b": "開賣當下（CET）搶票｜ticketing.colosseo.it"}, {"a": "11/30 前｜Anice Stellato 12/24 晚", "b": "電話 +39 342 084 2837；確認平安夜營業"}, {"a": "11/30 前｜Vini da Gigio 12/25 午", "b": "電話 +39 041 528 5140；確認聖誕營業"}, {"a": "11/30 前｜Ca' d'Oro alla Vedova 12/25 晚", "b": "電話 +39 041 528 5324；確認聖誕營業"}, {"a": "12/7 前｜Trattoria Sostanza 12/21 晚", "b": "只接受電話 +39 055 212691"}, {"a": "12/12 前｜Al Gatto Nero 12/26 午", "b": "電話 +39 041 730120"}, {"a": "12/13 前｜Roscioli 12/27 晚", "b": "官網訂位"}, {"a": "12/13 前｜La Casalinga 12/22 晚", "b": "電話 +39 055 218624"}, {"a": "12/14 前｜Trattoria Monti 12/29 午", "b": "電話 +39 06 446 6573"}, {"a": "12/16 前｜Trattoria Mario 12/23 午", "b": "Instagram 私訊"}, {"a": "12/16 前｜Coquinarius 12/23 晚", "b": "TheFork 或電話 +39 055 230 2153"}, {"a": "12/28 前｜（條件性）Borghese 12/29 下午", "b": "羅馬下雨才需要｜galleriaborghese.it"}]}, {"h": "出發前待辦", "rows": [{"a": "立即｜護照與 ETIAS", "b": "護照效期要超過 2027/3/30；ETIAS 尚未開放申請，避開代辦網站"}, {"a": "出發前 2 週", "b": "下載 Trenitalia、Italo、AVM Venezia（vaporetto）、Hi!Tide Venice；辦 eSIM"}, {"a": "出發前 1 週", "b": "確認所有「待確認」項目：總督宮 12/25 時間、高鐵時刻、Anice Stellato、Vini da Gigio、Vedova 的節日營業"}, {"a": "出發前 3 天", "b": "查罷工（scioperi）、威尼斯潮汐、天氣預報"}, {"a": "打包", "b": "防水短靴、保暖疊穿外套、遮肩圍巾（教堂、梵蒂岡）"}]}, {"h": "Dining Chart（含備案）", "rows": [{"a": "12/21 午｜Da Nerbone", "b": "牛肚包 lampredotto｜€10–15／人｜現場排隊\n備案 1：Trattoria Vecchio Mercato（Piazza del Mercato Centrale 17R，隔壁，€15–25）\n備案 2：中央市場二樓美食街（同棟，€15–25）"}, {"a": "12/21 晚｜Trattoria Sostanza", "b": "奶油煎雞胸、朝鮮薊烘蛋｜€40–55／人｜需訂 19:30\n備案 1：Osteria la Scala（Via della Scala 1，步行 2 分，€25–40）\n備案 2：Buca Lapi（Via del Trebbio 1r，步行 5 分，€40–60）"}, {"a": "12/22 午｜'Ino", "b": "Panini｜€12–18／人｜現場\n備案 1：Vinaino Fiorenza（Via Vacchereccia 13r，步行 2 分，€10–15）\n備案 2：I Fratellini（Via dei Cimatori 38r，步行 4 分，€8–12）"}, {"a": "12/22 晚｜Trattoria La Casalinga", "b": "佛羅倫斯家常菜 ribollita｜€30–45／人｜需訂 19:00\n備案 1：L'Arte di Dory（Via dei Serragli 78R，步行 3 分，€25–40）\n備案 2：Gustapanino（Piazza Santo Spirito 1，步行 1 分，€20–35）"}, {"a": "12/23 午｜Trattoria Mario", "b": "丁骨牛排｜€45–70／人｜需訂 12:00\n備案 1：Trattoria Vecchio Mercato（Piazza del Mercato Centrale 17R，步行 1 分，€25–45）\n備案 2：Trattoria Dedo（Piazza del Mercato Centrale 44，步行 1 分，€25–40）"}, {"a": "12/23 晚｜Coquinarius", "b": "Crostini、ravioli｜€30–45／人｜需訂 19:00\n備案 1：Trattoria Le Mossacce（Via del Proconsolo 55r，步行 4 分，€25–35；週六休）\n備案 2：Osteria Vini e Vecchi Sapori（Via dei Magazzini 3r，步行 5 分，€30–45；週日休）"}, {"a": "12/24 午｜Cantina Do Spade", "b": "Cicchetti｜€15–25／人｜現場\n備案 1：Cantina Do Mori（Calle Do Mori 429，步行 1 分，€15–25）\n備案 2：L' Bacaro de' Bischeri（Ruga dei Oresi 57，步行 2 分，€10–15）"}, {"a": "12/24 晚｜Osteria Anice Stellato", "b": "威尼斯海鮮｜€45–65／人｜需訂 19:00\n備案 1：Al Timon（Fondamenta dei Ormesini 2754，步行 2 分，€30–45）\n備案 2：Osteria L'Orto dei Mori（Cannaregio 3386，步行 4 分，€45–65）"}, {"a": "12/25 午｜Vini da Gigio", "b": "小干貝、整尾鱸魚｜€45–65／人｜需訂 12:30\n備案 1：Ostaria Santa Fosca（Fondamenta Trapolin 2321，步行 3 分，€30–45）\n備案 2：Osteria Al Cantinon（Calle de le Colonete 2152，步行 4 分，€40–55）"}, {"a": "12/25 晚｜Ca' d'Oro alla Vedova", "b": "Polpette 肉丸｜€25–35／人｜需訂 18:45\n備案 1：Ostaria Santa Fosca（Fondamenta Trapolin 2321，步行 4 分，€30–45）\n備案 2：Osteria Al Cantinon（Calle de le Colonete 2152，步行 5 分，€40–55）"}, {"a": "12/26 午｜Trattoria Al Gatto Nero", "b": "鰕虎魚燉飯｜€45–65／人｜需訂 12:30\n備案 1：Trattoria da Romano（Via San Martino destro 221，步行 2 分，€40–60）\n備案 2：Ristorantino Al Museo（Piazza Baldassarre Galuppi 113，步行 4 分，€35–55）"}, {"a": "12/26 晚｜Trattoria Bar Pontini", "b": "墨魚麵｜€30–45／人｜建議訂位\n備案 1：Trattoria Da Gigio（Rio Terà S. Leonardo 1594，步行 2 分，€30–45）\n備案 2：Trattoria da Mimmo（Rio Terà S. Leonardo 1372，步行 2 分，€30–45）"}, {"a": "12/27 午｜L'Osteria Le Guglie", "b": "海鮮麵｜€25–35／人｜現場\n備案 1：Trattoria Bar Pontini（Cannaregio 1268，步行 3 分，€30–45）\n備案 2：Trattoria da'a Marisa（Fondamenta S. Giobbe 652，步行 4 分，€30–50）"}, {"a": "12/27 晚｜Roscioli Salumeria", "b": "Cacio e pepe、carbonara｜€45–65／人｜需訂 19:30\n備案 1：La Carbonara（Campo de' Fiori 23，步行 4 分，€35–50）\n備案 2：Osteria da Fortunata（Via del Pellegrino 11/12，步行 5 分，€25–40）"}, {"a": "12/28 午｜Bonci Pizzarium", "b": "方塊披薩｜€10–20／人｜現場抽號\n備案 1：Alice Pizza Via delle Grazie（Via delle Grazie 7/9，往聖彼得順路，€8–15）\n備案 2：Pinsa 'mpò（Via dei Gracchi 7，往聖彼得順路，€10–15）"}, {"a": "12/28 晚｜Ai Tre Scalini", "b": "羅馬燉雞｜€25–40／人｜現場排隊\n備案 1：Grazie a Dio è venerdì（Via dei Capocci 1，步行 3 分，€20–35）\n備案 2：Taverna Urbana（Via Urbana 137，步行 5 分，€30–45）"}, {"a": "12/29 午｜Trattoria Monti", "b": "蛋黃大餃｜€35–50／人｜需訂 13:00\n備案 1：La Vecchia Conca（Via Carlo Alberto 26a，步行 1 分，€25–40）\n備案 2：Trattoria Vecchia Roma（Via Ferruccio 12，步行 3 分，€25–40）"}, {"a": "12/29 晚｜Trattoria Da Enzo al 29", "b": "燉牛尾｜€30–45／人｜不收訂位，提早排隊\n備案 1：Trattoria Lungaretta（Via della Lungaretta 170，步行 3 分，€25–40）\n備案 2：Antica Osteria Rugantino（Via della Lungaretta 54，步行 5 分，€35–55；19:30 開門）"}]}, {"h": "航班", "rows": [{"a": "12/20　CI75　TPE 23:25 → FCO 07:15（+1）", "b": "桃園第一航廈 → 羅馬第三航廈"}, {"a": "12/30　CI76　FCO 10:25 → TPE 05:45（+1）", "b": "羅馬第三航廈 → 桃園第一航廈"}]}, {"h": "交通", "rows": [{"a": "Leonardo Express", "b": "FCO ↔ Roma Termini 32 分，€14／人，每 15 分一班"}, {"a": "威尼斯 vaporetto 72 小時票", "b": "€45／人；12/24 10:35 啟用，12/27 10:35 到期；每次上船前感應"}, {"a": "羅馬地鐵", "b": "單程約 €1.50（待確認）；Monti 到 Trastevere 沒地鐵，晚上搭計程車"}, {"a": "羅馬市區 → FCO", "b": "計程車固定價 €55／車（待確認）"}]}, {"h": "付款與匯率", "rows": [{"a": "付款", "b": "多數可刷卡；小館子和 Trattoria Mario 備現金，約 €200；城市稅在飯店付"}, {"a": "小費", "b": "帳單已含 coperto（餐桌費）或服務費，不用另給"}, {"a": "匯率", "b": "台銀現鈔賣出 EUR 36.34（2026/10/12 09:44）；出發前再確認"}, {"a": "退稅", "b": "同一張收據滿 €70.01 可辦（待確認），在 FCO 辦"}, {"a": "預算", "b": "每人 NT$61,700–84,000｜2 人 NT$123,400–168,000\n住宿含 9 晚城市稅；不含機票、購物、保險"}]}, {"h": "規劃限制", "rows": [{"a": "華航直飛羅馬冬季班表：週二、週日去，週一、週三回", "b": "定 12/20 去、12/30 回"}, {"a": "佛羅倫斯沒有直達 FCO 的火車", "b": "落地當天直接去佛羅倫斯，最後一晚住羅馬"}, {"a": "Uffizi 週一、12/25 休；梵蒂岡 12/25–26 休；競技場 12/25 休", "b": "博物館排 12/22–23 與 12/28–29"}, {"a": "San Marco 大教堂週日、國定假日 14:00 才開放", "b": "12/26 是 Santo Stefano 國定假日，大教堂移到 12/24（週四）14:15"}, {"a": "12/27 是梵蒂岡免費日", "b": "這天不排梵蒂岡"}, {"a": "總督宮 2025 年 12/25 10:00 開門", "b": "12/25 主行程；2026 年公告待確認"}, {"a": "平安夜、聖誕節餐廳時間", "b": "12/24 晚、12/25 午晚都要先寫信確認並訂位"}, {"a": "交通業聖誕停罷期到主顯節（1/6）", "b": "罷工風險低；出發前再查一次"}, {"a": "威尼斯 acqua alta 季", "b": "每天看潮汐預報，穿防水鞋"}, {"a": "兩位旅伴各自的 must-do 尚未提供", "b": "先排三城經典；有想去的再調整"}]}];
-const FOOD_NOTE="排名依據：A 雙推薦（在地＋觀光）→ B 只有在地 → C 只有觀光；同級先比在地來源數，再比 Google 評分。在地來源：Gambero Rosso、Dissapore、Michelin、Il Foglio、Katie Parla、Wanted in Rome；觀光來源：Google 評論、Context Travel、Afar、The Infatuation、Frommers。部分在地來源是 2014–2024 年的文章。提醒：平安夜與聖誕節的營業時間以店家回覆為準。";
-const FOOD=[{"h": "佛羅倫斯（1–6）", "rows": [{"a": "1　Trattoria Mario", "b": "丁骨牛排｜正餐｜A 雙推薦｜人均 €45–70\n在地：Dissapore 前 14 名、Gambero Rosso｜觀光：Context Travel、Google 4.6（4,655）\n只開午餐的老牌 trattoria，牛排兩人分一份。", "p": "mario"}, {"a": "2　'Ino", "b": "Panini｜小吃｜A 雙推薦｜人均 €12–18\n在地：Gambero Rosso 最佳 panini｜觀光：Context Travel、Google 4.7（790）\nUffizi 旁，麵包是重點。", "p": "ino"}, {"a": "3　Trattoria La Casalinga", "b": "Ribollita、鴨肉醬麵｜正餐｜A 雙推薦｜人均 €30–45\n在地：Gambero Rosso ribollita｜觀光：Context Travel、Google 4.5（4,906）\nSanto Spirito 的家常菜老店。", "p": "casalinga"}, {"a": "4　Trattoria Sostanza", "b": "奶油煎雞胸｜正餐｜A 雙推薦｜人均 €40–55\n在地：Dissapore 前 14 名｜觀光：Context Travel、Google 4.5（1,184）\n只接受電話訂位的百年老店。", "p": "sostanza"}, {"a": "5　Da Nerbone", "b": "Lampredotto 牛肚包｜小吃｜A 雙推薦｜人均 €10–15\n在地：Gambero Rosso panini｜觀光：Afar、The Infatuation、Google 4.4（3,688）\n中央市場一樓的牛肚包攤，1872 年開業。", "p": "nerbone"}, {"a": "6　Coquinarius", "b": "Crostini、ravioli｜正餐｜A 雙推薦｜人均 €30–45\n在地：Dissapore 前 14 名｜觀光：Google 4.4（6,018）\nDuomo 南側，離飯店 7 分；取代 Cibrèo（來回 40 分步行）。", "p": "coquinarius"}]}, {"h": "威尼斯（1–7）", "rows": [{"a": "1　Cantina Do Spade", "b": "Cicchetti｜小吃｜A 雙推薦｜人均 €15–25\n在地：Dissapore 22 家 bacari、Gambero Rosso｜觀光：Google 4.4（4,116）\nRialto 老 bacaro，可坐下點炸海鮮。", "p": "dospade"}, {"a": "2　Vini da Gigio", "b": "小干貝、整尾鱸魚｜正餐｜A 雙推薦｜人均 €45–65\n在地：Michelin 2026、Dissapore｜觀光：Google 4.4（990）\nCannaregio 運河邊，離飯店約 10 分。", "p": "gigio"}, {"a": "3　Ca' d'Oro alla Vedova", "b": "Polpette 肉丸｜正餐｜A 雙推薦｜人均 €25–35\n在地：Gambero Rosso Premio Foglia、Dissapore｜觀光：Google 4.1（3,066）\n肉丸是招牌；週四休。", "p": "vedova"}, {"a": "4　Osteria Anice Stellato", "b": "威尼斯海鮮｜正餐｜A 雙推薦｜人均 €45–65\n在地：Dissapore Cannaregio｜觀光：Google 4.5（1,078）\n和飯店在同一條運河邊。", "p": "anice"}, {"a": "5　Trattoria Pontini", "b": "墨魚麵｜正餐｜A 雙推薦｜人均 €30–45\n在地：Dissapore Cannaregio｜觀光：Google 4.4（5,798）\n車站附近，晚上要訂位。", "p": "pontini"}, {"a": "6　Trattoria Al Gatto Nero", "b": "Risotto di gò｜正餐｜A 雙推薦｜人均 €45–65\n在地：Michelin 2026｜觀光：Google 4.4（1,988）\nBurano 家族經營的海鮮館。", "p": "gattonero"}, {"a": "7　L'Osteria Le Guglie", "b": "海鮮麵｜正餐｜C 觀光｜人均 €25–35\n在地：—｜觀光：Google 4.6（4,938）\n週日 10:30 就開、在車站旁，為行程方便保留。", "p": "guglie"}]}, {"h": "羅馬（1–5）", "rows": [{"a": "1　Trattoria Monti", "b": "蛋黃大餃｜正餐｜A 雙推薦｜人均 €35–50\n在地：Il Foglio、Katie Parla｜觀光：Google 4.5（1,267）\n馬爾凱菜，羅馬在地美食作家長年推薦。", "p": "tmonti"}, {"a": "2　Trattoria Da Enzo al 29", "b": "燉牛尾｜正餐｜A 雙推薦｜人均 €30–45\n在地：Gambero Rosso Trastevere、Dissapore 4/5｜觀光：Frommers、Google 4.3（10,241）\n不收訂位，開門前排隊。", "p": "enzo"}, {"a": "3　Ai Tre Scalini", "b": "羅馬燉雞｜正餐｜A 雙推薦｜人均 €25–40\n在地：Wanted in Rome（證據較弱）｜觀光：Google 4.5（5,220）\n1895 年的 Monti 老酒館。", "p": "trescalini"}, {"a": "4　Roscioli Salumeria con Cucina", "b": "Cacio e pepe｜正餐｜A 雙推薦｜人均 €45–65\n在地：Gambero Rosso 2024 傳統冠軍｜觀光：Google 4.3（6,620）\n熟食店兼餐廳，必須訂位。", "p": "roscioli"}, {"a": "5　Bonci Pizzarium", "b": "Pizza al taglio｜小吃｜A 雙推薦｜人均 €10–20\n在地：Gambero Rosso Tre Rotelle 95 分｜觀光：Google 4.1（14,474）\n秤重計價、座位很少。", "p": "pizzarium"}]}];
-const BUDGET={"rows": [["A 住宿", "NT$26,330–31,230"], ["B 交通", "NT$6,810–11,150"], ["C 門票", "NT$6,030–6,210"], ["D 餐飲", "NT$19,990–29,620"], ["E 雜支", "NT$2,540–5,810"]], "total": ["每人合計", "NT$61,700–84,000"]};
 
-TRIP.drv={ask:'Buongiorno, ci porti qui, per favore:',tel:'Tel.',lang:'it',copied:'已複製：可貼到叫車 app，或給司機看'};
-/* stays: overview groups days by where we sleep (k = first DAYS index) */
-const STAYS=[{"k": 0, "city": "去程", "sub": "CI75 TPE → FCO 夜班機"}, {"k": 1, "city": "Firenze 佛羅倫斯", "sub": "12/21–12/24・3 晚・Hotel Davanzati"}, {"k": 4, "city": "Venezia 威尼斯", "sub": "12/24–12/27・3 晚・Hotel ai Mori d'Oriente"}, {"k": 7, "city": "Roma 羅馬", "sub": "12/27–12/30・3 晚・Hotel Raffaello"}, {"k": 10, "city": "回程", "sub": "CI76 FCO → TPE"}];
+const INFO=[
+ {h:'規劃限制',rows:[
+  {a:'1. 沒有直飛',b:'桃園→香港→西安同一張票（CX407＋CX946／CX947＋CX408）；回程 10/21 00:35 才抵達桃園'},
+  {a:'2. 台胞證是所有預約的前提',b:'景點、高鐵都要用台胞證號碼實名預約，今天確認 4 人效期。咸陽機場可辦一次有效台胞證，但落地才辦就來不及預約'},
+  {a:'3. 休館日',b:'陝博週一休館 → 10/19（一）排洛陽；西安博物院週二休館 → 排 10/18（日）'},
+  {a:'4. 三個放票時間點',b:'兵馬俑已開放（7 天前放票）、陝博 10/13 17:00（5 天前，含當天）、龍門 10/13 00:10（7 天前，含當天）；現場不售票或量極少'},
+  {a:'5. 長輩體力（Tier A）',b:'每天步行 ≤4 km、午後回飯店休息 90 分鐘、市區一律計程車'},
+  {a:'6. 管記水席午市 14:00 結束',b:'龍門只排 2 小時（10:15–12:15），12:45 前要到餐廳'},
+  {a:'7. 大慈恩寺 16:30 停止入場',b:'10/17 改為 14:45 入寺（午休縮短為 50 分鐘），留 1 小時以上緩衝'},
+  {a:'8. 長者免票多半限大陸證件',b:'城牆要敬老優待證、兵馬俑寫大陸身分證，台胞證能否適用沒有官方說明；預算一律以全票計，現場可問政策免票窗口（龍門是 60 歲以上）'},
+  {a:'9. 地圖用百度',b:'Google 地圖在中國的地址資料不完整；給司機看用「複製地址」'}
+ ]},
+ {h:'出發前準備',rows:[
+  {a:'立即：確認 4 人台胞證效期',b:'所有景點和高鐵都要用台胞證號碼預約。咸陽機場可辦一次有效台胞證，但落地才辦就來不及預約景點'},
+  {a:'立即：支付寶＋微信實名、綁台灣信用卡',b:'審核 1–3 天，出發只剩 5 天；單筆超過 ¥200 收 3% 手續費'},
+  {a:'今天：裝滴滴、百度地圖、攜程',b:'用台灣手機號註冊'},
+  {a:'10/12 前：漫遊或 eSIM',b:'沒有漫遊或 eSIM，在中國用不了 LINE'},
+  {a:'出發前：人民幣現金約 ¥300／人',b:'臺銀 10/10 現金賣出 4.83，約 NT$1,450'},
+  {a:'出發前 3 天：查天氣',b:'目前預報 10/17–10/18 下雨，帶雨具和薄外套（11–24°C）'}
+ ]},
+ {h:'預訂清單（依期限排序）',rows:[
+  {a:'機票 ×4｜立即',b:'去程 CX407＋CX946，回程 CX947＋CX408，同一張票（國泰官網）'},
+  {a:'飯店 雙床房 ×2｜立即',b:'10/15–10/20 共 5 晚，訂含早方案（攜程／Trip.com）'},
+  {a:'兵馬俑 ×4｜已放票，立即訂',b:'10/16 09:00–10:00 時段；官網或微信公眾號「秦始皇帝陵博物院」，用台胞證'},
+  {a:'陝博本館 ×4｜10/13 17:00 放票',b:'10/17 09:00 時段；陝歷博公眾號 → 門票預約，選本館'},
+  {a:'大慈恩寺｜不用預約',b:'10/17 14:45 現場實名購票，帶台胞證'},
+  {a:'西安博物院 ×4｜今天就約',b:'10/18 14:30 時段（下雨走備案就改約上午）；免費，官方公眾號線上預約（放票時間沒查到，所以早點約）'},
+  {a:'高鐵 ×4｜10/12 前',b:'10/19 去程 G3162 08:12，回程 G2007 15:30（Trip.com 或 12306，用台胞證）；閘機讀不到台胞證就走人工通道'},
+  {a:'龍門石窟 ×4｜10/13 00:10 放票',b:'10/19 10:00–11:00 時段；微信公眾號「龍門石窟」'},
+  {a:'包車 ×3｜10/13 前',b:'10/15 接機（7 座）、10/16 兵馬俑東線、10/20 送機（7 座）'},
+  {a:'御膳苑 4 位｜10/15 前',b:'10/16 12:00；電話 029-8383 9595'},
+  {a:'管記水席 4 位｜10/18 前',b:'10/19 12:45；午市 14:00 結束，電話 139-3795-1844'},
+  {a:'桃園機場接送｜出發前',b:'10/21 00:35 抵達的深夜接機'},
+  {a:'碑林 ×4（條件式，只訂一次）',b:'10/18 下雨走備案 → 10/17 晚上訂 10/18 下午；不去洛陽 → 10/18 晚上訂 10/19 10:00；去洛陽又想看 → 訂 10/20 09:00。公眾號、官網或支付寶預約'}
+ ]},
+ {h:'Dining Chart（含備案）',rows:[
+  {a:'10/15 晚｜同盛祥（鐘樓店）',b:'羊肉泡饃｜¥30–60／人｜現場候位\n備案 1：老陝地牛羊肉泡饃（鐘樓郵電廣場店，北大街 1 號，鐘樓盤道旁，¥23）\n備案 2：清真老孫家泡饃（北院門老店，北院門 21 號，步行約 5 分鐘，¥33）'},
+  {a:'10/16 午｜華清御湯·御膳苑',b:'宮廷御膳｜¥140／人｜已訂 12:00，029-8383 9595\n備案 1：華清御湯酒店 唐吧（同酒店內，咖啡輕食，¥64）\n備案 2：紅川大盤雞（臨潼 東關街 26 號，新疆菜，包車約 5 分鐘，¥54）'},
+  {a:'10/16 晚｜德發長（鐘樓店）',b:'餃子宴｜¥70–150／人｜電話訂位 029-8721 8187\n備案 1：白雲章·餃子（易俗社店，西一路易俗社文化街區 1 樓，步行約 5 分鐘，¥40）\n備案 2：五一飯店·非遺（易俗街區店，案板街 26 號，鐘樓盤道 6 號口出直走 100 m，¥15）'},
+  {a:'10/17 午｜長安大牌檔（小寨店）',b:'陝菜・葫蘆雞｜¥60–90／人｜現場候位\n備案 1：唐貓庭院·千年陝菜（同棟賽格 12F，¥83）\n備案 2：賽格美食廣場（同棟賽格 4F，小吃自選，¥30）'},
+  {a:'10/17 晚｜郭老三面莊（大雁塔總店）',b:'biangbiang 麵｜¥18–25／人｜現場候位，153-4921-8476\n備案 1：子午路張記肉夾饃（翠華路店）\n備案 2：澄城學斌水盆羊肉（大唐不夜城總店）'},
+  {a:'10/18 午｜賈三灌湯包（北院門總店）',b:'灌湯包｜¥36–50／人｜11:30 前到\n備案 1：賈三 麻傢什字店（西羊市街 121 號，08:00–22:30）\n備案 2：盛志望麻醬釀皮（大皮院西口 225 號，步行約 6 分鐘，08:00–22:30，¥16）'},
+  {a:'10/18 晚｜酸辣谷（鐘樓店）',b:'清真涮羊肉｜¥80–120／人｜電話 180-9235-9162，10:30–23:30\n備案 1：雁歸巷涮肉館（同棟中環廣場 2F 西北角，西大街 48 號，¥60）\n備案 2：清雅齋·清真涮肉（鐘樓店，西大街 5 號，步行約 3 分鐘，¥47）'},
+  {a:'10/19 午｜管記水席（仙果市街店）',b:'洛陽水席｜¥50–70／人｜電話訂位 139-3795-1844，14:00 結束\n備案 1：杜記水席（西大街，11:00–22:00）\n備案 2：真不同飯店（中州東路店，百年老字號，11:00–14:30，同在老城區，計程車約 5–10 分鐘，¥68）'},
+  {a:'10/19 午（留在西安）｜春發生（南院門店）',b:'葫蘆頭泡饃｜¥43／人｜現場，09:30–21:00\n備案 1：西安飯莊・鐘樓店（陝菜，10:30–21:00）\n備案 2：醉長安・永寧門店（11:00–14:00）'},
+  {a:'10/19 晚（兩頁共用）｜魏家涼皮（西門外店）',b:'涼皮｜¥23–35／人｜現場\n備案 1：魏家涼皮 大唐西市店（07:30–24:00）\n備案 2：飯店叫外送（美團）'},
+  {a:'10/20 午｜咸陽機場 T5 簡餐',b:'¥60–90／人\n備案：出發前在飯店附近先吃'},
+  {a:'10/20 晚｜香港機場 港式',b:'HK$120–180／人\n備案：管制區內其他餐廳'}
+ ]},
+ {h:'景點與車站',rows:[{p:'bmy'},{p:'hqg'},{p:'zgl'},{p:'sxhm'},{p:'dyt'},{p:'dce'},{p:'dtb'},{p:'ynm'},{p:'xam'},{p:'bl'},{p:'xab'},{p:'lmz'},{p:'lmx'},{p:'lms'}]},
+ {h:'航班',rows:[
+  {a:'10/15　CX407　TPE 08:00 → HKG 10:00',b:'桃園 T1 → 香港 T1'},
+  {a:'10/15　CX946　HKG 11:10 → XIY 14:30',b:'每日航班；香港轉機 70 分鐘（最短轉機時間約 60 分鐘），行李直掛'},
+  {a:'10/20　CX947　XIY 15:50 → HKG 19:05',b:'咸陽 T5；每日航班'},
+  {a:'10/20　CX408　HKG 22:50 → TPE 00:35（+1）',b:'每日航班；夏季班表到 10/24，抵台時機場捷運已收班'}
+ ]},
+ {h:'付款與匯率',rows:[
+  {a:'付款',b:'掃碼為主（支付寶／微信）；景點和高鐵一律帶台胞證'},
+  {a:'匯率',b:'臺灣銀行 2026/10/10 人民幣現金賣出 4.83、港幣 4.111'}
+ ]},
+ {h:'緊急',rows:[
+  {a:'警察 110　急救 120　消防 119'},
+  {a:'兵馬俑醫務室',b:'一號坑前廣場南側遊客服務中心'}
+ ]}
+];
+const SUMSEC=[
+ {h:'Day 5 去不去洛陽（10/18 晚上決定）',rows:[
+  {a:'去：照原計畫',b:'全程最累的一天，交通約 5 小時、步行約 4 km；目前預報洛陽雨轉陰（14–19°C）'},
+  {a:'不去：留在西安',b:'改看「10/19 留在西安」那一頁：碑林・書院門・春發生午餐・休息・化覺巷・回坊・魏家涼皮。龍門票 10/19 20:00 前退，高鐵 4 人來回 ¥1,408，12306 退票費：開車前 48 小時以上 5%（10/17 08:00 前決定，約 ¥70）、24–48 小時 10%（約 ¥140）、不到 24 小時 20%（10/18 晚上才決定，約 ¥280）'}
+ ]},
+ {h:'雨天／累的備案',rows:[
+  {a:'10/16 下午',b:'累的話跳過華清宮與鐘鼓樓散步，直接回飯店'},
+  {a:'10/17 下午',b:'陝博室內照走。雨天或累：跳過大雁塔與不夜城，晚餐改愛驊褲帶麵（鐘樓附近）'},
+  {a:'10/18 城牆（目前預報下雨）',b:'雨天上午改西安博物院（室內，要改約上午時段），下午改碑林（¥85，要預約）。城牆移到 10/19（留在西安）；或 10/20 早上只坐單段電瓶車（約 1 小時，11:00 前回飯店退房）'},
+  {a:'10/19 洛陽',b:'見總覽「Day 5 去不去洛陽」'},
+  {a:'餐廳客滿',b:'泡饃改老陝地（北大街 1 號）或清真老孫家（北院門 21 號）；水席改杜記水席（西大街，11:00–22:00）；涮肉改雁歸巷（同棟 2F）'}
+ ]}
+];
+// 餐廳 Top 20（依推薦程度排名）。排名依據見 FOOD_NOTE；★ = 已排入行程
+const FOOD_NOTE='排名依據：多份美食指南共同推薦、老字號／非遺、百度評分（10/10 查詢），以及是否適合長輩坐下用餐。只列西安市區。想吃早餐小吃：10/19 留在西安那天早上，或 10/20 不去碑林時，8 點出門去回坊（果渊斋、秦豫、劉老虎、胖子甑糕）。';
+const FOOD=[
+ {h:'必吃（1–7）',rows:[
+  {a:'1　同盛祥（鐘樓店）★',b:'羊肉泡饃｜正餐｜百度 4.5｜人均 ¥56｜計程車約 10 分\n1920 年創立的泡饃老字號，各家攻略都推；店大有座位，最適合長輩\n已排入 10/15 晚餐',p:'tsx'},
+  {a:'2　子午路張記肉夾饃（翠華路店）',b:'臘汁肉夾饃、秦鎮米皮｜小吃｜百度 4.4｜人均 ¥25｜計程車約 15 分\n老字號，攻略推薦次數最多的肉夾饃；就在 10/17 晚餐郭老三隔壁，可以順便買',p:'zj'},
+  {a:'3　德發長（鐘樓店）★',b:'餃子宴｜正餐｜百度 4.5｜人均 ¥82｜計程車約 10 分\n1936 年老字號，餃子宴列入非遺；有包廂，長輩吃得舒服\n已排入 10/16 晚餐',p:'dfc'},
+  {a:'4　賈三灌湯包（北院門總店）★',b:'牛肉／羊肉灌湯包、八寶粥｜小吃｜百度 4.5｜人均 ¥44｜計程車約 12 分\n1903 年創立，回坊最有名的灌湯包\n已排入 10/18 午餐',p:'js'},
+  {a:'5　愛驊褲帶麵（鐘樓店）',b:'biangbiang 麵（三合一）｜小吃｜百度 4.6｜人均 ¥23｜計程車約 8 分\n20 年老店，上過《風味人間》；在南大街，離飯店近',p:'ah'},
+  {a:'6　西安飯莊（鐘樓店）',b:'葫蘆雞、金線油塔｜正餐｜百度 4.7｜人均 ¥109｜計程車約 8 分\n1929 年創立的陝菜老字號，非遺；正式餐廳，適合請長輩吃一頓好的',p:'xafz'},
+  {a:'7　春發生（南院門店）★備案頁',b:'葫蘆頭泡饃（豬腸泡饃）｜正餐｜百度 4.5｜人均 ¥43｜計程車約 8 分\n葫蘆頭泡饃老字號，非遺；和羊肉泡饃是不同口味',p:'cfs'}
+ ]},
+ {h:'強烈推薦（8–14）',rows:[
+  {a:'8　果渊斋老米家（北廣濟街店）',b:'羊肉泡饃｜早午｜百度 5.0｜人均 ¥32｜計程車約 12 分\n回坊泡饃老店，非遺；只營業到 15:00',p:'gyz'},
+  {a:'9　醉長安（永寧門店）',b:'松鼠魚、葫蘆雞、油潑麵｜正餐｜百度 5.0｜人均 ¥60｜計程車約 5 分\n在永寧門書院門旁，離飯店最近的陝菜正餐',p:'zca'},
+  {a:'10　郭老三面莊（大雁塔總店）★',b:'biangbiang 麵（三合一）｜小吃｜百度 4.6｜人均 ¥24｜計程車約 15 分\n大眾點評必吃榜；和愛驊是同一道麵，選順路的那家就好\n已排入 10/17 晚餐',p:'gls'},
+  {a:'11　盛志望麻醬釀皮',b:'麻醬涼皮｜小吃｜百度 4.3｜人均 ¥16｜計程車約 12 分\n回坊涼皮老字號，非遺；現點現做',p:'szw'},
+  {a:'12　馬洪小炒泡饃',b:'生肉小炒泡饃（酸辣口）｜小吃｜百度 5.0｜人均 ¥36｜計程車約 12 分\n小炒泡饃名店，跟一般泡饃吃法不同',p:'mh'},
+  {a:'13　長安大牌檔（小寨店）★',b:'葫蘆雞、毛筆酥、稠酒｜正餐｜百度 4.4｜人均 ¥60｜計程車約 12 分\n有表演、唐風裝潢；套餐選擇多，適合第一次吃陝菜\n已排入 10/17 午餐',p:'cadp'},
+  {a:'14　秦豫肉夾饃（騾馬市總店）',b:'臘汁肉夾饃｜早午｜百度 4.5｜人均 ¥15｜計程車約 10 分\n攻略常推的肉夾饃老店；只營業到 13:00',p:'qy'}
+ ]},
+ {h:'值得一試（15–20）',rows:[
+  {a:'15　澄城學斌水盆（鐘樓店）',b:'水盆羊肉、月牙餅｜小吃｜百度 4.5｜人均 ¥33｜計程車約 8 分\n清湯羊肉，比泡饃清爽；在南大街離飯店近',p:'cxb'},
+  {a:'16　唐貓庭院（賽格店）',b:'陝菜｜正餐｜百度 5.0｜人均 ¥83｜計程車約 12 分\n賽格 12 樓的陝菜餐廳，環境好；和長安大牌檔同一棟，可互為備案',p:'tm'},
+  {a:'17　胖子甑糕（洒金橋店）',b:'甑糕（糯米紅棗）｜早餐｜百度 4.8｜人均 ¥5｜計程車約 12 分\n洒金橋早市名攤；甜點，早上去',p:'pz'},
+  {a:'18　劉老虎肉丸糊辣湯（總店）',b:'肉丸糊辣湯｜早餐｜百度 4.2｜人均 ¥16｜計程車約 12 分\n西安人的早餐，回坊老店',p:'llh'},
+  {a:'19　酸辣谷（鐘樓店）★',b:'清真涮羊肉｜正餐｜百度 4.3｜人均 ¥61｜計程車約 10 分\n秋天晚上吃熱鍋，可選不辣鍋底\n已排入 10/18 晚餐',p:'slg'},
+  {a:'20　紅紅酸菜炒米（廟後街旗艦店）',b:'酸菜炒米｜小吃｜百度 4.6｜人均 ¥29｜計程車約 12 分\n回坊特色，在別的城市吃不到',p:'hh'}
+ ]},
+ {h:'攻略常見、但這次不推薦',rows:[
+  {a:'老孫家飯莊（東關店）百度 2.0',b:'攻略常推，但近期評價差'},
+  {a:'樊記臘汁肉（竹笆市總店）百度 2.0',b:'評價提到份量小、服務差；肉夾饃改去子午路張記或秦豫'},
+  {a:'東南亞甑糕 百度 1.5',b:'甑糕改去胖子甑糕'},
+  {a:'柳巷面（吉慶大廈店）百度 2.2',b:'評價提到份量小、價格偏高'},
+  {a:'劉信泡饃（回民街店）百度 2.3、一真樓 3.2',b:'泡饃改去同盛祥或果渊斋老米家'},
+  {a:'馬峰小炒泡饃 1.1、定家小酥肉 2.0、天下第一面 1.3',b:'評價偏低'}
+ ]}
+];
+const BUDGET={rows:[
+  ['住宿（5 晚，2 人一間）','NT$4,800–6,600'],
+  ['交通（包車、計程車、高鐵、電瓶車）','NT$4,000–4,500'],
+  ['門票（全票計；台胞若適用長者免票，長輩可再省）','NT$1,900–2,800'],
+  ['餐飲（11 個正餐＋點心）','NT$4,000–5,800'],
+  ['桃園機場接送（來回 2 趟，6–7 人座）','NT$800–950'],
+  ['雜支（eSIM 等）','NT$800–1,600']
+ ],total:['合計（不含機票、購物）','NT$16,300–22,250']};
+
 /* ============================ ENGINE ============================ */
 const M=(q,c)=>TRIP.map==='baidu'
   ?'https://map.baidu.com/search/'+encodeURIComponent(q)+'?querytype=s&wd='+encodeURIComponent(q)+'&c='+(c||TRIP.city)
   :'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(q);
 const MAPLABEL='地圖';
-const CHAT=TRIP.map==='baidu'?'微信／LINE':'LINE';
-const HOME=`<a class="home" href="./">${'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>'}所有行程</a>`;
 const view=document.getElementById('view'),navEl=document.getElementById('nav'),drv=document.getElementById('driver'),toast=document.getElementById('toast');
 const KIND={anchor:'重點',meal:'用餐',hotel:'飯店',flight:'航班'};
 const HAS_FOOD=typeof FOOD!=='undefined'&&Array.isArray(FOOD)&&FOOD.length>0;
@@ -768,14 +906,12 @@ function board(S){const {day,sp,nm,cur,next}=S;if(cur<0&&next<0)return'';let b='
   if(next>=0){const it=day.items[next];b+=`<div class="next"${cur<0?' style="border-top:0;padding-top:0"':''}><span class="tag2">NEXT</span><span class="nt2">${esc(it[0])}</span><span>${esc(clean(it[3]))}${it[4]?' · '+esc(it[4]):''}</span></div>`;}
   return b+'</section>';}
 
-/* 需訂 → 已訂 when a ticked booking to-do names this place: the row name is in the to-do, the to-do's name is in the row, or the row's bk hint is in the to-do */
-function bookTxt(txt,name,bk){txt=String(txt||'');if(!/需訂/.test(txt))return txt;const full=nrm(name),b=nrm(splitName(String(name||'').split('｜').pop()).base),kb=bk?nrm(bk):'';
-  const hit=k=>{if(!k.startsWith('預訂|'))return false;const nk=nrm(k);if(kb)return nk.includes(kb);const core=nk.split('｜').pop().replace(/\d{1,2}\/\d{1,2}.*$/,'');return (b.length>1&&nk.includes(b))||(core.length>2&&full.includes(core));};
-  return [...doneSet()].some(hit)?txt.replace(/需訂/g,'已訂'):txt;}
+function bookTxt(txt,name){txt=String(txt||'');if(!/需訂/.test(txt))return txt;const b=nrm(splitName(String(name||'').split('｜').pop()).base);
+  return b.length>1&&[...doneSet()].some(k=>k.startsWith('預訂|')&&nrm(k).includes(b))?txt.replace(/需訂/g,'已訂'):txt;}
 function itemHTML(it,st,k){let [a,b,kind,t,pl,c,n,x]=it;let o=x||{};const dk='i'+k;
-  if(kind==='hotel'&&/^(出門|離家|離開飯店)/.test(clean(t))){kind='move';o=Object.assign({},o);delete o.p;delete o.hotel;}
+  if(kind==='hotel'&&/^(出門|離家)/.test(clean(t))){kind='move';if(/^飯店/.test(pl||'')){o=Object.assign({},o);delete o.p;}}
   const px=o.p&&PLACES[o.p]&&PLACES[o.p].x;if(n&&px)n=String(n).split('；').filter(z=>!nrm(px).includes(nrm(z))).join('；');
-  if(kind==='meal'||kind==='anchor')n=bookTxt(n,t,o.bk);
+  if(kind==='meal')n=bookTxt(n,t);
   if(kind==='move')return `<li class="st k-move${st}"><div class="tm"><span class="t1">${esc(a)}</span></div><div class="rail"><span class="seg"></span></div><div class="bd"><div class="mv">${esc(clean(t))}${pl?' · '+esc(pl):''}${c?' · '+esc(c):''}</div>${legHTML(it)}${n?`<div class="nt">${esc(n)}</div>`:''}${chips(o,dk)}</div></li>`;
   const isCur=st===' cur';const air=kind==='plain'&&AIR.test(clean(t));const lab=air?(/候車|車站|月台/.test(t)?'車站':'機場'):kindLabel(kind,t);
   return `<li class="st k-${esc(kind)}${air?' k-air':''}${st}"><div class="tm"><span class="t1">${esc(a)}</span>${b?`<span class="t2">${esc(b)}</span>`:''}</div><div class="rail"><span class="seg"></span><span class="dot">${kind==='flight'?MICON(t):''}</span><span class="seg grow"></span></div><div class="bd">${lab||isCur?`<div class="kd">${isCur?'<span class="nowtag">NOW</span>':''}${lab?`<span class="kl">${esc(lab)}</span>`:''}</div>`:''}<div class="ttl">${esc(kind==='flight'?clean(t).replace(/^(火車|渡輪|巴士)\s+/,''):clean(t))}</div>${pl?`<div class="pl">${esc(pl)}</div>`:''}${legHTML(it)}${c?`<div class="cs">${esc(c)}</div>`:''}${n?`<div class="nt">${esc(n)}</div>`:''}${chips(o,dk)}</div></li>`;}
@@ -788,7 +924,7 @@ function renderDay(i){const S=state(i),{day,sp,nm,isToday,cur,past}=S;const dow=
   if(sib.length>1)h+=`<div class="vt" role="group" aria-label="本日方案">${sib.map(([d,k])=>`<button type="button" data-go="d${k}" aria-pressed="${k===i}">${esc(d.variant||d.title)}</button>`).join('')}</div>`;
   if(day.warn)h+=`<p class="warn"><b>注意</b>${esc(day.warn)}</p>`;
   if(day.sum)h+=`<p class="sum">${esc(day.sum)}</p>`;
-  const bkr=bkRows(day.tab);if(bkr.length){const lead=r=>String(r.a).slice(day.tab.length).trim();const hd=r=>{const l=lead(r);return l&&!(l.length<=3&&bkLeadTag(l))?`<div class="bkh">${esc(l)}</div>`:'';};h+=`<details class="bkd" data-dk="bkd"><summary><b>備案</b><span>${esc([...new Set(bkr.flatMap(r=>bkParts(r.b,lead(r)).map(x=>x.tag)))].join('・'))}</span>${I.chev}</summary>${bkr.map(r=>hd(r)+bkList(r.b,lead(r))).join('')}</details>`;}
+  const bkr=bkRows(day.tab);if(bkr.length){const lead=r=>String(r.a).slice(day.tab.length).trim();h+=`<details class="bkd" data-dk="bkd"><summary><b>備案</b><span>${esc([...new Set(bkr.flatMap(r=>bkParts(r.b).map(x=>x.tag)))].join('・'))}</span>${I.chev}</summary>${bkr.map(r=>(lead(r)?`<div class="bkh">${esc(lead(r))}</div>`:'')+bkList(r.b)).join('')}</details>`;}
   if(past.length)h+=`<button type="button" class="pastb" id="pastb" aria-expanded="${showPast}"><span>已完成 ${past.length} 項：${esc(past.map(k=>clean(day.items[k][3])).join('、'))}</span>${I.chev}</button>`;
   h+='<ol class="tl">';let lineDone=!isToday||cur>=0;REMSEEN=new Set();PREVP=null;
   day.items.forEach((it,k)=>{const [s,e]=sp[k];let st='';if(isToday){if(nm>=e)st=' past';else if(nm>=s)st=' cur';}
@@ -796,7 +932,7 @@ function renderDay(i){const S=state(i),{day,sp,nm,isToday,cur,past}=S;const dow=
     if(!lineDone&&nm<s){h+=`<li class="nowline" aria-label="現在時間"><span>NOW</span><hr></li>`;lineDone=true;}
     h+=itemHTML(it,st,k);PREVP=(it[7]||{}).p||null;});REMSEEN=null;PREVP=null;
   if(!lineDone)h+=`<li class="nowline" aria-label="現在時間"><span>NOW</span><hr></li>`;
-  h+=`</ol><button type="button" class="wide" id="cpday">${isToday?'複製今日行程（貼 '+CHAT+'）':'複製這天行程（貼 '+CHAT+'）'}</button></div>`;
+  h+=`</ol><button type="button" class="wide" id="cpday">${isToday?'複製今日行程（貼 LINE）':'複製這天行程（貼 LINE）'}</button></div>`;
   view.innerHTML=h;
   document.getElementById('cpday').onclick=()=>copy(dayText(day),'已複製 '+day.tab+' 行程');
   const pb=document.getElementById('pastb');if(pb)pb.onclick=()=>{showPast=!showPast;renderDay(i);};
@@ -810,26 +946,23 @@ function fparts(f){const md=tmode(f[3]),Mo=MODE[md],tr=md!=='fl';const p1=f[1]&&
   return {tr,md,t:clean(f[3]),short:`${f[0]}${f[1]?' → '+f[1]+p1:''}`,span:`${f[0]} ${Mo.go}${f[1]?` → ${f[1]} ${Mo.in}${p1}`:''}`};}
 const BKSEC=SUMS.find(s=>/備案/.test(s.h)&&s.rows&&s.rows.filter(r=>/^\d{1,2}\/\d{1,2}(?!\d)/.test(r.a||'')).length*2>=s.rows.length)||null;
 const bkRows=tab=>BKSEC?BKSEC.rows.filter(r=>{const a=String(r.a||'');return a.startsWith(tab)&&!/^\d/.test(a.slice(tab.length));}):[];
-/* backup tag: from the clause prefix (雨天… / 太累…), else from the row lead (「11/6 下雨」), else 臨時 */
-const bkLeadTag=l=>/雨/.test(l||'')?'雨天':/累/.test(l||'')?'累了':'';
-function bkParts(t,lead){const dt=bkLeadTag(lead)||'臨時';return String(t||'').replace(/。$/,'').split(/[；\n]/).map(z=>z.trim()).filter(Boolean).map(z=>{const m=z.match(/^(雨天或大霧|雨天或累|雨天|下雨|累的話|累了|太累|很累)/);
-  const tag=!m?dt:/雨/.test(m[1])?'雨天':'累了';return {tag,txt:m?z.slice(m[1].length).replace(/^[，、：:\s]+/,''):z};});}
-function bkList(t,lead){return `<ul class="bkl">${bkParts(t,lead).map(x=>`<li><span class="bt bt-${x.tag==='雨天'?'r':x.tag==='累了'?'t':'o'}">${esc(x.tag)}</span><span>${esc(x.txt)}</span></li>`).join('')}</ul>`;}
-const wxShort=w=>{w=String(w||'');let m=w.match(/(-?\d+)\s*°C\s*(?:至|–|-|~)\s*(-?\d+)\s*°C/);if(m)return m[1]+'–'+m[2]+'°';
-  m=w.match(/(-?\d+)°\s*\/\s*(-?\d+)°/);return m?Math.min(+m[1],+m[2])+'–'+Math.max(+m[1],+m[2])+'°':'';};
+function bkParts(t){return String(t||'').replace(/。$/,'').split('；').map(z=>z.trim()).filter(Boolean).map(z=>{const m=z.match(/^(雨天或累|雨天|累的話|累了)/);
+  const tag=!m?'臨時':/^雨/.test(m[1])?'雨天':'累了';return {tag,txt:m?z.slice(m[1].length).replace(/^[，、：:\s]+/,''):z};});}
+function bkList(t){return `<ul class="bkl">${bkParts(t).map(x=>`<li><span class="bt bt-${x.tag==='雨天'?'r':x.tag==='累了'?'t':'o'}">${esc(x.tag)}</span><span>${esc(x.txt)}</span></li>`).join('')}</ul>`;}
+const wxShort=w=>{const m=String(w||'').match(/(-?\d+)\s*°C\s*(?:至|–|-|~)\s*(-?\d+)\s*°C/);return m?m[1]+'–'+m[2]+'°':'';};
 const flightLine=f=>{const x=fparts(f);return `${x.t}｜${x.span}${f[4]?'｜'+f[4]:''}`;};
 function tripText(){let s=`【${TRIP.title}】\n${TRIP.sub}\n`;
   DAYS.forEach(d=>{s+=`\n${d.alt?'　└ 備案　':`${d.tab}（${d.wd}）`}${d.main||d.title}\n`;flightsOf(d).forEach(f=>{s+=`　${tmode(f[3])==='fl'?'班機 ':''}${flightLine(f)}\n`;});if(d.sum)s+=`　${d.sum}\n`;});
   return s.trim();}
 function renderPlan(){const wxs=[...new Set(DAYS.map(d=>d.wx).filter(Boolean))];
   const stay=k=>typeof STAYS!=='undefined'&&Array.isArray(STAYS)?STAYS.find(x=>x.k===k):null;
-  let h=`<header class="hd"><div class="kick">${HOME}<button type="button" class="sosb" data-go="info" data-sos="1">緊急</button></div><h1>${esc(TRIP.title)}</h1><p class="meta">${esc(TRIP.sub)}</p>${countdown()}</header><div class="body">`;
+  let h=`<header class="hd"><div class="kick"><span>行程總覽</span><button type="button" class="sosb" data-go="info" data-sos="1">緊急</button></div><h1>${esc(TRIP.title)}</h1><p class="meta">${esc(TRIP.sub)}</p>${countdown()}</header><div class="body">`;
   if(wxs.length===1)h+=`<p class="wxall"><b>全程天氣</b>${esc(wxs[0])}</p>`;
-  h+='<ol class="days">'+DAYS.map((d,k)=>{const sg=stay(k),ws=wxs.length>1?wxShort(d.wx):'';return (sg?`<li class="sg"><b>${esc(sg.city)}</b><small>${esc(sg.sub)}</small></li>`:'')+`<li><button type="button" class="dayrow${isTd(k)?' td':''}" data-go="d${k}"><span class="dt"><b>${esc(d.tab)}</b><small>${d.alt?'備案':isTd(k)?'今天':'週'+esc(d.wd)}</small>${ws?`<small class="wxs">${esc(ws)}</small>`:''}</span><span><span class="d1">${esc(d.main||d.title)}</span>${flightsOf(d).map(f=>{const x=fparts(f);return `<span class="dfl ${x.md}"><span class="fr">${esc(shortLab(f))}</span><span class="ft">${esc(x.short)}</span></span>`;}).join('')}<span class="d2">${esc(d.sum)}</span>${wxs.length>1&&d.wx&&!ws?`<span class="d2">${esc(d.wx)}</span>`:''}</span>${I.chevR}</button></li>`;}).join('')+'</ol>';
-  h+=`<button type="button" class="wide" id="cpplan">${I.copy} 複製行程摘要（貼 ${CHAT}）</button>`;
+  h+='<ol class="days">'+DAYS.map((d,k)=>{const sg=stay(k),ws=wxShort(d.wx);return (sg?`<li class="sg"><b>${esc(sg.city)}</b><small>${esc(sg.sub)}</small></li>`:'')+`<li><button type="button" class="dayrow${isTd(k)?' td':''}" data-go="d${k}"><span class="dt"><b>${esc(d.tab)}</b><small>${d.alt?'備案':isTd(k)?'今天':'週'+esc(d.wd)}</small>${ws?`<small class="wxs">${esc(ws)}</small>`:''}</span><span><span class="d1">${esc(d.main||d.title)}</span>${flightsOf(d).map(f=>{const x=fparts(f);return `<span class="dfl ${x.md}"><span class="fr">${esc(shortLab(f))}</span><span class="ft">${esc(x.short)}</span></span>`;}).join('')}<span class="d2">${esc(d.sum)}</span>${wxs.length>1&&d.wx&&!ws?`<span class="d2">${esc(d.wx)}</span>`:''}</span>${I.chevR}</button></li>`;}).join('')+'</ol>';
+  h+=`<button type="button" class="wide" id="cpplan">${I.copy} 複製行程摘要（貼 LINE）</button>`;
   if(TRIP.wxNote)h+=`<p class="hint">${esc(TRIP.wxNote)}</p>`;
-  view.innerHTML=h+secs(SUMS.filter(x=>x!==BKSEC))+(BKSEC?accHTML('sec-bk',BKSEC.h,`${BKSEC.rows.length} 天・每日頁也看得到`,`<ul class="rows">${BKSEC.rows.map(r=>`<li><div class="ra">${esc(r.a)}</div>${bkList(r.b,String(r.a).replace(/^\d{1,2}\/\d{1,2}\s*/,''))}</li>`).join('')}</ul>`,false):'')+'</div>';
-  document.getElementById('cpplan').onclick=()=>copy(tripText(),'已複製行程摘要，可貼到 '+CHAT);}
+  view.innerHTML=h+secs(SUMS.filter(x=>x!==BKSEC))+(BKSEC?accHTML('sec-bk',BKSEC.h,`${BKSEC.rows.length} 天・每日頁也看得到`,`<ul class="rows">${BKSEC.rows.map(r=>`<li><div class="ra">${esc(r.a)}</div>${bkList(r.b)}</li>`).join('')}</ul>`,false):'')+'</div>';
+  document.getElementById('cpplan').onclick=()=>copy(tripText(),'已複製行程摘要，可貼到 LINE');}
 
 
 const SEC_TODO=/預訂|出發前|準備/,SEC_FL=/^航班/,SEC_PAY=/付款|匯率/,SEC_PLAN=/規劃/;
@@ -917,7 +1050,7 @@ function planHTML(){const tdy=ymd(localNow()),inTrip=todayIdx>=0;const groups=[]
   if(past.length)h+=`<button type="button" class="pastb" id="fpast" aria-expanded="${showPastFood}"><span>已過 ${past.length} 天・${past.reduce((s,g)=>s+g.list.length,0)} 餐</span>${I.chev}</button>`;
   groups.forEach(g=>{const isP=past.includes(g);if(isP&&!showPastFood)return;const td=g.day&&g.day.d===tdy;const sib=DAYS.filter(d=>d.tab===g.date);
     h+=`<section class="mday${td?' td':''}${isP?' past':''}"><button type="button" class="mdh" data-go="d${g.k}"><b>${esc(g.date)}</b><small>${td?'<span class="tg">今天</span>':'週'+esc(g.day?g.day.wd:'')}</small><span class="t">${esc(sib.length>1?sib.map(d=>d.variant||d.title).join('／'):(g.day?g.day.title:''))}</span><span class="go">看當天${I.chevR}</span></button><ul class="mls">${g.list.map(mealRow).join('')}</ul></section>`;});
-  return h+`<button type="button" class="wide" id="cpmeal">${I.copy}複製用餐表（貼 ${CHAT}）</button></div>`;}
+  return h+`<button type="button" class="wide" id="cpmeal">${I.copy}複製用餐表（貼 LINE）</button></div>`;}
 function mealText(){let s=`【${TRIP.title} 用餐表】\n`;let last='';
   MEALS.forEach(m=>{if(m.date&&m.date!==last){const d=DAYS.find(x=>x.tab===m.date);s+=`\n${m.date}（${d?d.wd:''}）\n`;last=m.date;}
     const p=m.p&&PLACES[m.p];s+=`${m.slot}${m.time?' '+m.time:''}　${m.name}${m.variant?'（'+m.variant+'）':''}${m.head?'｜'+m.head:''}\n`;if(p&&p.a)s+=`　　${p.n}｜${p.a}\n`;
@@ -963,7 +1096,7 @@ function renderFood(){if(!HAS_FOOD&&!MEALS.length){current='plan';renderPlan();r
     h+=`<p class="fempty" id="fempty" hidden>沒有符合的餐廳</p>`;}
   OTHERSECS.forEach((s,k)=>{const nr=/不推薦/.test(s.h);h+=fsec('fs-o'+k,s.h,nr?'評價偏低，附替代選擇':'',s.rows.length,`<ul class="rows nr">${s.rows.map(r=>`<li>${r.a?`<div class="ra">${esc(r.a)}</div>`:''}${r.b?`<div class="rb">${esc(r.b)}</div>`:''}${r.p&&PLACES[r.p]?placeActs(r.p,false):''}</li>`).join('')}</ul>`,openIds.includes('fs-o'+k));});
   view.innerHTML=h+'</div>';
-  const cp=document.getElementById('cpmeal');if(cp)cp.onclick=()=>copy(mealText(),'已複製用餐表，可貼到 '+CHAT);
+  const cp=document.getElementById('cpmeal');if(cp)cp.onclick=()=>copy(mealText(),'已複製用餐表，可貼到 LINE');
   applyFF();}
 document.addEventListener('toggle',e=>{const d=e.target;if(!d||!d.classList||!d.classList.contains('fsec'))return;
   fput({open:[...view.querySelectorAll('.fsec')].filter(x=>x.open).map(x=>x.id)});xallLabel();},true);
@@ -1015,7 +1148,7 @@ function renderInfo(){const sos=INFO.find(s=>s.h==='緊急');let tiles='';const 
     while((m=re.exec(txt))){n++;tiles+=`<a class="sos" href="tel:${m[2]}"><b>${m[2]}</b><span>${esc(m[1])}</span></a>`;}if(!n)other.push(r);});
   const tdy=ymd(localNow()),pre=dayDiff(tdy,DAYS[0].d)>0;
   const todos=todoItems(),open=todos.filter(t=>!t.done).length;
-  let h=`<header class="hd"><div class="kick">${HOME}</div><h1>資訊</h1>`;
+  let h=`<header class="hd"><h1>資訊</h1>`;
   if(pre&&todos.length)h+=`<p class="ihd-sub">出發前待辦還有<b id="todo-n">${open}</b>項</p>`;
   if(tiles)h+=`<div class="sosg" id="sos">${tiles}</div>`;
   if(other.length)h+=`<ul class="sosx">${other.map(r=>`<li><b>${esc(r.a||'')}</b>${r.b?esc(r.b):''}</li>`).join('')}</ul>`;
