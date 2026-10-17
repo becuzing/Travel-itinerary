@@ -1,5 +1,5 @@
 /* Offline cache: pages are network-first (so edits show up), assets cache-first. */
-const V = 'trips-v3';
+const V = 'trips-v4';
 const PAGES = ['./', 'index.html', 'xian.html', 'hiroshima.html', 'hangzhou.html', 'italy.html', 'finland.html'];
 const ASSETS = ['manifest.webmanifest', 'assets/icon-180.png', 'assets/icon-192.png', 'assets/icon-512.png',
   'assets/fonts/barlow-condensed-500.woff2', 'assets/fonts/barlow-condensed-600.woff2', 'assets/fonts/barlow-condensed-700.woff2'];
