@@ -540,6 +540,16 @@ table.bud tr.tot td{font-weight:700;border-top:2px solid var(--ink)}
 .sum{color:var(--ink2);line-height:1.6}
 .warn{border-radius:12px;padding:9px 12px;line-height:1.5}
 .card h2,.sec-h h2{font-size:17px}
+/* ---- v5 (2026-10-17): place card ---- */
+.pd .acts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,104px),1fr));gap:6px;margin:6px 10px 10px}
+.pd .acts .act,.fr-bd .acts .act{margin:0;min-height:40px;padding:0 8px;border:1px solid var(--line2);background:transparent}
+.k-anchor .act{border-color:var(--line2)}
+.k-anchor .pd .acts .act{border-color:var(--line2);background:transparent}
+.k-flight .pd .acts .act{border-color:var(--on-flight2)}
+.pq .pd dl{grid-template-columns:minmax(0,1fr);gap:0;padding:0 10px 2px}
+.pq .pd dt{font-size:12px;margin-top:6px;line-height:1.3}
+.pq .pd dt:first-child{margin-top:0}
+.pq .pq-map{padding:0 10px}
 </style>
 
 <div class="app"><main id="view"></main></div>
@@ -814,13 +824,13 @@ function state(i){const day=DAYS[i],sp=spans(day),j=localNow(),nm=j.getHours()*6
   if(isToday)sp.forEach(([s,e],k)=>{if(nm>=e)past.push(k);else if(nm>=s&&cur<0)cur=k;else if(s>nm&&next<0)next=k;});
   return {day,sp,nm,isToday,cur,next,past};}
 
-function placeActs(k,inBoard){const p=PLACES[k];if(!p)return'';
-  return `<div class="acts"><a class="act pri" href="${M(p.q,p.c)}" target="_blank" rel="noopener">${I.pin}${MAPLABEL}</a><button type="button" class="act" data-drv="${esc(k)}">${I.car}給司機看</button>${inBoard?`<button type="button" class="act" data-copy="${esc(p.n+'\n'+(p.a||''))}">${I.copy}複製地址</button>`:''}${p.t?`<a class="act" href="tel:${esc(p.t)}">${I.phone}撥打</a>`:''}</div>`;}
+function placeActs(k,inBoard,noMap){const p=PLACES[k];if(!p)return'';
+  return `<div class="acts">${noMap?'':`<a class="act pri" href="${M(p.q,p.c)}" target="_blank" rel="noopener">${I.pin}${MAPLABEL}</a>`}<button type="button" class="act" data-drv="${esc(k)}">${I.car}給司機看</button>${inBoard?`<button type="button" class="act" data-copy="${esc(p.n+'\n'+(p.a||''))}">${I.copy}複製地址</button>`:''}${p.t?`<a class="act" href="tel:${esc(p.t)}">${I.phone}撥打</a>`:''}</div>`;}
 function placeBlock(k,dk){const p=PLACES[k];if(!p)return'';
   let h='';if(p.x&&!(REMSEEN&&REMSEEN.has(k))){h+=`<div class="rem"><b>提醒</b>${esc(p.x)}</div>`;if(REMSEEN)REMSEEN.add(k);}
   h+=`<div class="pq"><details class="pd" data-dk="${esc(dk)}"><summary><span class="pn">${esc(p.n)}</span>${I.chev}</summary><dl>`+
     (p.a?`<dt>地址</dt><dd>${esc(p.a)}</dd>`:'')+(p.h?`<dt>營業</dt><dd>${esc(p.h)}</dd>`:'')+(p.ts?`<dt>電話</dt><dd>${esc(p.ts)}</dd>`:'')+
-    `</dl>${placeActs(k,true)}</details><a class="act pri pq-map" href="${M(p.q,p.c)}" target="_blank" rel="noopener">${I.pin}${MAPLABEL}</a></div>`;
+    `</dl>${placeActs(k,true,true)}</details><a class="act pri pq-map" href="${M(p.q,p.c)}" target="_blank" rel="noopener">${I.pin}${MAPLABEL}</a></div>`;
   return h;}
 function hotelActs(full){const cp=full||!hotelReady;return `<div class="acts"><a class="act" href="${M(HOTEL.q)}" target="_blank" rel="noopener">${I.pin}${full?'飯店地圖':'地圖'}</a>${hotelReady?`<button type="button" class="act" data-drv="@hotel">${I.car}給司機看</button>`:''}${cp?`<button type="button" class="act" data-copy="${esc(HOTEL.name+'\n'+HOTEL.addr)}">${I.copy}${full?'複製飯店地址':'複製地址'}</button>`:''}</div>`;}
 function chips(o,dk){if(o.p&&o.p===PREVP)return o.hotel?hotelActs():'';return (o.p?placeBlock(o.p,dk):'')+(o.hotel?hotelActs():'');}
