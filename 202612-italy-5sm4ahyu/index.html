@@ -496,6 +496,50 @@ table.bud tr.tot td{font-weight:700;border-top:2px solid var(--ink)}
 .hint{font-size:13.5px}
 .dayrow .d2{font-size:13.5px}
 .ihd-sub{font-size:14px}
+/* ---- site v4 (2026-10-17): UX pass, then visual polish ---- */
+:root{--shadow:0 1px 2px rgba(15,27,38,.06),0 3px 10px rgba(15,27,38,.045)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--shadow:none;--sos:#C22D27}}
+:root[data-theme="dark"]{--shadow:none;--sos:#C22D27}
+/* touch targets >= 40px, primary actions 44px+ */
+.sosb{min-height:40px;padding:0 12px}
+.jump button{min-height:40px;padding:0 14px}
+.ff button{min-height:40px}
+.wide{min-height:46px;box-shadow:var(--shadow)}
+.pastb,.mdh,.bk summary,.pd summary,.bkd summary{min-height:44px}
+.ck{width:28px;height:28px;border-radius:8px;position:relative}
+.ck::after{content:"";position:absolute;inset:-9px}
+.ck svg{width:16px;height:16px}
+.todo li{grid-template-columns:30px minmax(0,1fr) auto;gap:10px}
+.nb{min-height:50px;font-size:12px}
+/* nothing under 12px; place names readable, up to 2 lines instead of an ellipsis */
+.dl,.grp,.kl,.bt,.vtag,.kd,.dd small,.fc-d small,.ml-tm small{font-size:12px}
+/* backup restaurant names (.bk .bt) were picking up the backup-tag chip style (.bt): tiny, boxed, no wrap */
+.bk .bt{font-size:14px;white-space:normal;border:0;padding:0;border-radius:0;font-weight:700;color:var(--ink);overflow-wrap:anywhere}
+.pd summary .pn{font-size:13.5px;white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;line-height:1.35}
+/* day header: wrap between parts, never inside "DAY 2 / 19" */
+.kick .kw{font-style:normal;white-space:nowrap;margin-right:.8em}
+.kick .kw:last-child{margin-right:0}
+/* scrollable chip rows show they scroll */
+.jump{-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 28px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 28px),transparent)}
+.jump::after{content:"";flex:0 0 18px}
+/* previous / next day at the end of each day */
+.pager{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:2px}
+.pg{min-height:64px;border:1px solid var(--line);border-radius:12px;background:var(--card);box-shadow:var(--shadow);color:var(--ink);display:flex;align-items:center;gap:6px;padding:8px 10px;cursor:pointer;text-align:left;min-width:0}
+.pg-n{grid-column:2;justify-content:flex-end;text-align:right}
+.pg>span{min-width:0;display:flex;flex-direction:column;line-height:1.3}
+.pg small{font-size:12px;color:var(--ink3)}
+.pg b{font-size:15.5px;font-weight:700}
+.pg b .num{font-family:var(--num);font-size:18px}
+.pg em{font-style:normal;font-size:13px;color:var(--ink2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pg svg{flex:0 0 auto;width:18px;height:18px;color:var(--link)}
+/* visual: soft elevation on light backgrounds, calmer rhythm */
+.tl,.days,.card,.acc,.todo,.fc,.vt,.ff,.bkd{box-shadow:var(--shadow)}
+.body{gap:10px;padding-top:12px;padding-bottom:8px}
+.hd h1{font-size:23px;letter-spacing:.01em}
+.hd{padding-bottom:16px}
+.sum{color:var(--ink2);line-height:1.6}
+.warn{border-radius:12px;padding:9px 12px;line-height:1.5}
+.card h2,.sec-h h2{font-size:17px}
 </style>
 
 <div class="app"><main id="view"></main></div>
@@ -779,9 +823,14 @@ function itemHTML(it,st,k){let [a,b,kind,t,pl,c,n,x]=it;let o=x||{};const dk='i'
   const isCur=st===' cur';const air=kind==='plain'&&AIR.test(clean(t));const lab=air?(/候車|車站|月台/.test(t)?'車站':'機場'):kindLabel(kind,t);
   return `<li class="st k-${esc(kind)}${air?' k-air':''}${st}"><div class="tm"><span class="t1">${esc(a)}</span>${b?`<span class="t2">${esc(b)}</span>`:''}</div><div class="rail"><span class="seg"></span><span class="dot">${kind==='flight'?MICON(t):''}</span><span class="seg grow"></span></div><div class="bd">${lab||isCur?`<div class="kd">${isCur?'<span class="nowtag">NOW</span>':''}${lab?`<span class="kl">${esc(lab)}</span>`:''}</div>`:''}<div class="ttl">${esc(kind==='flight'?clean(t).replace(/^(火車|渡輪|巴士)\s+/,''):clean(t))}</div>${pl?`<div class="pl">${esc(pl)}</div>`:''}${legHTML(it)}${c?`<div class="cs">${esc(c)}</div>`:''}${n?`<div class="nt">${esc(n)}</div>`:''}${chips(o,dk)}</div></li>`;}
 
+/* previous / next calendar day (first plan of that date, not its 備案 variant) */
+function dayPager(i){const u=UD.indexOf(DAYS[i].d);const first=dd=>{const k=DAYS.findIndex(x=>x.d===dd&&!x.alt);return k>=0?k:DAYS.findIndex(x=>x.d===dd);};
+  const pv=u>0?first(UD[u-1]):-1,nx=u<UD.length-1?first(UD[u+1]):-1;
+  const btn=(k,n)=>k<0?'<span></span>':`<button type="button" class="pg pg-${n?'n':'p'}" data-go="d${k}">${n?'':I.back}<span><small>${n?'下一天':'前一天'}</small><b><span class="num">${esc(DAYS[k].tab)}</span> 週${esc(DAYS[k].wd)}</b><em>${esc(DAYS[k].main||DAYS[k].title)}</em></span>${n?I.chevR:''}</button>`;
+  return pv<0&&nx<0?'':`<nav class="pager" aria-label="切換日期">${btn(pv,0)}${btn(nx,1)}</nav>`;}
 function renderDay(i){const S=state(i),{day,sp,nm,isToday,cur,past}=S;const dow=new Date(day.d+'T00:00:00Z').getUTCDay();
   const meta=[day.wx,day.walk].filter(Boolean).join(' · ');
-  let h=strip(i)+`<header class="hd"><div class="kick"><span>${esc(TRIP.title)}　${esc(day.tab)} ${WDEN[dow]}　DAY ${UD.indexOf(day.d)+1} / ${UD.length}</span><button type="button" class="sosb" data-go="info" data-sos="1">緊急</button></div>
+  let h=strip(i)+`<header class="hd"><div class="kick"><span><i class="kw">${esc(TRIP.title)}</i> <i class="kw">${esc(day.tab)} ${WDEN[dow]}</i> <i class="kw">DAY ${UD.indexOf(day.d)+1} / ${UD.length}</i></span><button type="button" class="sosb" data-go="info" data-sos="1">緊急</button></div>
     <h1>${esc(day.title)}</h1>${meta?`<p class="meta">${esc(meta)}</p>`:''}${flHead(day)}${isToday?board(S):''}</header><div class="body">`;
   const sib=DAYS.map((d,k)=>[d,k]).filter(([d])=>d.d===day.d);
   if(sib.length>1)h+=`<div class="vt" role="group" aria-label="本日方案">${sib.map(([d,k])=>`<button type="button" data-go="d${k}" aria-pressed="${k===i}">${esc(d.variant||d.title)}</button>`).join('')}</div>`;
@@ -795,7 +844,7 @@ function renderDay(i){const S=state(i),{day,sp,nm,isToday,cur,past}=S;const dow=
     if(!lineDone&&nm<s){h+=`<li class="nowline" aria-label="現在時間"><span>NOW</span><hr></li>`;lineDone=true;}
     h+=itemHTML(it,st,k);PREVP=(it[7]||{}).p||null;});REMSEEN=null;PREVP=null;
   if(!lineDone)h+=`<li class="nowline" aria-label="現在時間"><span>NOW</span><hr></li>`;
-  h+=`</ol><button type="button" class="wide" id="cpday">${isToday?'複製今日行程（貼 LINE）':'複製這天行程（貼 LINE）'}</button></div>`;
+  h+=`</ol><button type="button" class="wide" id="cpday">${isToday?'複製今日行程（貼 LINE）':'複製這天行程（貼 LINE）'}</button>${dayPager(i)}</div>`;
   view.innerHTML=h;
   document.getElementById('cpday').onclick=()=>copy(dayText(day),'已複製 '+day.tab+' 行程');
   const pb=document.getElementById('pastb');if(pb)pb.onclick=()=>{showPast=!showPast;renderDay(i);};
