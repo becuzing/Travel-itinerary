@@ -9,67 +9,119 @@
 <style>
 @font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/barlow-condensed-600.woff2) format('woff2')}
 @font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:700;font-display:swap;src:url(../assets/fonts/barlow-condensed-700.woff2) format('woff2')}
+/* Layout: navy header + sticky group switcher; "now / next" shortcut card; trips grouped below, 1 column on phones, 2 on wide screens */
 :root{
-  --board:#0F1B26;--board2:#18293B;--board-line:#2C3F52;--on-board:#fff;--on-board2:#B9C4CF;
+  --board:#0F1B26;--board2:#18293B;--on-board:#FFFFFF;--on-board2:#B9C4CF;
   --signal:#FFC72C;--on-signal:#0F1B26;
-  --bg:#EEF1F4;--card:#fff;--ink:#0F1B26;--ink2:#3E4C59;--ink3:#56636F;--line:#E3E8ED;--line2:#C6CFD8;
-  --done:#8A96A3;--live:#2B8A3E;
+  --bg:#EEF1F4;--card:#FFFFFF;--ink:#0F1B26;--ink2:#3E4C59;--ink3:#56636F;--line:#E3E8ED;--line2:#C6CFD8;
+  --done:#6B7885;--live:#1F7A35;--live-bg:#E4F4E8;
   --num:'Barlow Condensed','Arial Narrow',sans-serif;
   --sans:-apple-system,BlinkMacSystemFont,'PingFang TC','Noto Sans TC','Noto Sans CJK TC','Microsoft JhengHei',sans-serif;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --board:#07101A;--board2:#132232;--board-line:#26384A;--on-board:#F2F5F8;--on-board2:#A9B6C2;
+  --board:#07101A;--board2:#132232;--on-board:#F2F5F8;--on-board2:#A9B6C2;
   --bg:#0B141C;--card:#14212D;--ink:#E6ECF1;--ink2:#B8C4CE;--ink3:#97A5B1;--line:#22323F;--line2:#344654;
-  --done:#6E7D8A;--live:#5CC27A;color-scheme:dark}}
+  --done:#8493A0;--live:#5CC27A;--live-bg:#173326;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --board:#07101A;--board2:#132232;--on-board:#F2F5F8;--on-board2:#A9B6C2;
+  --bg:#0B141C;--card:#14212D;--ink:#E6ECF1;--ink2:#B8C4CE;--ink3:#97A5B1;--line:#22323F;--line2:#344654;
+  --done:#8493A0;--live:#5CC27A;--live-bg:#173326;color-scheme:dark}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.5;-webkit-text-size-adjust:100%}
-header{background:var(--board);color:var(--on-board);padding:calc(env(safe-area-inset-top,0px) + 18px) 16px 14px}
-.wrap{max-width:640px;margin:0 auto}
-.kick{font-family:var(--num);font-size:15px;font-weight:600;letter-spacing:.08em;color:var(--on-board2)}
-h1{margin:2px 0 12px;font-size:23px;font-weight:900;line-height:1.3}
-.stats{display:flex;gap:18px;margin-bottom:12px}
-.stats div{display:flex;flex-direction:column;line-height:1.1}
-.stats b{font-family:var(--num);font-size:26px;font-weight:700;color:var(--signal)}
-.stats small{font-size:12px;color:var(--on-board2)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.5;-webkit-text-size-adjust:100%;font-variant-numeric:tabular-nums}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--board);z-index:10}
+.wrap{max-width:760px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.num{font-family:var(--num)}
+
+header{background:var(--board);color:var(--on-board);padding-block:16px 4px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:28px}
+.kick{font-family:var(--num);font-size:15px;font-weight:600;letter-spacing:.1em;color:var(--on-board2)}
+h1{margin:2px 0 10px;font-size:26px;font-weight:900;line-height:1.25;text-wrap:balance}
+.stats{display:flex;gap:22px;padding-bottom:12px}
+.stats div{display:flex;align-items:baseline;gap:5px}
+.stats b{font-family:var(--num);font-size:28px;font-weight:700;line-height:1;color:var(--signal)}
+.stats small{font-size:13px;color:var(--on-board2)}
+.a2hs{display:none}
+@media (display-mode:standalone){.a2hs{display:none!important}}
+
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--board);padding-block:4px 12px}
 .seg{display:flex;gap:4px;background:var(--board2);border-radius:12px;padding:4px}
-.seg button{flex:1;min-height:38px;border:0;border-radius:9px;background:none;color:var(--on-board2);font:inherit;font-size:14.5px;font-weight:600;cursor:pointer}
+.seg button{flex:1;min-height:44px;border:0;border-radius:9px;background:none;color:var(--on-board2);font:inherit;font-size:15px;font-weight:600;cursor:pointer}
 .seg button[aria-pressed="true"]{background:var(--signal);color:var(--on-signal)}
-.seg button:focus-visible{outline:3px solid var(--signal);outline-offset:2px}
-main{padding:14px 16px calc(24px + env(safe-area-inset-bottom,0px))}
-.grp{margin-bottom:16px}
-.gh{display:flex;align-items:baseline;gap:8px;margin:0 2px 8px;font-size:15px;font-weight:700}
-.gh .num{font-family:var(--num);font-size:20px}
-.gh small{font-size:12.5px;font-weight:500;color:var(--ink3)}
-.list{display:flex;flex-direction:column;gap:8px}
-a.trip{display:grid;grid-template-columns:6px minmax(0,1fr) auto;column-gap:12px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px 12px 12px;color:inherit;text-decoration:none}
+.seg button:focus-visible,a:focus-visible{outline:3px solid var(--signal);outline-offset:2px}
+
+main{padding-block:16px calc(28px + env(safe-area-inset-bottom,0px))}
+
+/* now / next */
+.hero{display:flex;flex-direction:column;gap:8px;margin-bottom:22px}
+a.focus{display:block;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;color:inherit;text-decoration:none}
+a.focus:hover{border-color:var(--line2)}
+.fk{display:flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;letter-spacing:.06em;color:var(--ink3)}
+.fk.live{color:var(--live)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--live)}
+@media (prefers-reduced-motion:no-preference){.dot{animation:pulse 1.8s ease-in-out infinite}}
+@keyframes pulse{50%{opacity:.35}}
+.frow{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-top:6px}
+.frow>div{min-width:0}
+.ft{font-size:22px;font-weight:900;line-height:1.3;text-wrap:balance}
+.fd{font-size:14px;color:var(--ink2);margin-top:2px}
+.fd .num{font-size:16px;font-weight:600}
+.cd{text-align:right;line-height:1;white-space:nowrap}
+.cd b{font-family:var(--num);font-size:52px;font-weight:700;color:var(--ink)}
+.cd small{display:block;font-size:12.5px;color:var(--ink3);margin-top:2px}
+.prog{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:3px;margin-top:14px}
+.prog i{height:6px;border-radius:3px;background:var(--line)}
+.prog i.on{background:var(--live)}
+.prog-l{display:flex;justify-content:space-between;font-size:12.5px;color:var(--ink3);margin-top:6px}
+a.next{display:flex;align-items:center;gap:8px;min-height:44px;padding:8px 14px;border:1px solid var(--line);border-radius:12px;color:inherit;text-decoration:none;font-size:14px}
+a.next:hover{border-color:var(--line2)}
+a.next .l{color:var(--ink3);font-size:12.5px;font-weight:700;letter-spacing:.06em;flex:none}
+a.next b{font-weight:700;min-width:0;flex:1}
+a.next .c{flex:none;color:var(--ink2)}
+a.next .c .num{font-size:18px;font-weight:700;color:var(--ink)}
+
+/* groups */
+.grp{margin-bottom:20px}
+.gh{display:flex;align-items:baseline;gap:8px;margin:0 2px 8px;font-size:16px;font-weight:700}
+.gh .num{font-size:22px}
+.gh small{font-size:13px;font-weight:500;color:var(--ink3)}
+.list{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,330px),1fr));gap:8px}
+a.trip{display:grid;grid-template-columns:5px minmax(0,1fr) auto;column-gap:12px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px 12px 12px;color:inherit;text-decoration:none;min-height:84px}
 a.trip::before{content:"";align-self:stretch;border-radius:3px;background:var(--signal)}
 a.trip.done::before{background:var(--line2)}
-a.trip:focus-visible{outline:3px solid var(--signal);outline-offset:2px}
+a.trip.live::before{background:var(--live)}
+a.trip:hover{border-color:var(--line2)}
+a.trip:active{background:var(--bg)}
 .t1{font-size:17px;font-weight:700;line-height:1.35}
-.t2{font-size:13.5px;color:var(--ink2)}
-.t2 .num{font-family:var(--num);font-size:15.5px;font-weight:600}
-.chips{display:flex;flex-wrap:wrap;gap:4px;margin-top:4px}
-.chip{font-size:12px;line-height:1;padding:4px 7px;border-radius:999px;border:1px solid var(--line2);color:var(--ink3)}
-.st{font-size:12.5px;font-weight:700;white-space:nowrap;text-align:right}
-.st.up{color:var(--ink)} .st.up b{font-family:var(--num);font-size:22px;color:var(--ink)}
-.st.live{color:var(--live)} .st.done{color:var(--done);font-weight:500}
-.a2hs{display:none}@media (display-mode:standalone){.a2hs{display:none!important}}
-.top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.t2{font-size:13.5px;color:var(--ink2);margin-top:1px}
+.t2 .num{font-size:16px;font-weight:600}
+.t3{font-size:13px;color:var(--ink3);margin-top:3px}
+.t3 .num{font-size:15px;font-weight:600;color:var(--ink2)}
+.st{text-align:right;white-space:nowrap;line-height:1}
+.st.up b{display:block;font-family:var(--num);font-size:30px;font-weight:700;color:var(--ink)}
+.st.up small{font-size:12.5px;color:var(--ink3)}
+.st.live span{display:inline-block;padding:5px 10px;border-radius:999px;background:var(--live-bg);color:var(--live);font-size:13px;font-weight:700}
+.st.done{font-size:13px;color:var(--done)}
 </style>
-<link rel="manifest" href="manifest.webmanifest"><meta name="application-name" content="Ting"><meta name="apple-mobile-web-app-title" content="Ting"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="theme-color" content="#0F1B26"><link rel="apple-touch-icon" href="../icons/apple-touch-icon.png"><link rel="icon" type="image/svg+xml" href="../icon.svg"><link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png"><style id="app-top">#sbar{display:none}@media (display-mode:standalone){#sbar{display:block;position:fixed;top:0;left:0;right:0;height:calc(env(safe-area-inset-top,0px) + min(40px,env(safe-area-inset-top,0px)));background:var(--board,#0F1B26);z-index:50}html:root{padding-top:0;height:100%;overflow:hidden;background:var(--board,#0F1B26)}html body{position:fixed;top:0;left:0;right:0;bottom:0;overflow-x:hidden;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior-y:none;padding-top:calc(env(safe-area-inset-top,0px) + min(40px,env(safe-area-inset-top,0px)))}html body>header{padding-top:calc(18px - min(12px,env(safe-area-inset-top,0px)))}html body .strip{top:calc(env(safe-area-inset-top,0px) + min(40px,env(safe-area-inset-top,0px)))}}</style><script id="app-scroll">(function(){if(!(window.matchMedia&&matchMedia("(display-mode: standalone)").matches))return;var o=window.scrollTo.bind(window);window.scrollTo=function(a,b){try{document.body.scrollTo(a,b)}catch(e){}return o(a,b)}})();</script><script src="../a2hs.js?v=6" defer></script></head>
+<link rel="manifest" href="manifest.webmanifest"><meta name="application-name" content="Ting"><meta name="apple-mobile-web-app-title" content="Ting"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="theme-color" content="#0F1B26"><link rel="apple-touch-icon" href="../icons/apple-touch-icon.png"><link rel="icon" type="image/svg+xml" href="../icon.svg"><link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png"><style id="app-top">#sbar{display:none}@media (display-mode:standalone){#sbar{display:block;position:fixed;top:0;left:0;right:0;height:calc(env(safe-area-inset-top,0px) + min(40px,env(safe-area-inset-top,0px)));background:var(--board,#0F1B26);z-index:50}html:root{padding-top:0;height:100%;overflow:hidden;background:var(--board,#0F1B26)}html body{position:fixed;top:0;left:0;right:0;bottom:0;overflow-x:hidden;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior-y:none;padding-top:calc(env(safe-area-inset-top,0px) + min(40px,env(safe-area-inset-top,0px)))}html body>header{padding-top:calc(18px - min(12px,env(safe-area-inset-top,0px)))}html body .bar{top:calc(env(safe-area-inset-top,0px) + min(40px,env(safe-area-inset-top,0px)))}html body .strip{top:calc(env(safe-area-inset-top,0px) + min(40px,env(safe-area-inset-top,0px)))}}</style><script id="app-scroll">(function(){if(!(window.matchMedia&&matchMedia("(display-mode: standalone)").matches))return;var o=window.scrollTo.bind(window);window.scrollTo=function(a,b){try{document.body.scrollTo(a,b)}catch(e){}return o(a,b)}})();</script><script src="../a2hs.js?v=6" defer></script></head>
 <body><div id="sbar" aria-hidden="true"></div>
 <header><div class="wrap">
   <div class="top"><div class="kick">TRIP ARCHIVE</div>
-  <button type="button" class="a2hs a2hs-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4"/><path d="M12 8v8M8 12h8"/></svg>加到主畫面</button></div>
+  <button type="button" class="a2hs a2hs-pill"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4"/><path d="M12 8v8M8 12h8"/></svg>加到主畫面</button></div>
   <h1>Ting's Atlas</h1>
   <div class="stats" id="stats"></div>
-  <div class="seg" role="group" aria-label="分組方式">
-    <button type="button" data-g="year">年份</button>
-    <button type="button" data-g="continent">洲別</button>
-    <button type="button" data-g="duration">天數</button>
-  </div>
 </div></header>
-<main><div class="wrap" id="out"></div></main>
+<div class="bar"><div class="wrap">
+  <div class="seg" role="group" aria-label="分組方式">
+    <button type="button" id="g-year" data-g="year">年份</button>
+    <button type="button" id="g-continent" data-g="continent">洲別</button>
+    <button type="button" id="g-duration" data-g="duration">天數</button>
+  </div>
+</div></div>
+<main><div class="wrap">
+  <section class="hero" id="hero" aria-label="目前與下一趟"></section>
+  <div id="out"></div>
+</div></main>
+
 <script>
 // Add new trips here: path (relative to this folder), title, start/end (YYYY-MM-DD), country, continent, party
 const TRIPS=[
@@ -88,18 +140,41 @@ const days=t=>Math.round((d(t.end)-d(t.start))/864e5)+1;
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 function today(){const n=new Date(Date.now()+8*36e5);return new Date(n.getUTCFullYear(),n.getUTCMonth(),n.getUTCDate())}
 function status(t){const n=today(),s=d(t.start),e=d(t.end);
-  if(n>e)return{c:'done',h:'已結束'};
-  if(n>=s)return{c:'live',h:'旅行中'};
-  return{c:'up',h:'倒數 <b>'+Math.round((s-n)/864e5)+'</b> 天'}}
+  if(n>e)return{c:'done'};
+  if(n>=s)return{c:'live',day:Math.round((n-s)/864e5)+1};
+  return{c:'up',left:Math.round((s-n)/864e5)}}
 function fmt(t){const s=d(t.start),e=d(t.end);
   return `<span class="num">${s.getFullYear()}/${s.getMonth()+1}/${s.getDate()}</span>（${WD[s.getDay()]}）– <span class="num">${e.getMonth()+1}/${e.getDate()}</span>（${WD[e.getDay()]}）`}
+function right(t,st){
+  if(st.c==='live')return `<div class="st live"><span>旅行中・第 ${st.day} 天</span></div>`;
+  if(st.c==='up')return `<div class="st up"><b>${st.left}</b><small>天後出發</small></div>`;
+  return `<div class="st done">已結束</div>`}
 function card(t){const n=days(t),st=status(t);
-  return `<a class="trip ${st.c==='done'?'done':''}" href="${esc(t.path)}">
+  return `<a class="trip ${st.c}" href="${esc(t.path)}">
   <div><div class="t1">${esc(t.title)}</div><div class="t2">${fmt(t)}</div>
-  <div class="chips"><span class="chip">${esc(t.country)}</span><span class="chip">${n}天${n-1}夜</span><span class="chip">${esc(t.party)}</span></div></div>
-  <div class="st ${st.c}">${st.h}</div></a>`}
+  <div class="t3">${esc(t.country)}・<span class="num">${n}</span> 天 <span class="num">${n-1}</span> 夜・${esc(t.party)}</div></div>
+  ${right(t,st)}</a>`}
+function hero(){
+  const all=[...TRIPS].sort((a,b)=>d(a.start)-d(b.start));
+  const live=all.find(t=>status(t).c==='live'),ups=all.filter(t=>status(t).c==='up');
+  const t=live||ups[0];if(!t)return'';
+  const st=status(t),n=days(t),nx=live?ups[0]:ups[1];
+  let h;
+  if(st.c==='live'){
+    h=`<a class="focus" href="${esc(t.path)}"><div class="fk live"><span class="dot"></span>旅行中</div>
+    <div class="ft">${esc(t.title)}</div><div class="fd">${fmt(t)}・${esc(t.party)}</div>
+    <div class="prog" aria-hidden="true">${Array.from({length:n},(_,i)=>`<i class="${i<st.day?'on':''}"></i>`).join('')}</div>
+    <div class="prog-l"><span>第 <span class="num">${st.day}</span> 天</span><span>共 <span class="num">${n}</span> 天</span></div></a>`;
+  }else{
+    h=`<a class="focus" href="${esc(t.path)}"><div class="fk">下一趟出發</div>
+    <div class="frow"><div><div class="ft">${esc(t.title)}</div><div class="fd">${fmt(t)}・${esc(t.party)}</div></div>
+    <div class="cd"><b>${st.left}</b><small>天後</small></div></div></a>`;
+  }
+  if(nx){const s2=status(nx);
+    h+=`<a class="next" href="${esc(nx.path)}"><span class="l">下一趟</span><b>${esc(nx.title)}</b><span class="c"><span class="num">${s2.left}</span> 天後</span></a>`}
+  return h}
 function group(by){
-  const sorted=[...TRIPS].sort((a,b)=>d(b.start)-d(a.start));const m=new Map();
+  const sorted=[...TRIPS].sort((a,b)=>d(a.start)-d(b.start));const m=new Map();
   if(by==='year'){sorted.forEach(t=>{const k=t.start.slice(0,4);(m.get(k)||m.set(k,[]).get(k)).push(t)});
     return[...m].sort((a,b)=>b[0]-a[0]).map(([k,v])=>({h:`<span class="num">${k}</span>`,v}))}
   if(by==='continent'){sorted.forEach(t=>{(m.get(t.continent)||m.set(t.continent,[]).get(t.continent)).push(t)});
@@ -111,6 +186,7 @@ function render(by){
   try{localStorage.setItem('trips-group',by)}catch(e){}}
 const totalDays=TRIPS.reduce((s,t)=>s+days(t),0),countries=new Set(TRIPS.flatMap(t=>t.country.split('・'))).size;
 document.getElementById('stats').innerHTML=[[TRIPS.length,'趟行程'],[totalDays,'天'],[countries,'個國家']].map(([n,l])=>`<div><b>${n}</b><small>${l}</small></div>`).join('');
+document.getElementById('hero').innerHTML=hero();
 document.querySelectorAll('.seg button').forEach(b=>b.addEventListener('click',()=>render(b.dataset.g)));
 let init='year';try{const s=localStorage.getItem('trips-group');if(['year','continent','duration'].includes(s))init=s}catch(e){}
 render(init);
